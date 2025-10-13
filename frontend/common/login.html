@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Đăng nhập – KTX-DNU</title>
+
+  <!-- Tailwind & Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Font -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    :root{ color-scheme: dark; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .glass-effect { background: rgba(255,255,255,0.08); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.18); }
+    .form-container { transition: all .3s ease; max-width: 420px; width: 100%; }
+    .form-container:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,.15); }
+    .input-group { position: relative; margin-bottom: 1rem; }
+    .input-group input, .input-group select {
+      padding-left: 44px; padding-right: 44px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff; outline: none; width: 100%;
+      border-radius: .75rem; height: 48px; transition: all .2s ease;
+    }
+    .input-group input::placeholder { color: rgba(255,255,255,0.6); }
+    .input-group input:focus, .input-group select:focus {
+      border-color: rgba(102,126,234,.7);
+      box-shadow: 0 0 0 3px rgba(102,126,234,.25);
+      transform: translateY(-1px);
+    }
+    .input-group i.left-icon { position:absolute; left:14px; top:50%; transform: translateY(-50%); color:#c7cbe6; }
+    .input-group .right-icon { position:absolute; right:12px; top:50%; transform: translateY(-50%); color:#c7cbe6; cursor:pointer; }
+    .btn-primary { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); transition: all .2s ease; }
+    .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 10px 20px rgba(102,126,234,.35); }
+    .floating-shapes { position: fixed; inset: 0; overflow: hidden; z-index: -1; }
+    .shape { position: absolute; opacity:.12; animation: float 18s infinite ease-in-out; }
+    @keyframes float { 0%,100%{ transform: translateY(0) rotate(0deg); } 50%{ transform: translateY(-90px) rotate(180deg); } }
+    .shape:nth-child(1){ width:80px; height:80px; background:#fff; border-radius:50%; top:18%; left:12%; animation-delay:0s;}
+    .shape:nth-child(2){ width:120px; height:120px; background:#fff; clip-path: polygon(50% 0%, 0% 100%, 100% 100%); top:65%; right:10%; animation-delay:4s;}
+    .shape:nth-child(3){ width:60px; height:60px; background:#fff; border-radius:50%; bottom:18%; left:22%; animation-delay:8s;}
+  </style>
+</head>
+<body class="flex">
+
+  <!-- BG deco -->
+  <div class="floating-shapes">
+    <div class="shape"></div><div class="shape"></div><div class="shape"></div>
+  </div>
+
+  <!-- Main -->
+  <div class="flex items-center justify-center w-full px-4">
+    <div class="w-full max-w-md">
+      <div class="glass-effect rounded-2xl p-8 form-container">
+        <h1 class="text-white text-2xl font-semibold mb-6 text-center">Đăng nhập KTX-DNU</h1>
+
+        <!-- Login form -->
+        <form id="loginForm" autocomplete="off">
+          <!-- Vai trò (chỉ hiển thị cho đẹp, backend quyết định role) -->
+          <div class="input-group">
+            <select id="role" class="appearance-none">
+              <option value="student" selected>Sinh viên</option>
+              <option value="manager">Quản lý</option>
+            </select>
+            <i class="fas fa-user-tag left-icon"></i>
+          </div>
+
+          <!-- Username -->
+          <div class="input-group">
+            <input id="identifier" type="text" placeholder="Tài khoản (username)" required/>
+            <i class="fas fa-id-card left-icon"></i>
+          </div>
+
+          <!-- Password -->
+          <div class="input-group">
+            <input id="password" type="password" placeholder="Mật khẩu" required/>
+            <i class="fas fa-lock left-icon"></i>
+            <i class="fas fa-eye right-icon" id="togglePassword" style="display:none;"></i>
+            <i class="fas fa-eye-slash right-icon" id="togglePasswordSlash"></i>
+          </div>
+
+          <div class="flex items-center justify-between mb-6">
+            <label class="flex items-center text-white/80 text-sm">
+              <input type="checkbox" id="remember" class="mr-2 rounded">
+              Ghi nhớ đăng nhập
+            </label>
+            <span class="text-white/70 text-sm">API: <code>http://127.0.0.1:8000</code></span>
+          </div>
+
+          <button id="btnLogin" type="submit"
+                  class="btn-primary w-full py-3 rounded-lg text-white font-semibold flex items-center justify-center gap-2">
+            <span class="fas fa-right-to-bracket"></span>
+            <span class="btn-text">Đăng nhập</span>
+          </button>
+
+          <p class="text-center text-white/70 text-sm mt-4">
+            Chưa có tài khoản? Liên hệ quản trị để được cấp.
+          </p>
+        </form>
+      </div>
+
+      <!-- Footer -->
+      <div class="text-center mt-6">
+        <p class="text-white/80 text-lg">Chào mừng bạn quay trở lại</p>
+        <p class="text-white/70 text-sm mt-2">Thời gian hiện tại: <span id="currentTime"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script chung -->
+  <script src="../common/script.js"></script>
+
+  <!-- Script xử lý form đăng nhập -->
+  <script>
+    // đồng hồ nho nhỏ
+    setInterval(() => {
+      const el = document.querySelector("#currentTime");
+      if (el) el.textContent = new Date().toLocaleString();
+    }, 1000);
+
+    // toggle hiện/ẩn mật khẩu
+    (function(){
+      const inp = document.querySelector("#password");
+      const eye = document.querySelector("#togglePassword");
+      const eyeSlash = document.querySelector("#togglePasswordSlash");
+      function refresh(){
+        if (inp.type === "password"){ eye.style.display=""; eyeSlash.style.display="none"; }
+        else { eye.style.display="none"; eyeSlash.style.display=""; }
+      }
+      eye.addEventListener("click", ()=>{ inp.type="text"; refresh(); });
+      eyeSlash.addEventListener("click", ()=>{ inp.type="password"; refresh(); });
+      refresh();
+    })();
+
+    // Submit form
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.querySelector("#loginForm");
+      const btn = document.querySelector("#btnLogin");
+      const btnText = document.querySelector(".btn-text");
+      const username = document.querySelector("#identifier");  // <-- đúng ID
+      const password = document.querySelector("#password");
+
+      if (!form) return;
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        btn.disabled = true;
+        btnText.textContent = "Đang đăng nhập...";
+
+        try {
+          await ktxAuth.login(username.value.trim(), password.value);
+        } catch (err) {
+          alert("Đăng nhập thất bại: " + err.message);
+          console.error(err);
+        } finally {
+          btn.disabled = false;
+          btnText.textContent = "Đăng nhập";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

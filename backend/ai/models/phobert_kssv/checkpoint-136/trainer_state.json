@@ -1,0 +1,57 @@
+{
+  "best_metric": 0.9420127534881634,
+  "best_model_checkpoint": "D:\\KTX-DNU\\backend\\ai\\models\\phobert_kssv\\checkpoint-136",
+  "epoch": 1.0,
+  "eval_steps": 500,
+  "global_step": 136,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 0.36764705882352944,
+      "grad_norm": 4.03973388671875,
+      "learning_rate": 1.8529411764705884e-05,
+      "loss": 1.4534,
+      "step": 50
+    },
+    {
+      "epoch": 0.7352941176470589,
+      "grad_norm": 2.77408766746521,
+      "learning_rate": 1.7058823529411767e-05,
+      "loss": 0.6395,
+      "step": 100
+    },
+    {
+      "epoch": 1.0,
+      "eval_accuracy": 0.9424083769633508,
+      "eval_f1": 0.9420127534881634,
+      "eval_loss": 0.23755602538585663,
+      "eval_runtime": 1.9577,
+      "eval_samples_per_second": 97.563,
+      "eval_steps_per_second": 3.065,
+      "step": 136
+    }
+  ],
+  "logging_steps": 50,
+  "max_steps": 680,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 5,
+  "save_steps": 500,
+  "stateful_callbacks": {
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": false
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 22355992580472.0,
+  "train_batch_size": 16,
+  "trial_name": null,
+  "trial_params": null
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bảng điều khiển Quản lý – KTX-DNU</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;600" rel="stylesheet" />
+  <link rel="stylesheet" href="../student/student.css" />
+
+  <style>
+    html, body { height: 100%; margin: 0; }
+    .app { min-height: 100%; display: flex; }
+
+    /* === Sidebar cố định === */
+    .sidebar {
+      position: fixed;
+      top: 0; left: 0; bottom: 0;
+      width: 270px;
+      background: #fff;
+      border-right: 1px solid #e5e7eb;
+      overflow-y: auto;
+      z-index: 100;
+    }
+
+    /* === Nội dung chính === */
+    .main {
+      margin-left: 270px;
+      width: calc(100% - 270px);
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="material-symbols-outlined">apartment</span>
+        <span>KTX-DNU</span>
+      </div>
+      <nav class="menu">
+        <a class="menu-item active" data-keep-user href="./admin.html">
+          <span class="material-symbols-outlined">dashboard</span><span>Trang quản lý</span>
+        </a>
+
+        <!-- Quản lý sự cố -->
+        <a class="menu-item" data-keep-user href="./report_manage.html">
+          <span class="material-symbols-outlined">report</span><span>Quản lý sự cố</span>
+        </a>
+
+        <!-- ✅ Thay “Trang sinh viên” bằng “Check-in/Check-out” -->
+        <a class="menu-item" data-keep-user href="./checkins.html">
+          <span class="material-symbols-outlined">how_to_reg</span><span>Check-in/Check-out</span>
+        </a>
+
+        <!-- Đăng xuất -->
+        <a class="menu-item" href="../common/login.html" onclick="ktxAuth.logoutCurrent(); return false;">
+          <span class="material-symbols-outlined">logout</span><span>Đăng xuất</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="topbar">
+        <div class="welcome">
+          <h2 class="hello">Bảng điều khiển Quản lý</h2>
+          <p class="muted">Đang dùng: <b data-current-username></b> (<span data-current-role></span>)</p>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="grid quick-3">
+          <article class="card">
+            <h3><span class="material-symbols-outlined">assignment</span> Báo cáo mới</h3>
+            <p class="muted">Xem & xử lý các báo cáo sự cố từ sinh viên.</p>
+            <a class="btn primary" data-keep-user href="./report_manage.html">
+              <span class="material-symbols-outlined">open_in_new</span> Mở trang Quản lý sự cố
+            </a>
+          </article>
+
+          <article class="card">
+            <h3><span class="material-symbols-outlined">how_to_reg</span> Check-in/Check-out</h3>
+            <p class="muted">Xem yêu cầu vào/ra và cập nhật trạng thái.</p>
+            <a class="btn ghost" data-keep-user href="./checkins.html">
+              <span class="material-symbols-outlined">list</span> Xem danh sách
+            </a>
+          </article>
+        </div>
+
+        <!-- Danh sách Check-in/Check-out -->
+        <section class="card" id="checkins">
+          <div class="mi-head">
+            <h3><span class="material-symbols-outlined">history</span> Yêu cầu Check-in/Check-out</h3>
+          </div>
+          <div id="ck-list" class="mi-list"></div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="../common/script.js"></script>
+  <script>
+    // Chỉ cho phép admin truy cập
+    ktxAuth.requireAuth(["admin"]);
+
+    async function updateCheckin(id, patch) {
+      const res = await ktxAuth.apiFetch(`/checkins/${id}`, {
+        method: "PATCH",
+        body: JSON.stringify(patch),
+      });
+      if (!res.ok) throw new Error(`${res.status}`);
+      return res.json();
+    }
+
+    async function approve(id) {
+      try { await updateCheckin(id, { status: "approved" }); await loadCheckins(); alert("✅ Đã duyệt yêu cầu."); }
+      catch (e) { alert("Lỗi: " + e.message); }
+    }
+
+    async function reject(id) {
+      const note = prompt("Nhập lý do từ chối (tùy chọn):", "");
+      try { await updateCheckin(id, { status: "rejected", admin_reply: note || null }); await loadCheckins(); alert("🚫 Đã từ chối yêu cầu."); }
+      catch (e) { alert("Lỗi: " + e.message); }
+    }
+
+    async function reply(id) {
+      const note = prompt("Nội dung phản hồi:", "");
+      if (note === null) return;
+      try { await updateCheckin(id, { admin_reply: note }); await loadCheckins(); alert("💬 Đã phản hồi."); }
+      catch (e) { alert("Lỗi: " + e.message); }
+    }
+
+    async function loadCheckins() {
+      const box = document.getElementById('ck-list');
+      box.innerHTML = '<p class="muted">Đang tải...</p>';
+      try {
+        const res = await ktxAuth.apiFetch('/checkins');
+        const data = await res.json();
+        if (!Array.isArray(data) || data.length === 0) {
+          box.innerHTML = '<p class="muted">Chưa có yêu cầu.</p>';
+          return;
+        }
+
+        data.sort((a,b)=> new Date(b.created_at) - new Date(a.created_at));
+        box.innerHTML = data.map(item => {
+          const chipCls = item.status === 'approved' ? 'success'
+                        : item.status === 'rejected' ? 'danger' : 'info';
+          const statusVN = item.status === 'approved' ? 'Đã duyệt'
+                        : item.status === 'rejected' ? 'Từ chối' : 'Đang chờ';
+          return `
+            <article class="ticket">
+              <div class="ticket-main">
+                <div class="ticket-title">${item.type.toUpperCase()} • ${item.date}${item.time ? ' ' + item.time : ''}</div>
+                <div class="ticket-meta">
+                  <span class="meta"><span class="material-symbols-outlined">person</span> SV ID: ${item.student_id}</span>
+                  <span class="meta"><span class="material-symbols-outlined">schedule</span> ${new Date(item.created_at).toLocaleString('vi-VN')}</span>
+                  ${item.note ? `<span class="meta"><span class="material-symbols-outlined">notes</span> ${item.note}</span>` : ''}
+                </div>
+              </div>
+              <div class="ticket-aside" style="display:flex;gap:8px;align-items:center">
+                <span class="chip ${chipCls}">${statusVN}</span>
+                <button class="btn ghost sm" onclick="reply(${item.id})">
+                  <span class="material-symbols-outlined">chat</span> Phản hồi
+                </button>
+                ${item.status !== 'approved' ? `
+                  <button class="btn primary sm" onclick="approve(${item.id})">
+                    <span class="material-symbols-outlined">check</span> Duyệt
+                  </button>` : ''}
+                ${item.status !== 'rejected' ? `
+                  <button class="btn ghost sm" onclick="reject(${item.id})">
+                    <span class="material-symbols-outlined">close</span> Từ chối
+                  </button>` : ''}
+              </div>
+            </article>
+          `;
+        }).join('');
+      } catch (e) {
+        box.innerHTML = `<p class="muted">Lỗi tải dữ liệu: ${e.message}</p>`;
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadCheckins);
+  </script>
+</body>
+</html>

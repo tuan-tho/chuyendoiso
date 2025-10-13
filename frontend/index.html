@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KTX-DNU</title>
+  <meta http-equiv="refresh" content="1; url=./common/login.html" />
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+    .box {
+      text-align: center;
+    }
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(255,255,255,0.3);
+      border-top-color: #fff;
+      border-radius: 50%;
+      margin: 0 auto 12px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="spinner"></div>
+    <h2>Đang chuyển đến trang đăng nhập...</h2>
+    <p>Nếu trình duyệt không tự chuyển, <a href="./common/login.html" style="color:#fff;text-decoration:underline;">bấm vào đây</a>.</p>
+  </div>
+
+  <!-- JavaScript fallback -->
+  <script>
+    window.location.replace("./common/login.html");
+  </script>
+</body>
+</html>

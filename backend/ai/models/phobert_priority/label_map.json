@@ -1,0 +1,12 @@
+{
+  "label2id": {
+    "normal": 0,
+    "high": 1,
+    "urgent": 2
+  },
+  "id2label": {
+    "0": "normal",
+    "1": "high",
+    "2": "urgent"
+  }
+}

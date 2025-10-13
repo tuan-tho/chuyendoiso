@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Báo cáo sự cố – Sinh viên | KTX-DNU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;600" rel="stylesheet"/>
+  <link rel="stylesheet" href="./student.css" />
+  <style>
+    .wrap{max-width:900px;margin:24px auto}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    .col{flex:1;min-width:220px}
+    label{display:block;font-weight:600;margin:8px 0 6px}
+    input,select,textarea{width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:10px}
+    textarea{min-height:120px}
+    .btn{display:inline-flex;align-items:center;gap:6px;padding:10px 14px;border-radius:10px;border:1px solid #e5e7eb;background:#f9fafb}
+    .btn.primary{background:#4f46e5;color:#fff;border-color:#4f46e5}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="material-symbols-outlined">apartment</span>
+        <span>Cổng Sinh viên KTX</span>
+      </div>
+      <nav class="menu">
+        <a class="menu-item" data-keep-user href="./student.html">
+          <span class="material-symbols-outlined">home</span><span>Trang chủ</span>
+        </a>
+        <a class="menu-item" data-keep-user href="./checkin.html">
+          <span class="material-symbols-outlined">how_to_reg</span><span>Check-in/Check-out</span>
+        </a>
+        <a class="menu-item active" data-keep-user href="./report.html">
+          <span class="material-symbols-outlined">report</span><span>Báo cáo sự cố</span>
+        </a>
+        <a class="menu-item" href="../common/login.html" onclick="ktxAuth.logoutCurrent();return false;">
+          <span class="material-symbols-outlined">logout</span><span>Đăng xuất</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="welcome wrap">
+          <h2 class="hello">Báo cáo sự cố</h2>
+          <p class="muted">Đang dùng: <b data-current-username></b> (<span data-current-role></span>)</p>
+        </div>
+      </header>
+
+      <section class="content wrap">
+        <div class="card">
+          <form id="reportForm">
+            <div class="row">
+              <div class="col">
+                <label>Tiêu đề</label>
+                <input name="title" placeholder="Ví dụ: Hỏng bóng đèn phòng A3-302" required />
+              </div>
+              <div class="col">
+                <label>Loại</label>
+                <select name="category">
+                  <option value="">-- Chọn loại --</option>
+                  <option value="Điện">Điện</option>
+                  <option value="Nước">Nước</option>
+                  <option value="Vệ sinh">Vệ sinh</option>
+                  <option value="Khác">Khác</option>
+                </select>
+              </div>
+              <div class="col">
+                <label>Ưu tiên</label>
+                <select name="priority">
+                  <option value="">Bình thường</option>
+                  <option value="Cao">Cao</option>
+                  <option value="Khẩn cấp">Khẩn cấp</option>
+                </select>
+              </div>
+            </div>
+
+            <label>Mô tả chi tiết</label>
+            <textarea name="description" placeholder="Mô tả ngắn gọn sự cố, vị trí, thời điểm..."></textarea>
+
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <button class="btn primary" type="submit">
+                <span class="material-symbols-outlined">send</span> Gửi báo cáo
+              </button>
+              <a class="btn" data-keep-user href="./student.html">
+                <span class="material-symbols-outlined">arrow_back</span> Về trang chủ
+              </a>
+            </div>
+          </form>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3 style="margin:6px 0 12px">Sự cố của tôi</h3>
+          <div id="myReports">Đang tải...</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../common/script.js"></script>
+  <script>
+    // chỉ SV
+    ktxAuth.requireAuth(["student"]);
+
+    const box = document.getElementById('myReports');
+
+    async function loadMine(){
+      box.textContent = 'Đang tải...';
+      try{
+        const list = await ktxAuth.apiListReportsMine();
+        if(!Array.isArray(list) || list.length===0){ box.textContent='Bạn chưa có báo cáo nào.'; return; }
+        box.innerHTML = list.map(r=>{
+          const s = r.status==='resolved' ? 'Đã giải quyết' : (r.status==='in_progress'?'Đang xử lý':'Mở');
+          const cls = r.status==='resolved' ? 'success' : (r.status==='in_progress'?'info':'danger');
+          return `
+            <article class="ticket mini">
+              <div class="ticket-main">
+                <div class="ticket-title">${r.title||''}</div>
+                <div class="ticket-meta">
+                  <span class="meta"><span class="material-symbols-outlined">schedule</span> ${new Date(r.created_at).toLocaleString()}</span>
+                  ${r.category?`<span class="meta"><span class="material-symbols-outlined">sell</span> ${r.category}</span>`:''}
+                </div>
+                ${r.admin_reply?`<div class="muted" style="margin-top:6px">Phản hồi QL: ${r.admin_reply}</div>`:''}
+              </div>
+              <div class="ticket-aside"><span class="chip ${cls}">${s}</span></div>
+            </article>
+          `;
+        }).join('');
+      }catch(e){
+        box.textContent = 'Không tải được dữ liệu: ' + e.message;
+      }
+    }
+
+    document.getElementById('reportForm').addEventListener('submit', async (e)=>{
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      const payload = Object.fromEntries(fd.entries());
+      try{
+        await ktxAuth.apiCreateReport(payload);
+        alert('Đã gửi báo cáo!');
+        e.target.reset();
+        loadMine();
+      }catch(err){
+        alert('Lỗi gửi báo cáo: ' + err.message);
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', loadMine);
+  </script>
+</body>
+</html>

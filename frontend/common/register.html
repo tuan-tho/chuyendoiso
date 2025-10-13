@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>KTX-DNU – Đăng ký</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./common.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>Đăng ký tài khoản</h2>
+    <form id="regForm">
+      <label>Username</label>
+      <input id="r-username" required/>
+      <label>Mật khẩu</label>
+      <input id="r-password" type="password" required/>
+      <label>Họ tên</label>
+      <input id="r-fullname"/>
+      <label>Vai trò</label>
+      <select id="r-role">
+        <option value="student">Sinh viên</option>
+        <option value="admin">Quản lý</option>
+      </select>
+      <div class="row" style="justify-content:flex-end;margin-top:12px">
+        <button type="submit" class="btn primary">Tạo tài khoản</button>
+      </div>
+    </form>
+    <p class="center" style="margin-top:12px"><a href="./login.html">Quay lại đăng nhập</a></p>
+  </div>
+
+  <script src="./script.js"></script>
+  <script>
+    document.getElementById("regForm").addEventListener("submit", async (e)=>{
+      e.preventDefault();
+      try{
+        await apiRegister({
+          username: document.getElementById("r-username").value.trim(),
+          password: document.getElementById("r-password").value.trim(),
+          full_name: document.getElementById("r-fullname").value.trim(),
+          role: document.getElementById("r-role").value
+        });
+        alert("Đăng ký thành công. Vui lòng đăng nhập.");
+        window.location.href = "./login.html";
+      }catch(err){ alert(err.message || "Đăng ký thất bại"); }
+    });
+  </script>
+</body>
+</html>

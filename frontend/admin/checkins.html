@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yêu cầu Check-in/Check-out – KTX-DNU</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;600" rel="stylesheet" />
+  <link rel="stylesheet" href="../student/student.css" />
+  <style>
+    .table { width:100%; border-collapse: collapse; }
+    .table th, .table td { padding:12px 10px; border-bottom: 1px solid #eee; text-align:left; }
+    .toolbar { display:flex; gap:8px; flex-wrap:wrap; }
+    .filters { display:flex; gap:8px; margin:16px 0; flex-wrap:wrap; }
+    .filters .btn { padding:8px 12px; }
+    .wrap { max-width:1100px; margin: 0 auto; }
+    .note { color:#666; font-size: 13px; }
+  </style>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="material-symbols-outlined">apartment</span>
+      <span>KTX-DNU</span>
+    </div>
+    <nav class="menu">
+      <a class="menu-item" data-keep-user href="./admin.html">
+        <span class="material-symbols-outlined">dashboard</span><span>Trang quản lý</span>
+      </a>
+      <!-- ✅ SỬA: trỏ tới trang quản trị sự cố -->
+      <a class="menu-item" data-keep-user href="./report_manage.html">
+        <span class="material-symbols-outlined">report</span><span>Quản lý sự cố</span>
+      </a>
+      <a class="menu-item active" data-keep-user href="./checkins.html">
+        <span class="material-symbols-outlined">how_to_reg</span><span>Check-in/Check-out</span>
+      </a>
+      <a class="menu-item" href="../common/login.html" onclick="ktxAuth.logoutCurrent(); return false;">
+        <span class="material-symbols-outlined">logout</span><span>Đăng xuất</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+    <header class="topbar">
+      <div class="welcome wrap">
+        <h2 class="hello">Yêu cầu Check-in/Check-out</h2>
+        <p class="muted">Đang dùng: <b data-current-username></b> (<span data-current-role></span>)</p>
+      </div>
+    </header>
+
+    <section class="content wrap">
+      <div class="card">
+        <div class="filters">
+          <button class="btn ghost" data-filter="all">Tất cả</button>
+          <button class="btn ghost" data-filter="pending">Đang chờ</button>
+          <button class="btn ghost" data-filter="approved">Đã duyệt</button>
+          <button class="btn ghost" data-filter="rejected">Từ chối</button>
+        </div>
+
+        <div id="list">Đang tải...</div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="../common/script.js"></script>
+<script>
+(() => {
+  if (window.KTXCheckins) return;
+  window.KTXCheckins = true;
+
+  ktxAuth.requireAuth(["admin"]);
+
+  const me = ktxAuth.getUser();
+  if (me) {
+    const elU = document.querySelector("[data-current-username]");
+    const elR = document.querySelector("[data-current-role]");
+    if (elU) elU.textContent = me.username || "";
+    if (elR) elR.textContent = me.role || "";
+  }
+
+  const CANDIDATES = ["/checkins/checkins", "/checkins"];
+  let CHECKINS_PATH = null;
+  let rawData = [];
+  let currentFilter = "all";
+
+  document.querySelectorAll('[data-filter]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      document.querySelectorAll('[data-filter]').forEach(b=>b.classList.remove('primary'));
+      btn.classList.add('primary');
+      currentFilter = btn.dataset.filter;
+      render();
+    });
+  });
+
+  async function ensurePath() {
+    if (CHECKINS_PATH) return CHECKINS_PATH;
+    for (const p of CANDIDATES) {
+      try {
+        const r = await ktxAuth.apiFetch(p);
+        if (r.ok) { CHECKINS_PATH = p; return p; }
+      } catch {}
+    }
+    throw new Error("Không tìm thấy endpoint danh sách: thử /checkins/checkins và /checkins đều lỗi.");
+  }
+
+  async function loadData() {
+    const box = document.getElementById('list');
+    box.textContent = 'Đang tải...';
+    try {
+      await ensurePath();
+      const res = await ktxAuth.apiFetch(CHECKINS_PATH);
+      if (!res.ok) throw new Error(`HTTP ${res.status}: ` + (await res.text()));
+      rawData = await res.json();
+      render();
+    } catch (e) {
+      box.innerHTML = `<p class="muted">Lỗi tải dữ liệu: ${escapeHtml(e.message)}</p>`;
+      console.error(e);
+    }
+  }
+
+  function render() {
+    const box = document.getElementById('list');
+    let data = (rawData || []).slice().sort((a,b)=> new Date(b.created_at) - new Date(a.created_at));
+    if (currentFilter !== "all") data = data.filter(x => (x.status || "pending") === currentFilter);
+
+    if (!data.length) { box.innerHTML = `<p class="muted">Không có yêu cầu phù hợp.</p>`; return; }
+
+    const rows = data.map(x => `
+      <tr>
+        <td><b>${escapeHtml((x.type||'').toUpperCase())}</b></td>
+        <td>${escapeHtml(x.date || '')} ${escapeHtml(x.time || '')}</td>
+        <td>SV: ${x.student_id ?? '-'}</td>
+        <td>
+          <span class="chip ${x.status==='approved'?'success':x.status==='rejected'?'danger':'info'}">
+            ${escapeHtml(x.status || 'pending')}
+          </span>
+          ${x.admin_reply ? `<div class="note">Phản hồi: ${escapeHtml(x.admin_reply)}</div>` : ''}
+        </td>
+        <td class="toolbar">
+          <button class="btn sm" onclick="KTX_setStatus(${x.id}, 'approved')">Duyệt</button>
+          <button class="btn sm" onclick="KTX_setStatus(${x.id}, 'rejected')">Từ chối</button>
+          <button class="btn ghost sm" onclick="KTX_setStatus(${x.id}, 'pending')">Về pending</button>
+          <button class="btn ghost sm" onclick="KTX_reply(${x.id}, ${JSON.stringify(x.admin_reply||'')})">Phản hồi</button>
+        </td>
+        <td>${x.created_at ? new Date(x.created_at).toLocaleString() : ''}</td>
+      </tr>
+    `).join('');
+
+    box.innerHTML = `
+      <div style="overflow:auto">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Loại</th>
+              <th>Ngày/Giờ</th>
+              <th>Sinh viên</th>
+              <th>Trạng thái</th>
+              <th>Thao tác</th>
+              <th>Tạo lúc</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    `;
+  }
+
+  function escapeHtml(s) {
+    return String(s ?? "").replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
+
+  async function setStatus(id, status) {
+    try {
+      await ensurePath();
+      const admin_reply = prompt("Nhập ghi chú phản hồi (có thể bỏ trống):", "");
+      const res = await ktxAuth.apiFetch(`${CHECKINS_PATH}/${id}`, {
+        method: 'PATCH',
+        body: JSON.stringify({ status, admin_reply: admin_reply || null })
+      });
+      if (!res.ok) throw new Error(await res.text());
+      await loadData();
+      alert('Đã cập nhật trạng thái.');
+    } catch (e) { alert('Lỗi: ' + e.message); }
+  }
+
+  async function reply(id, cur) {
+    try {
+      await ensurePath();
+      const admin_reply = prompt("Nhập/đổi phản hồi cho yêu cầu:", cur || "");
+      if (admin_reply === null) return;
+      const res = await ktxAuth.apiFetch(`${CHECKINS_PATH}/${id}`, {
+        method: 'PATCH',
+        body: JSON.stringify({ admin_reply })
+      });
+      if (!res.ok) throw new Error(await res.text());
+      await loadData();
+      alert('Đã lưu phản hồi.');
+    } catch (e) { alert('Lỗi: ' + e.message); }
+  }
+
+  window.KTX_setStatus = setStatus;
+  window.KTX_reply = reply;
+
+  document.addEventListener('DOMContentLoaded', loadData);
+})();
+</script>
+</body>
+</html>

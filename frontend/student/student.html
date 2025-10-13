@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cổng Sinh viên KTX – Trang chủ</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;600" rel="stylesheet" />
+  <link rel="stylesheet" href="./student.css" />
+
+  <style>
+    :root { --line:#e5e7eb; --muted:#6b7280; --brand:#4f46e5; --brand-2:#7c3aed; }
+
+    html, body { height: 100%; margin: 0; font-family: 'Inter', sans-serif; }
+    .app { min-height: 100%; display: flex; }
+
+    .sidebar {
+      position: fixed; top: 0; left: 0; bottom: 0;
+      width: 270px; background: #fff;
+      border-right: 1px solid var(--line);
+      overflow-y: auto; z-index: 100;
+    }
+
+    .main { margin-left: 270px; width: calc(100% - 270px); }
+
+    /* ===== Badge ưu tiên ===== */
+    .prio-badge{
+      display:inline-flex; align-items:center; gap:4px;
+      font-weight:700; font-size:12px; padding:3px 9px;
+      border-radius:999px; color:#fff;
+    }
+    .prio-normal { background:#6b7280; }
+    .prio-high   { background:#f59e0b; }
+    .prio-urgent { background:#ef4444; }
+    .prio-unknown{ background:#f3f4f6; color:#6b7280; border:1px dashed #9ca3af; }
+    .prio-badge .material-symbols-outlined { font-size:16px; }
+
+    .btn.primary{
+      background: linear-gradient(135deg,var(--brand),var(--brand-2));
+      color:#fff; border:none; font-weight:600;
+      padding:10px 20px; border-radius:12px; cursor:pointer;
+      display:inline-flex; align-items:center; justify-content:center; text-decoration:none;
+    }
+    .btn.primary:hover{ opacity:.9; }
+
+    /* === Ảnh minh chứng trong danh sách sự cố === */
+    .ticket{ display:flex; align-items:center; gap:14px; }
+    .ticket .thumb{
+      width:72px; height:72px; flex:0 0 72px; object-fit:cover;
+      border-radius:12px; background:#f1f5f9; cursor:zoom-in;
+    }
+    .ticket .ticket-main{ flex:1; min-width:0; }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="material-symbols-outlined">apartment</span>
+        <span>Cổng Sinh viên KTX</span>
+      </div>
+      <nav class="menu">
+        <a class="menu-item active" data-keep-user href="./student.html">
+          <span class="material-symbols-outlined">home</span><span>Trang chủ</span>
+        </a>
+        <a class="menu-item" data-keep-user href="./profile.html">
+          <span class="material-symbols-outlined">badge</span><span>Hồ sơ cá nhân</span>
+        </a>
+        <a class="menu-item" data-keep-user href="./checkin.html">
+          <span class="material-symbols-outlined">how_to_reg</span><span>Check-in/Check-out</span>
+        </a>
+        <a class="menu-item" data-keep-user href="./report.html">
+          <span class="material-symbols-outlined">report</span><span>Báo cáo sự cố</span>
+        </a>
+        <a class="menu-item" href="../common/login.html" onclick="ktxAuth.logoutCurrent(); return false;">
+          <span class="material-symbols-outlined">logout</span><span>Đăng xuất</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="topbar">
+        <div class="welcome">
+          <h2 class="hello">Xin chào, <span id="hello-name" data-current-username></span> 👋</h2>
+          <p class="muted">Vai trò: <b data-current-role></b></p>
+        </div>
+        <div class="top-actions">
+          <a class="btn primary" data-keep-user href="./report.html">Báo cáo sự cố mới</a>
+        </div>
+      </header>
+
+      <section class="content">
+        <!-- Thông tin nhanh -->
+        <div class="grid quick-3">
+          <article class="card student-quick">
+            <div class="sq-head"><span class="material-symbols-outlined">location_home</span><h3>Thông tin phòng ở</h3></div>
+            <div class="kv slim">
+              <div><span>Tòa/Phòng</span><b id="q_build_room">—</b></div>
+              <div><span>Giường</span><b id="q_bed">—</b></div>
+              <div><span>Bạn cùng phòng</span><b>3</b></div>
+            </div>
+          </article>
+
+          <article class="card student-quick">
+            <div class="sq-head"><span class="material-symbols-outlined">description</span><h3>Hợp đồng</h3></div>
+            <div class="kv slim">
+              <div><span>Mã HĐ</span><b>HD-2025-00123</b></div>
+              <div><span>Bắt đầu</span><b id="q_checkin_date">—</b></div>
+              <div><span>Hết hạn</span><b>12/09/2025</b></div>
+            </div>
+            <div class="sq-actions">
+              <button class="btn ghost sm"><span class="material-symbols-outlined">visibility</span> Xem</button>
+              <button class="btn ghost sm"><span class="material-symbols-outlined">file_download</span> Tải PDF</button>
+            </div>
+          </article>
+
+          <article class="card student-quick">
+            <div class="sq-head"><span class="material-symbols-outlined">bolt</span><h3>Số dư điện nước</h3></div>
+            <div class="balance">
+              <div class="bal-item"><span>Điện</span><b>72 kWh</b><small class="muted">Còn ~9 ngày</small></div>
+              <div class="bal-item"><span>Nước</span><b>8 m³</b><small class="muted">Còn ~12 ngày</small></div>
+            </div>
+            <div class="sq-actions">
+              <button class="btn ghost sm"><span class="material-symbols-outlined">payments</span> Nạp thêm</button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Sự cố cá nhân -->
+        <section class="card my-incidents">
+          <div class="mi-head">
+            <h3><span class="material-symbols-outlined">history</span> Sự cố của tôi</h3>
+            <div class="tabs">
+              <button class="tab active" data-filter="all">Tất cả</button>
+              <button class="tab" data-filter="open">Mở</button>
+              <button class="tab" data-filter="progress">Đang xử lý</button>
+              <button class="tab" data-filter="done">Đã giải quyết</button>
+            </div>
+          </div>
+          <div class="mi-list" id="ticket-list"></div>
+          <div class="mi-footer">
+            <a class="btn primary" data-keep-user href="./report.html">Báo cáo sự cố mới</a>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="../common/script.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    ktxAuth.requireAuth(["student"]);
+
+    const NS = "ktx";
+    const profileKey = (u) => `${NS}:profile:${u}`;
+    const u = ktxAuth.getCurrentUsername();
+
+    document.querySelectorAll('.tab').forEach(t=>{
+      t.addEventListener('click', ()=>{
+        document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+        t.classList.add('active');
+        const f = t.dataset.filter;
+        document.querySelectorAll('.mi-list .ticket').forEach(row=>{
+          row.style.display = (f==='all' || row.dataset.status===f) ? '' : 'none';
+        });
+      });
+    });
+
+    function fmtDateView(x){
+      if(!x) return "—";
+      const d = new Date(x);
+      return isNaN(d) ? x : d.toLocaleDateString("vi-VN");
+    }
+
+    function paintQuick(profile){
+      const buildRoom = [profile?.building, profile?.room].filter(Boolean).join(" / ") || "—";
+      document.getElementById("q_build_room").textContent = buildRoom;
+      document.getElementById("q_bed").textContent = profile?.bed || "—";
+      document.getElementById("q_checkin_date").textContent = fmtDateView(profile?.checkin_date);
+      const hello = document.getElementById("hello-name");
+      const me = ktxAuth.getUser();
+      hello.textContent = (profile?.full_name || me?.username || "bạn");
+    }
+
+    if (u) {
+      const cached = localStorage.getItem(profileKey(u));
+      if (cached) { try { paintQuick(JSON.parse(cached)); } catch {} }
+    }
+
+    async function refreshQuick(){
+      try{
+        const r = await ktxAuth.apiFetch("/profile/me");
+        if(!r.ok) return;
+        const d = await r.json();
+        paintQuick(d);
+        if (u) localStorage.setItem(profileKey(u), JSON.stringify(d));
+      }catch{}
+    }
+    refreshQuick();
+
+    // ========== Helpers: Priority Badge (KHÔNG fallback 'normal') ==========
+    function renderPriorityBadge(priority) {
+      const map = {
+        urgent: { text: "Khẩn cấp", cls: "prio-urgent", icon: "whatshot" },
+        high:   { text: "Cao",       cls: "prio-high",   icon: "warning"  },
+        normal: { text: "Bình thường", cls: "prio-normal", icon: "schedule" }
+      };
+      const key = typeof priority === "string" ? priority.toLowerCase() : null;
+      const m = (key && map[key]) ? map[key] : { text: "—", cls: "prio-unknown", icon: "help" };
+      return `<span class="prio-badge ${m.cls}"><span class="material-symbols-outlined">${m.icon}</span>${m.text}</span>`;
+    }
+
+    // ========== Tickets ==========
+    const API_BASE = (window.ktxAuth && (ktxAuth.apiBase || ktxAuth.baseURL)) || "http://127.0.0.1:8000";
+    function resolveImg(url){
+      if(!url) return null;
+      return url.startsWith('http') ? url : (API_BASE + url);
+    }
+
+    async function loadMyTickets() {
+      const box = document.getElementById('ticket-list');
+      box.innerHTML = '<p class="muted">Đang tải...</p>';
+      try {
+        const data = await ktxAuth.apiListReportsMine();
+        if (!Array.isArray(data) || data.length === 0) {
+          box.innerHTML = '<p class="muted">Bạn chưa có báo cáo nào.</p>';
+          return;
+        }
+
+        box.innerHTML = data.map(t => {
+          const stText = t.status === 'resolved' ? 'Đã giải quyết'
+                       : t.status === 'in_progress' ? 'Đang xử lý' : 'Mở';
+          const stCls  = t.status === 'resolved' ? 'success'
+                       : t.status === 'in_progress' ? 'info' : 'danger';
+          const ds     = t.status === 'in_progress' ? 'progress'
+                       : (t.status === 'resolved' ? 'done' : 'open');
+          const imgSrc = resolveImg(t.image_url);
+
+          return `
+            <article class="ticket mini" data-status="${ds}">
+              ${imgSrc ? `<img class="thumb" src="${imgSrc}" alt="ảnh" loading="lazy" onclick="openImgModal('${imgSrc}')">`
+                       : `<div class="thumb"></div>`}
+              <div class="ticket-main">
+                <a class="ticket-title" href="#">${t.title}</a>
+                <div class="ticket-meta">
+                  <span class="meta">
+                    <span class="material-symbols-outlined">schedule</span>
+                    ${new Date(t.created_at).toLocaleString('vi-VN')}
+                  </span>
+                  ${t.category ? `<span class="meta"><span class="material-symbols-outlined">sell</span> ${t.category}</span>` : ''}
+                  ${renderPriorityBadge(t.priority)}
+                </div>
+                ${t.admin_reply ? `<div class="muted" style="margin-top:6px">Phản hồi QL: ${t.admin_reply}</div>` : ''}
+              </div>
+              <div class="ticket-aside">
+                <span class="chip ${stCls}">${stText}</span>
+              </div>
+            </article>
+          `;
+        }).join('');
+      } catch (e) {
+        box.innerHTML = `<p class="muted">Lỗi tải dữ liệu: ${e.message}</p>`;
+      }
+    }
+
+    loadMyTickets();
+  });
+  </script>
+
+  <!-- Modal xem ảnh -->
+  <div id="img-modal" class="hidden fixed inset-0 z-[60] bg-black/60 items-center justify-center">
+    <div class="relative max-w-4xl max-h-[85vh]">
+      <img id="img-modal-src" src="" alt="minh chứng" class="rounded-2xl max-h-[85vh]">
+      <button type="button" onclick="closeImgModal()" class="absolute -top-3 -right-3 bg-white rounded-full px-3 py-1 shadow">✕</button>
+    </div>
+  </div>
+  <script>
+    function openImgModal(src){
+      document.getElementById('img-modal-src').src = src;
+      const m = document.getElementById('img-modal');
+      m.classList.remove('hidden'); m.classList.add('flex');
+    }
+    function closeImgModal(){
+      const m = document.getElementById('img-modal');
+      m.classList.add('hidden'); m.classList.remove('flex');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "label2id": {
+    "điện": 0,
+    "nước": 1,
+    "internet": 2,
+    "thiết bị": 3,
+    "vệ sinh": 4,
+    "khác": 5
+  },
+  "id2label": {
+    "0": "điện",
+    "1": "nước",
+    "2": "internet",
+    "3": "thiết bị",
+    "4": "vệ sinh",
+    "5": "khác"
+  }
+}

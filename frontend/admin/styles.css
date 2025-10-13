@@ -1,0 +1,23 @@
+:root{--line:#e5e7eb;--primary:#2563eb;--success:#16a34a;--danger:#ef4444;--info:#3b82f6}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:#fff;cursor:pointer}
+.btn.primary{background:var(--primary);color:#fff;border-color:transparent}
+.btn.ghost{background:#fff}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;font-weight:700;font-size:12px}
+.chip.success{background:#dcfce7;color:#166534}
+.chip.info{background:#e0f2fe;color:#075985}
+.chip.danger{background:#fee2e2;color:#b91c1c}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
+
+/* ==== THUMBNAIL ẢNH giống trang Sinh viên ==== */
+.thumb{width:72px;height:72px;border-radius:12px;object-fit:cover;background:#f1f5f9;cursor:zoom-in;display:block}
+.img-cell{width:84px}
+
+/* ==== BADGE ƯU TIÊN dùng hệ chip ==== */
+.prio-badge{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;font-weight:700;font-size:12px}
+.prio-urgent{background:#fee2e2;color:#b91c1c} /* đỏ nhạt */
+.prio-high{background:#ffedd5;color:#9a3412}   /* cam nhạt */
+.prio-normal{background:#e5e7eb;color:#374151} /* xám */
+
+/* ==== MODAL xem ảnh ==== */
+#img-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:200;align-items:center;justify-content:center}
+#img-modal img{max-height:85vh;border-radius:16px;display:block}

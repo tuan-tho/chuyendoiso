@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Check-in/Check-out – KTX-DNU</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;600" rel="stylesheet" />
+  <link rel="stylesheet" href="./student.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="material-symbols-outlined">apartment</span>
+        <span>Cổng Sinh viên KTX</span>
+      </div>
+      <nav class="menu">
+        <a class="menu-item" data-keep-user href="./student.html">
+          <span class="material-symbols-outlined">home</span><span>Trang chủ</span>
+        </a>
+        <a class="menu-item" data-keep-user href="./profile.html">
+          <span class="material-symbols-outlined">badge</span><span>Hồ sơ cá nhân</span>
+        </a>
+        <a class="menu-item active" data-keep-user href="./checkin.html">
+          <span class="material-symbols-outlined">how_to_reg</span><span>Check-in/Check-out</span>
+        </a>
+        <a class="menu-item" data-keep-user href="./report.html">
+          <span class="material-symbols-outlined">report</span><span>Báo cáo sự cố</span>
+        </a>
+        <a class="menu-item" href="../common/login.html" onclick="ktxAuth.logoutCurrent(); return false;">
+          <span class="material-symbols-outlined">logout</span><span>Đăng xuất</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="topbar">
+        <h2 class="hello">Check-in/Check-out</h2>
+        <p class="muted">Đang dùng: <b data-current-username></b> (<span data-current-role></span>)</p>
+      </header>
+
+      <section class="content">
+        <div class="grid quick-2">
+          <!-- Form tạo yêu cầu -->
+          <article class="card">
+            <h3><span class="material-symbols-outlined">edit_calendar</span> Tạo yêu cầu</h3>
+            <form id="ck-form" class="form" autocomplete="off">
+              <div class="form-row">
+                <label>Loại</label>
+                <select name="type" required>
+                  <option value="checkin">Check-in</option>
+                  <option value="checkout">Check-out</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label>Ngày</label>
+                <input type="date" name="date" required />
+              </div>
+              <div class="form-row">
+                <label>Giờ</label>
+                <input type="time" name="time" />
+              </div>
+              <div class="form-row">
+                <label>Ghi chú</label>
+                <textarea name="note" rows="3" placeholder="Ghi chú ngắn (không bắt buộc)"></textarea>
+              </div>
+              <button class="btn primary" type="submit">
+                <span class="material-symbols-outlined">send</span> Gửi yêu cầu
+              </button>
+            </form>
+          </article>
+
+          <!-- Danh sách yêu cầu -->
+          <article class="card">
+            <h3><span class="material-symbols-outlined">history</span> Lịch sử của tôi</h3>
+            <div id="ck-mine"></div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../common/script.js"></script>
+  <script>
+    // Chặn truy cập: chỉ student
+    ktxAuth.requireAuth(["student"]);
+
+    const form = document.getElementById('ck-form');
+    const mineBox = document.getElementById('ck-mine');
+
+    // Set mặc định ngày hôm nay
+    document.addEventListener('DOMContentLoaded', () => {
+      const today = new Date().toISOString().slice(0, 10);
+      form.querySelector('input[name="date"]').value = today;
+      loadMine();
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const fd = new FormData(form);
+      const payload = {
+        type: fd.get('type'),            // "checkin" | "checkout"
+        date: fd.get('date'),            // YYYY-MM-DD
+        time: fd.get('time') || null,    // HH:MM (optional)
+        note: fd.get('note') || null,    // string (optional)
+      };
+
+      try {
+        // ✅ Dùng helper đã khớp endpoint /checkins/checkins
+        await ktxAuth.apiCreateCheckin(payload);
+        form.reset();
+        await loadMine();
+        alert('Đã gửi yêu cầu!');
+      } catch (err) {
+        alert('Lỗi: ' + err.message);
+        console.error(err);
+      }
+    });
+
+    async function loadMine() {
+      mineBox.innerHTML = '<p class="muted">Đang tải...</p>';
+      try {
+        // ✅ Dùng helper đã khớp endpoint /checkins/checkins/mine
+        const data = await ktxAuth.apiMyCheckins();
+        if (!Array.isArray(data) || data.length === 0) {
+          mineBox.innerHTML = '<p class="muted">Chưa có yêu cầu nào.</p>';
+          return;
+        }
+        mineBox.innerHTML = data.map(item => `
+          <article class="ticket mini">
+            <div class="ticket-main">
+              <div class="ticket-title">
+                ${item.type ? item.type.toUpperCase() : ''} • ${item.date || ''}${item.time ? ' ' + item.time : ''}
+              </div>
+              <div class="ticket-meta">
+                ${item.created_at ? `<span class="meta"><span class="material-symbols-outlined">schedule</span> ${new Date(item.created_at).toLocaleString()}</span>` : ''}
+                ${item.note ? `<span class="meta"><span class="material-symbols-outlined">notes</span> ${item.note}</span>` : ''}
+              </div>
+            </div>
+            <div class="ticket-aside">
+              <span class="chip ${item.status==='approved'?'success':item.status==='rejected'?'danger':'info'}">
+                ${item.status || 'pending'}
+              </span>
+              ${item.admin_reply ? `<button class="btn ghost sm" onclick="alert('Phản hồi: ${String(item.admin_reply).replace(/'/g, '\\\'')}')">Phản hồi</button>` : ''}
+            </div>
+          </article>
+        `).join('');
+      } catch (e) {
+        mineBox.innerHTML = `<p class="muted">Lỗi tải dữ liệu: ${e.message}</p>`;
+        console.error(e);
+      }
+    }
+  </script>
+</body>
+</html>

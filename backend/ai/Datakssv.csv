@@ -1,0 +1,2551 @@
+id,text,label,priority
+1,Cống thoát nước phòng kssv-388 bị nghẹt.,vệ sinh,high
+2,Phòng 605 muốn kích hoạt lại tài khoản mạng đã hết hạn.,internet,normal
+3,Vòi nước phòng kssv-182 bị rò rỉ.,nước,high
+4,"Báo cáo tiếng ồn từ buổi liên hoan khu nhà C sau 23h, gây mất ngủ.",khác,high
+5,Phòng KSSV-141 mất điện từ trưa nay.,điện,high
+6,Không vào được mạng tại phòng KSSV-667.,internet,high
+7,Có tiếng ồn lớn từ phòng kssv-249 ban đêm.,khác,high
+8,Điện tại phòng KSSV-120 chập chờn khi bật điều hòa.,điện,high
+9,"Đề nghị thay thế dây điện cũ vì nó quá mỏng, không chịu được tải các thiết bị cơ bản.",điện,urgent
+10,Bảng điện hành lang gần KSSV-120 nhảy aptomat liên tục.,điện,urgent
+11,"Lỗi phao nước của bồn chứa chung bị hỏng, nước tràn liên tục.",nước,normal
+12,Đèn chiếu sáng khu vực nhà xe bị vỡ bóng.,thiết bị,normal
+13,"Ống nước tầng 3 bị vỡ, ảnh hưởng khu vực KSSV-441.",nước,urgent
+14,Phòng KSSV-346 mất điện từ sáng nay.,điện,high
+15,Cầu trượt ở khu vực vui chơi bị nứt và sắc cạnh.,thiết bị,normal
+16,Điện phòng kssv-318 chập chờn khi bật điều hòa.,điện,normal
+17,"Gạch lát ở sân KTX bị vỡ, tạo thành hố sâu nguy hiểm.",khác,normal
+18,Không vào được mạng tại phòng KSSV-470.,internet,normal
+19,Wi-Fi phòng KSSV-151 không kết nối được.,internet,normal
+20,Báo cáo tốc độ mạng ban ngày chậm hơn ban đêm (ngược với bình thường).,internet,normal
+21,Cống thoát nước phòng KSSV-328 bị nghẹt.,vệ sinh,normal
+22,Phòng kssv-216 không có nước.,nước,high
+23,Cần hỗ trợ y tế khẩn cấp cho sinh viên bị ngất xỉu trong phòng học chung.,khác,normal
+24,"Lỗi công tắc điều khiển đèn ngủ bị kẹt, đèn không tắt được.",thiết bị,normal
+25,Wi-Fi phòng kssv-205 không kết nối được.,internet,normal
+26,Phòng em bị phạt vì đổ dầu mỡ xuống bồn rửa chén chung.,vệ sinh,normal
+27,Cần bổ sung rèm cửa cho phòng kssv-107.,khác,normal
+28,Cần thay thế ổ khóa cửa phòng 402 bị kẹt chìa.,thiết bị,high
+29,Cần bổ sung rèm cửa cho phòng kssv-261.,khác,normal
+30,"Ống nước tầng 5 bị vỡ, ảnh hưởng khu vực KSSV-398.",nước,urgent
+31,Quạt phòng kssv-500 không quay.,thiết bị,normal
+32,Ổ điện bàn học phòng KSSV-363 không hoạt động.,thiết bị,normal
+33,Có người lạ đi lại gần phòng kssv-603 tối qua.,khác,normal
+34,Wi-Fi phòng KSSV-353 không kết nối được.,internet,normal
+35,Cần bổ sung rèm cửa cho phòng KSSV-412.,khác,normal
+36,"Phòng 103 bị phạt vì làm ồn, hát karaoke sau 22h.",khác,high
+37,Có tiếng ồn lớn từ phòng KSSV-291 vào sáng nay.,khác,normal
+38,Có tiếng ồn lớn từ phòng kssv-405 ban đêm.,khác,high
+39,Internet khu vực KSSV-446 mất tín hiệu.,internet,normal
+40,Mùi hôi từ nhà vệ sinh kssv-607 rất khó chịu.,vệ sinh,normal
+41,Lỗi tốc độ tải xuống bị giới hạn rất thấp vào buổi tối (dưới 1Mbps).,internet,normal
+42,Có tiếng ồn lớn từ phòng KSSV-260 vào từ sáng nay.,khác,normal
+43,Phòng KSSV-386 có rác chưa dọn.,vệ sinh,normal
+44,Cần bổ sung rèm cửa cho phòng kssv-212.,khác,normal
+45,"Router tầng 3 bị lỗi, phòng KSSV-631 không vào mạng.",internet,normal
+46,"Ống nước tầng 4 bị vỡ, ảnh hưởng khu vực KSSV-360.",nước,urgent
+47,Bảng điện hành lang gần KSSV-431 nhảy aptomat liên tục.,điện,urgent
+48,Phòng KSSV-205 có rác chưa dọn.,vệ sinh,normal
+49,Internet khu vực KSSV-421 mất tín hiệu.,internet,normal
+50,Phòng kssv-307 có rác chưa dọn.,vệ sinh,normal
+51,Khu sinh viên khu vực phòng KSSV-282 mất điện toàn bộ.,điện,high
+52,"Báo cáo vòi nước chung khu nhà ăn bị tuột đầu vòi, phun nước không kiểm soát.",nước,high
+53,Thùng rác khu sinh viên gần KSSV-567 đầy tràn.,vệ sinh,normal
+54,Phòng kssv-505 bị mất đồ cá nhân.,khác,high
+55,Đèn trong phòng kssv-398 bị cháy.,điện,high
+56,Nước chảy yếu ở nhà tắm kssv-493.,nước,normal
+57,Nước chảy yếu ở nhà tắm gần phòng KSSV-467.,nước,normal
+58,Phòng kssv-177 không có nước.,nước,high
+59,Lỗi cổng ra vào KTX bị hỏng cảm biến tự động.,thiết bị,urgent
+60,Điện tại phòng KSSV-586 chập chờn khi bật điều hòa.,điện,high
+61,Phòng KSSV-513 có côn trùng bay vào thường xuyên.,khác,normal
+62,Ổ điện bàn học phòng KSSV-159 không hoạt động.,thiết bị,normal
+63,Phòng kssv-300 mất điện từ tối qua.,điện,high
+64,Báo cáo mất trộm quần áo phơi ở khu vực ban công.,khác,normal
+65,Tủ lạnh chung tầng 3 kssv bị rò điện.,thiết bị,high
+66,Internet khu vực KSSV-410 mất tín hiệu.,internet,normal
+67,"Báo cáo cây cối um tùm sau nhà, là nơi trú ngụ của rắn và côn trùng.",vệ sinh,normal
+68,Sinh viên bị té ngã ở cầu thang do sàn trơn trượt (không có biển báo).,khác,normal
+69,Quạt phòng KSSV-510 không quay.,thiết bị,normal
+70,Ổ cắm phòng kssv-488 phát ra tia lửa.,điện,high
+71,Đề nghị sửa chữa bánh xe của ghế học sinh bị hỏng.,thiết bị,normal
+72,Đèn học phòng KSSV-502 bị hỏng.,thiết bị,normal
+73,Nước chảy yếu ở nhà tắm kssv-261.,nước,normal
+74,Bảng điện hành lang gần KSSV-439 nhảy aptomat liên tục.,điện,urgent
+75,Ổ cắm phòng KSSV-303 phát ra tia lửa.,điện,urgent
+76,Phòng kssv-442 không có nước.,nước,high
+77,Wi-Fi phòng kssv-168 không kết nối được.,internet,normal
+78,Cống thoát nước phòng KSSV-659 bị nghẹt.,vệ sinh,high
+79,Phòng KSSV-468 bị mất đồ cá nhân.,khác,high
+80,Phòng 605 bị thấm nước qua trần từ phòng tắm tầng trên.,nước,high
+81,Điện tại phòng KSSV-545 chập chờn khi bật điều hòa.,điện,urgent
+82,Nước chảy yếu ở nhà tắm kssv-254.,nước,normal
+83,Ổ cắm phòng kssv-235 phát ra tia lửa.,điện,high
+84,Ổ điện bàn học kssv-287 không hoạt động.,thiết bị,normal
+85,Không vào được mạng ở phòng kssv-535.,internet,normal
+86,Ổ điện bàn học kssv-229 không hoạt động.,thiết bị,normal
+87,Phòng kssv-164 không có nước.,nước,high
+88,Cần bổ sung rèm cửa cho phòng KSSV-149.,khác,normal
+89,Lỗi máy bán hàng tự động không trả lại tiền thừa.,thiết bị,normal
+90,Khu sinh viên khu vực phòng KSSV-204 mất điện toàn bộ.,điện,high
+91,Phòng 702 bị giảm băng thông xuống mức rất thấp sau khi tải một file lớn.,internet,normal
+92,Phòng KSSV-481 bị mất đồ cá nhân.,khác,high
+93,Cống thoát nước phòng KSSV-448 bị nghẹt.,vệ sinh,normal
+94,Vòi nước phòng KSSV-575 bị rò rỉ.,nước,high
+95,Bảng điện hành lang gần KSSV-169 nhảy aptomat liên tục.,điện,urgent
+96,"Lỗi hộp thư chung bị hỏng, thư từ bị ẩm ướt.",khác,normal
+97,Lỗi công tắc điều khiển quạt thông gió nhà vệ sinh chung bị hỏng.,thiết bị,normal
+98,Đèn học phòng kssv-688 bị hỏng.,thiết bị,normal
+99,Báo cáo kết nối mạng bị gián đoạn mỗi khi có người gọi điện thoại.,internet,normal
+100,"Ống nước tầng 4 bị vỡ, ảnh hưởng khu vực KSSV-552.",nước,urgent
+101,Báo cáo camera an ninh khu vực nhà xe bị hỏng ống kính.,thiết bị,normal
+102,Ổ cắm phòng kssv-148 phát ra tia lửa.,điện,high
+103,Có người lạ đi lại gần phòng kssv-120 tối qua.,khác,normal
+104,Phòng KSSV-152 không có nước từ từ sáng nay.,nước,high
+105,Nước trong bồn rửa phòng KSSV-133 bị tắc.,nước,high
+106,"Cần tăng cường tần suất dọn dẹp khu vực bếp chung, rất nhiều đồ ăn thừa.",vệ sinh,normal
+107,Có người lạ đi lại gần khu phòng KSSV-304 vào trưa nay.,khác,normal
+108,Mạng kssv rất yếu buổi tối.,internet,normal
+109,Điện phòng kssv-677 chập chờn khi bật điều hòa.,điện,high
+110,"Router tầng 3 bị lỗi, phòng KSSV-428 không vào mạng.",internet,normal
+111,Internet khu vực KSSV-550 mất tín hiệu.,internet,normal
+112,Phòng kssv-190 bị mất đồ cá nhân.,khác,high
+113,Nước chảy yếu ở nhà tắm gần phòng KSSV-229.,nước,normal
+114,Phòng KSSV-505 có rác chưa dọn.,vệ sinh,normal
+115,Internet khu vực KSSV-685 mất tín hiệu.,internet,normal
+116,Cầu trượt ở khu vực vui chơi bị hỏng bậc thang.,thiết bị,normal
+117,Phòng em muốn kiểm tra xem có ai dùng mạng của phòng không.,internet,normal
+118,Thùng rác khu kssv đầy tràn.,vệ sinh,normal
+119,"Router tầng 3 bị lỗi, phòng KSSV-167 không vào mạng.",internet,normal
+120,"Báo cáo cây cối um tùm sau nhà, là nơi trú ngụ của rắn và côn trùng.",vệ sinh,normal
+121,Cần tăng cường tuần tra bảo vệ khu vực cổng KTX.,khác,normal
+122,Phòng kssv-498 có rác chưa dọn.,vệ sinh,normal
+123,Phòng 301 bị thông báo lỗi vượt quá giới hạn lưu lượng.,internet,normal
+124,Khu sinh viên khu vực phòng KSSV-183 mất điện toàn bộ.,điện,high
+125,Mùi hôi từ nhà vệ sinh kssv-435 rất khó chịu.,vệ sinh,normal
+126,Cần bổ sung rèm cửa cho phòng kssv-416.,khác,normal
+127,Phòng 102 bị điện giật nhẹ khi chạm vào vỏ máy tính bàn.,điện,high
+128,Cần bổ sung rèm cửa cho phòng KSSV-506.,khác,normal
+129,"Ống nước tầng 3 bị vỡ, ảnh hưởng khu vực KSSV-564.",nước,urgent
+130,"Đèn hành lang khu B nhấp nháy liên tục, gây khó chịu.",điện,normal
+131,Đèn học phòng KSSV-604 bị hỏng.,thiết bị,normal
+132,Phòng 705 bị kiểm tra và phạt vì vệ sinh phòng kém.,vệ sinh,normal
+133,Có người lạ đi lại gần phòng kssv-307 tối qua.,khác,normal
+134,Phòng kssv-464 có rác chưa dọn.,vệ sinh,normal
+135,"Ống nước tầng 2 bị vỡ, ảnh hưởng khu vực KSSV-279.",nước,urgent
+136,Phòng kssv-433 không có nước.,nước,high
+137,Có tiếng ồn lớn từ phòng kssv-137 ban đêm.,khác,normal
+138,Wi-Fi phòng KSSV-561 không kết nối được.,internet,normal
+139,Nước trong bồn rửa phòng kssv-579 bị tắc.,nước,normal
+140,Điều hòa phòng kssv-229 bị hỏng.,thiết bị,normal
+141,Đèn học phòng KSSV-352 bị hỏng.,thiết bị,normal
+142,Wi-Fi phòng kssv-134 không kết nối được.,internet,normal
+143,Phòng KSSV-569 mất điện từ sáng nay.,điện,high
+144,Phòng kssv-666 bị mất đồ cá nhân.,khác,high
+145,Mùi hôi từ khu vệ sinh gần phòng KSSV-178 rất khó chịu.,vệ sinh,normal
+146,Khu sinh viên khu vực phòng KSSV-271 mất điện toàn bộ.,điện,high
+147,Ổ cắm phòng KSSV-529 phát ra tia lửa.,điện,urgent
+148,Đèn sạc dự phòng bị nóng bất thường khi cắm vào ổ KTX.,điện,normal
+149,Khu sinh viên khu vực phòng KSSV-421 mất điện toàn bộ.,điện,high
+150,"Router tầng 6 bị lỗi, phòng KSSV-261 không vào mạng.",internet,normal
+151,Nhà vệ sinh tầng 2 có mùi hôi.,vệ sinh,normal
+152,Điện phòng kssv-488 chập chờn khi bật điều hòa.,điện,high
+153,Wi-Fi phòng kssv-486 không kết nối được.,internet,normal
+154,Mùi hôi từ khu vệ sinh gần phòng KSSV-691 rất khó chịu.,vệ sinh,normal
+155,Nước chảy yếu ở nhà tắm gần phòng KSSV-672.,nước,normal
+156,Bảng điện hành lang gần KSSV-258 nhảy aptomat liên tục.,điện,urgent
+157,Lỗi kết nối bị từ chối do trùng MAC Address.,internet,normal
+158,Báo cáo tiếng kêu cứu từ phòng 603 vào lúc nửa đêm.,khác,normal
+159,Lỗi phòng giặt chung bị mất nước khi đang giặt.,khác,normal
+160,KTX cần kiểm tra hệ thống tiếp địa vì máy tính phòng em bị giật nhẹ.,điện,high
+161,Phòng kssv-644 mất điện từ tối qua.,điện,high
+162,Ổ cắm điện ở phòng 501 bị chập mạch khi cắm máy pha cà phê.,điện,high
+163,Cổng mạng LAN bị hỏng do tự ý tháo lắp.,internet,normal
+164,Báo cáo mùi hôi thối nồng nặc bốc lên từ cống thoát nước nhà vệ sinh chung tầng 3.,vệ sinh,normal
+165,Mùi hôi từ khu vệ sinh gần phòng KSSV-623 rất khó chịu.,vệ sinh,normal
+166,Quạt phòng KSSV-310 không quay.,thiết bị,normal
+167,Cần bổ sung rèm cửa cho phòng KSSV-664.,khác,normal
+168,Điện tại phòng KSSV-479 chập chờn khi bật điều hòa.,điện,normal
+169,"Lỗi thẻ điện không nạp được tiền, báo lỗi hệ thống.",điện,normal
+170,Phòng 604 báo cáo mùi thuốc lá bay vào từ hành lang.,vệ sinh,normal
+171,Phòng kssv-467 mất điện từ tối qua.,điện,high
+172,Cần bổ sung rèm cửa cho phòng kssv-167.,khác,normal
+173,Nước chảy yếu ở nhà tắm gần phòng KSSV-490.,nước,normal
+174,Điều hòa phòng KSSV-498 bị hỏng.,thiết bị,normal
+175,Quạt phòng KSSV-687 không quay.,thiết bị,normal
+176,Phòng KSSV-362 có rác chưa dọn.,vệ sinh,normal
+177,Cần vệ sinh khu vực xung quanh thùng rác chung.,vệ sinh,normal
+178,Cần bổ sung rèm cửa cho phòng kssv-631.,khác,normal
+179,Phòng kssv-275 không có nước.,nước,high
+180,"Máy bơm nước phụ của tầng 7 bị hỏng công tắc nguồn, không thể khởi động.",điện,normal
+181,Đề nghị KTX kiểm tra cường độ tín hiệu WiFi ở phòng 212.,internet,normal
+182,"Cửa sổ phòng 303 bị hỏng chốt, gió lùa vào phòng.",thiết bị,normal
+183,Ổ cắm phòng KSSV-139 phát ra tia lửa.,điện,urgent
+184,Mùi hôi từ nhà vệ sinh kssv-605 rất khó chịu.,vệ sinh,normal
+185,Ổ điện bàn học kssv-287 không hoạt động.,thiết bị,normal
+186,Điện tại phòng KSSV-370 chập chờn khi bật điều hòa.,điện,high
+187,Đèn học phòng KSSV-515 bị hỏng.,thiết bị,normal
+188,Phòng 207 bị bảo vệ kiểm tra vệ sinh đột xuất.,vệ sinh,normal
+189,Bóng đèn trần phòng 412 bị rơi khỏi máng.,điện,normal
+190,Bảng điện hành lang gần KSSV-303 nhảy aptomat liên tục.,điện,urgent
+191,Điều hòa phòng KSSV-527 bị hỏng.,thiết bị,normal
+192,"Router tầng 4 bị lỗi, phòng KSSV-672 không vào mạng.",internet,normal
+193,Ổ điện bàn học kssv-432 không hoạt động.,thiết bị,normal
+194,Cần thay thế đèn chiếu sáng khu vực cầu thang thoát hiểm bị hỏng.,điện,normal
+195,Quạt phòng KSSV-510 không quay.,thiết bị,normal
+196,Phòng KSSV-354 có côn trùng bay vào thường xuyên.,khác,normal
+197,Đèn trong phòng kssv-538 bị cháy.,điện,normal
+198,Điện phòng kssv-349 chập chờn khi bật điều hòa.,điện,high
+199,Phòng kssv-178 có rác chưa dọn.,vệ sinh,normal
+200,Phòng KSSV-502 có rác chưa dọn.,vệ sinh,normal
+201,"Ống nước tầng 4 bị vỡ, ảnh hưởng khu vực KSSV-227.",nước,urgent
+202,Báo cáo máy phát điện dự phòng không hoạt động khi mất điện.,điện,high
+203,Nước trong bồn rửa phòng KSSV-690 bị tắc.,nước,normal
+204,Cống thoát nước phòng KSSV-279 bị nghẹt.,vệ sinh,normal
+205,Điều hòa phòng KSSV-633 bị hỏng.,thiết bị,normal
+206,Nước chảy yếu ở nhà tắm gần phòng KSSV-670.,nước,normal
+207,Nước trong bồn rửa phòng KSSV-564 bị tắc.,nước,normal
+208,Ổ điện bàn học phòng KSSV-146 không hoạt động.,thiết bị,normal
+209,"Router tầng 5 bị lỗi, phòng KSSV-587 không vào mạng.",internet,normal
+210,Nước trong bồn rửa phòng KSSV-206 bị tắc.,nước,normal
+211,Báo cáo dây cáp mạng bị hỏng do chuột cắn trong phòng 203.,internet,normal
+212,Lỗi tốc độ tải xuống bị giới hạn rất thấp vào buổi tối (dưới 1Mbps).,internet,normal
+213,Phòng kssv-147 mất điện từ tối qua.,điện,high
+214,Phòng KSSV-394 không có nước từ sáng nay.,nước,high
+215,Phòng KSSV-366 có rác chưa dọn.,vệ sinh,normal
+216,Vòi nước phòng kssv-308 bị rò rỉ.,nước,high
+217,Phòng KSSV-490 không có nước từ từ hôm qua.,nước,high
+218,"Phòng em mất điện hoàn toàn sau khi bật máy sấy tóc (đã kiểm tra thẻ, vẫn còn tiền).",điện,high
+219,Internet khu vực KSSV-232 mất tín hiệu.,internet,normal
+220,Phòng KSSV-218 có côn trùng bay vào thường xuyên.,khác,normal
+221,Phòng KSSV-530 mất điện từ sáng nay.,điện,high
+222,Quạt phòng KSSV-193 không quay.,thiết bị,normal
+223,Lỗi mạng KTX bị chặn truy cập vào ứng dụng học trực tuyến.,internet,high
+224,Điện tại phòng KSSV-482 chập chờn khi bật điều hòa.,điện,high
+225,Điều hòa phòng kssv-147 bị hỏng.,thiết bị,normal
+226,Tủ lạnh chung tầng 4 kssv bị rò điện.,thiết bị,high
+227,Wi-Fi phòng kssv-403 không kết nối được.,internet,normal
+228,Cần sửa chữa cổng mạng bị biến dạng do sinh viên tự ý rút dây.,internet,normal
+229,Phòng 109 bị phạt vì đổ nước thải ra hành lang.,vệ sinh,normal
+230,Phòng KSSV-538 mất điện từ từ sáng nay.,điện,high
+231,Lỗi mạng KTX không tương thích với hệ điều hành macOS mới nhất.,internet,normal
+232,Cần bổ sung rèm cửa cho phòng KSSV-543.,khác,normal
+233,Có tiếng ồn lớn từ phòng KSSV-202 vào tối qua.,khác,normal
+234,Phòng KSSV-546 không có nước từ từ tối qua.,nước,high
+235,Ổ điện bàn học phòng KSSV-337 không hoạt động.,thiết bị,normal
+236,Nhà vệ sinh tầng 2 kssv có mùi hôi.,vệ sinh,normal
+237,Có người lạ đi lại gần khu phòng KSSV-636 vào tối qua.,khác,normal
+238,Vòi nước phòng kssv-203 bị rò rỉ.,nước,high
+239,Ổ điện bàn học phòng KSSV-439 không hoạt động.,thiết bị,normal
+240,Cần bổ sung rèm cửa cho phòng KSSV-635.,khác,normal
+241,Phòng 404 bị phạt vì giấu rác trong tủ đồ cá nhân.,vệ sinh,normal
+242,Nước trong bồn rửa phòng KSSV-435 bị tắc.,nước,normal
+243,Ổ cắm phòng kssv-369 phát ra tia lửa.,điện,urgent
+244,Wi-Fi phòng kssv-469 không kết nối được.,internet,normal
+245,Cần bổ sung rèm cửa cho phòng kssv-195.,khác,normal
+246,Phòng KSSV-292 bị mất đồ cá nhân.,khác,high
+247,Không vào được mạng tại phòng KSSV-568.,internet,normal
+248,Quạt phòng kssv-680 không quay.,thiết bị,normal
+249,"Ống nước tầng 6 bị vỡ, ảnh hưởng khu vực KSSV-525.",nước,urgent
+250,Mái hiên khu nhà B bị gió lớn làm rơi xuống.,khác,normal
+251,"Ống nước tầng 4 bị vỡ, ảnh hưởng khu vực KSSV-594.",nước,urgent
+252,Vòi nước phòng KSSV-550 bị rò rỉ.,nước,high
+253,Cần sửa chữa cổng mạng bị biến dạng do sinh viên tự ý rút dây.,internet,normal
+254,"Cần kiểm tra dây cáp mạng bị hở vỏ, có nguy cơ gây điện giật.",internet,normal
+255,Báo cáo bồn cầu ở nhà vệ sinh chung tầng 6 bị nứt và rỉ nước thải.,thiết bị,high
+256,Wi-Fi phòng kssv-431 không kết nối được.,internet,normal
+257,Phòng kssv-516 mất điện từ tối qua.,điện,high
+258,Quạt phòng kssv-197 không quay.,thiết bị,normal
+259,"Ống nước tầng 5 bị vỡ, ảnh hưởng khu vực KSSV-182.",nước,urgent
+260,Đèn trong phòng kssv-522 bị cháy.,điện,normal
+261,Ổ điện bàn học kssv-239 không hoạt động.,thiết bị,normal
+262,Đèn trong phòng kssv-293 bị cháy.,điện,normal
+263,Phòng kssv-578 không có nước.,nước,high
+264,Điều hòa phòng KSSV-409 bị hỏng.,thiết bị,normal
+265,Đèn trong phòng kssv-560 bị cháy.,điện,normal
+266,Không vào được mạng tại phòng KSSV-380.,internet,normal
+267,"Khóa cửa phòng 602 bị hỏng lưỡi gà, không thể khóa được.",thiết bị,high
+268,Có người lạ đi lại gần phòng kssv-293 tối qua.,khác,normal
+269,Đèn học phòng kssv-359 bị hỏng.,thiết bị,normal
+270,Không vào được mạng tại phòng KSSV-551.,internet,normal
+271,"Ống nước tầng 5 bị vỡ, ảnh hưởng khu vực KSSV-430.",nước,urgent
+272,Phòng 104 báo cáo thẻ từ ra vào bị mất từ tính.,thiết bị,normal
+273,Ổ điện bàn học kssv-677 không hoạt động.,thiết bị,normal
+274,Không vào được mạng ở phòng kssv-658.,internet,normal
+275,"Chất thải rắn bị vứt vào toilet, gây tắc nghẽn.",vệ sinh,normal
+276,Phòng KSSV-363 không có nước từ chiều nay.,nước,high
+277,"Router tầng 6 bị lỗi, phòng KSSV-625 không vào mạng.",internet,normal
+278,Không vào được mạng ở phòng kssv-114.,internet,normal
+279,Mạng khu sinh viên rất yếu vào chiều nay.,internet,normal
+280,Điện phòng kssv-557 chập chờn khi bật điều hòa.,điện,high
+281,Ổ cắm phòng KSSV-578 phát ra tia lửa.,điện,urgent
+282,Cống thoát nước phòng KSSV-279 bị nghẹt.,vệ sinh,normal
+283,"Van khóa nước tổng khu D bị khóa, không có nước sử dụng.",nước,normal
+284,Phòng 503 bị nấm mốc trắng mọc trên tường gần cửa sổ.,vệ sinh,normal
+285,Ống nước tầng 4 kssv bị vỡ.,nước,urgent
+286,Đề nghị KTX tăng cường bảo mật mạng để tránh virus và mã độc.,internet,normal
+287,Ổ cắm phòng KSSV-180 phát ra tia lửa.,điện,high
+288,Quạt phòng kssv-226 không quay.,thiết bị,normal
+289,Mạng khu sinh viên rất yếu vào trưa nay.,internet,normal
+290,Mùi hôi từ nhà vệ sinh kssv-400 rất khó chịu.,vệ sinh,normal
+291,"Router tầng 6 bị lỗi, phòng KSSV-439 không vào mạng.",internet,normal
+292,Phòng 408 bị nước chảy từ đường ống của điều hòa.,thiết bị,normal
+293,Cống thoát nước phòng KSSV-199 bị nghẹt.,vệ sinh,normal
+294,Báo cáo camera an ninh khu vực cầu thang bộ bị hỏng.,thiết bị,normal
+295,Đèn trong phòng kssv-534 bị cháy.,điện,normal
+296,Nước chảy yếu ở nhà tắm kssv-455.,nước,normal
+297,"Cửa tủ đồ cá nhân phòng 412 bị bung bản lề, không đóng được.",thiết bị,normal
+298,Mạng kssv rất yếu buổi tối.,internet,normal
+299,Cống thoát nước phòng kssv-339 bị nghẹt.,vệ sinh,normal
+300,Wi-Fi phòng KSSV-148 không kết nối được.,internet,normal
+301,Mùi hôi từ nhà vệ sinh kssv-688 rất khó chịu.,vệ sinh,normal
+302,Mùi hôi từ nhà vệ sinh kssv-236 rất khó chịu.,vệ sinh,normal
+303,Khu sinh viên khu vực phòng KSSV-309 mất điện toàn bộ.,điện,high
+304,Nước chảy yếu ở nhà tắm gần phòng KSSV-492.,nước,normal
+305,Báo cáo bồn rửa tay bị ố vàng và có cặn bẩn bám vào.,vệ sinh,normal
+306,Điều hòa phòng KSSV-215 bị hỏng.,thiết bị,normal
+307,Bảng điện hành lang gần KSSV-646 nhảy aptomat liên tục.,điện,urgent
+308,Phòng kssv-125 mất điện từ tối qua.,điện,high
+309,"Ống nước tầng 2 bị vỡ, ảnh hưởng khu vực KSSV-137.",nước,high
+310,Khu sinh viên khu vực phòng KSSV-689 mất điện toàn bộ.,điện,high
+311,Thiết bị phát WiFi ở hành lang tầng 4 bị nóng rát bất thường.,internet,normal
+312,Phòng kssv-444 mất điện từ tối qua.,điện,high
+313,Thùng rác khu sinh viên gần KSSV-189 đầy tràn.,vệ sinh,normal
+314,Điều hòa phòng KSSV-242 bị hỏng.,thiết bị,normal
+315,Đèn học phòng kssv-229 bị hỏng.,thiết bị,normal
+316,Báo cáo cầu chì của bộ sạc xe điện ở nhà xe bị nóng chảy.,điện,urgent
+317,Cần bổ sung rèm cửa cho phòng kssv-472.,khác,normal
+318,Báo cáo sinh viên bị thương do ngã trong phòng tắm chung.,khác,normal
+319,Quạt phòng KSSV-126 không quay.,thiết bị,normal
+320,Quạt phòng kssv-559 không quay.,thiết bị,normal
+321,Cần bổ sung rèm cửa cho phòng kssv-339.,khác,normal
+322,Điện phòng kssv-629 chập chờn khi bật điều hòa.,điện,high
+323,Mùi hôi từ khu vệ sinh gần phòng KSSV-500 rất khó chịu.,vệ sinh,normal
+324,Cống thoát nước phòng KSSV-425 bị nghẹt.,vệ sinh,normal
+325,Điều hòa phòng kssv-147 bị hỏng.,thiết bị,normal
+326,Cống thoát nước phòng KSSV-462 bị nghẹt.,vệ sinh,normal
+327,Đèn trong phòng kssv-136 bị cháy.,điện,normal
+328,Quạt phòng KSSV-402 không quay.,thiết bị,normal
+329,Thùng rác khu sinh viên gần KSSV-218 đầy tràn.,vệ sinh,normal
+330,Không vào được mạng tại phòng KSSV-240.,internet,normal
+331,Có tiếng ồn lớn từ phòng kssv-351 ban đêm.,khác,normal
+332,Quạt phòng KSSV-282 không quay.,thiết bị,normal
+333,Nước rửa tay ở nhà vệ sinh chung bị hết.,vệ sinh,normal
+334,"Router tầng 6 bị lỗi, phòng KSSV-625 không vào mạng.",internet,normal
+335,Cổng mạng ở khu vực tự học chung bị mất kết nối.,internet,normal
+336,Mùi hôi từ khu vệ sinh gần phòng KSSV-308 rất khó chịu.,vệ sinh,normal
+337,Wi-Fi phòng KSSV-246 không kết nối được.,internet,normal
+338,Không vào được mạng tại phòng KSSV-272.,internet,normal
+339,Không vào được mạng tại phòng KSSV-257.,internet,normal
+340,Khu sinh viên khu vực phòng KSSV-315 mất điện toàn bộ.,điện,high
+341,Phòng kssv-110 không có nước.,nước,high
+342,Ổ cắm phòng kssv-328 phát ra tia lửa.,điện,high
+343,Điện phòng kssv-626 chập chờn khi bật điều hòa.,điện,high
+344,Phòng kssv-516 mất điện từ tối qua.,điện,high
+345,Có tiếng ồn lớn từ phòng kssv-318 ban đêm.,khác,normal
+346,"Lỗi bộ ổn áp chung của tòa nhà bị quá tải, phát ra tiếng kêu lớn.",điện,normal
+347,Phòng 404 bị sụt điện áp liên tục mỗi khi điều hòa phòng bên cạnh khởi động.,điện,high
+348,"Ống nước tầng 6 bị vỡ, ảnh hưởng khu vực KSSV-270.",nước,urgent
+349,Điện tại phòng KSSV-270 chập chờn khi bật điều hòa.,điện,high
+350,"Phòng 301 báo cáo toilet bị tắc nghẽn hoàn toàn, không thể sử dụng.",nước,normal
+351,Ổ cắm phòng kssv-191 phát ra tia lửa.,điện,high
+352,Quạt phòng KSSV-387 không quay.,thiết bị,normal
+353,Cống thoát nước phòng KSSV-480 bị nghẹt.,vệ sinh,normal
+354,Có người lạ đi lại gần khu phòng KSSV-102 vào từ hôm qua.,khác,normal
+355,Phòng kssv-602 có rác chưa dọn.,vệ sinh,normal
+356,Vòi nước phòng kssv-629 bị rò rỉ.,nước,normal
+357,Lỗi bình chữa cháy ở hành lang tầng 3 bị hết hạn sử dụng.,thiết bị,normal
+358,Wi-Fi phòng KSSV-353 không kết nối được.,internet,normal
+359,Ổ điện bàn học kssv-571 không hoạt động.,thiết bị,normal
+360,Lỗi kết nối mạng bị chậm khi sử dụng trình duyệt Firefox.,internet,normal
+361,Cần bổ sung rèm cửa cho phòng KSSV-149.,khác,normal
+362,Điện phòng kssv-469 chập chờn khi bật điều hòa.,điện,high
+363,Lỗi cổng mạng LAN phòng 506 không nhận tín hiệu từ dây mạng.,internet,normal
+364,Ống thoát nước ở ban công bị tắc do rác.,vệ sinh,normal
+365,Có người lạ đi lại gần phòng kssv-431 tối qua.,khác,normal
+366,Thùng rác khu sinh viên gần KSSV-130 đầy tràn.,vệ sinh,normal
+367,Đèn học phòng KSSV-419 bị hỏng.,thiết bị,normal
+368,Mạng bị ngắt hoàn toàn vào các ngày lễ lớn mà không có thông báo.,internet,normal
+369,Phòng 204 báo cáo rò rỉ nước vào đường dây điện chính.,điện,high
+370,Bảng điện hành lang gần KSSV-111 nhảy aptomat liên tục.,điện,urgent
+371,Báo cáo bụi bẩn bám dày trên các khung cửa sổ.,vệ sinh,normal
+372,Phòng kssv-592 có rác chưa dọn.,vệ sinh,normal
+373,"Giường tầng phòng 301 bị gãy thanh ngang, không dám ngủ.",thiết bị,normal
+374,Phòng kssv-162 có rác chưa dọn.,vệ sinh,normal
+375,Điện tại phòng KSSV-169 chập chờn khi bật điều hòa.,điện,high
+376,Phòng 408 bị nước chảy từ đường ống của điều hòa.,thiết bị,normal
+377,Phòng KSSV-659 có rác chưa dọn.,vệ sinh,normal
+378,Đèn học phòng kssv-519 bị hỏng.,thiết bị,normal
+379,Không vào được mạng ở phòng kssv-181.,internet,normal
+380,Phòng em bị sinh viên khác lén vào phòng khi không có ai.,khác,normal
+381,Phòng em bị mất thẻ từ và cần làm lại gấp.,thiết bị,high
+382,Vòi nước phòng KSSV-297 bị rò rỉ.,nước,high
+383,Báo cáo máy giặt công cộng khu A bị rò rỉ nước lớn dưới chân đế.,thiết bị,high
+384,Cống thoát nước phòng KSSV-193 bị nghẹt.,vệ sinh,normal
+385,Đèn học phòng KSSV-460 bị hỏng.,thiết bị,normal
+386,Địa chỉ IP của máy tính phòng em bị chặn khỏi hệ thống mạng KTX.,internet,normal
+387,Cống thoát nước phòng KSSV-346 bị nghẹt.,vệ sinh,high
+388,Cần bổ sung rèm cửa cho phòng kssv-182.,khác,normal
+389,Đèn học phòng kssv-293 bị hỏng.,thiết bị,normal
+390,"Lỗi bàn làm việc chung bị mất ốc, không đứng vững.",thiết bị,normal
+391,Nước trong bồn rửa phòng kssv-501 bị tắc.,nước,normal
+392,Phòng 401 bị nước chảy chậm đột ngột vào ban đêm.,nước,high
+393,Phòng KSSV-204 có côn trùng bay vào thường xuyên.,khác,normal
+394,Ổ cắm phòng KSSV-470 phát ra tia lửa.,điện,high
+395,Phòng kssv-551 có côn trùng bay vào thường xuyên.,khác,normal
+396,Quạt phòng kssv-637 không quay.,thiết bị,normal
+397,"Router tầng 2 bị lỗi, phòng KSSV-580 không vào mạng.",internet,normal
+398,Phòng KSSV-162 mất điện từ từ hôm qua.,điện,high
+399,"Lỗi quạt trần phòng 211 bị rơi cánh, chỉ còn 1 cánh quạt.",thiết bị,high
+400,Cống thoát nước phòng KSSV-539 bị nghẹt.,vệ sinh,normal
+401,Phòng kssv-520 mất điện từ tối qua.,điện,high
+402,Phòng 211 báo cáo nước sinh hoạt có nhiều bọt trắng bất thường.,nước,normal
+403,Cần bổ sung rèm cửa cho phòng kssv-211.,khác,normal
+404,Thùng rác khu sinh viên gần KSSV-667 đầy tràn.,vệ sinh,normal
+405,Quạt phòng KSSV-406 không quay.,thiết bị,normal
+406,Quạt phòng KSSV-275 không quay.,thiết bị,normal
+407,Phòng 601 báo cáo giường tầng bị kêu cót két lớn khi trở mình.,thiết bị,normal
+408,Điện tại phòng KSSV-617 chập chờn khi bật điều hòa.,điện,high
+409,Cần bổ sung rèm cửa cho phòng kssv-127.,khác,normal
+410,Báo cáo tài khoản Internet phòng 201 bị khóa đột ngột.,internet,normal
+411,Không vào được mạng tại phòng KSSV-667.,internet,normal
+412,Phòng kssv-258 không có nước.,nước,high
+413,Ổ điện bàn học phòng KSSV-272 không hoạt động.,thiết bị,normal
+414,Ổ cắm phòng KSSV-222 phát ra tia lửa.,điện,high
+415,Khu sinh viên khu vực phòng KSSV-568 mất điện toàn bộ.,điện,high
+416,Nước trong bồn rửa phòng KSSV-693 bị tắc.,nước,normal
+417,Ổ điện bàn học kssv-229 không hoạt động.,thiết bị,normal
+418,Phòng KSSV-597 có côn trùng bay vào thường xuyên.,khác,normal
+419,Phòng kssv-292 bị mất đồ cá nhân.,khác,high
+420,Nhà vệ sinh tầng 6 kssv có mùi hôi.,vệ sinh,normal
+421,"Lỗi hệ thống nước bị ngắt đột ngột, không có thông báo.",khác,high
+422,Phòng kssv-190 có rác chưa dọn.,vệ sinh,normal
+423,"Lỗi cửa ban công phòng 103 bị hỏng chốt cài, không khóa được.",thiết bị,high
+424,Phòng KSSV-150 không có nước từ sáng nay.,nước,high
+425,Cần tăng cường hệ thống phát WiFi ở khu vực cuối dãy nhà.,internet,normal
+426,Điều hòa phòng KSSV-498 bị hỏng.,thiết bị,normal
+427,Phòng KSSV-141 có côn trùng bay vào thường xuyên.,khác,normal
+428,Điều hòa phòng kssv-563 bị hỏng.,thiết bị,normal
+429,Mùi hôi từ nhà vệ sinh kssv-580 rất khó chịu.,vệ sinh,normal
+430,Phòng KSSV-192 không có nước từ từ hôm qua.,nước,high
+431,Vòi nước phòng KSSV-572 bị rò rỉ.,nước,high
+432,Ổ điện bàn học kssv-347 không hoạt động.,thiết bị,normal
+433,"Ống nước tầng 1 bị vỡ, ảnh hưởng khu vực KSSV-396.",nước,urgent
+434,Wi-Fi phòng KSSV-461 không kết nối được.,internet,normal
+435,Có tiếng ồn lớn từ phòng KSSV-347 vào từ sáng nay.,khác,normal
+436,Phòng kssv-128 bị mất đồ cá nhân.,khác,high
+437,"Báo cáo nước bị lẫn tạp chất, gây ngứa da khi tắm.",nước,normal
+438,Aptomat tổng khu vực nhà vệ sinh chung bị nhảy liên tục không rõ lý do.,điện,urgent
+439,Cống thoát nước phòng KSSV-208 bị nghẹt.,vệ sinh,normal
+440,Quạt phòng kssv-668 không quay.,thiết bị,normal
+441,Điện tại phòng KSSV-621 chập chờn khi bật điều hòa.,điện,high
+442,Điều hòa phòng kssv-282 bị hỏng.,thiết bị,normal
+443,Quạt phòng kssv-549 không quay.,thiết bị,normal
+444,Điều hòa phòng kssv-656 bị hỏng.,thiết bị,normal
+445,Cần can thiệp gấp vì xảy ra đánh nhau ở phòng 401.,khác,high
+446,Tủ lạnh chung tầng 2 bị rò điện.,thiết bị,high
+447,Có tiếng ồn lớn từ phòng KSSV-411 vào trưa nay.,khác,normal
+448,Có người lạ đi lại gần phòng kssv-637 tối qua.,khác,normal
+449,Phòng 503 bị nấm mốc trắng mọc trên tường gần cửa sổ.,vệ sinh,normal
+450,Phòng kssv-635 mất điện từ tối qua.,điện,high
+451,Có người lạ đi lại gần khu phòng KSSV-476 vào trưa nay.,khác,normal
+452,Thùng rác khu sinh viên gần KSSV-186 đầy tràn.,vệ sinh,normal
+453,Internet khu vực KSSV-562 mất tín hiệu.,internet,normal
+454,Quạt phòng kssv-686 không quay.,thiết bị,normal
+455,Báo cáo tốc độ tải lên/tải xuống bị giới hạn quá thấp vào giờ học.,internet,normal
+456,Cần thông tắc cống thoát nước ở khu vực nhà tắm tập thể.,nước,normal
+457,Cống thoát nước phòng KSSV-650 bị nghẹt.,vệ sinh,normal
+458,Có tiếng ồn lớn từ phòng KSSV-460 vào từ sáng nay.,khác,normal
+459,Bảng điện hành lang gần KSSV-142 nhảy aptomat liên tục.,điện,high
+460,Báo cáo bồn rửa tay bị ố vàng và có cặn bẩn bám vào.,vệ sinh,normal
+461,Điện phòng kssv-251 chập chờn khi bật điều hòa.,điện,high
+462,Đề nghị lắp đặt thêm quạt hút mùi ở khu vực nấu ăn chung.,vệ sinh,normal
+463,"Ống nước tầng 3 bị vỡ, ảnh hưởng khu vực KSSV-213.",nước,urgent
+464,Mùi hôi từ nhà vệ sinh kssv-103 rất khó chịu.,vệ sinh,normal
+465,Phòng kssv-586 không có nước.,nước,high
+466,"Router tầng 2 bị lỗi, phòng KSSV-560 không vào mạng.",internet,normal
+467,"Mật khẩu WiFi KTX bị đổi không báo trước, không thể truy cập.",internet,normal
+468,Báo cáo người bán hàng rong vào KTX để quảng cáo.,khác,normal
+469,Phòng KSSV-631 bị mất đồ cá nhân.,khác,high
+470,Quạt phòng KSSV-594 không quay.,thiết bị,normal
+471,Phòng kssv-655 có côn trùng bay vào thường xuyên.,khác,normal
+472,Ổ cắm phòng kssv-515 phát ra tia lửa.,điện,high
+473,Phòng KSSV-449 có côn trùng bay vào thường xuyên.,khác,normal
+474,Phòng 510 báo cáo mùi thuốc lá nồng nặc bay vào từ phòng bên cạnh.,vệ sinh,normal
+475,Tủ lạnh chung tầng 6 kssv bị rò điện.,thiết bị,high
+476,"Dây điện gần cửa sổ khu D bị chuột cắn đứt, đề nghị sửa gấp.",điện,high
+477,Phòng KSSV-492 có rác chưa dọn.,vệ sinh,normal
+478,Phòng KSSV-340 có côn trùng bay vào thường xuyên.,khác,normal
+479,Đèn học phòng kssv-438 bị hỏng.,thiết bị,normal
+480,Wi-Fi phòng KSSV-469 không kết nối được.,internet,normal
+481,Phòng KSSV-102 không có nước từ đêm qua.,nước,high
+482,Phòng 510 báo cáo mùi thuốc lá nồng nặc bay vào từ phòng bên cạnh.,vệ sinh,normal
+483,Có người lạ đi lại gần phòng kssv-373 tối qua.,khác,normal
+484,"Router tầng 2 bị lỗi, phòng KSSV-284 không vào mạng.",internet,normal
+485,Phòng KSSV-677 bị mất đồ cá nhân.,khác,high
+486,Phòng KSSV-350 mất điện từ sáng nay.,điện,high
+487,Cần tăng cường số lượng bảo vệ tuần tra khu vực nhà xe.,khác,normal
+488,Phòng kssv-160 có côn trùng bay vào thường xuyên.,khác,normal
+489,Lỗi thảm ở phòng sinh hoạt chung bị bẩn và có mùi ẩm mốc.,vệ sinh,normal
+490,Quạt phòng kssv-520 không quay.,thiết bị,normal
+491,Rác thải y tế bị vứt lẫn vào thùng rác thường.,vệ sinh,normal
+492,Điều hòa phòng kssv-384 bị hỏng.,thiết bị,normal
+493,Quạt phòng kssv-234 không quay.,thiết bị,normal
+494,Quạt phòng kssv-388 không quay.,thiết bị,normal
+495,Phòng KSSV-403 có côn trùng bay vào thường xuyên.,khác,normal
+496,Phòng kssv-100 không có nước.,nước,normal
+497,Có người lạ đi lại gần khu phòng KSSV-122 vào đêm qua.,khác,normal
+498,Báo cáo người ăn xin vào KTX làm phiền sinh viên.,khác,normal
+499,Wi-Fi phòng KSSV-327 không kết nối được.,internet,normal
+500,Không vào được mạng tại phòng KSSV-585.,internet,normal
+501,Phòng 707 bị thấm nước qua sàn từ nhà vệ sinh.,nước,high
+502,Wi-Fi phòng KSSV-327 không kết nối được.,internet,normal
+503,Phòng kssv-657 có rác chưa dọn.,vệ sinh,normal
+504,Đèn học phòng kssv-280 bị hỏng.,thiết bị,normal
+505,Ống nước tầng 5 kssv bị vỡ.,nước,normal
+506,Điều hòa phòng kssv-287 bị hỏng.,thiết bị,normal
+507,Phòng 510 báo cáo đèn bàn học bị đứt dây điện bên trong.,thiết bị,normal
+508,Đèn trong phòng kssv-673 bị cháy.,điện,normal
+509,Ổ cắm phòng KSSV-269 phát ra tia lửa.,điện,high
+510,Phòng kssv-346 không có nước.,nước,high
+511,Phòng 410 báo cáo sự cố mạng kéo dài 2 ngày chưa được khắc phục.,internet,high
+512,Thùng rác khu sinh viên gần KSSV-369 đầy tràn.,vệ sinh,normal
+513,Phòng KSSV-101 có rác chưa dọn.,vệ sinh,normal
+514,Mùi hôi từ khu vệ sinh gần phòng KSSV-459 rất khó chịu.,vệ sinh,normal
+515,Wi-Fi phòng kssv-314 không kết nối được.,internet,normal
+516,Phòng KSSV-650 mất điện từ chiều nay.,điện,high
+517,Mùi hôi từ khu vệ sinh gần phòng KSSV-375 rất khó chịu.,vệ sinh,normal
+518,"Lỗi quạt thông gió nhà tắm chung không hoạt động, không khí ngột ngạt.",vệ sinh,normal
+519,Không vào được mạng ở phòng kssv-150.,internet,normal
+520,Nước trong bồn rửa phòng kssv-303 bị tắc.,nước,normal
+521,Quạt phòng KSSV-109 không quay.,thiết bị,normal
+522,Báo cáo máy photocopy ở sảnh bị kẹt giấy liên tục và in mực rất mờ.,thiết bị,normal
+523,Có tiếng ồn lớn từ phòng KSSV-418 vào từ tối qua.,khác,normal
+524,Phòng KSSV-406 có rác chưa dọn.,vệ sinh,normal
+525,Bảng điện hành lang gần KSSV-350 nhảy aptomat liên tục.,điện,high
+526,Mạng khu sinh viên rất yếu vào từ sáng nay.,internet,normal
+527,Thùng rác khu sinh viên gần KSSV-264 đầy tràn.,vệ sinh,normal
+528,Lỗi cổng mạng LAN phòng 506 không nhận tín hiệu từ dây mạng.,internet,normal
+529,Khu sinh viên khu vực phòng KSSV-263 mất điện toàn bộ.,điện,high
+530,Internet khu vực KSSV-645 mất tín hiệu.,internet,normal
+531,Nước chảy yếu ở nhà tắm kssv-209.,nước,normal
+532,Cần xử lý sinh viên hút thuốc trong nhà vệ sinh chung.,khác,normal
+533,"Báo cáo áp lực nước rất yếu vào buổi tối, không đủ để rửa mặt.",nước,normal
+534,Mùi hôi từ nhà vệ sinh kssv-212 rất khó chịu.,vệ sinh,normal
+535,Ánh sáng đèn khu vực cầu thang bị yếu.,khác,normal
+536,"Mạng bị lỗi, không vào được các trang web có giao thức HTTPS.",internet,normal
+537,Quạt phòng KSSV-287 không quay.,thiết bị,normal
+538,Điện tại phòng KSSV-330 chập chờn khi bật điều hòa.,điện,high
+539,Phòng KSSV-159 bị mất đồ cá nhân.,khác,high
+540,Lỗi kết nối bị từ chối do quá nhiều thiết bị cùng truy cập từ một phòng.,internet,normal
+541,Ổ cắm phòng KSSV-103 phát ra tia lửa.,điện,high
+542,Cần bổ sung rèm cửa cho phòng kssv-214.,khác,normal
+543,Điều hòa phòng kssv-118 bị hỏng.,thiết bị,normal
+544,Phòng KSSV-632 bị mất đồ cá nhân.,khác,high
+545,Khu sinh viên khu vực phòng KSSV-512 mất điện toàn bộ.,điện,normal
+546,Phòng kssv-308 có rác chưa dọn.,vệ sinh,normal
+547,Cống thoát nước phòng KSSV-279 bị nghẹt.,vệ sinh,normal
+548,Điều hòa phòng KSSV-407 bị hỏng.,thiết bị,normal
+549,Wi-Fi phòng kssv-687 không kết nối được.,internet,normal
+550,Hệ thống loa thông báo chung bị tắt tiếng.,thiết bị,normal
+551,Nhà vệ sinh tầng 4 có mùi hôi.,vệ sinh,normal
+552,"Cần tìm gấp chìa khóa phòng 405 bị mất, đề nghị thay ổ khóa mới.",khác,high
+553,Đèn học phòng kssv-612 bị hỏng.,thiết bị,normal
+554,Cống thoát nước phòng KSSV-606 bị nghẹt.,vệ sinh,normal
+555,Điều hòa phòng KSSV-542 bị hỏng.,thiết bị,normal
+556,Có tiếng ồn lớn từ phòng KSSV-327 vào trưa nay.,khác,normal
+557,Wi-Fi phòng kssv-499 không kết nối được.,internet,normal
+558,"Ống nước tầng 1 bị vỡ, ảnh hưởng khu vực KSSV-224.",nước,urgent
+559,Lỗi công tắc điều hòa phòng 105 bị hỏng nút bấm.,điện,normal
+560,Nước chảy yếu ở nhà tắm gần phòng KSSV-330.,nước,normal
+561,Phòng KSSV-236 có côn trùng bay vào thường xuyên.,khác,normal
+562,Nước trong bồn rửa phòng KSSV-682 bị tắc.,nước,normal
+563,Đèn trong phòng kssv-528 bị cháy.,điện,normal
+564,"Router tầng 3 bị lỗi, phòng KSSV-481 không vào mạng.",internet,normal
+565,"Bóng đèn ở bồn rửa mặt chung bị cháy, rất tối để soi gương.",điện,normal
+566,Cống thoát nước phòng KSSV-324 bị nghẹt.,vệ sinh,normal
+567,Vòi nước phòng kssv-498 bị rò rỉ.,nước,high
+568,Phòng em bị muỗi đốt nghiêm trọng vào ban đêm.,vệ sinh,normal
+569,Phòng 605 muốn kích hoạt lại tài khoản mạng đã hết hạn.,internet,normal
+570,Cống thoát nước phòng kssv-382 bị nghẹt.,vệ sinh,normal
+571,Không vào được mạng tại phòng KSSV-482.,internet,normal
+572,Có tiếng ồn lớn từ phòng kssv-245 ban đêm.,khác,normal
+573,Mùi hôi từ khu vệ sinh gần phòng KSSV-525 rất khó chịu.,vệ sinh,normal
+574,Khu sinh viên khu vực phòng KSSV-129 mất điện toàn bộ.,điện,high
+575,"Router tầng 6 bị lỗi, phòng KSSV-137 không vào mạng.",internet,normal
+576,"Cần can thiệp gấp vì xảy ra cãi vã, đánh nhau giữa hai phòng 301 và 302.",khác,normal
+577,Phòng KSSV-346 bị mất đồ cá nhân.,khác,high
+578,Điện phòng kssv-469 chập chờn khi bật điều hòa.,điện,high
+579,Có tiếng ồn lớn từ phòng kssv-516 ban đêm.,khác,normal
+580,Quạt phòng KSSV-393 không quay.,thiết bị,normal
+581,Phòng 411 báo cáo sự cố mạng kéo dài hơn 1 ngày chưa được xử lý.,internet,normal
+582,Bảng điện hành lang gần KSSV-579 nhảy aptomat liên tục.,điện,high
+583,Wi-Fi phòng KSSV-697 không kết nối được.,internet,normal
+584,Cần bổ sung rèm cửa cho phòng KSSV-285.,khác,normal
+585,Vòi nước phòng kssv-500 bị rò rỉ.,nước,high
+586,Nước chảy yếu ở nhà tắm gần phòng KSSV-474.,nước,normal
+587,Cống thoát nước phòng kssv-565 bị nghẹt.,vệ sinh,normal
+588,Nước trong bồn rửa phòng kssv-212 bị tắc.,nước,normal
+589,Không vào được mạng ở phòng kssv-360.,internet,normal
+590,Lỗi kết nối mạng bị ngắt khi sử dụng ứng dụng nhắn tin.,internet,normal
+591,Nước trong bồn rửa phòng kssv-617 bị tắc.,nước,normal
+592,Nước trong bồn rửa phòng KSSV-440 bị tắc.,nước,normal
+593,Cống thoát nước phòng kssv-398 bị nghẹt.,vệ sinh,normal
+594,Ổ điện bàn học kssv-327 không hoạt động.,thiết bị,normal
+595,Thùng rác khu sinh viên gần KSSV-679 đầy tràn.,vệ sinh,normal
+596,Nước trong bồn rửa phòng KSSV-646 bị tắc.,nước,normal
+597,Phòng KSSV-553 mất điện từ sáng nay.,điện,high
+598,"Phòng 101 báo cáo tín hiệu WiFi cực yếu, chỉ có 1 vạch dù ngồi sát cục phát.",internet,normal
+599,Phòng 608 báo cáo nước có lẫn bùn sau khi KTX sửa chữa.,nước,high
+600,Ổ điện bàn học kssv-632 không hoạt động.,thiết bị,normal
+601,Vòi nước phòng kssv-307 bị rò rỉ.,nước,high
+602,Đèn trong phòng kssv-417 bị cháy.,điện,normal
+603,Nước trong bồn rửa phòng KSSV-326 bị tắc.,nước,normal
+604,Mạng khu sinh viên rất yếu vào từ tối qua.,internet,normal
+605,Phòng kssv-553 bị mất đồ cá nhân.,khác,high
+606,"Router tầng 3 bị lỗi, phòng KSSV-666 không vào mạng.",internet,normal
+607,Cống thoát nước phòng kssv-150 bị nghẹt.,vệ sinh,normal
+608,Ổ điện bàn học phòng KSSV-663 không hoạt động.,thiết bị,normal
+609,Phòng 606 báo cáo cửa tủ đồ bị hỏng khóa và bản lề.,thiết bị,normal
+610,Báo cáo lỗi hiển thị của màn hình đồng hồ điện tử ở phòng 109.,điện,normal
+611,"Báo cáo cống thoát nước mưa sân thượng bị tắc, nước tràn vào trong nhà.",nước,normal
+612,Phòng KSSV-385 mất điện từ trưa nay.,điện,high
+613,Báo cáo ghế đá công cộng bị bẩn và có rêu.,vệ sinh,normal
+614,Lỗi mạng bị chậm khi xem YouTube ở chất lượng 4K.,internet,normal
+615,Điều hòa phòng KSSV-557 bị hỏng.,thiết bị,normal
+616,"Báo cáo bồn nước phụ tầng 6 bị nghiêng, có nguy cơ đổ.",nước,normal
+617,Nước trong bồn rửa phòng KSSV-419 bị tắc.,nước,normal
+618,"Lỗi cống thoát nước sân sau bị tắc, nước đọng lâu ngày.",vệ sinh,high
+619,Đèn học phòng kssv-112 bị hỏng.,thiết bị,normal
+620,Báo cáo ghế đá công cộng bị nấm mốc và rêu xanh.,vệ sinh,normal
+621,Lỗi WiFi KTX bị mất sóng đột ngột khi trời mưa lớn.,internet,normal
+622,Có tiếng ồn lớn từ phòng kssv-301 ban đêm.,khác,normal
+623,Vòi nước phòng kssv-377 bị rò rỉ.,nước,high
+624,Wi-Fi phòng kssv-666 không kết nối được.,internet,normal
+625,Nước trong bồn rửa phòng kssv-410 bị tắc.,nước,normal
+626,Lỗi bình chữa cháy ở tầng 7 bị mất chốt an toàn.,thiết bị,normal
+627,Phòng KSSV-418 bị mất đồ cá nhân.,khác,high
+628,Điện tại phòng KSSV-559 chập chờn khi bật điều hòa.,điện,high
+629,Đèn trong phòng kssv-476 bị cháy.,điện,normal
+630,Quạt phòng kssv-359 không quay.,thiết bị,normal
+631,Đèn học phòng kssv-561 bị hỏng.,thiết bị,normal
+632,Đèn học phòng KSSV-428 bị hỏng.,thiết bị,normal
+633,Lỗi máy lạnh phòng 701 không bật được dù đã cắm điện.,điện,normal
+634,"Ống nước tầng 2 bị vỡ, ảnh hưởng khu vực KSSV-697.",nước,urgent
+635,Phòng 207 báo cáo thiết bị sạc điện thoại bị nóng chảy ở ổ cắm KTX.,điện,high
+636,Ổ điện bàn học kssv-195 không hoạt động.,thiết bị,normal
+637,Lỗi mạng KTX không thể kết nối được với máy tính bảng.,internet,normal
+638,Cần thay thế thùng rác chung bị nứt vỡ.,vệ sinh,normal
+639,Báo cáo bồn cầu ở nhà vệ sinh chung tầng 4 bị tắc cứng.,thiết bị,normal
+640,"Router tầng 6 bị lỗi, phòng KSSV-691 không vào mạng.",internet,normal
+641,Điện phòng kssv-667 chập chờn khi bật điều hòa.,điện,normal
+642,"Cảnh báo cháy giả bị kích hoạt, đề nghị kiểm tra hệ thống PCCC.",khác,normal
+643,Không vào được mạng tại phòng KSSV-272.,internet,normal
+644,"Máy bơm nước tổng khu A hoạt động ồn ào và liên tục, có dấu hiệu hỏng hóc.",nước,normal
+645,Mạng khu sinh viên rất yếu vào từ sáng nay.,internet,normal
+646,Mạng khu sinh viên rất yếu vào sáng nay.,internet,normal
+647,Bảng điện hành lang gần KSSV-323 nhảy aptomat liên tục.,điện,high
+648,Phòng KSSV-120 có rác chưa dọn.,vệ sinh,normal
+649,Có người lạ đi lại gần khu phòng KSSV-685 vào trưa nay.,khác,normal
+650,Thùng rác khu sinh viên gần KSSV-603 đầy tràn.,vệ sinh,normal
+651,"Lỗi thẻ điện không nhận khi cắm vào khe đọc, không thể nạp thêm.",điện,normal
+652,Cần bổ sung rèm cửa cho phòng kssv-377.,khác,normal
+653,Phòng KSSV-400 mất điện từ đêm qua.,điện,high
+654,Có tiếng ồn lớn từ phòng KSSV-623 vào từ hôm qua.,khác,normal
+655,Nước rửa tay ở nhà vệ sinh chung bị hết từ sáng.,vệ sinh,normal
+656,Có người lạ đi lại gần phòng kssv-424 tối qua.,khác,normal
+657,Cống thoát nước phòng kssv-563 bị nghẹt.,vệ sinh,normal
+658,"Lỗi cửa chính KTX không đóng vào ban đêm, không đảm bảo an ninh.",khác,normal
+659,Báo cáo rò rỉ nước vào đường dây điện chính ở khu A.,điện,normal
+660,Bảng điện hành lang gần KSSV-182 nhảy aptomat liên tục.,điện,high
+661,Đèn học phòng KSSV-186 bị hỏng.,thiết bị,normal
+662,Nước chảy yếu ở nhà tắm gần phòng KSSV-331.,nước,normal
+663,Wi-Fi phòng kssv-495 không kết nối được.,internet,normal
+664,"Router tầng 2 bị lỗi, phòng KSSV-251 không vào mạng.",internet,normal
+665,Ống nước tầng 1 kssv bị vỡ.,nước,urgent
+666,Có người lạ đi lại gần phòng kssv-676 tối qua.,khác,normal
+667,Phòng em bị nước thải từ máy giặt công cộng chảy ngược vào phòng.,vệ sinh,normal
+668,Điện tại phòng KSSV-479 chập chờn khi bật điều hòa.,điện,high
+669,Mạng khu sinh viên rất yếu vào từ hôm qua.,internet,normal
+670,Điều hòa phòng kssv-249 bị hỏng.,thiết bị,normal
+671,Có tiếng ồn lớn từ phòng KSSV-581 vào sáng nay.,khác,normal
+672,Phòng 701 báo cáo nước bị rò rỉ từ đường ống nước của điều hòa.,thiết bị,normal
+673,Nước chảy yếu ở nhà tắm kssv-415.,nước,normal
+674,Internet khu vực KSSV-232 mất tín hiệu.,internet,normal
+675,Phòng kssv-557 có rác chưa dọn.,vệ sinh,normal
+676,Ống nước tầng 6 kssv bị vỡ.,nước,normal
+677,Điều hòa phòng kssv-294 bị hỏng.,thiết bị,normal
+678,Lỗi cửa kính khu vực tự học bị bẩn.,vệ sinh,normal
+679,Đèn trong phòng kssv-389 bị cháy.,điện,normal
+680,Lỗi ống thoát nước của bồn rửa chén chung bị bung mối nối.,nước,normal
+681,Nước thải từ khu vực rửa chén chung bị tràn ra sàn.,vệ sinh,normal
+682,Có người lạ đi lại gần khu phòng KSSV-401 vào đêm qua.,khác,normal
+683,Phòng KSSV-593 không có nước từ sáng nay.,nước,high
+684,Có người lạ đi lại gần khu phòng KSSV-126 vào từ sáng nay.,khác,normal
+685,Có người lạ đi lại gần phòng kssv-312 tối qua.,khác,normal
+686,Phòng KSSV-617 có côn trùng bay vào thường xuyên.,khác,normal
+687,Lỗi vách tường nhà vệ sinh bị nấm mốc do rò rỉ nước ngầm.,vệ sinh,normal
+688,"Ống nước tầng 3 bị vỡ, ảnh hưởng khu vực KSSV-553.",nước,urgent
+689,Cống thoát nước phòng KSSV-342 bị nghẹt.,vệ sinh,normal
+690,Phòng KSSV-223 có rác chưa dọn.,vệ sinh,normal
+691,Đèn học phòng kssv-262 bị hỏng.,thiết bị,normal
+692,"Lỗi van xả nước của bồn cầu phòng 107 bị hỏng, nước chảy liên tục vào bồn.",nước,high
+693,Phòng kssv-394 không có nước.,nước,high
+694,Điều hòa phòng KSSV-650 bị hỏng.,thiết bị,normal
+695,Ổ cắm phòng kssv-240 phát ra tia lửa.,điện,high
+696,Không vào được mạng tại phòng KSSV-528.,internet,normal
+697,Thùng rác khu sinh viên gần KSSV-116 đầy tràn.,vệ sinh,normal
+698,Nước trong bồn rửa phòng KSSV-190 bị tắc.,nước,normal
+699,Ổ cắm phòng kssv-597 phát ra tia lửa.,điện,high
+700,"Router tầng 6 bị lỗi, phòng KSSV-153 không vào mạng.",internet,normal
+701,Cần bổ sung rèm cửa cho phòng KSSV-482.,khác,normal
+702,Cần bổ sung rèm cửa cho phòng kssv-260.,khác,normal
+703,"Hệ thống chiếu sáng hành lang tầng 3 bị hỏng, tối đen từ 21h hàng đêm.",điện,normal
+704,Điện tại phòng KSSV-611 chập chờn khi bật điều hòa.,điện,high
+705,Nước chảy yếu ở nhà tắm gần phòng KSSV-289.,nước,normal
+706,Phòng KSSV-636 có rác chưa dọn.,vệ sinh,normal
+707,Nước chảy yếu ở nhà tắm gần phòng KSSV-284.,nước,normal
+708,Phòng kssv-545 mất điện từ tối qua.,điện,high
+709,"Router tầng 3 bị lỗi, phòng KSSV-512 không vào mạng.",internet,normal
+710,Phòng kssv-307 có rác chưa dọn.,vệ sinh,normal
+711,Bảng điện hành lang gần KSSV-230 nhảy aptomat liên tục.,điện,high
+712,Router tầng 5 kssv bị lỗi.,internet,normal
+713,Đèn học phòng kssv-618 bị hỏng.,thiết bị,normal
+714,Wi-Fi phòng KSSV-616 không kết nối được.,internet,normal
+715,"Lỗi cổng mạng LAN ở phòng 304 bị hỏng, không kết nối được máy tính bàn.",internet,normal
+716,Cần kiểm tra dây cáp mạng tổng bị đứt ở khu vực sau nhà kho.,internet,normal
+717,Cần bổ sung rèm cửa cho phòng KSSV-209.,khác,normal
+718,Phòng 301 thắc mắc về phí phạt quá cao do sử dụng bếp từ không khai báo.,điện,normal
+719,Ổ điện bàn học phòng KSSV-348 không hoạt động.,thiết bị,normal
+720,Đèn trong phòng kssv-396 bị cháy.,điện,normal
+721,Mùi hôi từ khu vệ sinh gần phòng KSSV-375 rất khó chịu.,vệ sinh,normal
+722,Phòng 511 báo cáo đèn bàn học bị mất công tắc nguồn.,thiết bị,normal
+723,Ổ điện bàn học phòng KSSV-486 không hoạt động.,thiết bị,normal
+724,Quạt trần phòng 101 chạy yếu bất thường và phát ra tiếng kêu rít lớn.,điện,normal
+725,Phòng 701 báo cáo nước sinh hoạt có màu xanh rêu bất thường.,nước,normal
+726,Đèn học phòng kssv-477 bị hỏng.,thiết bị,normal
+727,Có người lạ đi lại gần khu phòng KSSV-556 vào chiều nay.,khác,normal
+728,Mùi hôi từ nhà vệ sinh kssv-140 rất khó chịu.,vệ sinh,normal
+729,Phòng kssv-466 mất điện từ tối qua.,điện,high
+730,"Ống nước tầng 1 bị vỡ, ảnh hưởng khu vực KSSV-554.",nước,urgent
+731,Cần thay thế tay nắm cửa phòng 702 bị gãy.,thiết bị,high
+732,Mùi hôi từ nhà vệ sinh kssv-298 rất khó chịu.,vệ sinh,normal
+733,Cần lắp đặt thêm gương cầu lồi ở góc cua cầu thang.,khác,normal
+734,Bảng điện hành lang gần KSSV-406 nhảy aptomat liên tục.,điện,high
+735,Internet khu vực KSSV-616 mất tín hiệu.,internet,normal
+736,Ổ cắm phòng KSSV-230 phát ra tia lửa.,điện,high
+737,Phòng kssv-175 bị mất đồ cá nhân.,khác,high
+738,"Báo cáo cây cối um tùm, là nơi sinh sản của côn trùng.",vệ sinh,normal
+739,Quạt phòng KSSV-677 không quay.,thiết bị,normal
+740,"Router tầng 4 bị lỗi, phòng KSSV-470 không vào mạng.",internet,normal
+741,Đèn học phòng kssv-488 bị hỏng.,thiết bị,normal
+742,"Router ở tầng 3 bị khóa trái phép, không thể truy cập cài đặt.",internet,normal
+743,Cần bổ sung rèm cửa cho phòng KSSV-322.,khác,normal
+744,Vòi nước phòng kssv-586 bị rò rỉ.,nước,high
+745,Wi-Fi phòng KSSV-241 không kết nối được.,internet,normal
+746,Ổ cắm phòng 111 bị mất nguồn điện một cách đột ngột.,điện,normal
+747,Phòng 305 bị lập biên bản vì nấu ăn bằng thiết bị cấm.,khác,normal
+748,Vòi nước phòng KSSV-520 bị rò rỉ.,nước,high
+749,Báo cáo camera an ninh khu vực nhà xe bị hỏng ống kính.,thiết bị,normal
+750,Cống thoát nước phòng kssv-141 bị nghẹt.,vệ sinh,normal
+751,Có tiếng ồn lớn từ phòng KSSV-475 vào tối qua.,khác,normal
+752,Quạt phòng KSSV-316 không quay.,thiết bị,normal
+753,Có người lạ đi lại gần phòng kssv-529 tối qua.,khác,normal
+754,Nước chảy yếu ở nhà tắm kssv-178.,nước,normal
+755,Vòi nước phòng KSSV-690 bị rò rỉ.,nước,high
+756,Có tiếng ồn lớn từ phòng kssv-165 ban đêm.,khác,normal
+757,"Rác thải sinh hoạt chất đống ở cầu thang bộ, thu hút chuột và ruồi.",vệ sinh,normal
+758,Có người lạ đi lại gần khu phòng KSSV-109 vào từ tối qua.,khác,normal
+759,Cống thoát nước phòng 505 bị tắc do đổ sữa chua.,nước,normal
+760,Không vào được mạng ở phòng kssv-505.,internet,normal
+761,Quạt phòng KSSV-445 không quay.,thiết bị,normal
+762,Lỗi cửa kính sảnh chính bị mờ do bụi bẩn lâu ngày.,vệ sinh,normal
+763,Báo cáo mùi hôi thối nồng nặc bốc lên từ cống thoát nước nhà vệ sinh chung tầng 3.,vệ sinh,normal
+764,Có người lạ đi lại gần phòng kssv-400 tối qua.,khác,normal
+765,Nước trong bồn rửa phòng kssv-361 bị tắc.,nước,normal
+766,Có tiếng ồn lớn từ phòng kssv-354 ban đêm.,khác,normal
+767,Phòng KSSV-311 mất điện từ từ tối qua.,điện,high
+768,"Báo cáo thiết bị mạng ở sảnh KTX bị hỏng, không có đèn báo nguồn.",internet,normal
+769,Phòng KSSV-206 có rác chưa dọn.,vệ sinh,normal
+770,Mùi hôi từ nhà vệ sinh kssv-140 rất khó chịu.,vệ sinh,normal
+771,Vòi nước phòng kssv-262 bị rò rỉ.,nước,high
+772,"Router tầng 3 bị lỗi, phòng KSSV-249 không vào mạng.",internet,normal
+773,Phòng em bị nước thải từ tầng trên rơi xuống quần áo.,vệ sinh,normal
+774,Internet khu vực KSSV-424 mất tín hiệu.,internet,normal
+775,Phòng KSSV-519 bị mất đồ cá nhân.,khác,high
+776,Cần bổ sung rèm cửa cho phòng KSSV-392.,khác,normal
+777,Cống thoát nước phòng kssv-177 bị nghẹt.,vệ sinh,normal
+778,Phòng KSSV-563 có rác chưa dọn.,vệ sinh,normal
+779,Khu sinh viên khu vực phòng KSSV-271 mất điện toàn bộ.,điện,high
+780,Wi-Fi phòng kssv-226 không kết nối được.,internet,normal
+781,Có người lạ đi lại gần khu phòng KSSV-373 vào chiều nay.,khác,normal
+782,Điện tại phòng KSSV-383 chập chờn khi bật điều hòa.,điện,high
+783,Lỗi WiFi phòng 707 bị yếu hơn hẳn các phòng lân cận.,internet,normal
+784,Phòng kssv-228 không có nước.,nước,normal
+785,Có tiếng ồn lớn từ phòng KSSV-333 vào đêm qua.,khác,normal
+786,Quạt phòng kssv-321 không quay.,thiết bị,normal
+787,Internet khu vực KSSV-180 mất tín hiệu.,internet,normal
+788,"Ống nước tầng 6 bị vỡ, ảnh hưởng khu vực KSSV-383.",nước,urgent
+789,Điện phòng kssv-349 chập chờn khi bật điều hòa.,điện,high
+790,Cần bổ sung rèm cửa cho phòng kssv-629.,khác,normal
+791,Có người lạ đi lại gần phòng kssv-483 tối qua.,khác,normal
+792,Báo cáo đường ống nước của hệ thống PCCC bị rò rỉ.,nước,high
+793,Phòng KSSV-396 có rác chưa dọn.,vệ sinh,normal
+794,Phòng 505 bị lập biên bản vì cấm sinh viên khác vào phòng.,khác,normal
+795,Phòng KSSV-249 bị mất đồ cá nhân.,khác,high
+796,Lỗi kết nối mạng bị gián đoạn khi có nhiều thiết bị cùng truy cập.,internet,normal
+797,Phòng kssv-403 không có nước.,nước,high
+798,Phòng kssv-307 có côn trùng bay vào thường xuyên.,khác,normal
+799,Phòng KSSV-331 không có nước từ từ tối qua.,nước,high
+800,Quạt phòng KSSV-123 không quay.,thiết bị,normal
+801,Cần bổ sung rèm cửa cho phòng KSSV-684.,khác,normal
+802,Mùi hôi từ khu vệ sinh gần phòng KSSV-245 rất khó chịu.,vệ sinh,normal
+803,Thùng rác khu sinh viên gần KSSV-167 đầy tràn.,vệ sinh,normal
+804,Wi-Fi phòng KSSV-541 không kết nối được.,internet,normal
+805,Thang bộ bị trơn trượt do không có gờ chống trượt.,thiết bị,normal
+806,Lỗi mạng không thể thực hiện cuộc gọi video chất lượng cao.,internet,normal
+807,Phòng KSSV-414 không có nước từ chiều nay.,nước,high
+808,Phòng em bị sinh viên khác làm phiền liên tục.,khác,normal
+809,Phòng 507 báo cáo giá trị tiền điện hiển thị sai trên đồng hồ.,điện,normal
+810,Ổ cắm phòng KSSV-106 phát ra tia lửa.,điện,high
+811,Ổ điện bàn học kssv-651 không hoạt động.,thiết bị,normal
+812,Điều hòa phòng kssv-525 bị hỏng.,thiết bị,normal
+813,Phòng 304 bị phạt vì rửa chén trong bồn rửa mặt (lần 2).,nước,normal
+814,Thùng rác khu sinh viên gần KSSV-138 đầy tràn.,vệ sinh,normal
+815,Nước trong bồn rửa phòng KSSV-551 bị tắc.,nước,normal
+816,Phòng KSSV-665 không có nước từ đêm qua.,nước,high
+817,Vòi nước phòng KSSV-666 bị rò rỉ.,nước,high
+818,"Router tầng 2 bị lỗi, phòng KSSV-590 không vào mạng.",internet,normal
+819,"Ổ cắm điện nhà vệ sinh bị dính nước, có dấu hiệu chập chờn.",điện,normal
+820,Sinh viên bị thương do ngã ở cầu thang không có đèn.,khác,normal
+821,"Lỗi phao nước của bồn chứa chung bị hỏng, nước chảy tràn ra ngoài.",nước,high
+822,Nước chảy yếu ở nhà tắm gần phòng KSSV-211.,nước,normal
+823,Điện tại phòng KSSV-229 chập chờn khi bật điều hòa.,điện,normal
+824,Đèn chiếu sáng khu vực cổng KTX bị cháy 3/4 bóng.,điện,normal
+825,Vòi nước phòng KSSV-247 bị rò rỉ.,nước,high
+826,Wi-Fi phòng kssv-130 không kết nối được.,internet,normal
+827,Thùng rác khu sinh viên gần KSSV-477 đầy tràn.,vệ sinh,normal
+828,Cần sửa chữa gấp cống thoát nước sàn phòng 603 bị tắc vì tóc.,nước,normal
+829,Nước trong bồn rửa phòng KSSV-695 bị tắc.,nước,normal
+830,Có tiếng ồn lớn từ phòng kssv-118 ban đêm.,khác,normal
+831,Thùng rác khu sinh viên gần KSSV-657 đầy tràn.,vệ sinh,normal
+832,Có người lạ đi lại gần khu phòng KSSV-452 vào đêm qua.,khác,normal
+833,Nước bị ngắt hoàn toàn từ 8h sáng mà không có thông báo trước.,nước,normal
+834,Nước trong bồn rửa phòng kssv-695 bị tắc.,nước,normal
+835,"Tủ đựng đồ phòng 103 bị bung mặt sau, rất dễ mất đồ.",thiết bị,normal
+836,Ổ cắm phòng KSSV-319 phát ra tia lửa.,điện,high
+837,"Router tầng 3 bị lỗi, phòng KSSV-227 không vào mạng.",internet,normal
+838,Phòng kssv-399 bị mất đồ cá nhân.,khác,high
+839,Quạt phòng kssv-542 không quay.,thiết bị,normal
+840,Wi-Fi phòng kssv-196 không kết nối được.,internet,normal
+841,Nước trong bồn rửa phòng KSSV-245 bị tắc.,nước,normal
+842,Lỗi camera an ninh khu vực nhà xe bị mất kết nối.,khác,normal
+843,Ổ điện bàn học phòng KSSV-200 không hoạt động.,thiết bị,normal
+844,Phòng 110 bị cắt nước do lỗi kỹ thuật của KTX.,nước,high
+845,Thang máy khu nhà A bị đứng đột ngột giữa tầng 3 và 4.,thiết bị,normal
+846,Tấm trần nhựa phòng 309 bị rơi xuống sàn.,thiết bị,normal
+847,Lỗi mạng KTX không tương thích với hệ điều hành macOS mới nhất.,internet,normal
+848,"Rác thải không được thu gom, chất đống quá tải ở thùng rác chung.",vệ sinh,normal
+849,Ổ điện bàn học phòng KSSV-421 không hoạt động.,thiết bị,normal
+850,Nước chảy yếu ở nhà tắm gần phòng KSSV-310.,nước,normal
+851,Wi-Fi phòng kssv-503 không kết nối được.,internet,normal
+852,Quạt phòng KSSV-522 không quay.,thiết bị,normal
+853,Cống thoát nước phòng kssv-177 bị nghẹt.,vệ sinh,normal
+854,Nhà vệ sinh tầng 6 có mùi hôi.,vệ sinh,normal
+855,Không vào được mạng ở phòng kssv-260.,internet,normal
+856,Khu sinh viên khu vực phòng KSSV-181 mất điện toàn bộ.,điện,normal
+857,"Cống thoát nước mưa sân thượng bị tắc, gây ngập úng toàn bộ hành lang tầng 7.",nước,normal
+858,Cần tăng cường hệ thống phát WiFi ở khu vực cuối dãy nhà.,internet,normal
+859,Phòng 207 báo cáo công suất điện không đủ để chạy cả hai quạt trần cùng lúc.,điện,normal
+860,Báo cáo ghế đá công cộng bị nấm mốc và rêu xanh.,vệ sinh,normal
+861,Phòng 104 muốn được mở khóa tài khoản Internet đã bị tạm ngưng.,internet,normal
+862,Lỗi mạng bị đơ/lag liên tục trong khoảng thời gian từ 20h đến 23h.,internet,normal
+863,Phòng kssv-335 mất điện từ tối qua.,điện,high
+864,"Router tầng 6 bị lỗi, phòng KSSV-395 không vào mạng.",internet,normal
+865,Vòi nước phòng KSSV-394 bị rò rỉ.,nước,high
+866,Cống thoát nước phòng KSSV-611 bị nghẹt.,vệ sinh,normal
+867,Quạt phòng KSSV-254 không quay.,thiết bị,normal
+868,Ổ cắm phòng KSSV-324 phát ra tia lửa.,điện,high
+869,Wi-Fi phòng kssv-205 không kết nối được.,internet,normal
+870,Phòng KSSV-128 có rác chưa dọn.,vệ sinh,normal
+871,Cần hỗ trợ sinh viên bị ốm sốt đột ngột và cần đến bệnh viện.,khác,high
+872,Điện phòng kssv-437 chập chờn khi bật điều hòa.,điện,high
+873,"Chuột chạy trong phòng 201, đề nghị diệt côn trùng khẩn cấp.",vệ sinh,normal
+874,Vòi nước phòng KSSV-245 bị rò rỉ.,nước,high
+875,Có người lạ đi lại gần khu phòng KSSV-253 vào trưa nay.,khác,normal
+876,Phòng KSSV-466 bị mất đồ cá nhân.,khác,high
+877,"Thùng rác chung bị vỡ nắp, rác thải bay ra ngoài.",vệ sinh,normal
+878,Cống thoát nước phòng KSSV-255 bị nghẹt.,vệ sinh,normal
+879,"Mạng bị lỗi DNS, không truy cập được các trang web sử dụng tên miền.",internet,normal
+880,Phòng kssv-403 mất điện từ tối qua.,điện,high
+881,Phòng 202 báo cáo chuột cắn dây điện trong phòng.,khác,normal
+882,"Cửa sổ phòng 201 bị gỉ sét, không thể đóng kín.",thiết bị,normal
+883,Mùi hôi từ nhà vệ sinh kssv-149 rất khó chịu.,vệ sinh,normal
+884,Phòng kssv-190 có côn trùng bay vào thường xuyên.,khác,normal
+885,Phòng kssv-480 bị mất đồ cá nhân.,khác,high
+886,Đèn học phòng kssv-520 bị hỏng.,thiết bị,normal
+887,Phòng kssv-365 không có nước.,nước,high
+888,Có người lạ đi lại gần khu phòng KSSV-423 vào đêm qua.,khác,normal
+889,Ổ điện bàn học phòng KSSV-483 không hoạt động.,thiết bị,normal
+890,"Phòng 409 bị nấm mốc đen lan rộng khắp tường do ẩm ướt, ảnh hưởng sức khỏe.",vệ sinh,normal
+891,"Router tầng 6 bị lỗi, phòng KSSV-426 không vào mạng.",internet,normal
+892,Báo cáo chuông báo cháy ở khu vực bếp chung bị kêu giả.,thiết bị,normal
+893,Có người lạ đi lại gần khu phòng KSSV-311 vào từ tối qua.,khác,normal
+894,Ổ cắm phòng KSSV-165 phát ra tia lửa.,điện,high
+895,Phòng 508 báo cáo thiết bị phát WiFi có tiếng kêu lạ.,internet,normal
+896,Cần sửa chữa nắp cống bị bung ở khu vực sân chung.,nước,normal
+897,Có người lạ đi lại gần khu phòng KSSV-166 vào chiều nay.,khác,normal
+898,Internet khu vực KSSV-446 mất tín hiệu.,internet,normal
+899,Khu sinh viên khu vực phòng KSSV-140 mất điện toàn bộ.,điện,normal
+900,Quạt phòng KSSV-387 không quay.,thiết bị,normal
+901,Cần thay thế thùng rác bị thủng đáy ở khu vực căn tin.,vệ sinh,normal
+902,Ống nước tầng 2 kssv bị vỡ.,nước,urgent
+903,Bảng điện hành lang gần KSSV-140 nhảy aptomat liên tục.,điện,high
+904,Báo cáo rèm cửa phòng 603 bị rách và tuột dây kéo.,thiết bị,normal
+905,Có tiếng ồn lớn từ phòng KSSV-632 vào đêm qua.,khác,normal
+906,Báo cáo đồ đạc chặn lối thoát hiểm ở tầng 6.,khác,normal
+907,Nền gạch ở sảnh KTX bị trơn trượt do nước.,khác,normal
+908,Phòng KSSV-435 có rác chưa dọn.,vệ sinh,normal
+909,"Dây điện phía sau quạt trần phòng 605 bị tuột vỏ bọc, hở lõi.",điện,normal
+910,Phòng 709 bị cắt điện do lỗi kỹ thuật của hệ thống KTX.,điện,normal
+911,Khu kssv mất điện toàn bộ.,điện,normal
+912,Ổ điện bàn học phòng KSSV-611 không hoạt động.,thiết bị,normal
+913,Quạt phòng KSSV-221 không quay.,thiết bị,normal
+914,Internet khu vực KSSV-625 mất tín hiệu.,internet,normal
+915,"Router tầng 6 bị lỗi, phòng KSSV-201 không vào mạng.",internet,normal
+916,Báo cáo máy sấy quần áo ở khu B bị hỏng chức năng sấy nóng.,thiết bị,normal
+917,"Lỗi router tầng 6 bị hỏng, không có đèn báo nguồn sáng.",internet,normal
+918,Phòng 406 thắc mắc về mức độ sạch sẽ của nước sinh hoạt.,vệ sinh,normal
+919,Wi-Fi phòng kssv-201 không kết nối được.,internet,normal
+920,Mùi hôi từ khu vệ sinh gần phòng KSSV-614 rất khó chịu.,vệ sinh,normal
+921,Quạt phòng KSSV-323 không quay.,thiết bị,normal
+922,Đèn trong phòng kssv-299 bị cháy.,điện,normal
+923,Quạt phòng KSSV-287 không quay.,thiết bị,normal
+924,Ổ cắm phòng KSSV-374 phát ra tia lửa.,điện,high
+925,"Cần người đến kiểm tra đồng hồ điện phòng 610, nó nhảy số rất nhanh và bất thường.",điện,high
+926,Điện phòng kssv-628 chập chờn khi bật điều hòa.,điện,high
+927,Phòng 407 báo cáo nước có vị đắng bất thường.,nước,normal
+928,Không vào được mạng ở phòng kssv-181.,internet,normal
+929,Phòng 310 cần thông tắc cống thoát nước ở ban công bị ứ đọng.,nước,normal
+930,Vòi nước phòng kssv-198 bị rò rỉ.,nước,high
+931,Cần bổ sung rèm cửa cho phòng kssv-551.,khác,normal
+932,Phòng KSSV-307 bị mất đồ cá nhân.,khác,high
+933,Không vào được mạng tại phòng KSSV-432.,internet,normal
+934,Cống thoát nước phòng KSSV-302 bị nghẹt.,vệ sinh,normal
+935,"Router tầng 3 bị lỗi, phòng KSSV-169 không vào mạng.",internet,normal
+936,Cần bổ sung rèm cửa cho phòng KSSV-162.,khác,normal
+937,Phòng kssv-281 có rác chưa dọn.,vệ sinh,normal
+938,Thùng rác khu sinh viên gần KSSV-402 đầy tràn.,vệ sinh,normal
+939,Mùi hôi từ khu vệ sinh gần phòng KSSV-195 rất khó chịu.,vệ sinh,normal
+940,Cần bổ sung rèm cửa cho phòng kssv-366.,khác,normal
+941,Cổng mạng LAN bị hỏng do tự ý tháo lắp.,internet,normal
+942,"Router tầng 1 bị lỗi, phòng KSSV-465 không vào mạng.",internet,normal
+943,Cần thông báo lịch phun thuốc diệt côn trùng cho sinh viên.,vệ sinh,normal
+944,Có người lạ đi lại gần phòng kssv-143 tối qua.,khác,normal
+945,Vòi nước phòng kssv-377 bị rò rỉ.,nước,high
+946,Điều hòa phòng KSSV-209 bị hỏng.,thiết bị,normal
+947,Cống thoát nước phòng kssv-150 bị nghẹt.,vệ sinh,normal
+948,Có người lạ đi lại gần khu phòng KSSV-516 vào từ sáng nay.,khác,normal
+949,Internet khu vực KSSV-630 mất tín hiệu.,internet,normal
+950,Điều hòa phòng KSSV-189 bị hỏng.,thiết bị,normal
+951,Phòng kssv-209 bị mất đồ cá nhân.,khác,high
+952,Có tiếng ồn lớn từ phòng kssv-536 ban đêm.,khác,normal
+953,Điện tại phòng KSSV-488 chập chờn khi bật điều hòa.,điện,normal
+954,"Vòi nước ở bồn rửa tay chung tầng 4 bị gãy, nước chảy xối xả không ngừng.",nước,normal
+955,"WiFi tầng 6 liên tục bị rớt mạng mỗi 5 phút, không thể làm việc.",internet,normal
+956,Phòng kssv-491 không có nước.,nước,normal
+957,"Cần kiểm tra an ninh khu vực ban đêm, có nhiều người lạ.",khác,normal
+958,Không vào được mạng tại phòng KSSV-430.,internet,normal
+959,"Router tầng 2 bị lỗi, phòng KSSV-620 không vào mạng.",internet,normal
+960,Ổ điện bàn học kssv-305 không hoạt động.,thiết bị,normal
+961,Bảng điện hành lang gần KSSV-584 nhảy aptomat liên tục.,điện,high
+962,Nước chảy yếu ở nhà tắm gần phòng KSSV-573.,nước,normal
+963,Lỗi vòi nước ở máy lọc nước công cộng bị rò rỉ liên tục.,thiết bị,high
+964,Cần vệ sinh và khử trùng khu vực để xe đạp điện.,vệ sinh,normal
+965,Nước trong bồn rửa phòng KSSV-283 bị tắc.,nước,normal
+966,Phòng kssv-582 có rác chưa dọn.,vệ sinh,normal
+967,Phòng 304 bị phạt vì rửa chén trong bồn rửa mặt (lần 2).,nước,normal
+968,Phòng KSSV-216 bị mất đồ cá nhân.,khác,high
+969,Có người lạ đi lại gần khu phòng KSSV-488 vào tối qua.,khác,normal
+970,Cống thoát nước phòng KSSV-246 bị nghẹt.,vệ sinh,normal
+971,Phòng kssv-272 có rác chưa dọn.,vệ sinh,normal
+972,Mùi hôi từ khu vệ sinh gần phòng KSSV-522 rất khó chịu.,vệ sinh,normal
+973,"WiFi khu vực tầng 3 liên tục bị rớt sóng, không ổn định.",internet,normal
+974,Ổ cắm phòng kssv-362 phát ra tia lửa.,điện,high
+975,"Ống nước tầng 1 bị vỡ, ảnh hưởng khu vực KSSV-554.",nước,urgent
+976,Đèn học phòng kssv-369 bị hỏng.,thiết bị,normal
+977,Phòng 210 thắc mắc về lỗi hệ thống cấp tài khoản mạng.,internet,normal
+978,Wi-Fi phòng kssv-562 không kết nối được.,internet,normal
+979,Cần bổ sung rèm cửa cho phòng KSSV-452.,khác,normal
+980,"Router tầng 6 bị lỗi, phòng KSSV-625 không vào mạng.",internet,normal
+981,Điện tại phòng KSSV-571 chập chờn khi bật điều hòa.,điện,normal
+982,Lỗi cổng ra vào KTX bị hỏng cần gạt tự động.,thiết bị,normal
+983,Phòng 502 muốn được kích hoạt lại dịch vụ Internet sau khi đóng phí.,internet,normal
+984,Điện tại phòng KSSV-680 chập chờn khi bật điều hòa.,điện,high
+985,Phòng kssv-548 không có nước.,nước,high
+986,Phòng KSSV-576 có côn trùng bay vào thường xuyên.,khác,normal
+987,Thùng rác khu sinh viên gần KSSV-421 đầy tràn.,vệ sinh,normal
+988,Không vào được mạng ở phòng kssv-558.,internet,normal
+989,Phòng KSSV-619 bị mất đồ cá nhân.,khác,high
+990,Phòng kssv-403 không có nước.,nước,high
+991,Cần bổ sung rèm cửa cho phòng KSSV-358.,khác,normal
+992,Phòng KSSV-408 mất điện từ sáng nay.,điện,high
+993,Nước có màu vàng đục và mùi tanh như bùn đất sau khi sửa chữa đường ống.,nước,normal
+994,Báo cáo cặn bẩn màu đen rỉ ra từ máy giặt chung.,vệ sinh,normal
+995,Không vào được mạng ở phòng kssv-536.,internet,normal
+996,Ổ điện bàn học kssv-159 không hoạt động.,thiết bị,normal
+997,Phòng kssv-274 có côn trùng bay vào thường xuyên.,khác,normal
+998,Quạt phòng kssv-610 không quay.,thiết bị,normal
+999,Phòng kssv-152 bị mất đồ cá nhân.,khác,high
+1000,Ổ cắm phòng kssv-531 phát ra tia lửa.,điện,high
+1001,Nước chảy yếu ở nhà tắm kssv-509.,nước,normal
+1002,Thùng rác khu sinh viên gần KSSV-220 đầy tràn.,vệ sinh,normal
+1003,Phòng kssv-472 mất điện từ tối qua.,điện,high
+1004,Cần tìm gấp chìa khóa tủ đồ cá nhân bị mất.,khác,normal
+1005,Phòng 109 muốn khôi phục dịch vụ Internet đã bị hủy.,internet,normal
+1006,Ổ điện bàn học phòng KSSV-650 không hoạt động.,thiết bị,normal
+1007,Điện tại phòng KSSV-652 chập chờn khi bật điều hòa.,điện,high
+1008,"Ống nước tầng 1 bị vỡ, ảnh hưởng khu vực KSSV-205.",nước,urgent
+1009,Mạng WiFi KTX bị mất kết nối hoàn toàn từ 2 tiếng trước.,internet,normal
+1010,Nhà vệ sinh tầng 4 kssv có mùi hôi.,vệ sinh,normal
+1011,Wi-Fi phòng KSSV-616 không kết nối được.,internet,normal
+1012,Không vào được mạng ở phòng kssv-167.,internet,normal
+1013,Màng lọc điều hòa phòng 107 cần được vệ sinh khẩn cấp.,thiết bị,normal
+1014,Phòng 209 bị phạt vì đánh bài trong phòng.,khác,normal
+1015,"Ống nước tầng 4 bị vỡ, ảnh hưởng khu vực KSSV-119.",nước,normal
+1016,Phòng kssv-162 có rác chưa dọn.,vệ sinh,normal
+1017,Báo cáo cửa sổ phòng 410 không thể mở được vì kẹt chốt.,thiết bị,normal
+1018,Phòng KSSV-686 có côn trùng bay vào thường xuyên.,khác,normal
+1019,Thùng rác khu sinh viên gần KSSV-627 đầy tràn.,vệ sinh,normal
+1020,Lỗi tường nhà vệ sinh bị ẩm mốc do thấm nước.,vệ sinh,normal
+1021,Cần bổ sung rèm cửa cho phòng kssv-559.,khác,normal
+1022,Rác thải công nghiệp bị vứt ở khu vực để xe.,vệ sinh,normal
+1023,Báo cáo chó/mèo hoang cắn nhau trong khuôn viên KTX.,khác,normal
+1024,Đèn học phòng kssv-229 bị hỏng.,thiết bị,normal
+1025,Điều hòa phòng kssv-610 bị hỏng.,thiết bị,normal
+1026,Báo cáo cổng mạng ở khu vực học nhóm chung bị mất kết nối.,internet,normal
+1027,"Ống nước tầng 3 bị vỡ, ảnh hưởng khu vực KSSV-190.",nước,normal
+1028,Thùng rác khu sinh viên gần KSSV-691 đầy tràn.,vệ sinh,normal
+1029,Ổ cắm phòng KSSV-606 phát ra tia lửa.,điện,high
+1030,Vòi nước phòng kssv-653 bị rò rỉ.,nước,high
+1031,Lỗi sàn nhà hành lang bị dính vết bẩn cứng đầu.,vệ sinh,normal
+1032,Ống thoát nước ở ban công bị tắc do rác.,vệ sinh,normal
+1033,"Đường ống nước ở ban công bị nứt, nước chảy nhỏ giọt xuống tầng dưới.",nước,normal
+1034,Báo cáo vòi nước bị mất áp lực đột ngột.,nước,normal
+1035,Mùi hôi từ khu vệ sinh gần phòng KSSV-338 rất khó chịu.,vệ sinh,normal
+1036,Phòng kssv-442 có côn trùng bay vào thường xuyên.,khác,normal
+1037,Tủ lạnh chung tầng 5 kssv bị rò điện.,thiết bị,high
+1038,"Lỗi bảng điện tổng bị sập, đề nghị sửa chữa.",khác,high
+1039,Báo cáo ghế đá công cộng bị bẩn và có rêu.,vệ sinh,normal
+1040,"Router tầng 1 bị lỗi, phòng KSSV-465 không vào mạng.",internet,normal
+1041,Phòng KSSV-699 bị mất đồ cá nhân.,khác,high
+1042,Có tiếng ồn lớn từ phòng KSSV-559 vào đêm qua.,khác,normal
+1043,Phòng KSSV-653 không có nước từ đêm qua.,nước,high
+1044,Không vào được mạng tại phòng KSSV-585.,internet,normal
+1045,"Báo cáo máy giặt công cộng khu B bị hỏng mô tơ, không quay lồng giặt.",thiết bị,normal
+1046,Mùi hôi từ khu vệ sinh gần phòng KSSV-468 rất khó chịu.,vệ sinh,normal
+1047,Vòi nước phòng KSSV-340 bị rò rỉ.,nước,high
+1048,Phòng tự học chung bị kiến bò và côn trùng xuất hiện.,vệ sinh,normal
+1049,Không vào được mạng ở phòng kssv-250.,internet,normal
+1050,Phòng kssv-401 không có nước.,nước,high
+1051,Phòng kssv-506 có côn trùng bay vào thường xuyên.,khác,normal
+1052,Quạt phòng kssv-663 không quay.,thiết bị,normal
+1053,Nước chảy yếu ở nhà tắm kssv-135.,nước,normal
+1054,"Lỗi cống thoát nước mưa sân thượng bị tắc, nước đen chảy ngược vào hành lang.",vệ sinh,normal
+1055,Có tiếng ồn lớn từ phòng KSSV-599 vào đêm qua.,khác,normal
+1056,Cống thoát nước phòng KSSV-529 bị nghẹt.,vệ sinh,normal
+1057,Nước trong bồn rửa phòng kssv-326 bị tắc.,nước,normal
+1058,Có người lạ đi lại gần phòng kssv-444 tối qua.,khác,normal
+1059,Báo cáo tiếng nổ từ bộ sạc xe điện ở nhà xe.,điện,normal
+1060,Mùi hôi từ khu vệ sinh gần phòng KSSV-454 rất khó chịu.,vệ sinh,normal
+1061,Phòng KSSV-626 mất điện từ chiều nay.,điện,high
+1062,Phòng KSSV-546 không có nước từ từ tối qua.,nước,high
+1063,Nước chảy yếu ở nhà tắm gần phòng KSSV-144.,nước,normal
+1064,"Phòng 209 báo cáo đồng hồ nước bị kẹt, không hiển thị chỉ số mới.",nước,normal
+1065,Đèn học phòng KSSV-373 bị hỏng.,thiết bị,normal
+1066,Vòi nước phòng KSSV-147 bị rò rỉ.,nước,high
+1067,Phòng kssv-673 mất điện từ tối qua.,điện,high
+1068,Lỗi bồn rửa tay công cộng bị nứt một đường dài.,nước,normal
+1069,Wi-Fi phòng kssv-486 không kết nối được.,internet,normal
+1070,Phòng KSSV-185 có rác chưa dọn.,vệ sinh,normal
+1071,"WiFi tầng 6 liên tục bị rớt mạng mỗi 5 phút, không thể làm việc.",internet,normal
+1072,Không vào được mạng tại phòng KSSV-489.,internet,normal
+1073,Dây mạng ở hành lang bị ai đó giật đứt.,internet,high
+1074,"Cần sửa chữa ghế ngồi ở phòng tự học bị bung ốc, rất dễ bị ngã.",thiết bị,normal
+1075,Phòng kssv-100 có rác chưa dọn.,vệ sinh,normal
+1076,Thang bộ bị trơn trượt do gạch lát bị bong tróc.,thiết bị,normal
+1077,Vòi nước ở khu vực sảnh KTX bị mất tay vặn.,nước,normal
+1078,Vòi nước phòng kssv-607 bị rò rỉ.,nước,high
+1079,Điều hòa phòng KSSV-243 bị hỏng.,thiết bị,normal
+1080,Phòng KSSV-235 có côn trùng bay vào thường xuyên.,khác,normal
+1081,Cần bổ sung rèm cửa cho phòng KSSV-191.,khác,normal
+1082,Ổ cắm phòng kssv-362 phát ra tia lửa.,điện,high
+1083,Phòng kssv-284 bị mất đồ cá nhân.,khác,high
+1084,Phòng kssv-281 có rác chưa dọn.,vệ sinh,normal
+1085,Phòng 406 thắc mắc về mức độ sạch sẽ của nước sinh hoạt.,vệ sinh,high
+1086,Phòng kssv-415 có côn trùng bay vào thường xuyên.,khác,normal
+1087,Không vào được mạng ở phòng kssv-677.,internet,normal
+1088,Điều hòa phòng kssv-441 bị hỏng.,thiết bị,normal
+1089,Báo cáo tốc độ mạng không đủ để tham gia các buổi họp trực tuyến chất lượng HD.,internet,high
+1090,Phòng 309 báo cáo tín hiệu WiFi yếu hơn hẳn các phòng khác cùng tầng.,internet,normal
+1091,Điện phòng kssv-243 chập chờn khi bật điều hòa.,điện,high
+1092,Cầu trượt ở khu vực vui chơi bị hỏng bậc thang.,thiết bị,normal
+1093,Đề nghị kiểm tra áp suất nước chung của tòa nhà có đạt quy chuẩn không.,nước,normal
+1094,Internet khu vực KSSV-339 mất tín hiệu.,internet,normal
+1095,Phòng 310 bị phạt vì không phân loại rác đúng quy định (lần 2).,vệ sinh,normal
+1096,Nước chảy yếu ở nhà tắm kssv-649.,nước,normal
+1097,Đèn học phòng KSSV-696 bị hỏng.,thiết bị,normal
+1098,Nước chảy yếu ở nhà tắm gần phòng KSSV-622.,nước,normal
+1099,Wi-Fi phòng kssv-453 không kết nối được.,internet,normal
+1100,Mạng khu sinh viên rất yếu vào đêm qua.,internet,normal
+1101,Cần sửa chữa tay vịn lan can tầng 6 bị lung lay.,thiết bị,normal
+1102,Phòng kssv-600 có rác chưa dọn.,vệ sinh,normal
+1103,Phòng kssv-241 bị mất đồ cá nhân.,khác,high
+1104,Thùng rác khu sinh viên gần KSSV-563 đầy tràn.,vệ sinh,normal
+1105,Có tiếng ồn lớn từ phòng KSSV-490 vào từ tối qua.,khác,normal
+1106,Điều hòa phòng KSSV-515 bị hỏng.,thiết bị,normal
+1107,Không vào được mạng ở phòng kssv-360.,internet,normal
+1108,Cần bổ sung rèm cửa cho phòng kssv-205.,khác,normal
+1109,Wi-Fi phòng KSSV-183 không kết nối được.,internet,normal
+1110,"Router tầng 5 bị lỗi, phòng KSSV-234 không vào mạng.",internet,normal
+1111,Quạt phòng kssv-686 không quay.,thiết bị,normal
+1112,Phòng kssv-588 bị mất đồ cá nhân.,khác,high
+1113,Điện tại phòng KSSV-371 chập chờn khi bật điều hòa.,điện,normal
+1114,Phòng kssv-490 mất điện từ tối qua.,điện,high
+1115,Mùi hôi từ nhà vệ sinh kssv-149 rất khó chịu.,vệ sinh,normal
+1116,Cống thoát nước phòng KSSV-621 bị nghẹt.,vệ sinh,normal
+1117,Khu sinh viên khu vực phòng KSSV-448 mất điện toàn bộ.,điện,high
+1118,Báo cáo vòi nước nóng ở khu vực rửa tay chung bị gãy van.,thiết bị,high
+1119,Bảng điện hành lang gần KSSV-559 nhảy aptomat liên tục.,điện,high
+1120,Đèn học phòng kssv-198 bị hỏng.,thiết bị,normal
+1121,Wi-Fi phòng kssv-398 không kết nối được.,internet,normal
+1122,Wi-Fi phòng kssv-588 không kết nối được.,internet,normal
+1123,Không vào được mạng tại phòng KSSV-470.,internet,normal
+1124,Mùi hôi từ nhà vệ sinh kssv-504 rất khó chịu.,vệ sinh,normal
+1125,Khu sinh viên khu vực phòng KSSV-521 mất điện toàn bộ.,điện,high
+1126,Vòi nước phòng kssv-663 bị rò rỉ.,nước,high
+1127,Cống thoát nước phòng KSSV-199 bị nghẹt.,vệ sinh,normal
+1128,Internet khu vực KSSV-664 mất tín hiệu.,internet,normal
+1129,Phòng kssv-510 mất điện từ tối qua.,điện,high
+1130,Báo cáo tiếng động và rên la bất thường từ phòng 510 vào lúc 1h sáng.,khác,normal
+1131,Phòng 106 báo cáo thẻ từ ra vào bị gãy đôi.,thiết bị,normal
+1132,Wi-Fi phòng KSSV-686 không kết nối được.,internet,normal
+1133,Tủ lạnh chung tầng 6 bị rò điện.,thiết bị,high
+1134,"Dây điện khu vực phơi đồ bị đứt, đang nằm sát nền bê tông ẩm ướt.",điện,normal
+1135,Cần bổ sung rèm cửa cho phòng KSSV-389.,khác,normal
+1136,Internet khu vực KSSV-144 mất tín hiệu.,internet,normal
+1137,"Van xả nước bồn cầu phòng 107 bị hỏng, nước chảy liên tục gây ồn ào.",nước,high
+1138,Báo cáo mạng nhện và bụi dày đặc trên trần nhà khu vực sảnh.,vệ sinh,normal
+1139,Thùng rác khu sinh viên gần KSSV-667 đầy tràn.,vệ sinh,normal
+1140,Lỗi WiFi KTX bị mất sóng khi bật lò vi sóng.,internet,normal
+1141,Địa chỉ IP của laptop phòng em bị báo là IP lạ và bị chặn.,internet,normal
+1142,Bình nóng lạnh phòng 201 không làm nóng nước dù đã bật lâu.,điện,normal
+1143,Internet khu vực KSSV-625 mất tín hiệu.,internet,normal
+1144,Không vào được mạng ở phòng kssv-658.,internet,normal
+1145,Quạt phòng KSSV-402 không quay.,thiết bị,normal
+1146,Phòng kssv-161 mất điện từ tối qua.,điện,high
+1147,Nước trong bồn rửa phòng KSSV-689 bị tắc.,nước,normal
+1148,Điều hòa phòng KSSV-411 bị hỏng.,thiết bị,normal
+1149,Điện tại phòng KSSV-368 chập chờn khi bật điều hòa.,điện,high
+1150,"Router tầng 1 bị lỗi, phòng KSSV-158 không vào mạng.",internet,normal
+1151,Có tiếng ồn lớn từ phòng KSSV-146 vào từ sáng nay.,khác,normal
+1152,Phòng kssv-256 mất điện từ tối qua.,điện,high
+1153,Có tiếng ồn lớn từ phòng KSSV-241 vào đêm qua.,khác,normal
+1154,Báo cáo tiếng ồn từ khu vực công trường xây dựng gần KTX.,khác,normal
+1155,Phòng 502 muốn được kích hoạt lại dịch vụ Internet sau khi đóng phí.,internet,normal
+1156,Mạng khu sinh viên rất yếu vào từ hôm qua.,internet,normal
+1157,Đèn học phòng KSSV-419 bị hỏng.,thiết bị,normal
+1158,Báo cáo rò rỉ nước từ trần nhà vệ sinh phòng 601 xuống sàn.,nước,normal
+1159,"Lỗi thiết bị tập gym ngoài trời bị mất ốc vít, không an toàn.",thiết bị,normal
+1160,"Router tầng 6 bị lỗi, phòng KSSV-359 không vào mạng.",internet,normal
+1161,Nước trong bồn rửa phòng KSSV-537 bị tắc.,nước,normal
+1162,Báo cáo thẻ từ ra vào bị rơi vào tay người ngoài KTX.,khác,high
+1163,"Khóa cửa phòng 401 bị kẹt, không thể mở được từ bên trong.",thiết bị,normal
+1164,Phòng KSSV-667 mất điện từ trưa nay.,điện,high
+1165,Điện tại phòng KSSV-381 chập chờn khi bật điều hòa.,điện,normal
+1166,Phòng KSSV-660 bị mất đồ cá nhân.,khác,high
+1167,"Thiết bị phát WiFi ở hành lang tầng 4 bị tắt nguồn, không có mạng.",internet,normal
+1168,"Nước sinh hoạt có mùi hôi tanh nồng nặc, không dám sử dụng.",nước,normal
+1169,Quạt phòng kssv-340 không quay.,thiết bị,normal
+1170,Wi-Fi phòng kssv-196 không kết nối được.,internet,normal
+1171,"Router tầng 3 bị lỗi, phòng KSSV-631 không vào mạng.",internet,normal
+1172,"Router tầng 3 bị lỗi, phòng KSSV-671 không vào mạng.",internet,normal
+1173,Cần bổ sung rèm cửa cho phòng KSSV-493.,khác,normal
+1174,Hệ thống loa thông báo chung bị rè và méo tiếng.,thiết bị,normal
+1175,Cống thoát nước phòng kssv-141 bị nghẹt.,vệ sinh,normal
+1176,Đề nghị vệ sinh ghế sofa ở phòng sinh hoạt chung bị bẩn.,vệ sinh,normal
+1177,Lỗi van nước ở máy lọc nước công cộng bị rò rỉ.,thiết bị,high
+1178,Mạng KTX không thể kết nối được với máy in WiFi cá nhân.,internet,normal
+1179,Có người lạ đi lại gần phòng kssv-515 tối qua.,khác,normal
+1180,Quạt phòng kssv-415 không quay.,thiết bị,normal
+1181,Điện phòng kssv-677 chập chờn khi bật điều hòa.,điện,high
+1182,Phòng KSSV-531 không có nước từ sáng nay.,nước,high
+1183,Phòng 604 báo cáo mùi thuốc lá bay vào từ hành lang.,vệ sinh,normal
+1184,"Báo cáo nhà vệ sinh chung quá bẩn, không thể sử dụng.",vệ sinh,normal
+1185,Nước chảy yếu ở nhà tắm kssv-612.,nước,normal
+1186,"Lỗi bồn chứa nước phụ tầng 5 bị nghiêng, có dấu hiệu rò rỉ.",nước,normal
+1187,Lỗi áp lực nước không đủ để xả bồn cầu tầng 7.,nước,normal
+1188,Cống thoát nước phòng kssv-202 bị nghẹt.,vệ sinh,normal
+1189,Ổ điện bàn học phòng KSSV-313 không hoạt động.,thiết bị,normal
+1190,"Công tắc đèn bàn học bị hỏng, đèn không sáng.",điện,normal
+1191,Điều hòa phòng KSSV-349 bị hỏng.,thiết bị,normal
+1192,Cống thoát nước phòng KSSV-235 bị nghẹt.,vệ sinh,normal
+1193,Cần bổ sung rèm cửa cho phòng KSSV-624.,khác,normal
+1194,Phòng kssv-178 không có nước.,nước,normal
+1195,Cống thoát nước phòng KSSV-562 bị nghẹt.,vệ sinh,normal
+1196,Quạt phòng kssv-149 không quay.,thiết bị,normal
+1197,Wi-Fi phòng kssv-296 không kết nối được.,internet,normal
+1198,Thùng rác khu sinh viên gần KSSV-189 đầy tràn.,vệ sinh,normal
+1199,Nước chảy yếu ở nhà tắm kssv-487.,nước,normal
+1200,Phòng KSSV-130 mất điện từ trưa nay.,điện,high
+1201,Lỗi hệ thống điện hành lang tầng 4 bị sập vào lúc 2h sáng.,điện,normal
+1202,Cần bổ sung rèm cửa cho phòng kssv-639.,khác,normal
+1203,Nước chảy yếu ở nhà tắm gần phòng KSSV-373.,nước,normal
+1204,Cần hỗ trợ y tế cho sinh viên bị đau bụng cấp tính.,khác,high
+1205,Lỗi hệ thống nước bị ngắt không lý do.,khác,normal
+1206,Đèn học phòng kssv-293 bị hỏng.,thiết bị,normal
+1207,Báo cáo bồn rửa tay bị ố vàng và có cặn xà phòng.,vệ sinh,normal
+1208,Điều hòa phòng 210 bị chảy nước và không làm mát được.,thiết bị,normal
+1209,Nước trong bồn rửa phòng kssv-508 bị tắc.,nước,normal
+1210,Nước trong bồn rửa phòng KSSV-302 bị tắc.,nước,normal
+1211,Phòng kssv-105 có rác chưa dọn.,vệ sinh,normal
+1212,Nước trong bồn rửa phòng KSSV-183 bị tắc.,nước,normal
+1213,"Ổ cắm điện ở phòng 402 bị cháy xém, không dám sử dụng nữa.",điện,high
+1214,Tấm trần ở hành lang tầng 4 bị sụp đổ một mảng lớn.,thiết bị,high
+1215,Nước trong bồn rửa phòng kssv-402 bị tắc.,nước,normal
+1216,Ổ cắm phòng kssv-500 phát ra tia lửa.,điện,high
+1217,Phòng kssv-297 có rác chưa dọn.,vệ sinh,normal
+1218,"Ống nước tầng 4 bị vỡ, ảnh hưởng khu vực KSSV-590.",nước,normal
+1219,Phòng KSSV-642 có côn trùng bay vào thường xuyên.,khác,normal
+1220,Phòng kssv-327 có côn trùng bay vào thường xuyên.,khác,normal
+1221,Phòng KSSV-635 có rác chưa dọn.,vệ sinh,normal
+1222,Mùi hôi từ khu vệ sinh gần phòng KSSV-544 rất khó chịu.,vệ sinh,normal
+1223,Báo cáo ghế sofa ở phòng sinh hoạt chung bị thủng lớn.,thiết bị,normal
+1224,Ổ điện bàn học phòng KSSV-199 không hoạt động.,thiết bị,normal
+1225,Có tiếng ồn lớn từ phòng KSSV-643 vào tối qua.,khác,normal
+1226,Đề nghị KTX thay thế máy phát WiFi cũ đã quá yếu.,internet,normal
+1227,Lỗi máy lạnh phòng 609 không bật được bằng remote.,điện,normal
+1228,Phòng em bị phạt vì sử dụng dây nối dài không đúng quy định.,điện,normal
+1229,Điện phòng kssv-305 chập chờn khi bật điều hòa.,điện,high
+1230,Khu sinh viên khu vực phòng KSSV-340 mất điện toàn bộ.,điện,high
+1231,"Router tầng 1 bị lỗi, phòng KSSV-667 không vào mạng.",internet,normal
+1232,Phòng KSSV-557 có côn trùng bay vào thường xuyên.,khác,normal
+1233,Phòng KSSV-128 bị mất đồ cá nhân.,khác,high
+1234,Lỗi đồng hồ điện hiển thị số âm (số lùi).,điện,normal
+1235,Điện phòng kssv-323 chập chờn khi bật điều hòa.,điện,high
+1236,"Báo cáo công tắc đèn ở cửa ra vào bị liệt, không thể bật/tắt.",điện,normal
+1237,Cống thoát nước phòng KSSV-242 bị nghẹt.,vệ sinh,normal
+1238,Điện tại phòng KSSV-280 chập chờn khi bật điều hòa.,điện,normal
+1239,Nước trong bồn rửa phòng kssv-203 bị tắc.,nước,normal
+1240,Internet khu vực KSSV-233 mất tín hiệu.,internet,normal
+1241,Wi-Fi phòng KSSV-435 không kết nối được.,internet,normal
+1242,Wi-Fi phòng kssv-669 không kết nối được.,internet,normal
+1243,Vòi nước phòng KSSV-432 bị rò rỉ.,nước,high
+1244,Ổ điện bàn học phòng KSSV-607 không hoạt động.,thiết bị,normal
+1245,Đèn học phòng kssv-495 bị hỏng.,thiết bị,normal
+1246,Phòng kssv-376 không có nước.,nước,high
+1247,Đèn trong phòng kssv-220 bị cháy.,điện,normal
+1248,"Ống nước tầng 6 bị vỡ, ảnh hưởng khu vực KSSV-477.",nước,normal
+1249,Router tầng 1 kssv bị lỗi.,internet,normal
+1250,"Lỗi cống thoát nước sân sau bị tắc, nước đọng lâu ngày.",vệ sinh,high
+1251,"Router tầng 6 bị lỗi, phòng KSSV-301 không vào mạng.",internet,normal
+1252,Điều hòa phòng kssv-370 bị hỏng.,thiết bị,normal
+1253,Điều hòa phòng KSSV-615 bị hỏng.,thiết bị,normal
+1254,Cần kiểm tra đồng hồ đo nhiệt độ phòng sinh hoạt chung bị hỏng.,thiết bị,normal
+1255,"Router ở tầng 7 bị khóa, không thể truy cập được.",internet,normal
+1256,Đèn trong phòng kssv-340 bị cháy.,điện,normal
+1257,"Ống nước tầng 6 bị vỡ, ảnh hưởng khu vực KSSV-631.",nước,urgent
+1258,Phòng 207 bị bảo vệ kiểm tra vệ sinh đột xuất.,vệ sinh,normal
+1259,Ổ cắm phòng KSSV-236 phát ra tia lửa.,điện,high
+1260,Đèn trong phòng kssv-342 bị cháy.,điện,normal
+1261,Phòng KSSV-471 không có nước từ từ hôm qua.,nước,high
+1262,"Chất thải rắn bị vứt vào toilet, gây tắc nghẽn.",vệ sinh,normal
+1263,Vòi nước phòng KSSV-622 bị rò rỉ.,nước,high
+1264,Phòng kssv-533 có rác chưa dọn.,vệ sinh,normal
+1265,Có người lạ đi lại gần phòng kssv-579 tối qua.,khác,normal
+1266,Đèn học phòng kssv-198 bị hỏng.,thiết bị,normal
+1267,Điều hòa phòng kssv-256 bị hỏng.,thiết bị,normal
+1268,Cần bổ sung rèm cửa cho phòng KSSV-108.,khác,normal
+1269,Internet khu vực KSSV-658 mất tín hiệu.,internet,normal
+1270,Lỗi cổng ra vào KTX bị hỏng cảm biến tự động.,thiết bị,normal
+1271,Internet khu vực KSSV-180 mất tín hiệu.,internet,normal
+1272,Vòi nước phòng KSSV-278 bị rò rỉ.,nước,high
+1273,Đèn học phòng KSSV-433 bị hỏng.,thiết bị,normal
+1274,"Lỗi cống thoát nước sân sau bị tắc, nước đọng lâu ngày.",vệ sinh,normal
+1275,Lỗi mạng không thể phát trực tiếp (livestream) trên các nền tảng xã hội.,internet,normal
+1276,Wi-Fi phòng kssv-547 không kết nối được.,internet,normal
+1277,Mùi hôi từ khu vệ sinh gần phòng KSSV-203 rất khó chịu.,vệ sinh,normal
+1278,Ổ cắm phòng KSSV-629 phát ra tia lửa.,điện,high
+1279,Quạt phòng KSSV-364 không quay.,thiết bị,normal
+1280,Vòi nước phòng KSSV-425 bị rò rỉ.,nước,high
+1281,Phòng kssv-179 bị mất đồ cá nhân.,khác,high
+1282,Ổ cắm phòng kssv-307 phát ra tia lửa.,điện,high
+1283,"Ống nước tầng 2 bị vỡ, ảnh hưởng khu vực KSSV-152.",nước,urgent
+1284,Nước chảy yếu ở nhà tắm kssv-588.,nước,normal
+1285,Phòng kssv-345 không có nước.,nước,high
+1286,"Phòng 205 báo cáo bình nóng lạnh bị rò điện ra vỏ kim loại, rất nguy hiểm khi chạm vào.",điện,high
+1287,Không vào được mạng ở phòng kssv-499.,internet,normal
+1288,Vòi nước phòng KSSV-506 bị rò rỉ.,nước,high
+1289,Ghế đá ở sân KTX bị đổ vỡ.,khác,normal
+1290,Điều hòa phòng KSSV-106 bị hỏng.,thiết bị,normal
+1291,Tín hiệu WiFi ở khu vực ban công không có sóng.,internet,normal
+1292,Báo cáo tiếng kêu lạ và tiếng nổ nhỏ từ hộp điện tổng tầng 2.,điện,normal
+1293,Phòng KSSV-314 bị mất đồ cá nhân.,khác,high
+1294,Quạt phòng kssv-467 không quay.,thiết bị,normal
+1295,Điều hòa phòng kssv-623 bị hỏng.,thiết bị,normal
+1296,Mùi hôi từ khu vệ sinh gần phòng KSSV-411 rất khó chịu.,vệ sinh,normal
+1297,Phòng 306 báo cáo hệ thống điện chập chờn khi có tiếng mưa.,điện,normal
+1298,Phòng kssv-564 bị mất đồ cá nhân.,khác,high
+1299,Cống thoát nước phòng KSSV-502 bị nghẹt.,vệ sinh,normal
+1300,Lỗi hệ thống chiếu sáng khu vực nhà xe bị hỏng toàn bộ.,điện,high
+1301,Bảng điện hành lang gần KSSV-690 nhảy aptomat liên tục.,điện,high
+1302,"Phòng 401 báo cáo toilet bị tắc nghiêm trọng, nước dâng lên không xả được.",nước,high
+1303,Có người lạ đi lại gần phòng kssv-646 tối qua.,khác,normal
+1304,Mùi hôi từ nhà vệ sinh kssv-458 rất khó chịu.,vệ sinh,normal
+1305,Đèn học phòng kssv-268 bị hỏng.,thiết bị,normal
+1306,Phòng KSSV-665 bị mất đồ cá nhân.,khác,high
+1307,"Báo cáo công tắc quạt trần phòng 302 bị lỏng, khó điều khiển.",điện,normal
+1308,Quạt phòng kssv-358 không quay.,thiết bị,normal
+1309,Báo cáo dây cáp mạng bị chuột cắn đứt ở phòng 603.,internet,normal
+1310,Quạt phòng KSSV-529 không quay.,thiết bị,normal
+1311,Lỗi máy bán hàng tự động bị kẹt tiền và không trả hàng.,thiết bị,normal
+1312,Wi-Fi phòng kssv-165 không kết nối được.,internet,normal
+1313,Phòng KSSV-223 có rác chưa dọn.,vệ sinh,normal
+1314,Điều hòa phòng kssv-659 bị hỏng.,thiết bị,normal
+1315,Mùi hôi từ khu vệ sinh gần phòng KSSV-466 rất khó chịu.,vệ sinh,normal
+1316,Thùng rác khu sinh viên gần KSSV-521 đầy tràn.,vệ sinh,normal
+1317,Mùi hôi từ khu vệ sinh gần phòng KSSV-236 rất khó chịu.,vệ sinh,normal
+1318,Wi-Fi phòng KSSV-246 không kết nối được.,internet,normal
+1319,Ống thoát nước ở ban công bị tắc do giấy vệ sinh.,vệ sinh,normal
+1320,Điều hòa phòng kssv-188 bị hỏng.,thiết bị,normal
+1321,Phòng em bị sinh viên khác lấy trộm đồ ăn trong tủ lạnh chung.,khác,normal
+1322,Điện phòng kssv-216 chập chờn khi bật điều hòa.,điện,normal
+1323,Ổ điện bàn học phòng KSSV-252 không hoạt động.,thiết bị,normal
+1324,Ổ điện bàn học phòng KSSV-235 không hoạt động.,thiết bị,normal
+1325,"Router tầng 1 bị lỗi, phòng KSSV-564 không vào mạng.",internet,normal
+1326,Quạt phòng kssv-680 không quay.,thiết bị,normal
+1327,Phòng 404 bị lập biên bản vì tự ý lắp thêm khóa cửa.,khác,normal
+1328,"Báo cáo xe máy đậu sai quy định, chắn lối đi chung.",khác,normal
+1329,"Lỗi hộp điều khiển điện của phòng 308 bị ẩm, có nước chảy vào.",điện,normal
+1330,Cống thoát nước phòng KSSV-502 bị nghẹt.,vệ sinh,normal
+1331,Đèn học phòng kssv-665 bị hỏng.,thiết bị,normal
+1332,Điều hòa phòng KSSV-236 bị hỏng.,thiết bị,normal
+1333,Lỗi công tắc hẹn giờ cho bình nóng lạnh chung bị sai giờ.,điện,normal
+1334,Phòng kssv-657 có rác chưa dọn.,vệ sinh,normal
+1335,"Tốc độ Internet quá chậm, không thể vào được cổng thông tin của trường.",internet,normal
+1336,Phòng kssv-177 mất điện từ tối qua.,điện,high
+1337,Không vào được mạng tại phòng KSSV-621.,internet,normal
+1338,Điều hòa phòng kssv-162 bị hỏng.,thiết bị,normal
+1339,Cống thoát nước phòng KSSV-380 bị nghẹt.,vệ sinh,normal
+1340,"Lỗi thùng thư bị hỏng khóa, thư từ bị rơi ra ngoài.",khác,normal
+1341,Nước trong bồn rửa phòng kssv-536 bị tắc.,nước,normal
+1342,"Thùng rác chung bị vỡ nắp, rác thải bay ra ngoài.",vệ sinh,normal
+1343,Wi-Fi phòng KSSV-416 không kết nối được.,internet,normal
+1344,Lỗi nước rửa tay ở căn tin bị hết.,vệ sinh,normal
+1345,"Ống nước tầng 4 bị vỡ, ảnh hưởng khu vực KSSV-193.",nước,urgent
+1346,Phòng KSSV-408 mất điện từ sáng nay.,điện,high
+1347,Không vào được mạng tại phòng KSSV-485.,internet,normal
+1348,Có người lạ đi lại gần phòng kssv-661 tối qua.,khác,normal
+1349,Nước nóng không hoạt động ở khu nhà tắm tập thể khu B.,nước,normal
+1350,Vòi nước phòng kssv-507 bị rò rỉ.,nước,high
+1351,Nước trong bồn rửa phòng KSSV-256 bị tắc.,nước,normal
+1352,"Phòng 101 báo cáo tín hiệu WiFi cực yếu, chỉ có 1 vạch dù ngồi sát cục phát.",internet,normal
+1353,Điện tại phòng KSSV-165 chập chờn khi bật điều hòa.,điện,normal
+1354,Thùng rác khu sinh viên gần KSSV-172 đầy tràn.,vệ sinh,normal
+1355,Cần bổ sung rèm cửa cho phòng kssv-454.,khác,normal
+1356,Phòng kssv-468 có rác chưa dọn.,vệ sinh,normal
+1357,Mái che hành lang tầng 5 bị dột nặng khi mưa.,thiết bị,normal
+1358,Cổng mạng LAN bị hỏng do tự ý tháo lắp.,internet,normal
+1359,Đèn học phòng KSSV-180 bị hỏng.,thiết bị,normal
+1360,Điều hòa phòng KSSV-116 bị hỏng.,thiết bị,normal
+1361,Lỗi cống thoát nước tầng 5 bị tắc do sinh viên xả tóc.,nước,normal
+1362,Quạt phòng kssv-588 không quay.,thiết bị,normal
+1363,Phòng KSSV-237 có côn trùng bay vào thường xuyên.,khác,normal
+1364,Phòng KSSV-299 có côn trùng bay vào thường xuyên.,khác,normal
+1365,Mùi hôi từ nhà vệ sinh kssv-457 rất khó chịu.,vệ sinh,normal
+1366,Lỗi công tắc nguồn tủ lạnh chung bị cháy.,thiết bị,high
+1367,Nước trong bồn rửa phòng KSSV-218 bị tắc.,nước,normal
+1368,Ổ cắm phòng KSSV-129 phát ra tia lửa.,điện,high
+1369,Phòng kssv-554 mất điện từ tối qua.,điện,high
+1370,Phòng 507 bị phạt vì hút thuốc trong phòng.,khác,normal
+1371,Phòng kssv-607 có rác chưa dọn.,vệ sinh,normal
+1372,Mùi hôi từ nhà vệ sinh kssv-238 rất khó chịu.,vệ sinh,normal
+1373,Vòi nước phòng KSSV-317 bị rò rỉ.,nước,high
+1374,Lỗi mạng bị ngắt khi tải xuống file có dung lượng trên 1GB.,internet,normal
+1375,Phòng KSSV-207 có côn trùng bay vào thường xuyên.,khác,normal
+1376,Vòi nước phòng kssv-375 bị rò rỉ.,nước,high
+1377,"Đèn chiếu sáng khu vực sân sau bị hỏng, rất tối.",khác,normal
+1378,Đèn học phòng kssv-561 bị hỏng.,thiết bị,high
+1379,Có tiếng ồn lớn từ phòng KSSV-676 vào chiều nay.,khác,normal
+1380,Đèn học phòng kssv-665 bị hỏng.,thiết bị,normal
+1381,Phòng 502 bị thấm dột nước mưa qua trần nhà.,nước,normal
+1382,Phòng kssv-267 bị mất đồ cá nhân.,khác,high
+1383,Có tiếng ồn lớn từ phòng kssv-446 ban đêm.,khác,normal
+1384,Nước chảy yếu ở nhà tắm kssv-126.,nước,normal
+1385,Ổ cắm phòng KSSV-376 phát ra tia lửa.,điện,high
+1386,"Ống nước tầng 3 bị vỡ, ảnh hưởng khu vực KSSV-643.",nước,urgent
+1387,Báo cáo cống thoát nước ở khu vực nhà xe bị tắc do lá cây và đất đá.,nước,normal
+1388,Phòng kssv-641 bị mất đồ cá nhân.,khác,high
+1389,Rác thải xây dựng bị vứt bừa bãi sau khu nhà A.,vệ sinh,normal
+1390,Điện phòng kssv-646 chập chờn khi bật điều hòa.,điện,high
+1391,Cần can thiệp khi có người lạ vào KTX phát tờ rơi.,khác,normal
+1392,Điện phòng kssv-323 chập chờn khi bật điều hòa.,điện,normal
+1393,Ổ cắm phòng KSSV-318 phát ra tia lửa.,điện,high
+1394,Quạt phòng kssv-687 không quay.,thiết bị,normal
+1395,"Ống nước tầng 6 bị vỡ, ảnh hưởng khu vực KSSV-198.",nước,urgent
+1396,Ổ cắm phòng KSSV-668 phát ra tia lửa.,điện,high
+1397,Không vào được mạng ở phòng kssv-468.,internet,normal
+1398,Ổ điện bàn học kssv-492 không hoạt động.,thiết bị,normal
+1399,Ổ điện bàn học phòng KSSV-252 không hoạt động.,thiết bị,normal
+1400,Nước chảy yếu ở nhà tắm gần phòng KSSV-150.,nước,normal
+1401,Ổ điện bàn học kssv-372 không hoạt động.,thiết bị,normal
+1402,Lỗi cửa kính sảnh bị bẩn do dấu vân tay và bụi.,vệ sinh,normal
+1403,"Màng lọc điều hòa phòng 705 bị bẩn nghiêm trọng, cần vệ sinh gấp.",thiết bị,normal
+1404,Không vào được mạng tại phòng KSSV-520.,internet,normal
+1405,"Nước thải từ khu bếp chung bị tắc, không thoát được gây mùi hôi thối.",nước,normal
+1406,Nước chảy yếu ở nhà tắm kssv-632.,nước,normal
+1407,Lỗi sàn nhà hành lang bị dính vết bẩn cứng đầu.,vệ sinh,normal
+1408,Báo cáo tốc độ tải lên/tải xuống bị giới hạn quá thấp vào giờ học.,internet,normal
+1409,Đèn học phòng KSSV-468 bị hỏng.,thiết bị,normal
+1410,Mùi hôi từ khu vệ sinh gần phòng KSSV-651 rất khó chịu.,vệ sinh,normal
+1411,"Lỗi chốt cửa tầng trệt bị hỏng, cửa mở toang.",khác,normal
+1412,Ổ điện bàn học kssv-533 không hoạt động.,thiết bị,normal
+1413,Phòng KSSV-323 bị mất đồ cá nhân.,khác,high
+1414,Cần bổ sung rèm cửa cho phòng KSSV-226.,khác,normal
+1415,Quạt phòng kssv-560 không quay.,thiết bị,normal
+1416,Quạt phòng kssv-633 không quay.,thiết bị,normal
+1417,Vòi nước nhà tắm chung tầng 5 bị gãy hoàn toàn.,nước,normal
+1418,Cổng mạng LAN phòng 105 bị hỏng chân cắm.,internet,normal
+1419,Lỗi móc khóa tủ giày chung bị gãy.,thiết bị,normal
+1420,Ổ điện bàn học kssv-208 không hoạt động.,thiết bị,normal
+1421,"Gián và chuột xuất hiện trong phòng 101, đề nghị diệt côn trùng khẩn cấp.",vệ sinh,normal
+1422,Phòng KSSV-361 có côn trùng bay vào thường xuyên.,khác,normal
+1423,Khu sinh viên khu vực phòng KSSV-316 mất điện toàn bộ.,điện,high
+1424,Quạt phòng KSSV-510 không quay.,thiết bị,normal
+1425,"Nước thải từ căn tin chảy thẳng ra khu vực sân, gây ô nhiễm mùi.",vệ sinh,normal
+1426,Phòng kssv-117 không có nước.,nước,high
+1427,Có người lạ đi lại gần phòng kssv-228 tối qua.,khác,normal
+1428,Quạt phòng KSSV-354 không quay.,thiết bị,normal
+1429,Phòng KSSV-386 có rác chưa dọn.,vệ sinh,normal
+1430,Đèn học phòng kssv-117 bị hỏng.,thiết bị,normal
+1431,Nước chảy yếu ở nhà tắm gần phòng KSSV-517.,nước,normal
+1432,Vòi nước phòng kssv-481 bị rò rỉ.,nước,high
+1433,Quạt phòng KSSV-368 không quay.,thiết bị,normal
+1434,Cần bổ sung rèm cửa cho phòng kssv-369.,khác,normal
+1435,Nước chảy yếu ở nhà tắm kssv-647.,nước,normal
+1436,Báo cáo bồn rửa tay bị ố vàng và có cặn xà phòng.,vệ sinh,normal
+1437,Ổ cắm phòng kssv-507 phát ra tia lửa.,điện,high
+1438,Phòng kssv-451 bị mất đồ cá nhân.,khác,high
+1439,"Lỗi khóa từ cửa ra vào bị hỏng pin/cảm biến, không nhận thẻ.",thiết bị,high
+1440,Nước chảy yếu ở nhà tắm gần phòng KSSV-674.,nước,normal
+1441,Phòng kssv-458 không có nước.,nước,high
+1442,Phòng KSSV-656 có rác chưa dọn.,vệ sinh,normal
+1443,Có tiếng ồn lớn từ phòng KSSV-263 vào từ tối qua.,khác,normal
+1444,Phòng 202 báo cáo chuột cắn dây điện trong phòng.,khác,normal
+1445,Báo cáo chuông báo cháy khu vực bếp chung bị hỏng.,thiết bị,normal
+1446,Lỗi van khóa nước tổng khu vực nhà vệ sinh công cộng bị kẹt cứng.,nước,normal
+1447,Điều hòa phòng KSSV-699 bị hỏng.,thiết bị,normal
+1448,Vòi nước ở khu vực giặt giũ chung bị mất đầu phun.,nước,normal
+1449,Cần kiểm tra cáp quang chính khu nhà C bị lỗi tốc độ.,internet,normal
+1450,Khu sinh viên khu vực phòng KSSV-653 mất điện toàn bộ.,điện,high
+1451,Có người lạ đi lại gần khu phòng KSSV-594 vào sáng nay.,khác,normal
+1452,"Lỗi router tầng 6 bị hỏng, không có đèn báo nguồn sáng.",internet,normal
+1453,Khu sinh viên khu vực phòng KSSV-510 mất điện toàn bộ.,điện,high
+1454,Nước trong bồn rửa phòng kssv-350 bị tắc.,nước,normal
+1455,Mùi hôi từ khu vệ sinh gần phòng KSSV-555 rất khó chịu.,vệ sinh,normal
+1456,Internet khu vực KSSV-562 mất tín hiệu.,internet,normal
+1457,Báo cáo rêu xanh bám vào vòi nước và bồn rửa tay chung.,vệ sinh,normal
+1458,Phòng KSSV-362 có rác chưa dọn.,vệ sinh,normal
+1459,Điện phòng kssv-500 chập chờn khi bật điều hòa.,điện,high
+1460,Điều hòa phòng 509 phát ra mùi khét và không làm lạnh.,thiết bị,high
+1461,Mùi hôi từ nhà vệ sinh kssv-186 rất khó chịu.,vệ sinh,normal
+1462,Nước trong bồn rửa phòng kssv-495 bị tắc.,nước,normal
+1463,Lỗi bảng điều khiển thang máy bị hỏng nút bấm.,khác,normal
+1464,Không vào được mạng ở phòng kssv-261.,internet,normal
+1465,Cần bổ sung rèm cửa cho phòng KSSV-300.,khác,normal
+1466,Ổ cắm phòng kssv-252 phát ra tia lửa.,điện,high
+1467,Phòng KSSV-566 bị mất đồ cá nhân.,khác,high
+1468,Lỗi tốc độ mạng không đủ để xem video HD trên các trang web.,internet,normal
+1469,Điều hòa phòng kssv-441 bị hỏng.,thiết bị,normal
+1470,Có người lạ đi lại gần khu phòng KSSV-251 vào chiều nay.,khác,normal
+1471,Quạt phòng kssv-687 không quay.,thiết bị,normal
+1472,Đèn nhà vệ sinh phòng 308 bị chớp tắt liên tục gây mỏi mắt.,điện,normal
+1473,Nước trong bồn rửa phòng KSSV-285 bị tắc.,nước,normal
+1474,Lỗi nước rửa tay ở căn tin bị pha loãng quá mức.,vệ sinh,normal
+1475,"Dây điện từ tường bị bong tróc thạch cao, có nguy cơ hở.",điện,normal
+1476,Bảng điện hành lang gần KSSV-470 nhảy aptomat liên tục.,điện,high
+1477,Ống nước tầng 3 kssv bị vỡ.,nước,urgent
+1478,Phòng kssv-133 bị mất đồ cá nhân.,khác,high
+1479,Báo cáo nước sinh hoạt bị ngắt không báo trước vào giờ ăn trưa.,nước,normal
+1480,Vòi nước phòng KSSV-518 bị rò rỉ.,nước,high
+1481,Ổ cắm phòng kssv-367 phát ra tia lửa.,điện,high
+1482,Nước chảy yếu ở nhà tắm gần phòng KSSV-438.,nước,normal
+1483,Đèn trong phòng kssv-237 bị cháy.,điện,normal
+1484,Quạt phòng kssv-331 không quay.,thiết bị,normal
+1485,Báo cáo sinh viên bị đánh ở khu vực sân KTX.,khác,normal
+1486,Cần sửa chữa gấp vòi sen nhà tắm phòng 209 bị rỉ sét và phun nước lung tung.,nước,normal
+1487,Ổ cắm phòng kssv-358 phát ra tia lửa.,điện,high
+1488,Khu sinh viên khu vực phòng KSSV-173 mất điện toàn bộ.,điện,high
+1489,Điều hòa phòng kssv-581 bị hỏng.,thiết bị,normal
+1490,"Đề nghị thay thế bóng đèn cũ, đã quá tối ở khu vực cầu thang bộ.",điện,normal
+1491,Có tiếng ồn lớn từ phòng KSSV-481 vào đêm qua.,khác,normal
+1492,Khu sinh viên khu vực phòng KSSV-152 mất điện toàn bộ.,điện,high
+1493,Phòng KSSV-421 bị mất đồ cá nhân.,khác,high
+1494,"Cần kiểm tra đồng hồ điện phòng 404, có vẻ chạy nhanh hơn bình thường.",điện,normal
+1495,Lỗi mạng bị chậm khi xem YouTube ở chất lượng 4K.,internet,normal
+1496,"Phòng 310 bị mất điện cục bộ, các phòng khác vẫn có điện.",điện,high
+1497,Thùng rác khu sinh viên gần KSSV-239 đầy tràn.,vệ sinh,normal
+1498,Đèn học phòng KSSV-168 bị hỏng.,thiết bị,normal
+1499,Vòi nước phòng KSSV-354 bị rò rỉ.,nước,normal
+1500,"Ống nước tầng 6 bị vỡ, ảnh hưởng khu vực KSSV-536.",nước,high
+1501,Phòng kssv-558 không có nước.,nước,high
+1502,Phòng KSSV-471 mất điện từ trưa nay.,điện,high
+1503,Bảng thông báo ở sảnh KTX bị rơi xuống sàn.,thiết bị,normal
+1504,Đề nghị kiểm tra bộ lọc nước ở khu vực căn tin bị bẩn.,nước,normal
+1505,Phòng KSSV-430 có rác chưa dọn.,vệ sinh,normal
+1506,Phòng KSSV-263 mất điện từ từ tối qua.,điện,high
+1507,Phòng em muốn kiểm tra lịch sử truy cập mạng vì nghi bị tấn công.,internet,normal
+1508,Nước chảy yếu ở nhà tắm gần phòng KSSV-180.,nước,normal
+1509,Đèn học phòng kssv-140 bị hỏng.,thiết bị,normal
+1510,Điện phòng kssv-369 chập chờn khi bật điều hòa.,điện,normal
+1511,Báo cáo tốc độ tải lên bị chặn (upload) xuống mức rất thấp.,internet,normal
+1512,Điện tại phòng KSSV-105 chập chờn khi bật điều hòa.,điện,high
+1513,Phòng 112 báo cáo có mùi khét từ hộp điện tổng ngoài hành lang.,điện,normal
+1514,Báo cáo nước sinh hoạt có cặn trắng và rêu xanh bám vào vòi.,vệ sinh,normal
+1515,Có tiếng ồn lớn từ phòng KSSV-415 vào từ sáng nay.,khác,normal
+1516,Cống thoát nước phòng KSSV-155 bị nghẹt.,vệ sinh,normal
+1517,Có tiếng ồn lớn từ phòng kssv-159 ban đêm.,khác,normal
+1518,Phòng KSSV-128 có rác chưa dọn.,vệ sinh,normal
+1519,Đèn trong phòng kssv-357 bị cháy.,điện,normal
+1520,Điện phòng kssv-542 chập chờn khi bật điều hòa.,điện,high
+1521,Phòng kssv-426 mất điện từ tối qua.,điện,high
+1522,Nước trong bồn rửa phòng kssv-656 bị tắc.,nước,normal
+1523,Khu sinh viên khu vực phòng KSSV-145 mất điện toàn bộ.,điện,high
+1524,Phòng KSSV-320 có côn trùng bay vào thường xuyên.,khác,normal
+1525,Quạt phòng KSSV-533 không quay.,thiết bị,normal
+1526,"Lỗi cây xanh bị gãy cành, rơi trúng xe đạp ở nhà xe.",khác,normal
+1527,Đèn trong phòng kssv-508 bị cháy.,điện,normal
+1528,Phòng kssv-671 không có nước.,nước,high
+1529,Có tiếng ồn lớn từ phòng KSSV-191 vào từ sáng nay.,khác,normal
+1530,"Lỗi cửa ra vào bị sệ, cạ mạnh vào nền nhà gây khó khăn khi mở.",thiết bị,normal
+1531,Vòi nước phòng kssv-173 bị rò rỉ.,nước,high
+1532,Nước trong bồn rửa phòng kssv-537 bị tắc.,nước,normal
+1533,Phòng KSSV-168 bị mất đồ cá nhân.,khác,high
+1534,Phòng 101 báo cáo đồng hồ nước bị mất nắp bảo vệ.,nước,normal
+1535,Mùi hôi từ nhà vệ sinh kssv-608 rất khó chịu.,vệ sinh,normal
+1536,"Bảng thông báo chung bị nghiêng, có nguy cơ rơi xuống.",thiết bị,normal
+1537,Ổ điện bàn học kssv-666 không hoạt động.,thiết bị,normal
+1538,"Cần sửa chữa công tắc đèn ngủ bị lỏng, đèn chớp tắt.",điện,normal
+1539,Bảng điện hành lang gần KSSV-598 nhảy aptomat liên tục.,điện,high
+1540,Báo cháy giả bị kích hoạt do sinh viên xịt khử mùi.,khác,normal
+1541,Cần sửa chữa ống thoát nước của máy giặt chung bị vỡ.,thiết bị,normal
+1542,Mùi hôi từ khu vệ sinh gần phòng KSSV-119 rất khó chịu.,vệ sinh,normal
+1543,Wi-Fi phòng KSSV-663 không kết nối được.,internet,normal
+1544,Nước chảy yếu ở nhà tắm kssv-242.,nước,normal
+1545,Đèn học phòng KSSV-666 bị hỏng.,thiết bị,normal
+1546,Phòng 610 bị lập biên bản vì có khách ở lại qua đêm trái phép.,khác,normal
+1547,Đèn trong phòng kssv-465 bị cháy.,điện,normal
+1548,Phòng kssv-403 không có nước.,nước,high
+1549,Phòng 409 bị mất nguồn điện đột ngột vào ban đêm.,điện,normal
+1550,"Lỗi bể chứa nước ngầm bị nứt, gây thất thoát nước nghiêm trọng.",nước,normal
+1551,Điều hòa phòng KSSV-548 bị hỏng.,thiết bị,normal
+1552,Báo cáo mùi hôi nồng nặc từ khu vực nhà rác lan vào hành lang.,vệ sinh,normal
+1553,Phòng 310 cần thông tắc cống thoát nước ở ban công bị ứ đọng.,nước,normal
+1554,Phòng KSSV-149 có rác chưa dọn.,vệ sinh,normal
+1555,Phòng KSSV-271 có rác chưa dọn.,vệ sinh,normal
+1556,Điện tại phòng KSSV-522 chập chờn khi bật điều hòa.,điện,high
+1557,Wi-Fi phòng kssv-687 không kết nối được.,internet,normal
+1558,Phòng 204 bị thất lạc bưu phẩm/hàng hóa ở phòng bảo vệ.,khác,normal
+1559,Thùng rác khu sinh viên gần KSSV-466 đầy tràn.,vệ sinh,normal
+1560,Không vào được mạng tại phòng KSSV-652.,internet,normal
+1561,Wi-Fi phòng kssv-450 không kết nối được.,internet,normal
+1562,"Nước có bọt trắng bất thường, nghi ngờ do hóa chất.",nước,normal
+1563,"Ổ cắm chung ở sảnh bị hỏng, không thể sạc laptop khi học nhóm.",điện,normal
+1564,Thùng rác khu sinh viên gần KSSV-170 đầy tràn.,vệ sinh,normal
+1565,Phòng 203 bị nước thải từ tầng trên chảy xuống ban công.,nước,normal
+1566,Vòi nước phòng KSSV-580 bị rò rỉ.,nước,high
+1567,Mùi hôi từ khu vệ sinh gần phòng KSSV-195 rất khó chịu.,vệ sinh,normal
+1568,Cần bổ sung rèm cửa cho phòng KSSV-498.,khác,normal
+1569,Thùng rác khu sinh viên gần KSSV-659 đầy tràn.,vệ sinh,normal
+1570,Quạt phòng kssv-197 không quay.,thiết bị,normal
+1571,Xe đạp của sinh viên bị phá khóa và mất ở khu vực nhà xe.,khác,high
+1572,Mùi hôi từ khu vệ sinh gần phòng KSSV-375 rất khó chịu.,vệ sinh,normal
+1573,Mùi hôi từ nhà vệ sinh kssv-397 rất khó chịu.,vệ sinh,normal
+1574,Ổ điện bàn học phòng KSSV-637 không hoạt động.,thiết bị,normal
+1575,Điều hòa phòng KSSV-311 bị hỏng.,thiết bị,normal
+1576,"Lỗi áp suất nước quá mạnh, gây vỡ vòi nước của phòng 610.",nước,normal
+1577,Nước trong bồn rửa phòng KSSV-133 bị tắc.,nước,normal
+1578,Phòng kssv-124 có rác chưa dọn.,vệ sinh,normal
+1579,Nước chảy yếu ở nhà tắm gần phòng KSSV-258.,nước,normal
+1580,Cống thoát nước phòng KSSV-523 bị nghẹt.,vệ sinh,normal
+1581,Mùi hôi từ nhà vệ sinh kssv-129 rất khó chịu.,vệ sinh,normal
+1582,Lỗi mạng KTX bị chặn truy cập vào ứng dụng học trực tuyến.,internet,high
+1583,"Bồn cầu phòng 410 bị rạn nứt, có nguy cơ gây rò rỉ nước thải.",nước,high
+1584,Báo cáo mất ví tiền ở khu vực phòng tự học.,khác,normal
+1585,Có tiếng ồn lớn từ phòng KSSV-492 vào chiều nay.,khác,normal
+1586,Tủ lạnh chung tầng 2 kssv bị rò điện.,thiết bị,high
+1587,Mạng khu sinh viên rất yếu vào tối qua.,internet,normal
+1588,Thùng rác khu sinh viên gần KSSV-563 đầy tràn.,vệ sinh,normal
+1589,Vòi nước phòng KSSV-441 bị rò rỉ.,nước,high
+1590,Cần bổ sung rèm cửa cho phòng kssv-131.,khác,normal
+1591,"Mật khẩu WiFi KTX bị rò rỉ, có người lạ dùng mạng chung.",internet,normal
+1592,Phòng kssv-458 có côn trùng bay vào thường xuyên.,khác,normal
+1593,Điều hòa phòng KSSV-655 bị hỏng.,thiết bị,normal
+1594,Mùi thức ăn từ khu bếp chung bay thẳng vào phòng 701.,vệ sinh,normal
+1595,Wi-Fi phòng kssv-686 không kết nối được.,internet,normal
+1596,Báo cáo chất lỏng màu đen rỉ ra từ máy giặt chung.,vệ sinh,high
+1597,Phòng 403 bị báo lỗi kết nối mạng liên tục trên máy tính.,internet,normal
+1598,Đề nghị lắp đặt thêm thùng rác phân loại ở mỗi tầng.,vệ sinh,normal
+1599,Phòng KSSV-146 mất điện từ trưa nay.,điện,high
+1600,Wi-Fi phòng kssv-503 không kết nối được.,internet,normal
+1601,Internet khu vực KSSV-697 mất tín hiệu.,internet,normal
+1602,Nước chảy yếu ở nhà tắm gần phòng KSSV-643.,nước,normal
+1603,Nước trong bồn rửa phòng KSSV-699 bị tắc.,nước,normal
+1604,Cần sửa chữa gấp bồn rửa mặt bị lung lay và rò rỉ nước dưới đáy.,nước,high
+1605,Wi-Fi phòng kssv-202 không kết nối được.,internet,normal
+1606,Không vào được mạng tại phòng KSSV-141.,internet,normal
+1607,Phòng KSSV-541 mất điện từ từ tối qua.,điện,high
+1608,Lỗi thảm ở sảnh KTX bị bẩn và có mùi hôi.,vệ sinh,normal
+1609,Ổ cắm phòng kssv-638 phát ra tia lửa.,điện,high
+1610,Cống thoát nước phòng KSSV-399 bị nghẹt.,vệ sinh,normal
+1611,Internet khu vực KSSV-636 mất tín hiệu.,internet,normal
+1612,Cần vệ sinh khu vực xung quanh bồn rửa mặt chung.,vệ sinh,normal
+1613,Ổ điện bàn học kssv-150 không hoạt động.,thiết bị,normal
+1614,Đề nghị kiểm tra cáp quang chính khu nhà B vì tốc độ rất chậm.,internet,normal
+1615,Bảng điện hành lang gần KSSV-259 nhảy aptomat liên tục.,điện,high
+1616,Phòng KSSV-574 có rác chưa dọn.,vệ sinh,normal
+1617,Điện tại phòng KSSV-205 chập chờn khi bật điều hòa.,điện,high
+1618,"Lỗi quạt trần phòng 107 bị rơi cánh, rất nguy hiểm cho sinh viên.",thiết bị,high
+1619,Điện phòng kssv-439 chập chờn khi bật điều hòa.,điện,high
+1620,Báo cáo rò rỉ nước ở đường ống nước của hệ thống PCCC.,nước,high
+1621,Wi-Fi phòng kssv-240 không kết nối được.,internet,normal
+1622,Phòng KSSV-347 mất điện từ từ tối qua.,điện,high
+1623,Nước trong bồn rửa phòng KSSV-687 bị tắc.,nước,normal
+1624,Điều hòa phòng KSSV-530 bị hỏng.,thiết bị,normal
+1625,Có người lạ đi lại gần khu phòng KSSV-206 vào từ hôm qua.,khác,normal
+1626,Cống thoát nước phòng KSSV-399 bị nghẹt.,vệ sinh,normal
+1627,"Router tầng 2 bị lỗi, phòng KSSV-595 không vào mạng.",internet,normal
+1628,Phòng KSSV-570 mất điện từ sáng nay.,điện,high
+1629,Phòng em bị sinh viên khác đe dọa và bắt nạt.,khác,normal
+1630,Cần bổ sung rèm cửa cho phòng kssv-270.,khác,normal
+1631,Phòng kssv-554 bị mất đồ cá nhân.,khác,high
+1632,Báo cáo chó hoang vào KTX gây nguy hiểm.,khác,normal
+1633,Wi-Fi phòng kssv-395 không kết nối được.,internet,normal
+1634,Ổ cắm phòng KSSV-436 phát ra tia lửa.,điện,high
+1635,Bình nóng lạnh phòng 201 không làm nóng nước dù đã bật lâu.,điện,normal
+1636,Khu vực phơi đồ bị bẩn do phân chim.,vệ sinh,normal
+1637,Cổng mạng ở khu vực tự học chung bị mất kết nối.,internet,normal
+1638,"Lỗi ổ cắm sạc laptop ở phòng 601 bị hỏng, không có điện.",điện,normal
+1639,"Ống nước tầng 2 bị vỡ, ảnh hưởng khu vực KSSV-219.",nước,normal
+1640,Vòi nước phòng kssv-280 bị rò rỉ.,nước,high
+1641,Cần kiểm tra chất lượng nước sinh hoạt có đảm bảo cho sức khỏe không.,nước,normal
+1642,Có người lạ đi lại gần phòng kssv-205 tối qua.,khác,normal
+1643,Báo cáo thẻ từ ra vào KTX bị đánh cắp.,khác,high
+1644,Cống thoát nước phòng KSSV-193 bị nghẹt.,vệ sinh,normal
+1645,Phòng kssv-358 mất điện từ tối qua.,điện,high
+1646,Điều hòa phòng kssv-204 bị hỏng.,thiết bị,normal
+1647,Phòng em muốn nâng cấp gói Internet KTX lên tốc độ cao hơn.,internet,normal
+1648,Phòng kssv-180 có rác chưa dọn.,vệ sinh,normal
+1649,Nước trong bồn rửa phòng KSSV-343 bị tắc.,nước,normal
+1650,Cống thoát nước phòng KSSV-159 bị nghẹt.,vệ sinh,normal
+1651,Đề nghị kiểm tra xem dây điện khu vực phơi đồ có bị ẩm không.,điện,normal
+1652,Đèn học phòng kssv-132 bị hỏng.,thiết bị,normal
+1653,Mùi hôi từ khu vệ sinh gần phòng KSSV-102 rất khó chịu.,vệ sinh,normal
+1654,Điều hòa phòng KSSV-243 bị hỏng.,thiết bị,normal
+1655,Điện tại phòng KSSV-151 chập chờn khi bật điều hòa.,điện,high
+1656,Có người lạ đi lại gần phòng kssv-164 tối qua.,khác,normal
+1657,Ổ điện bàn học phòng KSSV-670 không hoạt động.,thiết bị,normal
+1658,Phòng kssv-311 bị mất đồ cá nhân.,khác,high
+1659,"Lỗi thiết bị tập gym ngoài trời bị hoen gỉ, có lưỡi sắt sắc nhọn.",thiết bị,normal
+1660,Ổ cắm phòng kssv-266 phát ra tia lửa.,điện,high
+1661,Ổ cắm phòng KSSV-524 phát ra tia lửa.,điện,high
+1662,Quạt phòng KSSV-374 không quay.,thiết bị,normal
+1663,Không vào được mạng ở phòng kssv-261.,internet,normal
+1664,Wi-Fi phòng kssv-484 không kết nối được.,internet,normal
+1665,Tủ lạnh chung tầng 1 kssv bị rò điện.,thiết bị,high
+1666,Báo cáo tiếng ồn lớn từ phòng 305 do tổ chức tiệc sinh nhật.,khác,normal
+1667,Vòi nước phòng kssv-592 bị rò rỉ.,nước,high
+1668,Đèn học phòng KSSV-122 bị hỏng.,thiết bị,normal
+1669,Lỗi bàn làm việc chung bị nứt ở mặt bàn.,thiết bị,normal
+1670,Vòi nước phòng KSSV-491 bị rò rỉ.,nước,high
+1671,"Phòng 411 bị giảm áp điện đột ngột, máy tính không hoạt động được.",điện,normal
+1672,Quạt phòng kssv-520 không quay.,thiết bị,normal
+1673,Thùng rác khu sinh viên gần KSSV-424 đầy tràn.,vệ sinh,normal
+1674,Phòng kssv-383 có rác chưa dọn.,vệ sinh,normal
+1675,Wi-Fi phòng KSSV-229 không kết nối được.,internet,normal
+1676,Phòng kssv-108 mất điện từ tối qua.,điện,high
+1677,Ổ cắm phòng KSSV-278 phát ra tia lửa.,điện,high
+1678,Mùi hôi từ nhà vệ sinh kssv-393 rất khó chịu.,vệ sinh,normal
+1679,Không vào được mạng ở phòng kssv-124.,internet,normal
+1680,"Ống nước tầng 1 bị vỡ, ảnh hưởng khu vực KSSV-131.",nước,normal
+1681,Phòng kssv-563 mất điện từ tối qua.,điện,high
+1682,"Lỗi ổ cắm ở gầm bàn bị cháy xém, không an toàn.",điện,high
+1683,Ổ cắm phòng KSSV-103 phát ra tia lửa.,điện,high
+1684,Cần bổ sung rèm cửa cho phòng KSSV-616.,khác,normal
+1685,Cần vệ sinh khu vực xung quanh thùng rác chung bị bẩn.,vệ sinh,normal
+1686,Vòi nước phòng kssv-338 bị rò rỉ.,nước,high
+1687,Có người lạ đi lại gần khu phòng KSSV-519 vào chiều nay.,khác,normal
+1688,Phòng 105 bị lạc bưu phẩm ở phòng quản lý.,khác,normal
+1689,Nước trong bồn rửa phòng kssv-319 bị tắc.,nước,normal
+1690,"Đường ống nước ngầm bị rò rỉ, gây sụt lún nền gạch.",nước,normal
+1691,"Router tầng 6 bị lỗi, phòng KSSV-366 không vào mạng.",internet,normal
+1692,Điều hòa phòng KSSV-358 bị hỏng.,thiết bị,normal
+1693,Phòng kssv-600 có rác chưa dọn.,vệ sinh,normal
+1694,Phòng 605 báo cáo thiết bị mạng có mùi khét sau khi bị mất điện.,internet,normal
+1695,Không vào được mạng tại phòng KSSV-495.,internet,normal
+1696,Ổ cắm phòng kssv-671 phát ra tia lửa.,điện,high
+1697,Đèn trong phòng kssv-588 bị cháy.,điện,normal
+1698,Cần kiểm tra sinh viên hút thuốc trong nhà vệ sinh.,khác,normal
+1699,Phòng em bị muỗi bay vào phòng liên tục.,vệ sinh,normal
+1700,Mùi hôi từ khu vệ sinh gần phòng KSSV-268 rất khó chịu.,vệ sinh,normal
+1701,"Lỗi cửa ra vào bị sệ, phát ra tiếng kêu rít khi đóng/mở.",thiết bị,normal
+1702,Điều hòa phòng KSSV-545 bị hỏng.,thiết bị,normal
+1703,Có tiếng ồn lớn từ phòng KSSV-661 vào trưa nay.,khác,normal
+1704,"Nước nóng bị mất đột ngột khi đang tắm, nhiệt độ nước lạnh hoàn toàn.",nước,normal
+1705,Phòng KSSV-184 có rác chưa dọn.,vệ sinh,normal
+1706,Điện tại phòng KSSV-336 chập chờn khi bật điều hòa.,điện,normal
+1707,Có tiếng ồn lớn từ phòng kssv-239 ban đêm.,khác,normal
+1708,"Cần kiểm tra điện áp phòng 303, có dấu hiệu yếu hơn quy định.",điện,high
+1709,Wi-Fi phòng KSSV-541 không kết nối được.,internet,normal
+1710,Wi-Fi phòng kssv-631 không kết nối được.,internet,normal
+1711,Router tầng 6 kssv bị lỗi.,internet,normal
+1712,Cần bổ sung rèm cửa cho phòng kssv-436.,khác,normal
+1713,"Báo cáo công suất điện không ổn định, các thiết bị dễ bị reset.",điện,normal
+1714,Cần bổ sung rèm cửa cho phòng kssv-144.,khác,normal
+1715,Lỗi mạng bị đơ/lag liên tục trong khoảng thời gian từ 20h đến 23h.,internet,normal
+1716,Cống thoát nước phòng KSSV-496 bị nghẹt.,vệ sinh,normal
+1717,Nước chảy yếu ở nhà tắm kssv-437.,nước,normal
+1718,Lỗi cửa ra vào KTX bị hỏng cần gạt.,khác,normal
+1719,Cần bổ sung rèm cửa cho phòng KSSV-523.,khác,normal
+1720,Có người lạ đi lại gần phòng kssv-612 tối qua.,khác,normal
+1721,Phòng kssv-133 có rác chưa dọn.,vệ sinh,normal
+1722,Cần bổ sung rèm cửa cho phòng kssv-134.,khác,normal
+1723,Nước chảy yếu ở nhà tắm kssv-474.,nước,normal
+1724,Phòng KSSV-239 có rác chưa dọn.,vệ sinh,normal
+1725,Vòi nước phòng kssv-146 bị rò rỉ.,nước,high
+1726,Wi-Fi phòng kssv-201 không kết nối được.,internet,normal
+1727,Nước trong bồn rửa phòng KSSV-335 bị tắc.,nước,normal
+1728,"Phòng 509 báo cáo đồng hồ nước bị kẹt, chỉ số không nhảy dù đã sử dụng.",nước,normal
+1729,"Cần thay ngay bóng đèn led hành lang bị cháy, rất tối và khó đi lại.",điện,normal
+1730,Cần thay thế tủ đựng giày chung bị đổ sập do mối mọt.,thiết bị,normal
+1731,Không vào được mạng ở phòng kssv-211.,internet,normal
+1732,Ổ cắm phòng KSSV-683 phát ra tia lửa.,điện,high
+1733,Không vào được mạng tại phòng KSSV-482.,internet,normal
+1734,Không vào được mạng tại phòng KSSV-470.,internet,normal
+1735,Cần thay thế gấp cửa sổ phòng 503 bị vỡ kính do gió lớn.,thiết bị,normal
+1736,Internet khu vực KSSV-232 mất tín hiệu.,internet,normal
+1737,Đề nghị lắp đặt thêm thùng rác phân loại ở mỗi tầng.,vệ sinh,normal
+1738,Phòng kssv-197 bị mất đồ cá nhân.,khác,high
+1739,Có người lạ đi lại gần khu phòng KSSV-398 vào từ sáng nay.,khác,normal
+1740,Phòng KSSV-270 có côn trùng bay vào thường xuyên.,khác,normal
+1741,Phòng 703 báo cáo quạt trần chỉ hoạt động ở tốc độ rất yếu.,điện,normal
+1742,Không vào được mạng tại phòng KSSV-256.,internet,normal
+1743,Internet khu vực KSSV-242 mất tín hiệu.,internet,normal
+1744,Phòng KSSV-437 không có nước từ từ sáng nay.,nước,normal
+1745,Cống thoát nước phòng kssv-349 bị nghẹt.,vệ sinh,normal
+1746,Có người lạ đi lại gần khu phòng KSSV-192 vào sáng nay.,khác,normal
+1747,Thang máy khu nhà C phát ra tiếng ồn lớn và rung lắc mạnh.,thiết bị,normal
+1748,Có tiếng ồn lớn từ phòng KSSV-276 vào từ tối qua.,khác,normal
+1749,"Lỗi ống nước ngầm bị rò rỉ, gây ngập úng khu vực hành lang tầng 2.",nước,normal
+1750,Nước trong bồn rửa phòng kssv-697 bị tắc.,nước,normal
+1751,Không vào được mạng ở phòng kssv-238.,internet,normal
+1752,Internet kssv mất tín hiệu.,internet,normal
+1753,"Ống nước tầng 1 bị vỡ, ảnh hưởng khu vực KSSV-396.",nước,normal
+1754,"Router tầng 2 bị lỗi, phòng KSSV-251 không vào mạng.",internet,normal
+1755,"Báo cáo dây điện khu vực lối đi bị đứt, đề nghị xử lý gấp.",điện,normal
+1756,Ổ điện bàn học phòng KSSV-243 không hoạt động.,thiết bị,normal
+1757,Phòng KSSV-160 có rác chưa dọn.,vệ sinh,normal
+1758,Phòng kssv-343 có côn trùng bay vào thường xuyên.,khác,normal
+1759,Internet khu vực KSSV-180 mất tín hiệu.,internet,normal
+1760,Phòng em muốn nâng cấp gói Internet KTX lên tốc độ cao hơn.,internet,normal
+1761,Ổ điện bàn học phòng KSSV-663 không hoạt động.,thiết bị,normal
+1762,Ổ cắm phòng kssv-329 phát ra tia lửa.,điện,high
+1763,Cống thoát nước phòng kssv-248 bị nghẹt.,vệ sinh,normal
+1764,Cống thoát nước phòng KSSV-280 bị nghẹt.,vệ sinh,normal
+1765,Ổ cắm phòng kssv-320 phát ra tia lửa.,điện,normal
+1766,Điều hòa phòng KSSV-435 bị hỏng.,thiết bị,normal
+1767,Có người lạ đi lại gần khu phòng KSSV-133 vào tối qua.,khác,normal
+1768,"Router tầng 2 bị lỗi, phòng KSSV-560 không vào mạng.",internet,normal
+1769,Thùng rác khu sinh viên gần KSSV-264 đầy tràn.,vệ sinh,normal
+1770,Có tiếng ồn lớn từ phòng KSSV-510 vào từ sáng nay.,khác,normal
+1771,Nước trong bồn rửa phòng kssv-467 bị tắc.,nước,normal
+1772,Phòng KSSV-523 không có nước từ từ sáng nay.,nước,normal
+1773,Điều hòa phòng kssv-463 bị hỏng.,thiết bị,normal
+1774,Khu sinh viên khu vực phòng KSSV-158 mất điện toàn bộ.,điện,normal
+1775,Phòng KSSV-396 có rác chưa dọn.,vệ sinh,normal
+1776,Quạt phòng KSSV-622 không quay.,thiết bị,normal
+1777,"Ống nước tầng 5 bị vỡ, ảnh hưởng khu vực KSSV-378.",nước,normal
+1778,Nước chảy yếu ở nhà tắm gần phòng KSSV-320.,nước,normal
+1779,Phòng kssv-157 không có nước.,nước,high
+1780,"Dây điện khu vực sân thượng bị hở, nước mưa có thể gây chập.",điện,high
+1781,Đèn chiếu sáng khu vực cầu thang bị cháy 2/3 bóng.,điện,normal
+1782,Nước trong bồn rửa phòng kssv-327 bị tắc.,nước,normal
+1783,"Báo cáo xe máy đậu sai quy định, gây cản trở.",khác,normal
+1784,Cần bổ sung rèm cửa cho phòng KSSV-281.,khác,normal
+1785,"Lỗi cống thoát nước ban công bị tắc, nước đen ứ đọng.",vệ sinh,normal
+1786,Mùi hôi từ nhà vệ sinh kssv-616 rất khó chịu.,vệ sinh,normal
+1787,"Rác thải không được thu gom, chất đống quá tải ở thùng rác chung.",vệ sinh,normal
+1788,Có tiếng ồn lớn từ phòng kssv-427 ban đêm.,khác,normal
+1789,"Cần kiểm tra chất lượng nước ở vòi uống công cộng, có cặn bẩn.",nước,normal
+1790,"Router tầng 2 bị lỗi, phòng KSSV-320 không vào mạng.",internet,normal
+1791,Nước từ vòi hoa sen chung tầng 2 bị bắn ra ngoài khu vực tắm.,nước,normal
+1792,Mùi hôi từ nhà vệ sinh kssv-397 rất khó chịu.,vệ sinh,normal
+1793,Điều hòa phòng KSSV-145 bị hỏng.,thiết bị,normal
+1794,Hệ thống điện của khu vực nhà ăn bị quá tải vào giờ cao điểm.,điện,normal
+1795,Phòng KSSV-172 mất điện từ tối qua.,điện,high
+1796,Phòng 308 bị giảm tốc độ mạng xuống mức rất thấp sau khi vi phạm.,internet,normal
+1797,"Cầu chì trong hộp điện phòng 108 bị nổ, có mùi khét.",điện,high
+1798,Phòng KSSV-269 có côn trùng bay vào thường xuyên.,khác,normal
+1799,Wi-Fi phòng kssv-407 không kết nối được.,internet,normal
+1800,Bảng thông báo ở sảnh KTX bị rơi xuống sàn.,thiết bị,normal
+1801,Vòi nước phòng kssv-124 bị rò rỉ.,nước,high
+1802,Wi-Fi phòng KSSV-616 không kết nối được.,internet,normal
+1803,Có người lạ đi lại gần phòng kssv-404 tối qua.,khác,normal
+1804,Mùi hôi từ nhà vệ sinh kssv-483 rất khó chịu.,vệ sinh,normal
+1805,Phòng kssv-112 bị mất đồ cá nhân.,khác,high
+1806,Cần phun thuốc diệt muỗi khẩn cấp vì muỗi nhiều bất thường.,vệ sinh,normal
+1807,Ổ điện bàn học phòng KSSV-104 không hoạt động.,thiết bị,normal
+1808,Nước trong bồn rửa phòng KSSV-217 bị tắc.,nước,normal
+1809,Lỗi cửa thoát hiểm bị khóa trái.,khác,normal
+1810,Cần sửa chữa ghế ngồi phòng học chung bị rách đệm mút.,thiết bị,normal
+1811,Internet khu vực KSSV-152 mất tín hiệu.,internet,normal
+1812,Ổ cắm phòng KSSV-552 phát ra tia lửa.,điện,high
+1813,Phòng KSSV-620 không có nước từ đêm qua.,nước,high
+1814,Mùi hôi từ khu vệ sinh gần phòng KSSV-112 rất khó chịu.,vệ sinh,normal
+1815,Ổ cắm phòng kssv-548 phát ra tia lửa.,điện,high
+1816,Điện phòng kssv-651 chập chờn khi bật điều hòa.,điện,high
+1817,Mạng khu sinh viên rất yếu vào chiều nay.,internet,normal
+1818,Lỗi kết nối bị từ chối do trùng MAC Address.,internet,normal
+1819,Phòng KSSV-180 có côn trùng bay vào thường xuyên.,khác,normal
+1820,Cần bổ sung rèm cửa cho phòng KSSV-397.,khác,normal
+1821,Bảng điện hành lang gần KSSV-643 nhảy aptomat liên tục.,điện,high
+1822,Ổ điện bàn học phòng KSSV-200 không hoạt động.,thiết bị,normal
+1823,Vòi nước phòng KSSV-284 bị rò rỉ.,nước,high
+1824,Phòng KSSV-279 có rác chưa dọn.,vệ sinh,normal
+1825,"Ánh sáng đèn đường KTX bị mờ, không đủ chiếu sáng.",khác,normal
+1826,Đề nghị vệ sinh ghế sofa ở phòng sinh hoạt chung bị bẩn.,vệ sinh,normal
+1827,Lỗi kết nối mạng bị chậm khi sử dụng VPN cho mục đích học tập.,internet,normal
+1828,Báo cáo rèm cửa phòng 601 bị tuột ra khỏi thanh treo.,thiết bị,normal
+1829,Thùng rác khu sinh viên gần KSSV-174 đầy tràn.,vệ sinh,normal
+1830,Mùi hôi từ khu vệ sinh gần phòng KSSV-324 rất khó chịu.,vệ sinh,normal
+1831,"Báo cáo tiếng ồn từ công trình xây dựng bên ngoài, làm rung chuyển KTX.",khác,normal
+1832,Đèn học phòng KSSV-168 bị hỏng.,thiết bị,normal
+1833,Ổ điện bàn học kssv-107 không hoạt động.,thiết bị,normal
+1834,"Thùng rác chung bị cháy, rác thải bị đốt trộm gây khói độc.",vệ sinh,normal
+1835,Nền nhà hành lang bị dính sơn và xi măng sau khi sửa chữa.,vệ sinh,normal
+1836,Nước trong bồn rửa phòng kssv-698 bị tắc.,nước,normal
+1837,Ổ cắm phòng KSSV-690 phát ra tia lửa.,điện,high
+1838,Nước chảy yếu ở nhà tắm gần phòng KSSV-402.,nước,normal
+1839,"Lỗi cửa ban công phòng 205 bị hỏng ổ khóa, không an toàn.",thiết bị,high
+1840,Điều hòa phòng kssv-591 bị hỏng.,thiết bị,normal
+1841,Phòng 405 bị phạt vì vứt rác không đúng nơi quy định.,vệ sinh,normal
+1842,Điều hòa phòng kssv-531 bị hỏng.,thiết bị,normal
+1843,Đèn trong phòng kssv-196 bị cháy.,điện,normal
+1844,Đèn học phòng KSSV-595 bị hỏng.,thiết bị,normal
+1845,Phòng KSSV-636 có rác chưa dọn.,vệ sinh,normal
+1846,"Phòng 310 bị mất điện cục bộ, các phòng khác vẫn có điện.",điện,normal
+1847,Điều hòa phòng kssv-453 bị hỏng.,thiết bị,normal
+1848,Quạt phòng kssv-693 không quay.,thiết bị,normal
+1849,Nước nóng bị chuyển thành lạnh sau 1 phút sử dụng.,nước,normal
+1850,Không vào được mạng tại phòng KSSV-377.,internet,normal
+1851,Phòng em bị tính tiền nước theo định mức cao vì rò rỉ ở van xả bồn cầu.,nước,normal
+1852,"Báo cáo vòi nước chung khu nhà ăn bị tuột đầu vòi, phun nước không kiểm soát.",nước,normal
+1853,Có tiếng ồn lớn từ phòng KSSV-614 vào đêm qua.,khác,normal
+1854,"Mật khẩu WiFi KTX bị rò rỉ, có người lạ dùng mạng chung.",internet,normal
+1855,Bộ chuyển đổi nguồn của quạt trần phòng 503 bị nóng rát bất thường.,điện,normal
+1856,Cống thoát nước phòng kssv-165 bị nghẹt.,vệ sinh,normal
+1857,Nước trong bồn rửa phòng kssv-593 bị tắc.,nước,normal
+1858,Khu sinh viên khu vực phòng KSSV-391 mất điện toàn bộ.,điện,normal
+1859,Lỗi ống thoát nước của máy lạnh chung bị vỡ.,nước,normal
+1860,Internet khu vực KSSV-232 mất tín hiệu.,internet,normal
+1861,Internet khu vực KSSV-648 mất tín hiệu.,internet,normal
+1862,"Cần thay thế cửa ra vào phòng 407 bị cong vênh, không đóng kín được.",thiết bị,high
+1863,"Lỗi công tắc bình nóng lạnh bị lỏng, không giữ được nút bật.",điện,normal
+1864,Bảng điện hành lang gần KSSV-409 nhảy aptomat liên tục.,điện,high
+1865,Bảng điện hành lang gần KSSV-315 nhảy aptomat liên tục.,điện,high
+1866,Thùng rác khu sinh viên gần KSSV-172 đầy tràn.,vệ sinh,normal
+1867,Phòng kssv-520 mất điện từ tối qua.,điện,high
+1868,Ổ điện bàn học kssv-205 không hoạt động.,thiết bị,normal
+1869,Nước rửa tay ở nhà vệ sinh chung bị hết từ sáng.,vệ sinh,normal
+1870,Có người lạ đi lại gần phòng kssv-476 tối qua.,khác,normal
+1871,Vòi nước phòng KSSV-576 bị rò rỉ.,nước,high
+1872,Cầu dao tổng của tầng bị nhảy khi cả tầng dùng máy sấy tóc.,điện,high
+1873,"Lỗi ống nước từ điều hòa bị thủng, nước chảy xuống sàn.",nước,normal
+1874,Đèn học phòng kssv-530 bị hỏng.,thiết bị,normal
+1875,Phòng kssv-674 có rác chưa dọn.,vệ sinh,normal
+1876,Wi-Fi phòng kssv-114 không kết nối được.,internet,normal
+1877,Phòng kssv-525 bị mất đồ cá nhân.,khác,high
+1878,Vòi nước ở máy giặt chung bị rò rỉ ngay đầu vào.,nước,high
+1879,"Lỗi tủ lạnh chung bị hỏng rơ le nhiệt, không làm lạnh.",thiết bị,normal
+1880,"Lỗi ổ cắm ở gầm bàn học bị lỏng, cắm sạc dễ bị move gây hư hỏng thiết bị.",điện,normal
+1881,Đèn học phòng KSSV-398 bị hỏng.,thiết bị,normal
+1882,Cống thoát nước phòng KSSV-111 bị nghẹt.,vệ sinh,normal
+1883,Không vào được mạng tại phòng KSSV-244.,internet,normal
+1884,Internet khu vực KSSV-296 mất tín hiệu.,internet,normal
+1885,Điều hòa phòng kssv-188 bị hỏng.,thiết bị,normal
+1886,Có người lạ đi lại gần khu phòng KSSV-297 vào tối qua.,khác,normal
+1887,Phòng kssv-640 có rác chưa dọn.,vệ sinh,normal
+1888,Nước nóng bị chuyển thành nước lạnh sau 5 phút sử dụng.,nước,normal
+1889,Ổ cắm phòng KSSV-697 phát ra tia lửa.,điện,high
+1890,"Router tầng 5 bị lỗi, phòng KSSV-587 không vào mạng.",internet,normal
+1891,Wi-Fi phòng kssv-416 không kết nối được.,internet,normal
+1892,Phòng kssv-140 không có nước.,nước,normal
+1893,Nước chảy yếu ở nhà tắm kssv-120.,nước,normal
+1894,Điện phòng kssv-618 chập chờn khi bật điều hòa.,điện,normal
+1895,"Ống nước tầng 2 bị vỡ, ảnh hưởng khu vực KSSV-540.",nước,normal
+1896,Khu sinh viên khu vực phòng KSSV-488 mất điện toàn bộ.,điện,high
+1897,Vòi nước phòng kssv-274 bị rò rỉ.,nước,high
+1898,Wi-Fi phòng kssv-574 không kết nối được.,internet,normal
+1899,Phòng KSSV-383 bị mất đồ cá nhân.,khác,high
+1900,"Ống nước tầng 6 bị vỡ, ảnh hưởng khu vực KSSV-495.",nước,normal
+1901,Nước trong bồn rửa phòng KSSV-413 bị tắc.,nước,normal
+1902,Wi-Fi phòng KSSV-630 không kết nối được.,internet,normal
+1903,Phòng kssv-175 có côn trùng bay vào thường xuyên.,khác,normal
+1904,Phòng KSSV-494 bị mất đồ cá nhân.,khác,high
+1905,Có tiếng ồn lớn từ phòng KSSV-254 vào trưa nay.,khác,normal
+1906,Nước trong bồn rửa phòng kssv-222 bị tắc.,nước,normal
+1907,"Lỗi chốt chặn cửa tầng trệt bị hỏng, cửa bị bung khi gió lớn.",khác,normal
+1908,Mùi hôi từ nhà vệ sinh kssv-129 rất khó chịu.,vệ sinh,normal
+1909,Bảng điện hành lang gần KSSV-421 nhảy aptomat liên tục.,điện,high
+1910,Mùi hôi từ khu vệ sinh gần phòng KSSV-197 rất khó chịu.,vệ sinh,normal
+1911,Đèn trong phòng kssv-497 bị cháy.,điện,normal
+1912,Điều hòa phòng KSSV-422 bị hỏng.,thiết bị,normal
+1913,Vòi nước phòng KSSV-575 bị rò rỉ.,nước,high
+1914,Nước trong bồn rửa phòng kssv-100 bị tắc.,nước,normal
+1915,"Lỗi cây xanh bị ngã đổ, chắn lối đi vào nhà xe.",khác,high
+1916,Khu vực phơi đồ bị bẩn do chim chóc và bụi từ mái tôn.,vệ sinh,normal
+1917,Đề nghị vệ sinh và khử mùi rèm cửa sổ đã quá bẩn.,vệ sinh,normal
+1918,Phòng 607 bị nước chảy từ trần nhà do lỗi kỹ thuật.,khác,normal
+1919,Có tiếng ồn lớn từ phòng kssv-627 ban đêm.,khác,normal
+1920,Wi-Fi phòng kssv-202 không kết nối được.,internet,normal
+1921,Có tiếng ồn lớn từ phòng kssv-371 ban đêm.,khác,normal
+1922,"Thùng rác chung bị vỡ nắp, rác thải bay ra ngoài.",vệ sinh,normal
+1923,Nước chảy yếu ở nhà tắm gần phòng KSSV-186.,nước,normal
+1924,Phòng 207 bị bảo vệ kiểm tra vệ sinh đột xuất.,vệ sinh,normal
+1925,"Lỗi router tầng 2 bị quá tải, nhấp nháy đèn báo lỗi liên tục.",internet,normal
+1926,Máy photocopy ở sảnh KTX bị hỏng nguồn điện.,thiết bị,normal
+1927,Có tiếng ồn lớn từ phòng KSSV-513 vào từ hôm qua.,khác,normal
+1928,Không vào được mạng tại phòng KSSV-426.,internet,normal
+1929,Không vào được mạng tại phòng KSSV-141.,internet,normal
+1930,Phòng KSSV-136 có côn trùng bay vào thường xuyên.,khác,normal
+1931,Phòng KSSV-670 mất điện từ sáng nay.,điện,high
+1932,Không vào được mạng tại phòng KSSV-619.,internet,normal
+1933,Không vào được mạng ở phòng kssv-665.,internet,normal
+1934,Cần bổ sung rèm cửa cho phòng kssv-636.,khác,normal
+1935,Internet khu vực KSSV-482 mất tín hiệu.,internet,normal
+1936,Vòi nước phòng KSSV-505 bị rò rỉ.,nước,high
+1937,Ổ cắm phòng KSSV-558 phát ra tia lửa.,điện,high
+1938,Đèn trong phòng kssv-395 bị cháy.,điện,normal
+1939,Điều hòa phòng KSSV-488 bị hỏng.,thiết bị,normal
+1940,Nước trong bồn rửa phòng KSSV-510 bị tắc.,nước,normal
+1941,"Đường dây điện chính khu nhà C đang bị hở, có nguy cơ chập cháy ngay mưa lớn.",điện,normal
+1942,Đèn chiếu sáng khu vực nhà xe bị vỡ bóng.,thiết bị,normal
+1943,Ổ cắm phòng kssv-384 phát ra tia lửa.,điện,high
+1944,Phòng 702 báo cáo nước có vị mặn bất thường.,nước,normal
+1945,"Báo cáo cây cối um tùm, là nơi sinh sản của côn trùng.",vệ sinh,normal
+1946,Xe máy của sinh viên bị xước và mất gương ở nhà xe.,khác,normal
+1947,Khu sinh viên khu vực phòng KSSV-271 mất điện toàn bộ.,điện,high
+1948,Phòng em bị cắt Internet do chưa đóng tiền phòng (dù đã đóng riêng phí mạng).,internet,normal
+1949,Bảng điện hành lang gần KSSV-189 nhảy aptomat liên tục.,điện,urgent
+1950,Nước chảy yếu ở nhà tắm kssv-509.,nước,normal
+1951,Đèn trong phòng kssv-400 bị cháy.,điện,normal
+1952,Quạt phòng KSSV-106 không quay.,thiết bị,normal
+1953,Phòng kssv-629 có côn trùng bay vào thường xuyên.,khác,normal
+1954,Cống thoát nước phòng KSSV-355 bị nghẹt.,vệ sinh,normal
+1955,Bảng điện hành lang gần KSSV-373 nhảy aptomat liên tục.,điện,urgent
+1956,Có tiếng ồn lớn từ phòng KSSV-362 vào trưa nay.,khác,normal
+1957,Phòng kssv-465 bị mất đồ cá nhân.,khác,high
+1958,Báo cáo dây mạng ở hành lang bị ai đó cắt đứt.,internet,normal
+1959,Phòng KSSV-485 có côn trùng bay vào thường xuyên.,khác,normal
+1960,"Van nước ở khu vực nấu ăn chung bị hỏng gioăng cao su, nước nhỏ giọt liên tục.",nước,high
+1961,Cần hỗ trợ sinh viên bị bệnh nặng và cần đưa đi cấp cứu.,khác,high
+1962,Bảng điện hành lang gần KSSV-282 nhảy aptomat liên tục.,điện,urgent
+1963,"Router tầng 1 bị lỗi, phòng KSSV-393 không vào mạng.",internet,normal
+1964,Phòng 709 báo cáo tiền điện tháng này cao gấp đôi tháng trước dù dùng ít hơn.,điện,normal
+1965,Lỗi cửa thoát hiểm tầng 2 bị khóa trái từ bên ngoài.,khác,normal
+1966,Internet khu vực KSSV-255 mất tín hiệu.,internet,normal
+1967,Vòi nước phòng KSSV-339 bị rò rỉ.,nước,high
+1968,Khu sinh viên khu vực phòng KSSV-619 mất điện toàn bộ.,điện,high
+1969,Vòi nước phòng kssv-522 bị rò rỉ.,nước,high
+1970,Phòng KSSV-557 có rác chưa dọn.,vệ sinh,normal
+1971,Thùng rác khu sinh viên gần KSSV-562 đầy tràn.,vệ sinh,normal
+1972,Không vào được mạng ở phòng kssv-260.,internet,normal
+1973,Cần xử lý sinh viên gây rối ở khu vực sảnh chung.,khác,normal
+1974,Mùi hôi từ khu vệ sinh gần phòng KSSV-141 rất khó chịu.,vệ sinh,normal
+1975,Phòng kssv-172 không có nước.,nước,high
+1976,Quạt phòng KSSV-354 không quay.,thiết bị,normal
+1977,Không vào được mạng ở phòng kssv-124.,internet,normal
+1978,Phòng 102 bị điện giật nhẹ khi chạm vào vỏ máy tính bàn.,điện,normal
+1979,Vòi nước khu vực giặt giũ chung bị mất tay cầm.,nước,normal
+1980,Có tiếng lẹt xẹt từ hộp cầu dao tổng của dãy phòng 500.,điện,normal
+1981,Có người lạ đi lại gần phòng kssv-639 tối qua.,khác,normal
+1982,Báo cáo cầu dao tổng khu C bị nhảy liên tục.,điện,high
+1983,Internet khu vực KSSV-588 mất tín hiệu.,internet,normal
+1984,Phòng 104 muốn được mở khóa tài khoản Internet đã bị tạm ngưng.,internet,normal
+1985,Không vào được mạng tại phòng KSSV-619.,internet,normal
+1986,Phòng kssv-240 có côn trùng bay vào thường xuyên.,khác,normal
+1987,Mùi hôi từ khu vệ sinh gần phòng KSSV-677 rất khó chịu.,vệ sinh,normal
+1988,Bộ nguồn cấp điện cho máy chiếu phòng học chung bị hỏng.,điện,normal
+1989,Mùi hôi từ khu vệ sinh gần phòng KSSV-617 rất khó chịu.,vệ sinh,normal
+1990,Thùng rác khu sinh viên gần KSSV-655 đầy tràn.,vệ sinh,normal
+1991,Mùi hôi từ nhà vệ sinh kssv-563 rất khó chịu.,vệ sinh,normal
+1992,Phòng KSSV-343 bị mất đồ cá nhân.,khác,high
+1993,Phòng 305 bị thấm dột nước mưa qua khung cửa sổ.,nước,normal
+1994,Mạng bị lag và delay nặng khi tham gia các lớp học online.,internet,high
+1995,Lỗi bàn làm việc chung bị nứt ở mặt bàn.,thiết bị,normal
+1996,Không vào được mạng ở phòng kssv-436.,internet,normal
+1997,Mùi hôi từ nhà vệ sinh kssv-490 rất khó chịu.,vệ sinh,normal
+1998,Phòng kssv-264 có côn trùng bay vào thường xuyên.,khác,normal
+1999,Có tiếng ồn lớn từ phòng kssv-479 ban đêm.,khác,normal
+2000,"Ống nước tầng 1 bị vỡ, ảnh hưởng khu vực KSSV-156.",nước,normal
+2001,Nước chảy yếu ở nhà tắm gần phòng KSSV-234.,nước,normal
+2002,Cần thay thế đèn khẩn cấp khu vực cầu thang bị cháy bóng.,thiết bị,normal
+2003,Vòi nước phòng kssv-495 bị rò rỉ.,nước,high
+2004,"Báo cáo thiết bị mạng ở sảnh KTX bị hỏng, không có đèn báo nguồn.",internet,normal
+2005,Phòng kssv-487 mất điện từ tối qua.,điện,high
+2006,Tín hiệu WiFi ở khu vực ban công không có sóng.,internet,normal
+2007,Điện tại phòng KSSV-457 chập chờn khi bật điều hòa.,điện,high
+2008,Quạt phòng KSSV-292 không quay.,thiết bị,normal
+2009,Khu sinh viên khu vực phòng KSSV-640 mất điện toàn bộ.,điện,high
+2010,"Router tầng 3 bị lỗi, phòng KSSV-180 không vào mạng.",internet,normal
+2011,Wi-Fi phòng KSSV-400 không kết nối được.,internet,normal
+2012,Có người lạ đi lại gần khu phòng KSSV-154 vào tối qua.,khác,normal
+2013,Internet khu vực KSSV-415 mất tín hiệu.,internet,normal
+2014,Khu sinh viên khu vực phòng KSSV-565 mất điện toàn bộ.,điện,normal
+2015,Điều hòa phòng KSSV-385 bị hỏng.,thiết bị,normal
+2016,Ổ cắm phòng KSSV-303 phát ra tia lửa.,điện,high
+2017,"Rác thải không được thu gom, chất đống quá tải ở thùng rác chung.",vệ sinh,normal
+2018,Có tiếng ồn lớn từ phòng kssv-338 ban đêm.,khác,normal
+2019,Cống thoát nước phòng kssv-415 bị nghẹt.,vệ sinh,normal
+2020,Phòng KSSV-390 mất điện từ từ hôm qua.,điện,high
+2021,Phòng KSSV-294 không có nước từ chiều nay.,nước,high
+2022,Ổ điện bàn học kssv-234 không hoạt động.,thiết bị,normal
+2023,Thùng rác khu sinh viên gần KSSV-271 đầy tràn.,vệ sinh,normal
+2024,Đèn học phòng KSSV-489 bị hỏng.,thiết bị,normal
+2025,Thùng rác khu vực tự học không được dọn trong 3 ngày.,vệ sinh,high
+2026,Ổ điện bàn học kssv-449 không hoạt động.,thiết bị,normal
+2027,Có tiếng ồn lớn từ phòng kssv-100 ban đêm.,khác,normal
+2028,Cần kiểm tra bộ lọc nước tổng khu B bị bẩn.,nước,normal
+2029,Lỗi mạng bị chậm khi xem phim trực tuyến.,internet,normal
+2030,"Lỗi cửa sổ không đóng kín, bụi bẩn bay vào phòng liên tục.",vệ sinh,normal
+2031,Phòng KSSV-653 mất điện từ sáng nay.,điện,high
+2032,Thùng rác ở khu vực giải trí bị đầy tràn.,vệ sinh,normal
+2033,Cần kiểm tra tình trạng say xỉn của một sinh viên ở sảnh khu B.,khác,normal
+2034,Báo cáo ghế sofa ở phòng sinh hoạt chung bị lún sâu.,thiết bị,normal
+2035,Cống thoát nước phòng KSSV-429 bị nghẹt.,vệ sinh,normal
+2036,Bảng điện hành lang gần KSSV-677 nhảy aptomat liên tục.,điện,urgent
+2037,Điều hòa phòng kssv-177 bị hỏng.,thiết bị,normal
+2038,Phòng KSSV-630 không có nước từ từ sáng nay.,nước,normal
+2039,Không vào được mạng tại phòng KSSV-253.,internet,normal
+2040,Internet khu vực KSSV-144 mất tín hiệu.,internet,normal
+2041,Có người lạ đi lại gần khu phòng KSSV-654 vào từ hôm qua.,khác,normal
+2042,Mạng bị mất tín hiệu hoàn toàn trong thời gian 1 tiếng (9h-10h sáng).,internet,normal
+2043,"Cửa sổ phòng 201 bị gỉ sét, không thể đóng kín.",thiết bị,normal
+2044,Lỗi nước ở vòi uống công cộng có cặn trắng và mùi clo nồng nặc.,nước,normal
+2045,Đề nghị lắp đặt thêm quạt hút mùi ở khu vực nấu ăn chung.,vệ sinh,normal
+2046,Dây mạng ở hành lang bị ai đó giật đứt.,internet,normal
+2047,Nước trong bồn rửa phòng KSSV-459 bị tắc.,nước,normal
+2048,Cần kiểm tra lại hệ thống tiếp địa của toàn bộ khu nhà A.,điện,normal
+2049,Có người lạ đi lại gần khu phòng KSSV-364 vào sáng nay.,khác,normal
+2050,Có người lạ đi lại gần khu phòng KSSV-511 vào từ tối qua.,khác,normal
+2051,Nước trong bồn rửa phòng KSSV-419 bị tắc.,nước,normal
+2052,Phòng KSSV-551 có côn trùng bay vào thường xuyên.,khác,normal
+2053,Nước chảy yếu ở nhà tắm gần phòng KSSV-201.,nước,normal
+2054,"Router tầng 4 bị lỗi, phòng KSSV-347 không vào mạng.",internet,normal
+2055,Lỗi van nước tổng khu vực nhà xe bị hỏng.,nước,high
+2056,Phòng em thắc mắc về chi phí xử lý tắc cống do lỗi hệ thống chung.,nước,normal
+2057,Nhà vệ sinh tầng 5 có mùi hôi.,vệ sinh,normal
+2058,Router tầng 2 kssv bị lỗi.,internet,normal
+2059,Ổ điện bàn học phòng KSSV-421 không hoạt động.,thiết bị,normal
+2060,"Lỗi khóa từ bị mất điện, không thể quét thẻ vào phòng.",thiết bị,high
+2061,Ổ cắm phòng 603 bị cháy khi sạc pin dự phòng.,điện,normal
+2062,"Router tầng 3 bị lỗi, phòng KSSV-167 không vào mạng.",internet,normal
+2063,Mạng bị ngắt hoàn toàn vào các ngày lễ lớn mà không có thông báo.,internet,normal
+2064,"Lỗi quạt thông gió bị tắc bụi, không khí trong phòng tắm rất ngột ngạt.",vệ sinh,normal
+2065,"Router tầng 5 bị lỗi, phòng KSSV-556 không vào mạng.",internet,normal
+2066,Phòng KSSV-418 không có nước từ tối qua.,nước,high
+2067,Mùi hôi từ khu vệ sinh gần phòng KSSV-411 rất khó chịu.,vệ sinh,normal
+2068,Phòng kssv-281 có rác chưa dọn.,vệ sinh,normal
+2069,"Tủ đựng đồ phòng 103 bị bung mặt sau, rất dễ mất đồ.",thiết bị,normal
+2070,Vòi nước phòng KSSV-552 bị rò rỉ.,nước,high
+2071,Mạng WiFi KTX khu D bị mất tín hiệu hoàn toàn từ tối qua.,internet,normal
+2072,Có tiếng ồn lớn từ phòng kssv-119 ban đêm.,khác,normal
+2073,Cần sửa chữa công tắc điều khiển quạt thông gió nhà tắm bị liệt.,điện,normal
+2074,Mùi hôi từ nhà vệ sinh kssv-558 rất khó chịu.,vệ sinh,normal
+2075,Phòng KSSV-253 có côn trùng bay vào thường xuyên.,khác,normal
+2076,Ổ cắm phòng KSSV-516 phát ra tia lửa.,điện,high
+2077,Báo cáo mất trộm giày dép ở khu vực tủ giày chung.,khác,normal
+2078,Không vào được mạng tại phòng KSSV-221.,internet,normal
+2079,Phòng KSSV-284 có rác chưa dọn.,vệ sinh,normal
+2080,Đề nghị sửa chữa ổ cắm sạc điện thoại ở khu vực sảnh chung bị hỏng.,điện,normal
+2081,Nước trong bồn rửa phòng kssv-627 bị tắc.,nước,normal
+2082,Wi-Fi phòng KSSV-483 không kết nối được.,internet,normal
+2083,Cống thoát nước phòng KSSV-611 bị nghẹt.,vệ sinh,normal
+2084,Không vào được mạng tại phòng KSSV-400.,internet,normal
+2085,Có người lạ đi lại gần phòng kssv-300 tối qua.,khác,normal
+2086,Phòng tự học chung bị kiến bò và côn trùng xuất hiện.,vệ sinh,normal
+2087,Có người lạ đi lại gần phòng kssv-549 tối qua.,khác,normal
+2088,Phòng kssv-235 không có nước.,nước,high
+2089,Có người lạ đi lại gần phòng kssv-590 tối qua.,khác,normal
+2090,Có người lạ đi lại gần phòng kssv-154 tối qua.,khác,normal
+2091,Phòng KSSV-377 có rác chưa dọn.,vệ sinh,normal
+2092,Đèn học phòng kssv-140 bị hỏng.,thiết bị,normal
+2093,Wi-Fi phòng kssv-375 không kết nối được.,internet,normal
+2094,Cần thay thế thùng rác chung bị nứt vỡ.,vệ sinh,normal
+2095,Phòng KSSV-252 không có nước từ chiều nay.,nước,normal
+2096,Không vào được mạng tại phòng KSSV-621.,internet,normal
+2097,Ổ điện bàn học phòng KSSV-665 không hoạt động.,thiết bị,normal
+2098,Mùi hôi từ nhà vệ sinh kssv-309 rất khó chịu.,vệ sinh,normal
+2099,Nước trong bồn rửa phòng KSSV-294 bị tắc.,nước,normal
+2100,Wi-Fi phòng KSSV-524 không kết nối được.,internet,normal
+2101,Có người lạ đi lại gần phòng kssv-648 tối qua.,khác,normal
+2102,Không vào được mạng tại phòng KSSV-257.,internet,normal
+2103,Phòng KSSV-563 bị mất đồ cá nhân.,khác,high
+2104,Máy sấy quần áo ở khu B không làm khô đồ dù đã chạy hết chu trình.,thiết bị,normal
+2105,"Lỗi cống thoát nước khu nhà xe bị tắc, nước đọng đen hôi.",vệ sinh,normal
+2106,Nước trong bồn rửa phòng KSSV-245 bị tắc.,nước,normal
+2107,Không vào được mạng tại phòng KSSV-221.,internet,normal
+2108,Có người lạ đi lại gần phòng kssv-166 tối qua.,khác,normal
+2109,Phòng kssv-620 bị mất đồ cá nhân.,khác,high
+2110,Phòng 507 bị phạt vì quên rút phích cắm ấm đun nước.,điện,normal
+2111,Internet khu vực KSSV-577 mất tín hiệu.,internet,normal
+2112,Internet khu vực KSSV-581 mất tín hiệu.,internet,normal
+2113,Cần bổ sung rèm cửa cho phòng kssv-579.,khác,normal
+2114,Phòng KSSV-554 có côn trùng bay vào thường xuyên.,khác,normal
+2115,Thùng rác khu sinh viên gần KSSV-130 đầy tràn.,vệ sinh,normal
+2116,Khu sinh viên khu vực phòng KSSV-326 mất điện toàn bộ.,điện,high
+2117,Cần kiểm tra cáp điện đi qua cửa sổ phòng 701 bị kẹt.,điện,normal
+2118,Khu sinh viên khu vực phòng KSSV-459 mất điện toàn bộ.,điện,high
+2119,Khu sinh viên khu vực phòng KSSV-655 mất điện toàn bộ.,điện,high
+2120,Cần kiểm tra độ ổn định của mạng KTX vào giờ khuya.,internet,normal
+2121,Phòng kssv-552 có côn trùng bay vào thường xuyên.,khác,normal
+2122,Phòng KSSV-195 có rác chưa dọn.,vệ sinh,normal
+2123,Điều hòa phòng KSSV-633 bị hỏng.,thiết bị,normal
+2124,Phòng KSSV-210 bị mất đồ cá nhân.,khác,high
+2125,Nước trong bồn rửa phòng kssv-226 bị tắc.,nước,normal
+2126,Điều hòa phòng KSSV-385 bị hỏng.,thiết bị,normal
+2127,Phòng kssv-106 có rác chưa dọn.,vệ sinh,normal
+2128,Mái che khu vực phơi đồ bị tốc mái do gió bão.,thiết bị,normal
+2129,Đèn học phòng KSSV-600 bị hỏng.,thiết bị,normal
+2130,Không vào được mạng ở phòng kssv-360.,internet,normal
+2131,Nước chảy yếu ở nhà tắm gần phòng KSSV-672.,nước,normal
+2132,Nước trong bồn rửa phòng kssv-579 bị tắc.,nước,normal
+2133,Mạng KTX bị chặn truy cập vào máy chủ game và một số trang web nước ngoài.,internet,normal
+2134,Phòng kssv-212 bị mất đồ cá nhân.,khác,high
+2135,Cống thoát nước phòng kssv-690 bị nghẹt.,vệ sinh,normal
+2136,Tường nhà bị bẩn do sinh viên dán băng keo.,vệ sinh,normal
+2137,Ổ điện bàn học kssv-312 không hoạt động.,thiết bị,normal
+2138,Cần thông báo lịch dọn vệ sinh chung theo tuần.,vệ sinh,normal
+2139,Nước chảy yếu ở nhà tắm gần phòng KSSV-415.,nước,normal
+2140,Có tiếng ồn lớn từ phòng KSSV-619 vào từ tối qua.,khác,normal
+2141,Phòng KSSV-507 bị mất đồ cá nhân.,khác,high
+2142,Phòng kssv-690 mất điện từ tối qua.,điện,high
+2143,Đèn trong phòng kssv-386 bị cháy.,điện,normal
+2144,Bảng điện hành lang gần KSSV-537 nhảy aptomat liên tục.,điện,urgent
+2145,Nước chảy yếu ở nhà tắm gần phòng KSSV-507.,nước,normal
+2146,Vòi nước phòng KSSV-587 bị rò rỉ.,nước,high
+2147,Điều hòa phòng kssv-692 bị hỏng.,thiết bị,normal
+2148,Cống thoát nước phòng KSSV-324 bị nghẹt.,vệ sinh,normal
+2149,Có tiếng ồn lớn từ phòng KSSV-104 vào trưa nay.,khác,normal
+2150,Quạt phòng kssv-150 không quay.,thiết bị,normal
+2151,Ổ điện bàn học phòng KSSV-112 không hoạt động.,thiết bị,normal
+2152,Phòng kssv-281 có côn trùng bay vào thường xuyên.,khác,normal
+2153,Đèn học phòng kssv-391 bị hỏng.,thiết bị,normal
+2154,Phòng KSSV-597 mất điện từ đêm qua.,điện,high
+2155,Không vào được mạng tại phòng KSSV-461.,internet,normal
+2156,Ổ điện bàn học phòng KSSV-345 không hoạt động.,thiết bị,normal
+2157,Cần thông tắc cống thoát nước ở khu vực nhà xe bị ứ đọng.,nước,normal
+2158,Điều hòa phòng kssv-591 bị hỏng.,thiết bị,normal
+2159,Không vào được mạng ở phòng kssv-555.,internet,normal
+2160,Phòng KSSV-438 có côn trùng bay vào thường xuyên.,khác,normal
+2161,Ổ điện bàn học phòng KSSV-468 không hoạt động.,thiết bị,normal
+2162,Cống thoát nước phòng kssv-162 bị nghẹt.,vệ sinh,normal
+2163,Phòng 508 báo cáo thiết bị phát WiFi có tiếng kêu lạ.,internet,normal
+2164,Có người lạ đi lại gần khu phòng KSSV-479 vào từ hôm qua.,khác,normal
+2165,Tủ lạnh chung tầng 3 bị rò điện.,thiết bị,high
+2166,"Lỗi máy hút bụi chung bị hỏng túi chứa, làm rác rơi ra sàn.",vệ sinh,normal
+2167,Khu sinh viên khu vực phòng KSSV-157 mất điện toàn bộ.,điện,high
+2168,Nhà vệ sinh tầng 3 kssv có mùi hôi.,vệ sinh,normal
+2169,Nước từ vòi hoa sen bị lẫn cặn vôi trắng.,nước,normal
+2170,"Đề nghị sửa chữa nắp cống ở sân KTX bị vỡ, gây nguy hiểm.",nước,normal
+2171,Điều hòa phòng kssv-139 bị hỏng.,thiết bị,normal
+2172,Vòi nước phòng KSSV-370 bị rò rỉ.,nước,high
+2173,Aptomat phòng 512 tự động nhảy khi bật đèn và quạt cùng lúc.,điện,high
+2174,Lỗi công tắc điều khiển máy bơm không phản hồi.,nước,normal
+2175,Phòng KSSV-371 có côn trùng bay vào thường xuyên.,khác,normal
+2176,Quạt phòng KSSV-221 không quay.,thiết bị,normal
+2177,Báo cáo mất quần áo ở máy giặt công cộng.,khác,normal
+2178,Mạng khu sinh viên rất yếu vào tối qua.,internet,normal
+2179,Phòng KSSV-303 bị mất đồ cá nhân.,khác,high
+2180,Cần phun thuốc muỗi khẩn cấp vì khu vực sân sau có ổ muỗi lớn.,vệ sinh,normal
+2181,Không vào được mạng ở phòng kssv-355.,internet,normal
+2182,Khu sinh viên khu vực phòng KSSV-384 mất điện toàn bộ.,điện,normal
+2183,Mùi hôi từ nhà vệ sinh kssv-183 rất khó chịu.,vệ sinh,normal
+2184,Đèn học phòng kssv-405 bị hỏng.,thiết bị,normal
+2185,Phòng kssv-698 bị mất đồ cá nhân.,khác,high
+2186,"Router tầng 1 bị lỗi, phòng KSSV-583 không vào mạng.",internet,normal
+2187,Cống thoát nước phòng KSSV-208 bị nghẹt.,vệ sinh,normal
+2188,Phòng kssv-133 có rác chưa dọn.,vệ sinh,normal
+2189,Internet khu vực KSSV-276 mất tín hiệu.,internet,normal
+2190,"Router tầng 4 bị lỗi, phòng KSSV-480 không vào mạng.",internet,normal
+2191,Phòng 301 bị kiểm tra vì có mùi hôi từ thực phẩm thối.,vệ sinh,normal
+2192,Ổ điện bàn học phòng KSSV-637 không hoạt động.,thiết bị,normal
+2193,Wi-Fi phòng KSSV-395 không kết nối được.,internet,normal
+2194,Quạt phòng KSSV-648 không quay.,thiết bị,normal
+2195,Không vào được mạng ở phòng kssv-307.,internet,normal
+2196,Vòi nước phòng KSSV-126 bị rò rỉ.,nước,high
+2197,Phòng KSSV-565 có rác chưa dọn.,vệ sinh,normal
+2198,Phòng KSSV-340 mất điện từ chiều nay.,điện,high
+2199,Router tầng 6 kssv bị lỗi.,internet,normal
+2200,Quạt phòng KSSV-648 không quay.,thiết bị,normal
+2201,Có tiếng ồn lớn từ phòng kssv-382 ban đêm.,khác,normal
+2202,Phòng kssv-569 mất điện từ tối qua.,điện,high
+2203,Nhà vệ sinh tầng 5 kssv có mùi hôi.,vệ sinh,normal
+2204,Phòng 512 thắc mắc về chi phí thuê thợ sửa chữa đường ống nước cá nhân.,nước,normal
+2205,Đèn học phòng KSSV-561 bị hỏng.,thiết bị,normal
+2206,Không vào được mạng tại phòng KSSV-656.,internet,normal
+2207,Mùi hôi từ nhà vệ sinh kssv-599 rất khó chịu.,vệ sinh,normal
+2208,Ổ cắm phòng KSSV-661 phát ra tia lửa.,điện,high
+2209,Phòng KSSV-212 mất điện từ đêm qua.,điện,high
+2210,Điện tại phòng KSSV-385 chập chờn khi bật điều hòa.,điện,high
+2211,"Lỗi tài khoản Internet bị khóa không rõ lý do, không thể đăng nhập lại.",internet,normal
+2212,Phòng 508 báo cáo thiết bị phát WiFi có tiếng kêu lạ.,internet,normal
+2213,Nước chảy yếu ở nhà tắm kssv-281.,nước,normal
+2214,Cần thay thế router WiFi đã quá cũ ở tầng 5.,internet,normal
+2215,Đèn học phòng KSSV-308 bị hỏng.,thiết bị,normal
+2216,Phòng kssv-435 có côn trùng bay vào thường xuyên.,khác,normal
+2217,Mạng KTX không hỗ trợ kết nối với thiết bị mạng cá nhân.,internet,normal
+2218,Có người lạ đi lại gần phòng kssv-671 tối qua.,khác,normal
+2219,Khu sinh viên khu vực phòng KSSV-541 mất điện toàn bộ.,điện,high
+2220,Không vào được mạng tại phòng KSSV-581.,internet,normal
+2221,Tủ lạnh chung tầng 4 bị rò điện.,thiết bị,high
+2222,Cần bổ sung rèm cửa cho phòng KSSV-556.,khác,normal
+2223,Nhà vệ sinh tầng 1 có mùi hôi.,vệ sinh,normal
+2224,Thùng rác khu sinh viên gần KSSV-466 đầy tràn.,vệ sinh,normal
+2225,Cần bổ sung rèm cửa cho phòng kssv-657.,khác,normal
+2226,Phòng kssv-414 có côn trùng bay vào thường xuyên.,khác,normal
+2227,Phòng KSSV-406 có côn trùng bay vào thường xuyên.,khác,normal
+2228,Phòng kssv-285 có rác chưa dọn.,vệ sinh,normal
+2229,Đèn học phòng kssv-369 bị hỏng.,thiết bị,normal
+2230,Wi-Fi phòng kssv-686 không kết nối được.,internet,normal
+2231,Mùi thức ăn từ khu bếp chung bay vào phòng 501.,vệ sinh,normal
+2232,Nước chảy yếu ở nhà tắm kssv-437.,nước,normal
+2233,Đèn trong phòng kssv-245 bị cháy.,điện,normal
+2234,Phòng em bị mất remote điều hòa và bị phạt tiền.,thiết bị,normal
+2235,Đèn học phòng KSSV-391 bị hỏng.,thiết bị,normal
+2236,Ổ cắm phòng KSSV-374 phát ra tia lửa.,điện,high
+2237,Nước trong bồn rửa phòng kssv-240 bị tắc.,nước,normal
+2238,Phòng 509 thắc mắc về lỗi hệ thống quản lý tài khoản mạng KTX.,internet,normal
+2239,Ổ điện bàn học phòng KSSV-407 không hoạt động.,thiết bị,normal
+2240,Tín hiệu WiFi không đến được khu vực giường tầng trên.,internet,normal
+2241,Đèn học phòng kssv-252 bị hỏng.,thiết bị,normal
+2242,Nước trong bồn rửa phòng KSSV-251 bị tắc.,nước,normal
+2243,Mùi hôi từ nhà vệ sinh kssv-688 rất khó chịu.,vệ sinh,normal
+2244,Không vào được mạng tại phòng KSSV-432.,internet,normal
+2245,Mùi hôi từ nhà vệ sinh kssv-205 rất khó chịu.,vệ sinh,normal
+2246,Phòng 209 bị phân chim rơi vào phòng qua cửa sổ.,vệ sinh,normal
+2247,Internet khu vực KSSV-308 mất tín hiệu.,internet,normal
+2248,Phòng 102 bị ngập nước do cống thoát nước sàn bị tắc vì tóc và rác.,nước,normal
+2249,Phòng KSSV-546 mất điện từ trưa nay.,điện,high
+2250,Điện phòng kssv-261 chập chờn khi bật điều hòa.,điện,normal
+2251,Quạt phòng KSSV-354 không quay.,thiết bị,normal
+2252,Phòng kssv-358 mất điện từ tối qua.,điện,high
+2253,Cống thoát nước phòng kssv-369 bị nghẹt.,vệ sinh,normal
+2254,Đèn trong phòng kssv-508 bị cháy.,điện,normal
+2255,Mùi hôi từ khu vệ sinh gần phòng KSSV-270 rất khó chịu.,vệ sinh,normal
+2256,Tấm ván sàn gỗ ở phòng sinh hoạt chung bị lún và gãy.,khác,normal
+2257,Phòng KSSV-557 không có nước từ từ sáng nay.,nước,normal
+2258,Phòng KSSV-165 có côn trùng bay vào thường xuyên.,khác,normal
+2259,Đèn trong phòng kssv-563 bị cháy.,điện,normal
+2260,Điều hòa phòng kssv-226 bị hỏng.,thiết bị,normal
+2261,Tủ lạnh chung tầng 1 bị rò điện.,thiết bị,high
+2262,Lỗi kết nối mạng bị đứt khi có nhiều người cùng truy cập WiFi.,internet,normal
+2263,Phòng KSSV-118 có côn trùng bay vào thường xuyên.,khác,normal
+2264,Nước trong bồn rửa phòng kssv-545 bị tắc.,nước,normal
+2265,Phòng 209 bị phân chim rơi vào phòng qua cửa sổ.,vệ sinh,normal
+2266,Wi-Fi phòng KSSV-697 không kết nối được.,internet,normal
+2267,Ổ cắm phòng kssv-471 phát ra tia lửa.,điện,high
+2268,Báo cáo vòi nước ở sân thể thao bị rò rỉ liên tục.,nước,high
+2269,Phòng em bị mất remote điều hòa và bị phạt tiền.,thiết bị,normal
+2270,Không vào được mạng ở phòng kssv-186.,internet,normal
+2271,Có tiếng ồn lớn từ phòng kssv-486 ban đêm.,khác,normal
+2272,Lỗi công tắc điều khiển quạt thông gió nhà vệ sinh chung bị hỏng.,thiết bị,normal
+2273,Wi-Fi phòng KSSV-427 không kết nối được.,internet,normal
+2274,Đề nghị lắp đặt thêm thùng rác phân loại ở mỗi tầng.,vệ sinh,normal
+2275,Ổ điện bàn học kssv-504 không hoạt động.,thiết bị,normal
+2276,Cần kiểm tra và sửa chữa xích đu ngoài trời bị hỏng.,khác,normal
+2277,Báo cáo đường ống nước của hệ thống PCCC bị rò rỉ.,nước,normal
+2278,Phòng kssv-119 có rác chưa dọn.,vệ sinh,normal
+2279,Bảng điện hành lang gần KSSV-651 nhảy aptomat liên tục.,điện,urgent
+2280,Phòng KSSV-114 bị mất đồ cá nhân.,khác,high
+2281,Có tiếng ồn lớn từ phòng KSSV-149 vào sáng nay.,khác,normal
+2282,Báo cáo mất điện thoại ở căng tin KTX.,khác,normal
+2283,Phòng KSSV-350 không có nước từ từ tối qua.,nước,normal
+2284,Đèn trong phòng kssv-588 bị cháy.,điện,normal
+2285,Điều hòa phòng KSSV-106 bị hỏng.,thiết bị,normal
+2286,Đèn học phòng kssv-237 bị hỏng.,thiết bị,normal
+2287,Bảng điện hành lang gần KSSV-153 nhảy aptomat liên tục.,điện,urgent
+2288,Wi-Fi phòng KSSV-695 không kết nối được.,internet,normal
+2289,Quạt phòng kssv-652 không quay.,thiết bị,normal
+2290,Wi-Fi phòng KSSV-502 không kết nối được.,internet,normal
+2291,Phòng KSSV-653 không có nước từ đêm qua.,nước,high
+2292,Điều hòa phòng kssv-229 bị hỏng.,thiết bị,normal
+2293,"Ống nước tầng 6 bị vỡ, ảnh hưởng khu vực KSSV-645.",nước,normal
+2294,Phòng kssv-398 có rác chưa dọn.,vệ sinh,normal
+2295,Có tiếng ồn lớn từ phòng KSSV-187 vào từ hôm qua.,khác,normal
+2296,Phòng KSSV-327 bị mất đồ cá nhân.,khác,high
+2297,Phòng kssv-325 mất điện từ tối qua.,điện,high
+2298,Đèn học phòng KSSV-220 bị hỏng.,thiết bị,normal
+2299,Lỗi mạng bị chậm khi xem phim trực tuyến.,internet,normal
+2300,Điều hòa phòng KSSV-616 bị hỏng.,thiết bị,normal
+2301,Tủ lạnh chung tầng 2 bị rò điện.,thiết bị,high
+2302,Phòng 505 báo cáo thẻ điện bị từ chối dù còn số dư.,điện,normal
+2303,Phòng KSSV-679 không có nước từ từ tối qua.,nước,normal
+2304,Phòng KSSV-177 mất điện từ đêm qua.,điện,high
+2305,Ổ điện bàn học kssv-587 không hoạt động.,thiết bị,normal
+2306,Phòng KSSV-231 có côn trùng bay vào thường xuyên.,khác,normal
+2307,"Báo cáo nhà vệ sinh chung quá bẩn, không thể sử dụng.",vệ sinh,normal
+2308,Cần vệ sinh và khử khuẩn bể chứa nước chung vì nước có màu lạ.,vệ sinh,normal
+2309,Nước chảy yếu ở nhà tắm gần phòng KSSV-540.,nước,normal
+2310,Lỗi tường nhà vệ sinh bị ẩm mốc do thấm nước.,vệ sinh,normal
+2311,Đề nghị sửa chữa bánh xe của ghế học sinh bị vỡ.,thiết bị,normal
+2312,Báo cáo cáp quang bị đứt do thi công ở khu vực gần KTX.,internet,normal
+2313,Cống thoát nước phòng kssv-370 bị nghẹt.,vệ sinh,normal
+2314,Đèn trong phòng kssv-320 bị cháy.,điện,normal
+2315,Phòng kssv-545 mất điện từ tối qua.,điện,high
+2316,Router tầng 4 kssv bị lỗi.,internet,normal
+2317,"Router tầng 2 bị lỗi, phòng KSSV-251 không vào mạng.",internet,normal
+2318,Có người lạ đi lại gần khu phòng KSSV-282 vào từ hôm qua.,khác,normal
+2319,Khu sinh viên khu vực phòng KSSV-508 mất điện toàn bộ.,điện,high
+2320,"Ống nước tầng 2 bị vỡ, ảnh hưởng khu vực KSSV-429.",nước,normal
+2321,Người lạ mặt không phải sinh viên đột nhập vào phòng 109 vào ban đêm.,khác,normal
+2322,Không vào được mạng tại phòng KSSV-652.,internet,normal
+2323,"Báo cáo áp lực nước rất yếu vào buổi sáng (6h-7h), không đủ để tắm rửa.",nước,normal
+2324,"Ổ cắm chung ở sảnh bị hỏng, không thể sạc laptop khi học nhóm.",điện,normal
+2325,"WiFi khu vực tầng 3 liên tục bị rớt sóng, không ổn định.",internet,normal
+2326,Phòng kssv-517 không có nước.,nước,high
+2327,Mùi hôi từ khu vệ sinh gần phòng KSSV-206 rất khó chịu.,vệ sinh,normal
+2328,Cần dọn dẹp khu vực bếp chung bị bẩn do thức ăn thừa.,vệ sinh,normal
+2329,Phòng em muốn kiểm tra xem có ai câu trộm điện vào phòng không.,điện,normal
+2330,Router tầng 3 kssv bị lỗi.,internet,normal
+2331,Nhà vệ sinh tầng 3 kssv có mùi hôi.,vệ sinh,normal
+2332,Wi-Fi phòng kssv-146 không kết nối được.,internet,normal
+2333,Phòng KSSV-243 có rác chưa dọn.,vệ sinh,normal
+2334,"Lỗi vòi sen nhà tắm chung bị rò rỉ, nước nhỏ giọt không ngừng.",nước,normal
+2335,"Ống nước tầng 3 bị vỡ, ảnh hưởng khu vực KSSV-517.",nước,normal
+2336,"Router tầng 1 bị lỗi, phòng KSSV-619 không vào mạng.",internet,normal
+2337,Điều hòa phòng kssv-229 bị hỏng.,thiết bị,normal
+2338,Ổ cắm phòng KSSV-384 phát ra tia lửa.,điện,high
+2339,Điều hòa phòng KSSV-353 bị hỏng.,thiết bị,normal
+2340,Quạt phòng KSSV-117 không quay.,thiết bị,normal
+2341,Cần sửa chữa công tắc điều khiển quạt thông gió nhà tắm bị liệt.,điện,normal
+2342,Vòi nước phòng KSSV-411 bị rò rỉ.,nước,high
+2343,Đèn học phòng kssv-379 bị hỏng.,thiết bị,normal
+2344,Điều hòa phòng KSSV-650 bị hỏng.,thiết bị,normal
+2345,Quạt phòng KSSV-368 không quay.,thiết bị,normal
+2346,Bảng điện hành lang gần KSSV-136 nhảy aptomat liên tục.,điện,urgent
+2347,Cần bổ sung rèm cửa cho phòng kssv-474.,khác,normal
+2348,"Cây xanh bị gãy cành, rơi xuống chắn lối đi.",khác,normal
+2349,Nước trong bồn rửa phòng KSSV-316 bị tắc.,nước,normal
+2350,Thùng rác khu sinh viên gần KSSV-231 đầy tràn.,vệ sinh,normal
+2351,Điện tại phòng KSSV-328 chập chờn khi bật điều hòa.,điện,high
+2352,Ổ cắm phòng kssv-529 phát ra tia lửa.,điện,high
+2353,Nhà vệ sinh tầng 1 kssv có mùi hôi.,vệ sinh,normal
+2354,Thiết bị báo cháy ở hành lang tầng 5 phát ra tiếng kêu tít tít yếu.,thiết bị,normal
+2355,Cống thoát nước phòng kssv-538 bị nghẹt.,vệ sinh,normal
+2356,Cần vệ sinh máy giặt công cộng vì có mùi ẩm mốc.,vệ sinh,normal
+2357,Nước trong bồn rửa phòng KSSV-435 bị tắc.,nước,normal
+2358,Quạt phòng KSSV-195 không quay.,thiết bị,normal
+2359,Điều hòa phòng KSSV-296 bị hỏng.,thiết bị,normal
+2360,Lỗi phòng giặt chung bị mất điện sau khi giặt.,khác,high
+2361,Vòi nước phòng KSSV-298 bị rò rỉ.,nước,high
+2362,Điều hòa phòng KSSV-382 bị hỏng.,thiết bị,normal
+2363,Đèn trong phòng kssv-165 bị cháy.,điện,normal
+2364,Đèn học phòng KSSV-367 bị hỏng.,thiết bị,normal
+2365,Phòng 406 bị báo lỗi kết nối mạng liên tục trên điện thoại.,internet,normal
+2366,Phòng KSSV-190 có côn trùng bay vào thường xuyên.,khác,normal
+2367,Ổ cắm phòng KSSV-616 phát ra tia lửa.,điện,high
+2368,Cống thoát nước phòng KSSV-689 bị nghẹt.,vệ sinh,normal
+2369,Phòng kssv-121 bị mất đồ cá nhân.,khác,high
+2370,Phòng kssv-238 bị mất đồ cá nhân.,khác,high
+2371,Nước chảy yếu ở nhà tắm kssv-244.,nước,normal
+2372,Phòng 501 bị nước chảy từ trần nhà do mưa bão.,khác,normal
+2373,Đèn trong phòng kssv-346 bị cháy.,điện,normal
+2374,"Lỗi bàn làm việc chung bị mất ốc, không đứng vững.",thiết bị,normal
+2375,Cần kiểm tra và sửa chữa các thiết bị thể dục ngoài trời bị hỏng.,khác,normal
+2376,Cống thoát nước phòng KSSV-188 bị nghẹt.,vệ sinh,normal
+2377,"Ống nước tầng 1 bị vỡ, ảnh hưởng khu vực KSSV-654.",nước,normal
+2378,"Ống nước tầng 4 bị vỡ, ảnh hưởng khu vực KSSV-356.",nước,normal
+2379,"Router tầng 3 bị lỗi, phòng KSSV-428 không vào mạng.",internet,normal
+2380,Phòng KSSV-404 có rác chưa dọn.,vệ sinh,normal
+2381,Phòng KSSV-179 có rác chưa dọn.,vệ sinh,normal
+2382,Ổ điện bàn học phòng KSSV-677 không hoạt động.,thiết bị,normal
+2383,Ổ điện bàn học phòng KSSV-252 không hoạt động.,thiết bị,normal
+2384,Internet khu vực KSSV-105 mất tín hiệu.,internet,normal
+2385,Phòng kssv-512 không có nước.,nước,normal
+2386,"Báo cáo nhà vệ sinh chung quá bẩn, đầy chất thải và không có nước rửa tay.",vệ sinh,normal
+2387,Nước trong bồn rửa phòng KSSV-467 bị tắc.,nước,normal
+2388,Không vào được mạng tại phòng KSSV-406.,internet,normal
+2389,Wi-Fi phòng kssv-395 không kết nối được.,internet,normal
+2390,Cần thay thế ổ khóa cửa phòng 402 bị kẹt chìa.,thiết bị,high
+2391,Đèn học phòng KSSV-256 bị hỏng.,thiết bị,normal
+2392,Cần sửa chữa tay vịn cầu thang tầng 4 bị lỏng.,thiết bị,normal
+2393,Phòng kssv-391 không có nước.,nước,normal
+2394,Ổ điện bàn học kssv-327 không hoạt động.,thiết bị,normal
+2395,Wi-Fi phòng kssv-685 không kết nối được.,internet,normal
+2396,Báo cáo tốc độ mạng không đủ để tham gia các buổi họp trực tuyến chất lượng HD.,internet,normal
+2397,Ổ điện bàn học kssv-119 không hoạt động.,thiết bị,normal
+2398,Phòng KSSV-365 bị mất đồ cá nhân.,khác,high
+2399,Phòng em muốn khôi phục dịch vụ mạng KTX sau khi bị tạm khóa.,internet,normal
+2400,Vòi nước phòng KSSV-382 bị rò rỉ.,nước,high
+2401,Internet khu vực KSSV-105 mất tín hiệu.,internet,normal
+2402,Phòng KSSV-530 bị mất đồ cá nhân.,khác,high
+2403,Điện phòng kssv-508 chập chờn khi bật điều hòa.,điện,high
+2404,Phòng KSSV-211 mất điện từ từ tối qua.,điện,high
+2405,Nước trong bồn rửa phòng kssv-211 bị tắc.,nước,normal
+2406,Cần bổ sung rèm cửa cho phòng KSSV-594.,khác,normal
+2407,Thùng rác khu sinh viên gần KSSV-402 đầy tràn.,vệ sinh,normal
+2408,Phòng 108 bị phạt vì để nước chảy lãng phí khi đi ra ngoài.,nước,normal
+2409,Mùi hôi từ khu vệ sinh gần phòng KSSV-375 rất khó chịu.,vệ sinh,normal
+2410,Bảng điện hành lang gần KSSV-110 nhảy aptomat liên tục.,điện,urgent
+2411,Báo cáo vật dụng chặn lối thoát hiểm tầng 4.,khác,normal
+2412,Khu sinh viên khu vực phòng KSSV-326 mất điện toàn bộ.,điện,high
+2413,Cần thay thế khóa tủ đồ cá nhân bị hỏng ổ khóa.,thiết bị,normal
+2414,Cần sửa chữa ống thoát nước của máy giặt chung bị rò rỉ.,thiết bị,normal
+2415,Phòng em muốn kiểm tra xem có ai dùng mạng của phòng không.,internet,normal
+2416,Nước trong bồn rửa phòng KSSV-553 bị tắc.,nước,normal
+2417,Lỗi camera an ninh khu vực căn tin bị che khuất.,khác,normal
+2418,Báo cáo rò rỉ nước từ trần nhà vệ sinh phòng 601 xuống sàn.,nước,normal
+2419,"Bóng đèn khu tự học cháy, cần thay thế gấp, rất tối không học được.",điện,normal
+2420,Ổ điện bàn học kssv-461 không hoạt động.,thiết bị,normal
+2421,Có tiếng ồn lớn từ phòng kssv-395 ban đêm.,khác,normal
+2422,Wi-Fi phòng KSSV-416 không kết nối được.,internet,normal
+2423,Ổ điện bàn học kssv-195 không hoạt động.,thiết bị,normal
+2424,Phòng KSSV-624 không có nước từ từ hôm qua.,nước,normal
+2425,Lỗi công tắc điều khiển quạt thông gió phòng tắm bị kẹt.,điện,normal
+2426,Điện tại phòng KSSV-418 chập chờn khi bật điều hòa.,điện,normal
+2427,Phòng kssv-490 có côn trùng bay vào thường xuyên.,khác,normal
+2428,Wi-Fi phòng kssv-432 không kết nối được.,internet,normal
+2429,Cần can thiệp khi có người lạ nằm ngủ ở sảnh chờ.,khác,normal
+2430,Có tiếng ồn lớn từ phòng kssv-543 ban đêm.,khác,normal
+2431,Vòi nước phòng KSSV-643 bị rò rỉ.,nước,high
+2432,Khu sinh viên khu vực phòng KSSV-170 mất điện toàn bộ.,điện,high
+2433,"Khí độc từ hóa chất tẩy rửa mạnh bị xả ra ngoài, gây khó thở.",vệ sinh,normal
+2434,Ổ điện bàn học phòng KSSV-186 không hoạt động.,thiết bị,normal
+2435,Đèn trong phòng kssv-404 bị cháy.,điện,normal
+2436,Phòng kssv-228 mất điện từ tối qua.,điện,high
+2437,Lỗi mạng KTX không thể kết nối được với máy tính bảng.,internet,normal
+2438,Vòi nước phòng kssv-291 bị rò rỉ.,nước,high
+2439,Điện tại phòng KSSV-599 chập chờn khi bật điều hòa.,điện,high
+2440,Có tiếng ồn lớn từ phòng KSSV-333 vào chiều nay.,khác,normal
+2441,Báo cáo vòi nước ở khu vực nấu ăn chung bị rỉ sét nặng.,nước,normal
+2442,Thùng rác khu sinh viên gần KSSV-271 đầy tràn.,vệ sinh,normal
+2443,Điều hòa phòng kssv-410 bị hỏng.,thiết bị,normal
+2444,Ổ điện bàn học phòng KSSV-187 không hoạt động.,thiết bị,normal
+2445,Nước chảy yếu ở nhà tắm gần phòng KSSV-321.,nước,normal
+2446,Phòng KSSV-667 mất điện từ trưa nay.,điện,normal
+2447,Điều hòa phòng KSSV-291 bị hỏng.,thiết bị,normal
+2448,Phòng 308 bị giảm tốc độ mạng xuống mức rất thấp sau khi vi phạm.,internet,normal
+2449,Ổ điện bàn học kssv-133 không hoạt động.,thiết bị,normal
+2450,Thùng rác khu sinh viên gần KSSV-170 đầy tràn.,vệ sinh,normal
+2451,Đèn học phòng KSSV-540 bị hỏng.,thiết bị,normal
+2452,"Báo cáo trộm cắp xảy ra ở phòng 503, mất laptop khi sinh viên đi tắm.",khác,normal
+2453,"Đèn chiếu sáng khu vực nhà xe bị hỏng, rất nguy hiểm khi lấy xe đêm.",khác,normal
+2454,Phòng KSSV-354 mất điện từ trưa nay.,điện,high
+2455,Phòng KSSV-669 không có nước từ từ hôm qua.,nước,high
+2456,Phòng 207 thắc mắc về hóa chất KTX dùng để vệ sinh máy giặt chung.,vệ sinh,high
+2457,Phòng 707 bị phạt vì tự ý lắp đặt khóa riêng không đúng quy định.,khác,normal
+2458,Phòng KSSV-467 mất điện từ chiều nay.,điện,high
+2459,Có người lạ đi lại gần khu phòng KSSV-565 vào từ sáng nay.,khác,normal
+2460,Cần bổ sung rèm cửa cho phòng KSSV-586.,khác,normal
+2461,"Lỗi ống nước trong tường phòng 505 bị rò rỉ, gây ẩm mốc tường nghiêm trọng.",nước,high
+2462,Lỗi nước rửa tay ở căn tin bị hết.,vệ sinh,normal
+2463,Phòng KSSV-493 không có nước từ sáng nay.,nước,high
+2464,Lỗi ống thoát nước của bồn rửa mặt bị bung khỏi tường.,nước,normal
+2465,Phòng KSSV-252 có côn trùng bay vào thường xuyên.,khác,normal
+2466,Mái che hành lang tầng 5 bị dột nặng khi mưa.,thiết bị,normal
+2467,"Thùng rác y tế (khẩu trang, kim tiêm) bị vứt lẫn vào rác sinh hoạt.",vệ sinh,normal
+2468,Phòng KSSV-141 mất điện từ trưa nay.,điện,high
+2469,Lỗi ổ cắm đa năng ở phòng học chung bị quá tải.,điện,normal
+2470,"Cần thay thế bàn học bị khắc tên, vẽ bậy quá nhiều.",thiết bị,normal
+2471,Mùi hôi từ nhà vệ sinh kssv-205 rất khó chịu.,vệ sinh,normal
+2472,"Phòng em bị phạt vì sử dụng bếp từ (lần 2), đề nghị xem xét lại mức phạt.",điện,normal
+2473,Khu sinh viên khu vực phòng KSSV-322 mất điện toàn bộ.,điện,high
+2474,Vòi nước phòng kssv-659 bị rò rỉ.,nước,high
+2475,Phòng kssv-672 có côn trùng bay vào thường xuyên.,khác,normal
+2476,Internet khu vực KSSV-350 mất tín hiệu.,internet,normal
+2477,Wi-Fi phòng kssv-202 không kết nối được.,internet,normal
+2478,Phòng KSSV-199 không có nước từ tối qua.,nước,high
+2479,"Ống nước tầng 6 bị vỡ, ảnh hưởng khu vực KSSV-200.",nước,urgent
+2480,Điều hòa phòng KSSV-652 bị hỏng.,thiết bị,normal
+2481,Phòng kssv-272 có rác chưa dọn.,vệ sinh,normal
+2482,Internet khu vực KSSV-613 mất tín hiệu.,internet,normal
+2483,Vòi xịt vệ sinh ở phòng 403 bị rò rỉ ngay tại đầu nối.,nước,normal
+2484,Vòi nước phòng kssv-358 bị rò rỉ.,nước,high
+2485,Quạt phòng kssv-348 không quay.,thiết bị,normal
+2486,Nhà vệ sinh tầng 5 kssv có mùi hôi.,vệ sinh,normal
+2487,Ổ cắm phòng kssv-391 phát ra tia lửa.,điện,high
+2488,Tủ lạnh chung tầng 5 bị rò điện.,thiết bị,high
+2489,Internet khu vực KSSV-614 mất tín hiệu.,internet,normal
+2490,Cần kiểm tra mối mọt ở các khung cửa gỗ phòng 402.,khác,normal
+2491,"Lỗi máy bơm nước phụ tầng 4 bị cháy, không bơm được nước lên tầng trên.",nước,normal
+2492,Điện tại phòng KSSV-303 chập chờn khi bật điều hòa.,điện,high
+2493,Mùi hôi từ nhà vệ sinh kssv-599 rất khó chịu.,vệ sinh,normal
+2494,Cần bổ sung rèm cửa cho phòng KSSV-120.,khác,normal
+2495,"Lỗi ống thoát nước từ máy giặt chung bị bung, nước thải chảy lênh láng ra sàn.",nước,normal
+2496,Có tiếng ồn lớn từ phòng kssv-302 ban đêm.,khác,normal
+2497,Bảng điện hành lang gần KSSV-508 nhảy aptomat liên tục.,điện,urgent
+2498,Wi-Fi phòng kssv-403 không kết nối được.,internet,normal
+2499,Phòng 308 báo cáo gián xuất hiện nhiều trong phòng.,khác,normal
+2500,"Tốc độ Internet quá chậm, không thể load video học online.",internet,normal
+2501,Nước trong bồn rửa phòng KSSV-322 bị tắc.,nước,normal
+2502,Nước trong bồn rửa phòng kssv-356 bị tắc.,nước,normal
+2503,Cống thoát nước phòng KSSV-687 bị nghẹt.,vệ sinh,normal
+2504,Mùi hôi từ nhà vệ sinh kssv-321 rất khó chịu.,vệ sinh,normal
+2505,Phòng KSSV-192 không có nước từ từ hôm qua.,nước,high
+2506,Cần lắp đặt thêm biển cảnh báo trơn trượt ở nhà vệ sinh.,khác,normal
+2507,Phòng KSSV-428 có côn trùng bay vào thường xuyên.,khác,normal
+2508,Vòi nước phòng kssv-363 bị rò rỉ.,nước,high
+2509,Có tiếng ồn lớn từ phòng kssv-149 ban đêm.,khác,normal
+2510,Cần bổ sung rèm cửa cho phòng KSSV-287.,khác,normal
+2511,Phòng 602 bị kiểm tra và lập biên bản vì vệ sinh phòng quá kém.,vệ sinh,normal
+2512,"Bàn học phòng 304 bị gãy chân, không thể sử dụng để học tập.",thiết bị,normal
+2513,Phòng KSSV-230 có rác chưa dọn.,vệ sinh,normal
+2514,Không vào được mạng tại phòng KSSV-507.,internet,normal
+2515,Cần thay thế gấp cửa sổ phòng 503 bị vỡ kính do gió lớn.,thiết bị,normal
+2516,"Lỗi công tắc điều khiển đèn ngủ bị kẹt, đèn không tắt được.",thiết bị,normal
+2517,Điện phòng kssv-429 chập chờn khi bật điều hòa.,điện,high
+2518,Internet khu vực KSSV-446 mất tín hiệu.,internet,normal
+2519,Mùi hôi từ nhà vệ sinh kssv-613 rất khó chịu.,vệ sinh,normal
+2520,Vòi nước phòng KSSV-193 bị rò rỉ.,nước,high
+2521,Cần sửa chữa đầu vòi phun nước ở bồn rửa chén chung bị tắc.,nước,normal
+2522,Phòng 606 báo cáo cửa tủ đồ bị hỏng khóa và bản lề.,thiết bị,normal
+2523,Mùi hôi từ khu vệ sinh gần phòng KSSV-544 rất khó chịu.,vệ sinh,normal
+2524,Vòi nước phòng KSSV-166 bị rò rỉ.,nước,normal
+2525,Quạt phòng KSSV-287 không quay.,thiết bị,normal
+2526,Bộ nguồn cấp điện cho máy chiếu phòng học chung bị hỏng.,điện,normal
+2527,Đèn trong phòng kssv-544 bị cháy.,điện,normal
+2528,Phòng học chung bị chuột cắn hỏng sách vở và để lại phân.,vệ sinh,normal
+2529,Phòng KSSV-104 có côn trùng bay vào thường xuyên.,khác,normal
+2530,"Router tầng 2 bị lỗi, phòng KSSV-185 không vào mạng.",internet,normal
+2531,Phòng KSSV-125 mất điện từ chiều nay.,điện,high
+2532,Nước trong bồn rửa phòng KSSV-669 bị tắc.,nước,normal
+2533,Báo cáo bồn rửa tay bị ố vàng và có cặn bẩn bám vào.,vệ sinh,normal
+2534,Không vào được mạng tại phòng KSSV-667.,internet,normal
+2535,Nhà vệ sinh tầng 3 có mùi hôi.,vệ sinh,normal
+2536,Ổ cắm phòng kssv-278 phát ra tia lửa.,điện,normal
+2537,Wi-Fi phòng KSSV-638 không kết nối được.,internet,normal
+2538,"Ống nước tầng 2 bị vỡ, ảnh hưởng khu vực KSSV-664.",nước,normal
+2539,Cần bổ sung rèm cửa cho phòng kssv-616.,khác,normal
+2540,Phòng em bị chập điện nhẹ ngay ổ cắm sạc khi cắm ấm siêu tốc.,điện,normal
+2541,"Đèn ngủ trần phòng 210 bị nổ bóng, vụn thủy tinh rơi xuống sàn.",điện,normal
+2542,Cống thoát nước phòng KSSV-448 bị nghẹt.,vệ sinh,normal
+2543,Wi-Fi phòng kssv-563 không kết nối được.,internet,normal
+2544,Phòng kssv-640 mất điện từ tối qua.,điện,normal
+2545,Mùi hôi từ nhà vệ sinh kssv-146 rất khó chịu.,vệ sinh,normal
+2546,Người lạ đi lại ở khu vực tầng 7 vào ban đêm.,khác,normal
+2547,Ổ điện bàn học phòng KSSV-482 không hoạt động.,thiết bị,normal
+2548,Không vào được mạng tại phòng KSSV-568.,internet,normal
+2549,Internet khu vực KSSV-616 mất tín hiệu.,internet,normal
+2550,Ổ cắm ở khu vực phơi đồ bị rỉ sét do nước mưa.,điện,normal

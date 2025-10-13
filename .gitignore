@@ -1,0 +1,6 @@
+data/**
+logs/**
+checkpoints/**
+!data/README.md
+!logs/README.md
+!checkpoints/README.md
