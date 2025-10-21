@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🏫 KSSV-DNU  
-### *Hệ Thống Quản Lý Ký Túc Xá Đại Nam – Digital Transformation Project*
+### *Hệ Thống Quản Lý Khách Sạn Sinh Viên Đại Nam – Digital Transformation Project*
 
 [![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
