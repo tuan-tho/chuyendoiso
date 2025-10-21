@@ -54,3 +54,6 @@ backend/ai/models/
 
 # Dữ liệu CSV đặt nhầm chỗ (tạm bỏ qua)
 backend/ai/Datakssv.csv
+# BFG và công cụ phụ
+bfg.jar
+
