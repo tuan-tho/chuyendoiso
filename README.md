@@ -21,7 +21,7 @@
 
 ## 🎯 Giới Thiệu
 
-**KTX-DNU** là hệ thống **chuyển đổi số** phục vụ quản lý ký túc xá Đại Nam, hỗ trợ tự động hóa các quy trình truyền thống như:
+**KSSV-DNU** là hệ thống **chuyển đổi số** phục vụ quản lý ký túc xá Đại Nam, hỗ trợ tự động hóa các quy trình truyền thống như:
 - Đăng ký – check-in / check-out sinh viên  
 - Gửi phản ánh sự cố (điện, nước, thiết bị, vệ sinh, internet, khác)  
 - Xử lý ưu tiên và phân loại sự cố bằng **AI tiếng Việt (PhoBERT)**  
