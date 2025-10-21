@@ -6,38 +6,38 @@ import logging
 from typing import List, Optional
 from datetime import datetime
 
-from sqlalchemy.orm import Session, selectinload  # type: ignore # 👈 add selectinload
-from sqlalchemy.exc import SQLAlchemyError # type: ignore
+from sqlalchemy.orm import Session, selectinload  # type: ignore
+from sqlalchemy.exc import SQLAlchemyError  # type: ignore
 
 from .. import models, schemas
 
-# ✅ Import predictor đầy đủ (có priority)
+# ✅ PhoBERT / bộ phân loại
 try:
     from ai.predictor import classify_one_full  # type: ignore
 except Exception:
-    classify_one_full = None  # fallback nếu môi trường chưa sẵn AI
+    classify_one_full = None  # fallback nếu môi trường chưa có AI
+
+# ✅ Gemini auto-reply
+try:
+    from ai.auto_reply_gemini import generate_auto_reply  # type: ignore
+except Exception:
+    generate_auto_reply = None
 
 logger = logging.getLogger(__name__)
 
-ALLOWED_PRIORITIES = {"normal", "high", "urgent"}  # 👈 whitelist
+ALLOWED_PRIORITIES = {"normal", "high", "urgent"}
 
 
 # --------- Helpers ----------
 def _infer_floor_from_room(room: Optional[str]) -> Optional[int]:
-    """
-    Suy tầng từ số phòng khi NER không bắt được:
-    - "214"  -> 2
-    - "333"  -> 3
-    - "1001" -> 10
-    - "1205" -> 12
-    - Giới hạn [1..15]
-    """
+    """Suy tầng từ số phòng khi NER không bắt được."""
     if not room:
         return None
     digits = "".join(ch for ch in str(room) if ch.isdigit())
     if not digits:
         return None
 
+    # Phòng 1001 -> tầng 10; 1205 -> tầng 12
     if len(digits) >= 4:
         try:
             floor = int(digits[:2])
@@ -46,6 +46,7 @@ def _infer_floor_from_room(room: Optional[str]) -> Optional[int]:
         except ValueError:
             pass
 
+    # Phòng 214 -> tầng 2
     try:
         floor = int(digits[0])
         if 1 <= floor <= 15:
@@ -58,15 +59,14 @@ def _infer_floor_from_room(room: Optional[str]) -> Optional[int]:
 
 def _auto_priority_backup(title: str, desc: Optional[str], ai_label: Optional[str]) -> str:
     """
-    Fallback cuối cùng (trường hợp không có AI):
-    Trả 'urgent' cho các từ khóa nguy cấp, 'high' cho mức cao, mặc định 'high' (tránh thiên vị normal).
+    Fallback ưu tiên an toàn khi chưa có AI.
     """
     text = f"{title} {desc or ''}".lower()
 
     urgent_kw = [
         "khẩn cấp", "khẩn", "nguy hiểm", "cháy", "chập điện",
         "tia lửa", "bốc khói", "vỡ ống", "ngập nặng", "rò rỉ mạnh",
-        "mất hoàn toàn", "toàn dãy", "toàn khu"
+        "mất hoàn toàn", "toàn dãy", "toàn khu",
     ]
     if any(k in text for k in urgent_kw):
         return "urgent"
@@ -80,7 +80,7 @@ def _auto_priority_backup(title: str, desc: Optional[str], ai_label: Optional[st
     if ai_label == "vệ sinh" and any(k in text for k in ["hôi thối", "rất bẩn", "đầy rác", "tràn rác"]):
         return "high"
 
-    # ⚠️ mặc định HIGH để an toàn vận hành
+    # Mặc định HIGH để đảm bảo xử lý kịp thời
     return "high"
 
 
@@ -116,7 +116,7 @@ def create_report(db: Session, reporter_id: int, data: schemas.ReportCreate) -> 
         title=title,
         description=description,
         category=category,        # có thể None, sẽ map từ AI nếu có
-        priority=None,            # sẽ set ở dưới
+        priority=None,            # set ở dưới
         reporter_id=reporter_id,
         status="open",
         image_url=image_url,
@@ -130,7 +130,7 @@ def create_report(db: Session, reporter_id: int, data: schemas.ReportCreate) -> 
     ai_label: Optional[str] = None
     pred: dict = {}
 
-    # ✅ Gọi AI (nếu có)
+    # ✅ Gọi AI phân loại (nếu có)
     if classify_one_full:
         try:
             text = f"{title}. {description or ''}"
@@ -168,15 +168,25 @@ def create_report(db: Session, reporter_id: int, data: schemas.ReportCreate) -> 
         except Exception as e:
             logger.warning(f"[AI enrich failed][report_id={rpt.id}] {e}")
 
-    # ✅ Gán priority theo thứ tự (và chuẩn hoá):
-    # 1) Client gửi → tôn trọng
-    # 2) AI dự đoán → dùng
-    # 3) Fallback rule → _auto_priority_backup (mặc định HIGH)
+    # ✅ Chốt priority
     ai_priority = (pred.get("priority") if pred else None)
     chosen_priority = client_priority or ai_priority or _auto_priority_backup(title, description, ai_label)
-    rpt.priority = _normalize_priority(chosen_priority)  # 👈 chuẩn hoá
+    rpt.priority = _normalize_priority(chosen_priority)
 
-    # Lưu meta AI (nếu có)
+    # ✅ Gọi Gemini để sinh phản hồi tự động
+    if generate_auto_reply:
+        try:
+            auto_reply = generate_auto_reply(description or title, ai_label or "khác", rpt.priority)
+            if auto_reply and len(auto_reply) > 500:
+                auto_reply = auto_reply[:500].rstrip() + "…"
+            rpt.admin_reply = auto_reply
+            rpt.admin_reply_source = "ai"  # 👈 Đánh dấu nguồn phản hồi là AI
+        except Exception as e:
+            logger.warning(f"[Gemini auto-reply failed][report_id={rpt.id}] {e}")
+            # Không gán source để biết đây không phải AI
+            rpt.admin_reply = "Hệ thống đã ghi nhận sự cố, bộ phận kỹ thuật sẽ xử lý trong thời gian sớm nhất."
+
+    # ✅ Lưu meta AI (nếu có)
     if pred:
         try:
             rpt.ai_meta = json.dumps(pred, ensure_ascii=False)
@@ -200,7 +210,7 @@ def create_report(db: Session, reporter_id: int, data: schemas.ReportCreate) -> 
 def list_reports(db: Session, skip: int = 0, limit: int = 200) -> List[models.Report]:
     return (
         db.query(models.Report)
-        .options(selectinload(models.Report.reporter))  # 👈 eager-load reporter
+        .options(selectinload(models.Report.reporter))
         .order_by(models.Report.created_at.desc())
         .offset(skip)
         .limit(limit)
@@ -211,7 +221,7 @@ def list_reports(db: Session, skip: int = 0, limit: int = 200) -> List[models.Re
 def list_reports_by_user(db: Session, user_id: int) -> List[models.Report]:
     return (
         db.query(models.Report)
-        .options(selectinload(models.Report.reporter))  # 👈 eager-load reporter
+        .options(selectinload(models.Report.reporter))
         .filter(models.Report.reporter_id == user_id)
         .order_by(models.Report.created_at.desc())
         .all()
@@ -221,7 +231,7 @@ def list_reports_by_user(db: Session, user_id: int) -> List[models.Report]:
 def get_report(db: Session, report_id: int) -> Optional[models.Report]:
     return (
         db.query(models.Report)
-        .options(selectinload(models.Report.reporter))  # 👈 eager-load reporter
+        .options(selectinload(models.Report.reporter))
         .filter(models.Report.id == report_id)
         .first()
     )
@@ -243,8 +253,11 @@ def update_report(db: Session, report_id: int, upd: schemas.ReportUpdate) -> Opt
         rpt.status = upd.status
     if hasattr(upd, "admin_reply") and upd.admin_reply is not None:
         rpt.admin_reply = upd.admin_reply
+        # nếu admin tự sửa, đánh dấu nguồn thủ công
+        if (rpt.admin_reply or "").strip():
+            rpt.admin_reply_source = "manual"
     if hasattr(upd, "priority") and upd.priority is not None:
-        rpt.priority = _normalize_priority(upd.priority)  # 👈 chuẩn hoá khi admin chỉnh
+        rpt.priority = _normalize_priority(upd.priority)
     if hasattr(upd, "building") and upd.building is not None:
         rpt.building = (upd.building or "").strip() or None
     if hasattr(upd, "room") and upd.room is not None:
@@ -262,7 +275,7 @@ def update_report(db: Session, report_id: int, upd: schemas.ReportUpdate) -> Opt
             if pred:
                 rpt.ai_label = pred.get("label") or rpt.ai_label
                 rpt.ai_confidence = float(pred.get("label_confidence") or 0.0) or rpt.ai_confidence
-                new_priority = _normalize_priority(pred.get("priority"))  # 👈 chuẩn hoá
+                new_priority = _normalize_priority(pred.get("priority"))
                 rpt.priority = new_priority
                 try:
                     rpt.ai_meta = json.dumps(pred, ensure_ascii=False)

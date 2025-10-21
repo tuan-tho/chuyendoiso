@@ -9,11 +9,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;600" rel="stylesheet" />
   <link rel="stylesheet" href="../student/student.css" />
 
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   <style>
-    html, body { height: 100%; margin: 0; }
+    html, body { height: 100%; margin: 0; font-family: 'Inter', sans-serif; }
     .app { min-height: 100%; display: flex; }
 
-    /* === Sidebar cố định === */
+    /* Sidebar cố định */
     .sidebar {
       position: fixed;
       top: 0; left: 0; bottom: 0;
@@ -24,12 +27,62 @@
       z-index: 100;
     }
 
-    /* === Nội dung chính === */
+    /* Main content */
     .main {
       margin-left: 270px;
       width: calc(100% - 270px);
       min-height: 100vh;
       overflow-y: auto;
+      padding-bottom: 30px;
+    }
+
+    /* Nút */
+    .btn {
+      text-decoration: none !important;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      border-radius: 8px;
+      padding: 8px 14px;
+      transition: 0.2s;
+      gap: 8px;
+    }
+    .btn.primary { background:#6366f1; color:#fff; }
+    .btn.primary:hover { background:#4f46e5; }
+    .btn.purple { background:#7c3aed; color:#fff; }
+    .btn.purple:hover { background:#6d28d9; }
+    .btn.sm { padding:6px 10px; border-radius:8px; }
+
+    /* Lưới 2 cột cho 2 chart đầu */
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+
+    .legend-dot {
+      display:inline-block;width:12px;height:12px;border-radius:9999px;
+      margin-right:6px;vertical-align:middle;
+    }
+
+    h3 { display: flex; align-items: center; gap: 6px; margin-bottom: 10px; }
+
+    /* ✅ Giảm kích thước biểu đồ 2 card trên */
+    .card canvas {
+      max-width: 80%;
+      height: auto !important;
+      margin: 0 auto;
+      display: block;
     }
   </style>
 </head>
@@ -40,24 +93,22 @@
     <aside class="sidebar">
       <div class="brand">
         <span class="material-symbols-outlined">apartment</span>
-        <span>KTX-DNU</span>
+        <span>KSSV-DNU</span>
       </div>
       <nav class="menu">
         <a class="menu-item active" data-keep-user href="./admin.html">
           <span class="material-symbols-outlined">dashboard</span><span>Trang quản lý</span>
         </a>
-
-        <!-- Quản lý sự cố -->
         <a class="menu-item" data-keep-user href="./report_manage.html">
           <span class="material-symbols-outlined">report</span><span>Quản lý sự cố</span>
         </a>
-
-        <!-- ✅ Thay “Trang sinh viên” bằng “Check-in/Check-out” -->
         <a class="menu-item" data-keep-user href="./checkins.html">
           <span class="material-symbols-outlined">how_to_reg</span><span>Check-in/Check-out</span>
         </a>
+        <a class="menu-item" data-keep-user href="./users.html">
+          <span class="material-symbols-outlined">group</span><span>Quản lý tài khoản</span>
+        </a>
 
-        <!-- Đăng xuất -->
         <a class="menu-item" href="../common/login.html" onclick="ktxAuth.logoutCurrent(); return false;">
           <span class="material-symbols-outlined">logout</span><span>Đăng xuất</span>
         </a>
@@ -67,33 +118,59 @@
     <!-- Main -->
     <main class="main">
       <header class="topbar">
-        <div class="welcome">
+        <div class="welcome wrap">
           <h2 class="hello">Bảng điều khiển Quản lý</h2>
           <p class="muted">Đang dùng: <b data-current-username></b> (<span data-current-role></span>)</p>
         </div>
       </header>
 
-      <section class="content">
-        <div class="grid quick-3">
+      <section class="content wrap">
+        <!-- Hàng 1: 2 card chức năng -->
+        <div class="grid-2" style="margin-top:10px">
           <article class="card">
             <h3><span class="material-symbols-outlined">assignment</span> Báo cáo mới</h3>
             <p class="muted">Xem & xử lý các báo cáo sự cố từ sinh viên.</p>
-            <a class="btn primary" data-keep-user href="./report_manage.html">
-              <span class="material-symbols-outlined">open_in_new</span> Mở trang Quản lý sự cố
-            </a>
+            <a class="btn primary" data-keep-user href="./report_manage.html">Mở trang Quản lý sự cố</a>
           </article>
 
           <article class="card">
             <h3><span class="material-symbols-outlined">how_to_reg</span> Check-in/Check-out</h3>
             <p class="muted">Xem yêu cầu vào/ra và cập nhật trạng thái.</p>
-            <a class="btn ghost" data-keep-user href="./checkins.html">
-              <span class="material-symbols-outlined">list</span> Xem danh sách
-            </a>
+            <a class="btn purple" data-keep-user href="./checkins.html">Xem danh sách</a>
           </article>
         </div>
 
+        <!-- Hàng 2: 2 biểu đồ -->
+        <div class="grid-2" style="margin-top:20px">
+          <article class="card">
+            <h3>Phân bố mức độ ưu tiên</h3>
+            <canvas id="priorityChart" width="280" height="160"></canvas>
+            <div class="muted" style="margin-top:10px;display:flex;gap:16px;flex-wrap:wrap">
+              <span><span class="legend-dot" style="background:#93c5fd"></span> Bình thường</span>
+              <span><span class="legend-dot" style="background:#f59e0b"></span> Cao</span>
+              <span><span class="legend-dot" style="background:#ef4444"></span> Khẩn cấp</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Tình hình Check-in / Check-out</h3>
+            <canvas id="checkChart" width="280" height="160"></canvas>
+            <div class="muted" style="margin-top:10px;display:flex;gap:16px;flex-wrap:wrap">
+              <span><span class="legend-dot" style="background:#22c55e"></span> Check-in</span>
+              <span><span class="legend-dot" style="background:#3b82f6"></span> Check-out</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Hàng 3: Biểu đồ thống kê theo Loại (FULL WIDTH – dùng dữ liệu thật từ /reports) -->
+        <article class="card" style="margin-top:20px">
+          <h3><span class="material-symbols-outlined">bar_chart_4_bars</span> Thống kê theo <b>loại sự cố</b></h3>
+          <canvas id="categoryChart" height="220"></canvas>
+          <div id="catEmpty" class="muted" style="display:none;margin-top:8px">Không có dữ liệu để thống kê.</div>
+        </article>
+
         <!-- Danh sách Check-in/Check-out -->
-        <section class="card" id="checkins">
+        <section class="card" id="checkins" style="margin-top:20px">
           <div class="mi-head">
             <h3><span class="material-symbols-outlined">history</span> Yêu cầu Check-in/Check-out</h3>
           </div>
@@ -105,14 +182,20 @@
 
   <script src="../common/script.js"></script>
   <script>
-    // Chỉ cho phép admin truy cập
     ktxAuth.requireAuth(["admin"]);
 
+    // ==== Hiển thị người dùng đang đăng nhập
+    (function(){
+      const me = ktxAuth.getUser && ktxAuth.getUser();
+      if (me){
+        document.querySelector("[data-current-username]").textContent = me.username || "";
+        document.querySelector("[data-current-role]").textContent = me.role || "";
+      }
+    })();
+
+    // =================== CHECKINS LIST ===================
     async function updateCheckin(id, patch) {
-      const res = await ktxAuth.apiFetch(`/checkins/${id}`, {
-        method: "PATCH",
-        body: JSON.stringify(patch),
-      });
+      const res = await ktxAuth.apiFetch(`/checkins/${id}`, { method: "PATCH", body: JSON.stringify(patch) });
       if (!res.ok) throw new Error(`${res.status}`);
       return res.json();
     }
@@ -148,10 +231,8 @@
 
         data.sort((a,b)=> new Date(b.created_at) - new Date(a.created_at));
         box.innerHTML = data.map(item => {
-          const chipCls = item.status === 'approved' ? 'success'
-                        : item.status === 'rejected' ? 'danger' : 'info';
-          const statusVN = item.status === 'approved' ? 'Đã duyệt'
-                        : item.status === 'rejected' ? 'Từ chối' : 'Đang chờ';
+          const chipCls = item.status === 'approved' ? 'success' : item.status === 'rejected' ? 'danger' : 'info';
+          const statusVN = item.status === 'approved' ? 'Đã duyệt' : item.status === 'rejected' ? 'Từ chối' : 'Đang chờ';
           return `
             <article class="ticket">
               <div class="ticket-main">
@@ -164,27 +245,137 @@
               </div>
               <div class="ticket-aside" style="display:flex;gap:8px;align-items:center">
                 <span class="chip ${chipCls}">${statusVN}</span>
-                <button class="btn ghost sm" onclick="reply(${item.id})">
-                  <span class="material-symbols-outlined">chat</span> Phản hồi
-                </button>
-                ${item.status !== 'approved' ? `
-                  <button class="btn primary sm" onclick="approve(${item.id})">
-                    <span class="material-symbols-outlined">check</span> Duyệt
-                  </button>` : ''}
-                ${item.status !== 'rejected' ? `
-                  <button class="btn ghost sm" onclick="reject(${item.id})">
-                    <span class="material-symbols-outlined">close</span> Từ chối
-                  </button>` : ''}
+                <button class="btn ghost sm" onclick="reply(${item.id})"><span class="material-symbols-outlined">chat</span> Phản hồi</button>
+                ${item.status !== 'approved' ? `<button class="btn primary sm" onclick="approve(${item.id})"><span class="material-symbols-outlined">check</span> Duyệt</button>` : ''}
+                ${item.status !== 'rejected' ? `<button class="btn ghost sm" onclick="reject(${item.id})"><span class="material-symbols-outlined">close</span> Từ chối</button>` : ''}
               </div>
-            </article>
-          `;
+            </article>`;
         }).join('');
       } catch (e) {
         box.innerHTML = `<p class="muted">Lỗi tải dữ liệu: ${e.message}</p>`;
       }
     }
 
-    document.addEventListener('DOMContentLoaded', loadCheckins);
+    // =================== CHART 1: Priority Summary ===================
+    async function loadPrioritySummary() {
+      const el = document.getElementById('priorityChart'); if (!el) return;
+      let items = [];
+      try { const res = await ktxAuth.apiFetch('/reports'); items = await res.json(); }
+      catch (e) { console.warn('Không lấy được /reports:', e); }
+      const counts = { normal: 0, high: 0, urgent: 0 };
+      (Array.isArray(items) ? items : []).forEach(r => {
+        const p = (r.priority || '').toLowerCase();
+        if (p.includes('urgent') || p === 'khẩn cấp') counts.urgent++;
+        else if (p.includes('high') || p === 'cao') counts.high++;
+        else counts.normal++;
+      });
+      if (!counts.normal && !counts.high && !counts.urgent) { counts.normal = 2; counts.high = 1; counts.urgent = 1; }
+      new Chart(el.getContext('2d'), {
+        type: 'doughnut',
+        data: { labels: ['Bình thường','Cao','Khẩn cấp'], datasets:[{data:[counts.normal,counts.high,counts.urgent],backgroundColor:['#93c5fd','#f59e0b','#ef4444'],borderWidth:0}] },
+        options: { responsive:true, cutout:'65%', plugins:{legend:{display:false}} }
+      });
+    }
+
+    // =================== CHART 2: Checkin Summary ===================
+    async function loadCheckinChart() {
+      const el = document.getElementById('checkChart'); if (!el) return;
+      let items = [];
+      try { const res = await ktxAuth.apiFetch('/checkins'); items = await res.json(); }
+      catch (e) { console.warn('Không lấy được /checkins:', e); }
+      const c = { checkin: 0, checkout: 0 };
+      (Array.isArray(items)?items:[]).forEach(r=>{
+        const t=(r.type||'').toLowerCase();
+        if(t.includes('out'))c.checkout++;else c.checkin++;
+      });
+      if(!c.checkin&&!c.checkout){c.checkin=2;c.checkout=1;}
+      new Chart(el.getContext('2d'), {
+        type: 'doughnut',
+        data: { labels:['Check-in','Check-out'], datasets:[{data:[c.checkin,c.checkout],backgroundColor:['#22c55e','#3b82f6'],borderWidth:0}] },
+        options: { responsive:true, cutout:'65%', plugins:{legend:{display:false}} }
+      });
+    }
+
+    // =================== CHART 3: Category Summary (dữ liệu thật từ /reports) ===================
+    let _catChart = null;
+    const _vn = (v)=> String(v ?? '').toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu,'').trim();
+    const CATEGORY_MAP = {
+      'dien': 'Điện',
+      'nuoc': 'Nước',
+      've sinh': 'Vệ sinh', 'vs': 'Vệ sinh',
+      'co so vat chat': 'Cơ sở vật chất', 'csvc': 'Cơ sở vật chất',
+      'internet': 'Internet',
+      'wifi': 'Internet',
+      'khac': 'Khác'
+    };
+    function pickCategory(r){
+      // Ưu tiên category người dùng; rỗng thì dùng nhãn AI
+      const raw = (r.category && r.category.trim()) ? r.category : (r.ai_label || '');
+      const n = _vn(raw);
+      if (!n) return 'Khác';
+      for (const k in CATEGORY_MAP){
+        if (n === k || n.includes(k)) return CATEGORY_MAP[k];
+      }
+      return raw ? (raw[0].toUpperCase()+raw.slice(1)) : 'Khác';
+    }
+
+    async function loadCategoryChart(){
+      const el = document.getElementById('categoryChart');
+      const empty = document.getElementById('catEmpty');
+      if (!el) return;
+
+      let reports = [];
+      try {
+        const res = await ktxAuth.apiFetch('/reports');
+        if (!res.ok) throw new Error(await res.text());
+        reports = await res.json();
+      } catch (e) {
+        console.warn('Không lấy được /reports:', e);
+        reports = [];
+      }
+
+      const counts = {};
+      (Array.isArray(reports)?reports:[]).forEach(r=>{
+        const k = pickCategory(r);
+        counts[k] = (counts[k]||0)+1;
+      });
+
+      const labels = Object.keys(counts);
+      const data = labels.map(l=>counts[l]);
+
+      if (!labels.length){
+        el.style.display = 'none';
+        if (empty) empty.style.display = 'block';
+        return;
+      } else {
+        el.style.display = '';
+        if (empty) empty.style.display = 'none';
+      }
+
+      if (_catChart) { _catChart.destroy(); _catChart = null; }
+      _catChart = new Chart(el.getContext('2d'), {
+        type: 'bar',
+        data: { labels, datasets: [{ data, borderWidth: 0 }] },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } },
+          scales: { y: { beginAtZero: true, ticks: { precision:0 } } }
+        }
+      });
+    }
+
+    // Lắng nghe thay đổi từ trang SV (đã set localStorage 'ktx:reports:changed')
+    window.addEventListener('storage', (ev)=>{
+      if (ev.key === 'ktx:reports:changed') loadCategoryChart();
+    });
+
+    // =================== BOOT ===================
+    document.addEventListener('DOMContentLoaded', ()=>{
+      loadCheckins();
+      loadPrioritySummary();
+      loadCheckinChart();
+      loadCategoryChart();       // <-- biểu đồ theo LOẠI
+    });
   </script>
 </body>
 </html>

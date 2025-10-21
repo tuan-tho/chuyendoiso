@@ -1,4 +1,6 @@
 # app/routers/profile.py
+from __future__ import annotations
+
 from fastapi import APIRouter, Depends, HTTPException, status  # type: ignore
 from sqlalchemy.orm import Session  # type: ignore
 from passlib.context import CryptContext  # type: ignore
@@ -18,27 +20,38 @@ def verify_password(plain: str, hashed: str) -> bool:
 def get_password_hash(password: str) -> str:
     return pwd_context.hash(password)
 
-# Helper: build output dict “sạch” cho StudentProfileOut
-def _profile_out(profile: models.StudentProfile, full_name: str | None) -> dict:
+# ===== Helper: build output dict phù hợp StudentProfileOut =====
+def _profile_out(
+    profile: models.StudentProfile,
+    full_name: str | None,
+    fallback_student_code: str,
+) -> dict:
+    """
+    Chuẩn hóa dữ liệu trả về theo schemas.StudentProfileOut.
+    - student_code: ưu tiên profile.student_id (nếu có), fallback = username.
+    - Chỉ trả những field tồn tại trong StudentProfileOut.
+    """
     return {
         "id": profile.id,
         "user_id": profile.user_id,
-        "student_code": profile.student_code,
-        "faculty": profile.faculty,
-        "major": profile.major,
-        "address": profile.address,
-        "dob": profile.dob,
-        "gender": profile.gender,
-        "phone": profile.phone,
-        "email": profile.email,
-        "hometown": profile.hometown,
-        "guardian_name": profile.guardian_name,
-        "guardian_phone": profile.guardian_phone,
-        "building": profile.building,
-        "room": profile.room,
-        "bed": profile.bed,
-        "checkin_date": profile.checkin_date,
         "full_name": full_name,
+
+        # thông tin hồ sơ
+        "major": getattr(profile, "major", None),
+        "address": getattr(profile, "address", None),
+        "dob": getattr(profile, "dob", None),
+        "gender": getattr(profile, "gender", None),
+        "hometown": getattr(profile, "hometown", None),
+        "guardian_name": getattr(profile, "guardian_name", None),
+        "guardian_phone": getattr(profile, "guardian_phone", None),
+
+        # cư trú
+        "building": getattr(profile, "building", None),
+        "bed": getattr(profile, "bed", None),
+        "checkin_date": getattr(profile, "checkin_date", None),
+
+        # tương thích: schema đang có student_code
+        "student_code": getattr(profile, "student_id", None) or fallback_student_code,
     }
 
 # ===== Me: Get profile =====
@@ -65,9 +78,10 @@ def get_my_profile(
         db.commit()
         db.refresh(profile)
 
-    return _profile_out(profile, current_user.full_name)
+    # fallback_student_code = username (mã SV)
+    return _profile_out(profile, current_user.full_name, current_user.username)
 
-# ===== Me: Update profile =====
+# ===== Me: Update profile (WHITELIST) =====
 @router.put("/me", response_model=schemas.StudentProfileOut)
 def update_my_profile(
     payload: schemas.StudentProfileUpdate,
@@ -86,24 +100,37 @@ def update_my_profile(
         .first()
     )
     if not profile:
-        raise HTTPException(status_code=404, detail="Không tìm thấy hồ sơ")
+        # Nếu chưa có thì khởi tạo rỗng
+        profile = models.StudentProfile(user_id=current_user.id)
+        db.add(profile)
+        db.flush()
 
-    # Cập nhật các trường hồ sơ
-    for field, value in payload.model_dump(exclude_unset=True).items():
-        if field == "full_name":
-            # cập nhật họ tên sang bảng users
-            if value is not None:
-                current_user.full_name = value
-                db.add(current_user)
-            continue
-        if hasattr(profile, field):
-            setattr(profile, field, value)
+    data = payload.model_dump(exclude_unset=True)
 
-    db.add(profile)
+    # ---- WHITELIST bảng users
+    # full_name
+    if "full_name" in data and data["full_name"] is not None:
+        current_user.full_name = data["full_name"]
+    # email
+    if "email" in data and data["email"] is not None:
+        current_user.email = data["email"]
+    # phone
+    if "phone" in data and data["phone"] is not None:
+        current_user.phone = data["phone"]
+
+    # ---- WHITELIST bảng student_profiles
+    # address
+    if "address" in data and data["address"] is not None:
+        profile.address = data["address"]
+
+    # ⚠️ Không cho SV tự sửa: faculty/room/bed/building/checkin_date...
+
+    db.add_all([current_user, profile])
     db.commit()
     db.refresh(profile)
+    db.refresh(current_user)
 
-    return _profile_out(profile, current_user.full_name)
+    return _profile_out(profile, current_user.full_name, current_user.username)
 
 # ===== Admin: Get profile by user_id =====
 @router.get("/{user_id}", response_model=schemas.StudentProfileOut)
@@ -124,12 +151,17 @@ def get_profile_by_user_id(
         .first()
     )
     if not profile:
-        raise HTTPException(status_code=404, detail="Không tìm thấy hồ sơ sinh viên")
+        # Cho trải nghiệm mượt mà hơn: tự tạo rỗng thay vì 404
+        profile = models.StudentProfile(user_id=user_id)
+        db.add(profile)
+        db.commit()
+        db.refresh(profile)
 
     user_obj = db.query(models.User).filter(models.User.id == user_id).first()
     full_name = user_obj.full_name if user_obj else None
+    fallback_student_code = user_obj.username if user_obj else ""
 
-    return _profile_out(profile, full_name)
+    return _profile_out(profile, full_name, fallback_student_code)
 
 # ===== Me: Change password =====
 @router.post("/change-password", response_model=schemas.ChangePasswordOut)

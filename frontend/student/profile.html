@@ -3,122 +3,101 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cổng Sinh viên KTX – Hồ sơ cá nhân</title>
+  <title>Hồ sơ cá nhân | Cổng sinh viên KTX</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;600" rel="stylesheet" />
-  <link rel="stylesheet" href="./student.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;600" rel="stylesheet"/>
+  <link rel="stylesheet" href="./student.css"/>
+
   <style>
-    /* ===== Modal styles ===== */
+    /* ================= Modal cập nhật (nền trắng) ================= */
     .modal-backdrop {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.5);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999; /* cao để che mọi thứ */
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,.5);
+      display: none; align-items: center; justify-content: center;
+      z-index: 1000;
     }
     .modal {
-      background: #0f172a;
-      color: #e5e7eb;
-      width: min(960px, 92vw);
-      border-radius: 14px;
-      border: 1px solid #334155;
-      box-shadow: 0 20px 60px rgba(0,0,0,.45);
+      background: #fff; color: #111827;
+      width: min(560px, 95vw);
+      border-radius: 12px; border: 1px solid #e5e7eb;
+      box-shadow: 0 15px 40px rgba(0,0,0,.25);
+      overflow: hidden;
     }
-    .modal header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 20px;
-      border-bottom: 1px solid #334155;
-    }
-    .modal .body {
-      padding: 16px 20px;
-      max-height: 70vh;
-      overflow-y: auto;
+    .modal header, .modal footer {
+      padding: 14px 20px;
+      border-bottom: 1px solid #e5e7eb;
+      display: flex; justify-content: space-between; align-items: center;
     }
     .modal footer {
-      display: flex;
-      justify-content: flex-end;
-      gap: 10px;
-      padding: 14px 20px;
-      border-top: 1px solid #334155;
+      border-top: 1px solid #e5e7eb; border-bottom: none; justify-content: flex-end;
+      background: #f9fafb;
     }
-    .form-row label {
-      display: block;
-      margin: 6px 0;
-      font-size: 13px;
-      color: #cbd5e1;
+    .modal .body { padding: 18px 20px; max-height: 70vh; overflow-y: auto; }
+    .form-row { margin-bottom: 14px; }
+    label { font-size: 14px; color: #374151; display: block; margin-bottom: 6px; font-weight: 500; }
+    input {
+      width: 100%; padding: 10px 12px; border-radius: 8px;
+      border: 1px solid #d1d5db; background: #fff; color: #111827;
+      transition: border-color .2s;
     }
-    .form-row input, .form-row select {
-      width: 100%;
-      padding: 10px 12px;
-      border-radius: 8px;
-      border: 1px solid #334155;
-      background: #0b1326;
-      color: #e5e7eb;
-      outline: none;
-    }
-    .grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
+    input:focus {
+      outline: none; border-color: #2563eb; box-shadow: 0 0 0 2px rgba(37,99,235,0.1);
     }
     .btn {
-      padding: 8px 14px;
-      border-radius: 8px;
-      border: 1px solid #334155;
-      background: #111827;
-      color: #e5e7eb;
-      cursor: pointer;
+      padding: 8px 14px; border-radius: 8px; border: 1px solid #d1d5db;
+      background: #f3f4f6; color: #111827; cursor: pointer;
+      transition: all .2s;
     }
+    .btn.primary { background: #2563eb; border-color: #1d4ed8; color: #fff; }
+    .btn:hover { background: #e5e7eb; }
+    .btn.primary:hover { background: #1e40af; }
     .btn[disabled] { opacity: .6; cursor: not-allowed; }
-    .btn.primary { background: #2563eb; border-color: #1d4ed8; }
+
+    /* === Header profile chỉnh lại === */
+    .profile-header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding-right: 80px;
+    }
+    .ph-main h2 { margin: 0; font-size: 20px; font-weight: 700; color: #111827; }
+    .ph-meta { color: #4b5563; font-size: 14px; display: flex; gap: 12px; flex-wrap: wrap; }
+    .ph-actions { position: absolute; top: 16px; right: 20px; }
   </style>
 </head>
+
 <body>
   <div class="app">
-    <!-- Sidebar -->
     <aside class="sidebar">
       <div class="brand">
         <span class="material-symbols-outlined">apartment</span>
         <span>Cổng Sinh viên KTX</span>
       </div>
       <nav class="menu">
-        <a class="menu-item" data-keep-user href="./student.html">
-          <span class="material-symbols-outlined">home</span><span>Trang chủ</span>
-        </a>
-        <a class="menu-item active" data-keep-user href="./profile.html">
-          <span class="material-symbols-outlined">badge</span><span>Hồ sơ cá nhân</span>
-        </a>
-        <a class="menu-item" data-keep-user href="./checkin.html">
-          <span class="material-symbols-outlined">how_to_reg</span><span>Check-in/Check-out</span>
-        </a>
-        <a class="menu-item" data-keep-user href="../admin/report.html">
-          <span class="material-symbols-outlined">report</span><span>Báo cáo sự cố</span>
-        </a>
+        <a class="menu-item" href="./student.html"><span class="material-symbols-outlined">home</span>Trang chủ</a>
+        <a class="menu-item active" href="./profile.html"><span class="material-symbols-outlined">badge</span>Hồ sơ cá nhân</a>
+        <a class="menu-item" href="./checkin.html"><span class="material-symbols-outlined">how_to_reg</span>Check-in/Check-out</a>
+        <a class="menu-item" href="./report.html"><span class="material-symbols-outlined">report</span>Báo cáo sự cố</a>
         <a class="menu-item" href="../common/login.html" onclick="ktxAuth.logoutCurrent(); return false;">
-          <span class="material-symbols-outlined">logout</span><span>Đăng xuất</span>
+          <span class="material-symbols-outlined">logout</span>Đăng xuất
         </a>
       </nav>
     </aside>
 
-    <!-- Main -->
     <main class="main">
       <header class="topbar">
         <h2>Hồ sơ cá nhân</h2>
-        <p class="muted">Đang dùng: <b data-current-username></b> (<span data-current-role></span>)</p>
+        <p class="muted">Tài khoản: <b data-current-username></b></p>
       </header>
 
       <section class="content">
-        <!-- Hồ sơ -->
+        <!-- Header -->
         <section class="card profile-header">
-          <img class="avatar" src="https://i.pravatar.cc/120?img=15" alt="avatar" />
+          <img class="avatar" src="https://i.pravatar.cc/120?img=14" alt="avatar">
           <div class="ph-main">
-            <h2 class="student-name" id="pf_full_name">Tên sinh viên</h2>
-            <span class="chip success">Đang cư trú</span>
+            <h2 id="pf_full_name">Tên sinh viên</h2>
             <div class="ph-meta">
               <span><b>MSSV:</b> <span id="pf_student_code">—</span></span>
               <span><b>Khoa:</b> <span id="pf_faculty">—</span></span>
@@ -126,11 +105,11 @@
             </div>
           </div>
           <div class="ph-actions">
-            <button class="btn" id="btnEdit" type="button">Cập nhật</button>
+            <button class="btn primary" id="btnEdit">Cập nhật</button>
           </div>
         </section>
 
-        <!-- Thông tin -->
+        <!-- Info -->
         <section class="card info-card">
           <h3>Thông tin cá nhân</h3>
           <div class="kv">
@@ -139,27 +118,16 @@
             <div><span>SĐT</span><b id="pf_phone">—</b></div>
             <div><span>Email</span><b id="pf_email">—</b></div>
             <div><span>Khoa</span><b id="pf_faculty_2">—</b></div>
-            <div><span>Chuyên ngành</span><b id="pf_major">—</b></div>
             <div><span>Địa chỉ</span><b id="pf_address">—</b></div>
-            <div><span>Quê quán</span><b id="pf_hometown">—</b></div>
           </div>
         </section>
 
         <section class="card info-card">
           <h3>Cư trú</h3>
           <div class="kv">
-            <div><span>Tòa</span><b id="pf_building">—</b></div>
+            <div><span>Tòa</span><b id="pf_building">KSSV</b></div>
             <div><span>Phòng</span><b id="pf_room_2">—</b></div>
             <div><span>Giường</span><b id="pf_bed">—</b></div>
-            <div><span>Ngày vào</span><b id="pf_checkin_date">—</b></div>
-          </div>
-        </section>
-
-        <section class="card info-card">
-          <h3>Liên hệ khẩn</h3>
-          <div class="kv">
-            <div><span>Người liên hệ</span><b id="pf_guardian_name">—</b></div>
-            <div><span>SĐT</span><b id="pf_guardian_phone">—</b></div>
           </div>
         </section>
 
@@ -169,203 +137,119 @@
   </div>
 
   <!-- Modal cập nhật -->
-  <div class="modal-backdrop" id="mdEdit" aria-hidden="true">
-    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mdTitle">
+  <div class="modal-backdrop" id="mdEdit">
+    <div class="modal">
       <header>
-        <h3 id="mdTitle">Cập nhật hồ sơ</h3>
-        <button class="btn" id="mdEditClose" type="button">✕</button>
+        <h3>Cập nhật hồ sơ</h3>
+        <button class="btn" id="btnClose">✕</button>
       </header>
       <div class="body">
-        <form id="formProfile" class="grid-2">
-          <div class="form-row"><label>Họ và tên</label><input id="full_name" type="text" /></div>
-          <div class="form-row"><label>MSSV</label><input id="student_code" type="text" /></div>
-          <div class="form-row"><label>Điện thoại</label><input id="phone" type="text" /></div>
-          <div class="form-row"><label>Email</label><input id="email" type="email" /></div>
-          <div class="form-row"><label>Ngày sinh</label><input id="dob" type="date" /></div>
-          <div class="form-row">
-            <label>Giới tính</label>
-            <select id="gender">
-              <option value="" selected>—</option>
-              <option value="Nam">Nam</option>
-              <option value="Nữ">Nữ</option>
-            </select>
-          </div>
-          <div class="form-row"><label>Khoa</label><input id="faculty" type="text" /></div>
-          <div class="form-row"><label>Chuyên ngành</label><input id="major" type="text" /></div>
-          <div class="form-row"><label>Địa chỉ</label><input id="address" type="text" /></div>
-          <div class="form-row"><label>Quê quán</label><input id="hometown" type="text" /></div>
-          <div class="form-row"><label>Tòa</label><input id="building" type="text" /></div>
-          <div class="form-row"><label>Phòng</label><input id="room" type="text" /></div>
-          <div class="form-row"><label>Giường</label><input id="bed" type="text" /></div>
-          <div class="form-row"><label>Ngày vào</label><input id="checkin_date" type="date" /></div>
-          <div class="form-row"><label>Người liên hệ khẩn</label><input id="guardian_name" type="text" /></div>
-          <div class="form-row"><label>SĐT liên hệ khẩn</label><input id="guardian_phone" type="text" /></div>
+        <form id="formProfile">
+          <div class="form-row"><label>Họ và tên</label><input id="full_name" type="text"></div>
+          <div class="form-row"><label>Email</label><input id="email" type="email"></div>
+          <div class="form-row"><label>Điện thoại</label><input id="phone" type="text"></div>
+          <div class="form-row"><label>Địa chỉ</label><input id="address" type="text"></div>
         </form>
       </div>
       <footer>
-        <button class="btn" id="btnCancel" type="button">Hủy</button>
-        <button class="btn primary" id="btnSave" type="button">Lưu thay đổi</button>
+        <button class="btn" id="btnCancel">Hủy</button>
+        <button class="btn primary" id="btnSave" type="button">Lưu</button>
       </footer>
     </div>
   </div>
 
   <script src="../common/script.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // Bảo vệ route
+    document.addEventListener("DOMContentLoaded", async () => {
       ktxAuth.requireAuth(["student"]);
 
-      // ====== HẰNG & HỖ TRỢ CACHE ======
-      const NS = "ktx";
-      const profileKey = (u) => `${NS}:profile:${u}`;
-
-      const FIELDS = [
-        "full_name","student_code","faculty","major","address",
-        "dob","gender","phone","email","hometown",
-        "guardian_name","guardian_phone",
-        "building","room","bed","checkin_date"
-      ];
-
-      // DOM
       const md = document.getElementById("mdEdit");
       const btnEdit = document.getElementById("btnEdit");
-      const btnSave = document.getElementById("btnSave");
+      const btnClose = document.getElementById("btnClose");
       const btnCancel = document.getElementById("btnCancel");
-      const btnClose = document.getElementById("mdEditClose");
+      const btnSave = document.getElementById("btnSave");
 
-      // Mở/đóng modal
-      const showModal = () => { md.style.display = "flex"; md.setAttribute("aria-hidden","false"); };
-      const hideModal = () => { md.style.display = "none"; md.setAttribute("aria-hidden","true"); };
+      const showModal = () => md.style.display="flex";
+      const hideModal = () => md.style.display="none";
+      btnEdit.onclick = showModal; btnClose.onclick = hideModal; btnCancel.onclick = hideModal;
+      md.onclick = e=>{if(e.target===md)hideModal()};
 
-      btnEdit.addEventListener("click", showModal);
-      btnCancel.addEventListener("click", hideModal);
-      btnClose.addEventListener("click", hideModal);
-      md.addEventListener("click", (e) => {
-        if (e.target === md) hideModal(); // click nền đóng modal
-      });
-
-      function setMsg(t, err=false){
-        const el=document.getElementById("pf-msg");
-        el.textContent=t||"";
-        el.style.color=err?"#b91c1c":"#6b7280";
-      }
-
-      function fmtDateView(x){
-        if(!x) return "—";
-        const d = new Date(x);
-        return isNaN(d) ? x : d.toLocaleDateString("vi-VN");
-      }
-
-      function paintProfile(d){
-        const map = (id,v)=>{const e=document.getElementById(id); if(e) e.textContent=v||"—"};
-        map("pf_full_name", d.full_name);
-        map("pf_student_code", d.student_code);
-        map("pf_faculty", d.faculty);
-        map("pf_faculty_2", d.faculty);
-        map("pf_room", d.room);
-        map("pf_room_2", d.room);
-        map("pf_building", d.building);
-        map("pf_bed", d.bed);
-        map("pf_major", d.major);
-        map("pf_phone", d.phone);
-        map("pf_email", d.email);
-        map("pf_address", d.address);
-        map("pf_hometown", d.hometown);
-        map("pf_guardian_name", d.guardian_name);
-        map("pf_guardian_phone", d.guardian_phone);
-        map("pf_gender", d.gender);
-        document.getElementById("pf_dob").textContent = fmtDateView(d.dob);
-        document.getElementById("pf_checkin_date").textContent = fmtDateView(d.checkin_date);
-      }
-
-      function fillForm(d){
-        FIELDS.forEach(k=>{
-          const el = document.getElementById(k);
-          if(!el) return;
-          let v = d[k];
-          if(v && (k==="dob"||k==="checkin_date")){
-            const nd = new Date(v);
-            if(!isNaN(nd)) v = nd.toISOString().slice(0,10);
-          }
-          if(k==="gender" && v!=="Nam" && v!=="Nữ") v = "";
-          el.value = v || "";
-        });
-      }
+      const setText = (id,v)=>{const el=document.getElementById(id); if(el) el.textContent = (v ?? "—");};
+      const fmtDate=v=>v?new Date(v).toLocaleDateString("vi-VN"):"—";
 
       async function loadProfile(){
-        try{
-          const r = await ktxAuth.apiFetch("/profile/me");
-          if(!r.ok){
-            const txt = await r.text(); throw new Error(txt || `HTTP ${r.status}`);
-          }
-          const d = await r.json();
+        const [resP, resU] = await Promise.all([
+          ktxAuth.apiFetch("/profile/me"),
+          ktxAuth.apiFetch("/users/me")
+        ]);
 
-          // Vẽ + điền form
-          paintProfile(d);
-          fillForm(d);
-
-          // Cache + tín hiệu
-          const u = ktxAuth.getCurrentUsername();
-          if (u) localStorage.setItem(profileKey(u), JSON.stringify(d));
-          localStorage.setItem("ktx:profile_updated", String(Date.now()));
-        }catch(e){
-          setMsg("Lỗi tải hồ sơ: " + (e?.message || e), true);
+        if(!resP.ok || !resU.ok){
+          document.querySelector('[data-current-username]').textContent = "-";
+          document.getElementById("pf-msg").textContent = "Không tải được hồ sơ";
+          return;
         }
-      }
 
-      function startSavingState(){
-        btnSave.disabled = true;
-        btnSave.dataset.oldText = btnSave.textContent;
-        btnSave.textContent = "Đang lưu…";
-      }
-      function endSavingState(){
-        btnSave.disabled = false;
-        btnSave.textContent = btnSave.dataset.oldText || "Lưu thay đổi";
+        const [p, u] = [await resP.json(), await resU.json()];
+
+        document.querySelector('[data-current-username]').textContent = u.username || "-";
+        setText("pf_full_name", u.full_name);
+        setText("pf_student_code", u.username);
+        setText("pf_faculty", u.faculty);
+        setText("pf_room", u.room);
+        setText("pf_phone", u.phone);
+        setText("pf_email", u.email);
+        setText("pf_faculty_2", u.faculty);
+        setText("pf_address", p.address);
+        setText("pf_gender", p.gender);
+        document.getElementById("pf_dob").textContent = fmtDate(p.dob);
+
+        // Nếu tòa trống thì mặc định là KSSV
+        const building = p.building || "KSSV";
+        document.getElementById("pf_building").textContent = building;
+        setText("pf_room_2", u.room);
+        setText("pf_bed", p.bed);
+
+        document.getElementById("full_name").value = u.full_name || "";
+        document.getElementById("email").value     = u.email || "";
+        document.getElementById("phone").value     = u.phone || "";
+        document.getElementById("address").value   = p.address || "";
       }
 
       async function saveProfile(){
-        const payload = {};
-        FIELDS.forEach(k=>{
-          const el=document.getElementById(k);
-          if(!el) return;
-          const val = el.value.trim();
-          if(val !== "") payload[k] = val;
+        const payload = {
+          full_name: document.getElementById("full_name").value.trim() || null,
+          email:     document.getElementById("email").value.trim() || null,
+          phone:     document.getElementById("phone").value.trim() || null,
+          address:   document.getElementById("address").value.trim() || null,
+        };
+
+        btnSave.disabled = true; btnSave.textContent = "Đang lưu...";
+        const res = await ktxAuth.apiFetch("/profile/me", {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
         });
+        btnSave.disabled = false; btnSave.textContent = "Lưu";
 
-        try{
-          startSavingState();
-          const r = await ktxAuth.apiFetch("/profile/me", {
-            method: "PUT",
-            body: JSON.stringify(payload)
-          });
-          if(!r.ok){
-            let msg = "";
-            try { const j = await r.json(); msg = j.detail || JSON.stringify(j); }
-            catch { msg = await r.text(); }
-            throw new Error(msg || `HTTP ${r.status}`);
-          }
-          const d = await r.json();
-
-          // Vẽ lại + điền form
-          paintProfile(d);
-          fillForm(d);
-
-          // Cache + tín hiệu
-          const u = ktxAuth.getCurrentUsername();
-          if (u) localStorage.setItem(profileKey(u), JSON.stringify(d));
-          localStorage.setItem("ktx:profile_updated", String(Date.now()));
-
-          setMsg("Đã lưu thay đổi.");
-          hideModal();
-        }catch(e){
-          setMsg("Lỗi lưu: " + (e?.message || e), true);
-        }finally{
-          endSavingState();
+        if (!res.ok) {
+          let msg = "";
+          try {
+            const raw = await res.text();
+            try {
+              const j = JSON.parse(raw);
+              msg = j.detail || (Array.isArray(j) ? j.map(e => e.msg).join("; ") : JSON.stringify(j));
+            } catch { msg = raw; }
+          } catch { msg = res.statusText || "Unknown error"; }
+          alert("Lỗi lưu hồ sơ: " + msg);
+          return;
         }
+
+        hideModal();
+        await loadProfile();
       }
 
-      btnSave.addEventListener("click", (e)=>{ e.preventDefault(); saveProfile(); });
-      loadProfile();
+      btnSave.onclick = saveProfile;
+      await loadProfile();
     });
   </script>
 </body>

@@ -6,6 +6,8 @@ const API_BASE = "http://127.0.0.1:8000"; // Backend FastAPI
 // ✅ Đường dẫn backend
 const REPORTS_PATH  = "/reports";
 const CHECKINS_PATH = "/checkins";
+// ✅ Upload ảnh check-in/out
+const CHECKINS_UPLOAD_PATH = `${CHECKINS_PATH}/upload`;
 
 /* LOCAL STORAGE (đa phiên) */
 const NS = "ktx";
@@ -86,6 +88,7 @@ async function apiFetch(path, options = {}) {
   const token = getToken();
   const headers = new Headers(options.headers || {});
 
+  // Không set Content-Type khi body là FormData
   if (!headers.has("Content-Type") && options.body && !(options.body instanceof FormData)) {
     headers.set("Content-Type", "application/json");
   }
@@ -185,6 +188,12 @@ async function apiMe() {
   return r.json();
 }
 
+/* Helper URL ảnh dùng chung */
+function resolveImg(url){
+  if (!url) return null;
+  return url.startsWith("http") ? url : `${API_BASE}${url}`;
+}
+
 /* API – REPORTS */
 async function apiUploadImage(file) {
   const fd = new FormData();
@@ -214,9 +223,9 @@ async function apiCreateReport(payload) {
   return res.json();
 }
 
-// Danh sách sự cố của riêng tôi
-async function apiListReportsMine() {
-  const res = await apiFetch(`${REPORTS_PATH}/mine`);
+// Danh sách sự cố của riêng tôi (mặc định mới nhất trước)
+async function apiListReportsMine(order = "desc") {
+  const res = await apiFetch(`${REPORTS_PATH}/mine?order=${encodeURIComponent(order)}`);
   if (!res.ok) {
     const t = await res.text().catch(()=> "");
     throw new Error(`Không tải được danh sách của bạn: ${res.status} ${t}`);
@@ -225,8 +234,8 @@ async function apiListReportsMine() {
 }
 
 // (Admin) – Danh sách tất cả
-async function apiListReportsAll() {
-  const res = await apiFetch(REPORTS_PATH);
+async function apiListReportsAll(order = "desc") {
+  const res = await apiFetch(`${REPORTS_PATH}?order=${encodeURIComponent(order)}`);
   if (!res.ok) {
     const t = await res.text().catch(()=> "");
     throw new Error(`Không tải được danh sách sự cố: ${res.status} ${t}`);
@@ -257,10 +266,35 @@ async function apiUpdateReport(reportId, patch) {
   return res.json();
 }
 
+// alias thuận tiện: trên SV gọi apiListReports() sẽ chính là mine
 async function apiListReports() { return apiListReportsMine(); }
 
 /* API – CHECKINS */
+
+// Upload ảnh check-in/out
+async function apiUploadCheckinImage(file) {
+  const fd = new FormData();
+  fd.append("file", file);
+  const res = await apiFetch(CHECKINS_UPLOAD_PATH, {
+    method: "POST",
+    body: fd,
+  });
+  if (!res.ok) {
+    const t = await res.text().catch(()=> "");
+    throw new Error(`Upload ảnh check-in/out thất bại: ${res.status} ${t}`);
+  }
+  const { url } = await res.json();
+  return url.startsWith("http") ? url : `${API_BASE}${url}`;
+}
+
 async function apiCreateCheckin(payload) {
+  // Nếu truyền image_file (File), tự upload rồi gắn image_url
+  if (payload && payload.image_file instanceof File) {
+    const url = await apiUploadCheckinImage(payload.image_file);
+    payload = { ...payload, image_url: url };
+    delete payload.image_file;
+  }
+
   const res = await apiFetch(CHECKINS_PATH, {
     method: "POST",
     body: JSON.stringify(payload),
@@ -315,13 +349,15 @@ window.ktxAuth = {
   getCurrentUsername,
   linkWithUser,
   apiMe,
-  apiUploadImage, // ✅ thêm dòng này
+  resolveImg,                 // 👈 export helper URL ảnh
+  apiUploadImage,
   apiCreateReport,
   apiListReportsMine,
   apiListReportsAll,
   apiGetReport,
   apiUpdateReport,
   apiListReports,
+  apiUploadCheckinImage,      // 👈 export upload ảnh check-in/out
   apiCreateCheckin,
   apiMyCheckins,
   apiListCheckinsAll,
@@ -330,4 +366,4 @@ window.ktxAuth = {
 
 // ✅ Đảm bảo mọi trang truy cập được API_BASE đúng
 window.ktxAuth.apiBase = API_BASE;
-window.ktxAuth.baseURL = API_BASE; // OK
+window.ktxAuth.baseURL = API_BASE;

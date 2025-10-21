@@ -17,10 +17,19 @@
     .main{ margin-left:270px; width:calc(100% - 270px); min-height:100vh; }
 
     .wrap { max-width: 1100px; margin: 24px auto; padding: 0 16px; }
-    .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; }
-    .filters { display: flex; gap: 8px; flex-wrap: wrap; }
-    .tab { background: #f3f4f6; border: 1px solid #e5e7eb; padding: 6px 12px; border-radius: 8px; cursor: pointer; font-weight: 500; }
-    .tab.active { background: #4f46e5; color: #fff; border-color: #4f46e5; }
+
+    .top { display:flex; flex-direction:column; gap:12px; margin-bottom: 18px; }
+    .titlebar { display:flex; align-items:flex-start; gap:10px; }
+    .title-left { min-width: 280px; }
+
+    .filters-row { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+    .filters-left { display:flex; gap:8px; flex-wrap:wrap; }
+    .filters-right { margin-left:auto; }
+
+    .tab { background:#f3f4f6; border:1px solid #e5e7eb; padding:6px 12px; border-radius:8px; cursor:pointer; font-weight:500; }
+    .tab.active { background:#4f46e5; color:#fff; border-color:#4f46e5; }
+
+    #q { border:1px solid #e5e7eb; border-radius:999px; padding:8px 14px; font-size:.95rem; min-width:280px; background:#fff; }
 
     table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
     th, td { padding: 10px 12px; border-bottom: 1px solid #e5e7eb; vertical-align: top; font-size: 0.95rem; }
@@ -34,22 +43,23 @@
     .muted { color: #6b7280; font-size: 0.9rem; }
     .btn { padding: 6px 12px; border-radius: 8px; border: none; cursor: pointer; font-weight: 600; }
     .btn.warn { background: #f59e0b; color: #fff; } .btn.primary { background: #4f46e5; color: #fff; }
-    .btn.gray { background: #f3f4f6; border: 1px solid #e5e7eb; } .btn:hover { opacity: 0.9; }
-    .select { border: 1px solid #e5e7eb; border-radius: 8px; padding: 6px 10px; background: #fff; font-size: 0.9rem; }
+    .btn.gray { background: #f3f4f6; border: 1px solid #e5e7eb; } .btn:hover { opacity: 0.92; }
     .notice { margin: 10px 0 16px; font-size: 0.9rem; } .err { color: #b91c1c; }
 
     .menu .menu-item{ display:flex; gap:10px; align-items:center; padding:10px 16px; text-decoration:none; color:#111827; }
     .menu .menu-item.active{ background:#eef2ff; }
 
-    /* Ảnh & ưu tiên */
     .thumb{ width:72px; height:72px; border-radius:12px; object-fit:cover; background:#f1f5f9; cursor:zoom-in; display:block; }
     .img-cell{ width:86px; }
     .prio-badge{ display:inline-flex; align-items:center; gap:6px; padding:3px 9px; border-radius:999px; font-weight:700; font-size:12px; }
     .prio-normal{ background:#e0f2fe; color:#075985; } .prio-high{ background:#fef9c3; color:#92400e; } .prio-urgent{ background:#fee2e2; color:#991b1b; }
 
-    /* Modal ảnh */
     #img-modal{ display:none; position:fixed; inset:0; background:rgba(0,0,0,.6); z-index:200; align-items:center; justify-content:center; }
     #img-modal img{ max-height:85vh; border-radius:16px; display:block; }
+
+    .badge { display:inline-block; padding:2px 8px; margin-top:6px; border-radius:6px; font-size:12px; font-weight:600; color:#fff; }
+    .badge-ai { background:#4f46e5; } .badge-manual { background:#16a34a; }
+    .select { border: 1px solid #e5e7eb; border-radius: 8px; padding: 6px 10px; background: #fff; font-size: 0.9rem; }
   </style>
 </head>
 <body>
@@ -57,28 +67,48 @@
     <aside class="sidebar">
       <div class="brand" style="display:flex;align-items:center;gap:8px;padding:14px 16px;border-bottom:1px solid #e5e7eb">
         <span class="material-symbols-outlined">apartment</span>
-        <span>KTX-DNU</span>
+        <span>KSSV-DNU</span>
       </div>
+
       <nav class="menu" style="padding:8px 0;">
-        <a class="menu-item" data-keep-user href="./admin.html"><span class="material-symbols-outlined">dashboard</span><span>Trang quản lý</span></a>
-        <a class="menu-item active" data-keep-user href="./report_manage.html"><span class="material-symbols-outlined">report</span><span>Quản lý sự cố</span></a>
-        <a class="menu-item" data-keep-user href="./checkins.html"><span class="material-symbols-outlined">how_to_reg</span><span>Check-in/Check-out</span></a>
-        <a class="menu-item" href="../common/login.html" onclick="ktxAuth.logoutCurrent(); return false;"><span class="material-symbols-outlined">logout</span><span>Đăng xuất</span></a>
+        <a class="menu-item" data-keep-user href="./admin.html">
+          <span class="material-symbols-outlined">dashboard</span><span>Trang quản lý</span>
+        </a>
+        <a class="menu-item active" data-keep-user href="./report_manage.html">
+          <span class="material-symbols-outlined">report</span><span>Quản lý sự cố</span>
+        </a>
+        <a class="menu-item" data-keep-user href="./checkins.html">
+          <span class="material-symbols-outlined">how_to_reg</span><span>Check-in/Check-out</span>
+        </a>
+        <a class="menu-item" data-keep-user href="./users.html">
+          <span class="material-symbols-outlined">group</span><span>Quản lý tài khoản</span>
+        </a>
+        <a class="menu-item" href="../common/login.html" onclick="ktxAuth.logoutCurrent(); return false;">
+          <span class="material-symbols-outlined">logout</span><span>Đăng xuất</span>
+        </a>
       </nav>
     </aside>
 
     <main class="main">
       <div class="wrap">
         <div class="top">
-          <div>
-            <h2 style="margin:6px 0 0;font-weight:700">Quản lý Báo cáo sự cố</h2>
-            <p class="muted">Đang đăng nhập: <b data-current-username></b> (<span data-current-role></span>)</p>
-          </div> 
-          <div class="filters">
-            <button class="tab active" data-filter="all">Tất cả</button>
-            <button class="tab" data-filter="open">Mở</button>
-            <button class="tab" data-filter="in_progress">Đang xử lý</button>
-            <button class="tab" data-filter="resolved">Đã giải quyết</button>
+          <div class="titlebar">
+            <div class="title-left">
+              <h2 style="margin:6px 0 0;font-weight:700">Quản lý Báo cáo sự cố</h2>
+              <p class="muted">Đang đăng nhập: <b data-current-username></b> (<span data-current-role></span>)</p>
+            </div>
+          </div>
+
+          <div class="filters-row">
+            <div class="filters-left">
+              <button class="tab active" data-filter="all">Tất cả</button>
+              <button class="tab" data-filter="open">Mở</button>
+              <button class="tab" data-filter="in_progress">Đang xử lý</button>
+              <button class="tab" data-filter="resolved">Đã giải quyết</button>
+            </div>
+            <div class="filters-right">
+              <input id="q" placeholder="Tìm kiếm..." />
+            </div>
           </div>
         </div>
 
@@ -116,17 +146,93 @@
 
   <script src="../common/script.js?v=5"></script>
   <script>
-    // ✅ Không khai báo lại API_BASE nữa — đã có từ script.js
     ktxAuth.requireAuth(["admin"]);
 
     const tbody  = document.getElementById("tbody");
     const notice = document.getElementById("notice");
+    const qInput = document.getElementById("q");
 
     function setNotice(msg, err=false){ notice.textContent = msg || ""; notice.className = "notice " + (err ? "err" : "muted"); }
     const chip = (s)=>{ const map={open:"s-open",in_progress:"s-progress",resolved:"s-done"}; const txt=s==="resolved"?"Đã giải quyết":(s==="in_progress"?"Đang xử lý":"Mở"); return `<span class="status-chip ${map[s]||"s-open"}">${txt}</span>`; };
     const prBadge=(p)=>{ const k=(p||"").toLowerCase(); if(k==="urgent")return`<span class="prio-badge prio-urgent">Khẩn cấp</span>`; if(k==="high")return`<span class="prio-badge prio-high">Cao</span>`; return`<span class="prio-badge prio-normal">Bình thường</span>`; };
-    const resolveImg=(url)=> !url?null : (url.startsWith('http')?url:(ktxAuth.apiBase+url));
+    const debounce = (fn, t=250) => { let h; return (...args)=>{ clearTimeout(h); h=setTimeout(()=>fn(...args), t); }; };
 
+    const normalize = (v)=> (v==null? "" : String(v))
+      .normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\s+/g,'').trim();
+
+    const KEY_ALIAS = {
+      priority:['priority','prio','uutien','uu_tien','u_tien','uutiên','ưu_tiên','ưu-tien'],
+      status:['status','stt','trangthai','trang_thai','trang-thai'],
+      category:['category','loai','loai_suco','loai-su-co','loại'],
+      user:['user','sv','sinhvien','student','reporter','nguoi_gui','nguoigui'],
+      id:['id','ma','#'],
+      building:['building','toa','toà','block'],
+      room:['room','phong','phòng'],
+    };
+
+    function normalizeKey(k){
+      const nk = normalize(k);
+      for (const std in KEY_ALIAS){
+        if (KEY_ALIAS[std].some(a => normalize(a)===nk)) return std;
+      }
+      return null;
+    }
+
+    function normPriority(v){
+      const x = normalize(v);
+      if (/^(urgent|khan|khancap|khan-cap)$/.test(x)) return 'urgent';
+      if (/^(high|cao)$/.test(x)) return 'high';
+      if (/^(normal|binhthuong)$/.test(x)) return 'normal';
+      return null;
+    }
+    function normStatus(v){
+      const x = normalize(v);
+      if (/^(open|mo)$/.test(x)) return 'open';
+      if (/^(inprogress|dangxuly|dang_xu_ly|dang-xu-ly)$/.test(x)) return 'in_progress';
+      if (/^(resolved|dagiaiquyet|da_giai_quyet|da-giai-quyet|giaiquyet)$/.test(x)) return 'resolved';
+      return null;
+    }
+
+    function parseQuery(raw){
+      const filters = {};
+      const terms = [];
+      if (!raw) return {filters, terms};
+
+      const re = /(\S+):"([^"]+)"|(\S+):(\S+)/g;
+      const usedIdx = [];
+      let m;
+      while ((m = re.exec(raw)) !== null){
+        const key = normalizeKey(m[1] || m[3]);
+        const valRaw = m[2] || m[4] || '';
+        if (!key) continue;
+
+        if (key==='priority'){
+          const p = normPriority(valRaw); if (p) filters.priority = p;
+        } else if (key==='status'){
+          const s = normStatus(valRaw); if (s) filters.status = s;
+        } else if (key==='category'){
+          filters.category = normalize(valRaw);
+        } else if (key==='user'){
+          filters.user = normalize(valRaw);
+        } else if (key==='id'){
+          const n = String(valRaw).replace(/\D+/g,''); if (n) filters.id = Number(n);
+        } else if (key==='building'){
+          filters.building = normalize(valRaw);
+        } else if (key==='room'){
+          filters.room = normalize(valRaw);
+        }
+        usedIdx.push([m.index, re.lastIndex]);
+      }
+
+      let rest = raw;
+      usedIdx.sort((a,b)=>a[0]-b[0]).reverse().forEach(([s,e])=>{
+        rest = rest.slice(0,s) + ' ' + rest.slice(e);
+      });
+      rest.split(/\s+/).filter(Boolean).forEach(w => terms.push(normalize(w)));
+      return {filters, terms};
+    }
+
+    // API
     async function apiList(){ return ktxAuth.apiListReportsAll(); }
     async function apiPatch(id,data){ return ktxAuth.apiUpdateReport(id,data); }
 
@@ -134,14 +240,55 @@
       tbody.innerHTML = `<tr><td colspan="9" style="text-align:center;">Đang tải...</td></tr>`;
       try{
         const data = await apiList();
-        const list = (filter==="all") ? data : data.filter(r => r.status === filter);
-        if(!Array.isArray(list) || !list.length){
+        const byStatus = (filter==="all") ? data : data.filter(r => r.status === filter);
+
+        const raw = qInput?.value || "";
+        const {filters, terms} = parseQuery(raw);
+
+        const list = byStatus.filter(r=>{
+          if (filters.priority && String(r.priority||'').toLowerCase() !== filters.priority) return false;
+          if (filters.status && String(r.status||'') !== filters.status) return false;
+          if (filters.category && normalize(r.category||'') !== filters.category) return false;
+          if (filters.user){
+            const u = normalize(r.reporter?.username || r.reporter_id || '');
+            if (!u.includes(filters.user)) return false;
+          }
+          if (filters.id && Number(r.id)!==filters.id) return false;
+          if (filters.building && !normalize(r.building||'').includes(filters.building)) return false;
+          if (filters.room && !normalize(r.room||'').includes(filters.room)) return false;
+
+          if (terms.length){
+            const prioText = (() => {
+              const p = (r.priority||"").toLowerCase();
+              if (p==="urgent") return "urgent khan khancap";
+              if (p==="high")   return "high cao";
+              if (p==="normal") return "normal binhthuong";
+              return "";
+            })();
+            const haystack = [
+              r.id, r.title, r.description,
+              r.reporter?.username, r.reporter_id,
+              r.category, r.status, r.building, r.room,
+              prioText
+            ].map(x=>normalize(x)).join('|');
+
+            for (const t of terms){
+              if (!haystack.includes(t)) return false;
+            }
+          }
+          return true;
+        });
+
+        if (!list.length){
           tbody.innerHTML = `<tr><td colspan="9" style="text-align:center;color:#6b7280;">Không có báo cáo nào.</td></tr>`;
           setNotice(""); return;
         }
+
         tbody.innerHTML = list.map(r=>{
-          const img = resolveImg(r.image_url);
-          const imgCell = img ? `<img class="thumb" src="${img}" alt="ảnh minh chứng" onclick="openImgModal('${img}')">` : `<div class="thumb" style="cursor:default;"></div>`;
+          const imgUrl = ktxAuth.resolveImg(r.image_url);
+          const imgCell = imgUrl
+            ? `<img class="thumb" src="${imgUrl}" alt="ảnh minh chứng" onclick="openImgModal('${imgUrl}')">`
+            : `<div class="thumb" style="cursor:default;"></div>`;
           return `
             <tr data-id="${r.id}">
               <td>#${r.id}</td>
@@ -162,7 +309,14 @@
                   <option value="resolved" ${r.status==='resolved'?'selected':''}>Đã giải quyết</option>
                 </select>
               </td>
-              <td><textarea id="rp-${r.id}" class="reply" placeholder="Nhập phản hồi…">${r.admin_reply || ""}</textarea></td>
+              <td>
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+                  <span class="muted">Phản hồi</span>
+                  ${r.admin_reply_source==='ai' ? '<span class="badge badge-ai">AI</span>' :
+                    (r.admin_reply_source==='manual' ? '<span class="badge badge-manual">Thủ công</span>' : '')}
+                </div>
+                <textarea id="rp-${r.id}" class="reply" placeholder="Nhập phản hồi…">${r.admin_reply || ""}</textarea>
+              </td>
               <td class="actions">
                 <button class="btn warn" onclick="updateStatus(${r.id})">Cập nhật</button>
                 <button class="btn primary" onclick="saveReply(${r.id})">Lưu</button>
@@ -179,16 +333,22 @@
 
     async function updateStatus(id){
       const st = document.getElementById(`st-${id}`).value;
-      try{ await apiPatch(id,{status:st}); setNotice(`✅ Đã cập nhật trạng thái #${id} → ${st}`); load(getCurrentFilter()); }
-      catch(e){ alert("Lỗi cập nhật: " + e.message); }
+      try{
+        await apiPatch(id,{status:st});
+        setNotice(`✅ Đã cập nhật trạng thái #${id} → ${st}`);
+        load(getCurrentFilter());
+      } catch(e){ alert("Lỗi cập nhật: " + e.message); }
     }
     async function saveReply(id){
       const val = document.getElementById(`rp-${id}`).value;
-      try{ await apiPatch(id,{admin_reply:val}); setNotice(`💬 Đã lưu phản hồi cho #${id}`); }
-      catch(e){ alert("Lỗi lưu phản hồi: " + e.message); }
+      try{
+        await apiPatch(id,{admin_reply:val});
+        setNotice(`💬 Đã lưu phản hồi cho #${id}`);
+        load(getCurrentFilter());
+      } catch(e){ alert("Lỗi lưu phản hồi: " + e.message); }
     }
-    function getCurrentFilter(){ const a=document.querySelector(".tab.active"); return a? a.dataset.filter : "all"; }
 
+    function getCurrentFilter(){ const a=document.querySelector(".tab.active"); return a? a.dataset.filter : "all"; }
     function wireTabs(){
       document.querySelectorAll(".tab").forEach(btn=>{
         btn.addEventListener("click", ()=>{
@@ -212,6 +372,7 @@
       }
       if (window.rewriteLinksKeepUser) rewriteLinksKeepUser();
       wireTabs();
+      qInput?.addEventListener("input", debounce(()=>load(getCurrentFilter()), 200));
       load();
     }
 

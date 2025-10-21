@@ -3,11 +3,61 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Check-in/Check-out – KTX-DNU</title>
+  <title>Check-in/Check-out – KSSV-DNU</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;600" rel="stylesheet" />
   <link rel="stylesheet" href="./student.css" />
+
+  <style>
+    /* Card tạo yêu cầu */
+    .create-card{background:#fff;color:#1e293b;border-radius:16px;border:1px solid #e2e8f0;padding:18px;box-shadow:0 6px 20px rgba(0,0,0,.06)}
+    .create-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+    .create-head .ico{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;font-weight:800}
+    .create-head h3{margin:0;font-size:18px;color:#111827}
+    .create-sub{color:#64748b;font-size:13px}
+    .create-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media(max-width:760px){.create-grid{grid-template-columns:1fr}}
+
+    .field label{display:block;font-size:12px;color:#64748b;margin-bottom:6px}
+    .field .input,.field select,.field input[type="date"],.field input[type="time"],.field textarea{
+      width:100%;padding:10px 12px;border-radius:10px;border:1px solid #cbd5e1;background:#f8fafc;color:#1e293b;outline:none
+    }
+    .field .input:focus,.field select:focus,.field textarea:focus,.field input[type="date"]:focus,.field input[type="time"]:focus{
+      border-color:#4f46e5;box-shadow:0 0 0 3px rgba(79,70,229,.25)
+    }
+
+    .type-pills{display:flex;gap:8px;flex-wrap:wrap}
+    .type-pill{border:1px solid #cbd5e1;background:#f8fafc;color:#1e293b;border-radius:999px;padding:8px 14px;cursor:pointer;user-select:none;transition:.15s}
+    .type-pill.active{background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border-color:transparent}
+
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+    .chip{padding:6px 10px;border:1px solid #cbd5e1;border-radius:999px;background:#f8fafc;color:#1e293b;font-size:12px;cursor:pointer}
+    .chip:hover{border-color:#4f46e5}
+
+    #note{min-height:100px;resize:vertical;background:#f8fafc}
+    .note-row{display:flex;justify-content:space-between;align-items:center;margin-top:6px;color:#64748b;font-size:12px}
+
+    .btn-big{display:inline-flex;align-items:center;gap:10px;justify-content:center;width:100%;padding:12px 16px;margin-top:14px;border-radius:12px;border:0;cursor:pointer;font-weight:700;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;box-shadow:0 6px 16px rgba(99,102,241,.25)}
+    .btn-big:hover{filter:brightness(1.07)}
+
+    /* Upload ảnh */
+    .filebox{display:flex;align-items:center;gap:12px}
+    .thumb{width:84px;height:84px;border:1px dashed #e5e7eb;border-radius:12px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#fafafa}
+    .thumb img{max-width:100%;max-height:100%;object-fit:cover}
+
+    /* Lịch sử */
+    .ticket{border:1px solid #eef2f7;border-radius:12px;padding:12px;background:#fff;display:flex;justify-content:space-between;gap:12px}
+    .ticket + .ticket{margin-top:10px}
+    .ticket-title{font-weight:700}
+    .meta{display:inline-flex;gap:6px;align-items:center;color:#6b7280;font-size:13px;margin-right:12px}
+    .chip-badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:999px;font-weight:700;font-size:12px}
+    .chip-info{background:#e0f2fe;color:#075985}
+    .chip-success{background:#dcfce7;color:#166534}
+    .chip-danger{background:#fee2e2;color:#b91c1c}
+    .thumb-sm{width:110px;height:82px;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;background:#fafafa;flex-shrink:0}
+    .thumb-sm img{width:100%;height:100%;object-fit:cover;display:block}
+  </style>
 </head>
 <body>
   <div class="app">
@@ -47,34 +97,71 @@
         <div class="grid quick-2">
           <!-- Form tạo yêu cầu -->
           <article class="card">
-            <h3><span class="material-symbols-outlined">edit_calendar</span> Tạo yêu cầu</h3>
-            <form id="ck-form" class="form" autocomplete="off">
-              <div class="form-row">
-                <label>Loại</label>
-                <select name="type" required>
-                  <option value="checkin">Check-in</option>
-                  <option value="checkout">Check-out</option>
-                </select>
+            <div class="create-card">
+              <div class="create-head">
+                <!--<div class="ico">CI</div>-->
+                <div>
+                  <h3>Tạo yêu cầu Check-in/Check-out</h3>
+                  <div class="create-sub">Điền nhanh và gửi cho quản lý ký túc xá</div>
+                </div>
               </div>
-              <div class="form-row">
-                <label>Ngày</label>
-                <input type="date" name="date" required />
-              </div>
-              <div class="form-row">
-                <label>Giờ</label>
-                <input type="time" name="time" />
-              </div>
-              <div class="form-row">
-                <label>Ghi chú</label>
-                <textarea name="note" rows="3" placeholder="Ghi chú ngắn (không bắt buộc)"></textarea>
-              </div>
-              <button class="btn primary" type="submit">
-                <span class="material-symbols-outlined">send</span> Gửi yêu cầu
-              </button>
-            </form>
+
+              <form id="ck-form" class="form" autocomplete="off">
+                <div class="create-grid">
+                  <div class="field">
+                    <label>Loại</label>
+                    <select name="type" id="typeSelect" class="input" style="display:none">
+                      <option value="checkin" selected>checkin</option>
+                      <option value="checkout">checkout</option>
+                    </select>
+                    <div class="type-pills" id="typePills">
+                      <span class="type-pill active" data-v="checkin">Check-in</span>
+                      <span class="type-pill" data-v="checkout">Check-out</span>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label>Ngày</label>
+                    <input type="date" name="date" id="date" class="input" required />
+                  </div>
+
+                  <div class="field">
+                    <label>Giờ (không bắt buộc)</label>
+                    <input type="time" name="time" id="time" class="input" />
+                    <div class="chips">
+                      <span class="chip" data-time="07:30">07:30</span>
+                      <span class="chip" data-time="12:00">12:00</span>
+                      <span class="chip" data-time="17:30">17:30</span>
+                      <span class="chip" data-time="20:00">20:00</span>
+                      <span class="chip" id="chipNow">Bây giờ</span>
+                    </div>
+                  </div>
+
+                  <div class="field" style="grid-column:1/-1">
+                    <label>Ghi chú</label>
+                    <textarea name="note" id="note" class="input" rows="3" placeholder="Ghi chú ngắn (không bắt buộc)"></textarea>
+                    <div class="note-row"><span>Mẹo: nêu lý do ngắn gọn</span><span id="noteCount">0/300</span></div>
+                  </div>
+
+                  <!-- ✅ Ảnh minh hoạ -->
+                  <div class="field" style="grid-column:1/-1">
+                    <label>Ảnh minh hoạ (tuỳ chọn)</label>
+                    <div class="filebox">
+                      <div class="thumb" id="ck-thumb"><span class="material-symbols-outlined">image</span></div>
+                      <input id="ck-file" type="file" accept="image/*" />
+                    </div>
+                    <div class="note">Có thể chụp vé xe, đồ đạc mang theo… để quản lý xác nhận nhanh hơn (không bắt buộc).</div>
+                  </div>
+                </div>
+
+                <button class="btn-big" type="submit">
+                  <span class="material-symbols-outlined">send</span> Gửi yêu cầu
+                </button>
+              </form>
+            </div>
           </article>
 
-          <!-- Danh sách yêu cầu -->
+          <!-- Lịch sử -->
           <article class="card">
             <h3><span class="material-symbols-outlined">history</span> Lịch sử của tôi</h3>
             <div id="ck-mine"></div>
@@ -86,74 +173,133 @@
 
   <script src="../common/script.js"></script>
   <script>
-    // Chặn truy cập: chỉ student
+  (function(){
+    // Bảo vệ trang
     ktxAuth.requireAuth(["student"]);
 
-    const form = document.getElementById('ck-form');
-    const mineBox = document.getElementById('ck-mine');
-
-    // Set mặc định ngày hôm nay
-    document.addEventListener('DOMContentLoaded', () => {
-      const today = new Date().toISOString().slice(0, 10);
-      form.querySelector('input[name="date"]').value = today;
-      loadMine();
+    // ===== UI phụ =====
+    const sel = document.getElementById('typeSelect');
+    document.querySelectorAll('#typePills .type-pill').forEach(p=>{
+      p.addEventListener('click', ()=>{
+        document.querySelectorAll('#typePills .type-pill').forEach(x=>x.classList.remove('active'));
+        p.classList.add('active');
+        sel.value = p.dataset.v;
+      });
     });
 
-    form.addEventListener('submit', async (e) => {
+    const dEl = document.getElementById('date');
+    if (dEl && !dEl.value){
+      const now = new Date();
+      const local = new Date(now.getTime() - now.getTimezoneOffset()*60000).toISOString().slice(0,10);
+      dEl.value = local;
+    }
+    document.querySelectorAll('.chip[data-time]').forEach(ch=>{
+      ch.addEventListener('click', ()=>{ document.getElementById('time').value = ch.dataset.time; });
+    });
+    document.getElementById('chipNow').addEventListener('click', ()=>{
+      const t = new Date(); const hh = String(t.getHours()).padStart(2,'0'); const mm = String(t.getMinutes()).padStart(2,'0');
+      document.getElementById('time').value = `${hh}:${mm}`;
+    });
+
+    const note = document.getElementById('note');
+    const counter = document.getElementById('noteCount');
+    note.maxLength = 300;
+    note.addEventListener('input', ()=> counter.textContent = `${note.value.length}/300`);
+    counter.textContent = '0/300';
+
+    // ===== Preview ảnh =====
+    const fileInp = document.getElementById('ck-file');
+    const thumb   = document.getElementById('ck-thumb');
+    fileInp.addEventListener('change', ()=>{
+      const f = fileInp.files?.[0];
+      thumb.innerHTML = f ? `<img src="${URL.createObjectURL(f)}" alt="preview"/>`
+                          : '<span class="material-symbols-outlined">image</span>';
+    });
+
+    // ===== Submit =====
+    const formEl = document.getElementById('ck-form');
+    const mineBox = document.getElementById('ck-mine');
+
+    formEl.addEventListener('submit', async (e)=>{
       e.preventDefault();
-      const fd = new FormData(form);
+      const fd = new FormData(formEl);
+
+      // 1) upload ảnh nếu có
+      let image_url = null;
+      const f = fileInp.files?.[0];
+      if (f) {
+        image_url = await ktxAuth.apiUploadImage(f); // trả full URL (../uploads/xxx.jpg)
+      }
+
+      // 2) payload
       const payload = {
-        type: fd.get('type'),            // "checkin" | "checkout"
-        date: fd.get('date'),            // YYYY-MM-DD
-        time: fd.get('time') || null,    // HH:MM (optional)
-        note: fd.get('note') || null,    // string (optional)
+        type: fd.get('type'),
+        date: fd.get('date'),
+        time: fd.get('time') || null,
+        note: fd.get('note') || null,
+        image_url: image_url || null,      // ✅ gửi kèm lên server
       };
 
-      try {
-        // ✅ Dùng helper đã khớp endpoint /checkins/checkins
+      try{
         await ktxAuth.apiCreateCheckin(payload);
-        form.reset();
+        formEl.reset();
+        // reset ui
+        document.querySelector('#typePills .type-pill[data-v="checkin"]').click();
+        const now = new Date();
+        dEl.value = new Date(now.getTime()-now.getTimezoneOffset()*60000).toISOString().slice(0,10);
+        counter.textContent = '0/300';
+        thumb.innerHTML = '<span class="material-symbols-outlined">image</span>';
         await loadMine();
         alert('Đã gửi yêu cầu!');
-      } catch (err) {
-        alert('Lỗi: ' + err.message);
+      }catch(err){
+        alert('Lỗi: ' + (err.message || err));
         console.error(err);
       }
     });
 
-    async function loadMine() {
+    // Helper resolve ảnh (nếu backend trả path tương đối)
+    function resolveImg(url){
+      if(!url) return null;
+      return url.startsWith('http') ? url : (window.ktxAuth.apiBase + url);
+    }
+
+    // ===== Lịch sử =====
+    async function loadMine(){
       mineBox.innerHTML = '<p class="muted">Đang tải...</p>';
-      try {
-        // ✅ Dùng helper đã khớp endpoint /checkins/checkins/mine
+      try{
         const data = await ktxAuth.apiMyCheckins();
-        if (!Array.isArray(data) || data.length === 0) {
+        if(!Array.isArray(data) || data.length===0){
           mineBox.innerHTML = '<p class="muted">Chưa có yêu cầu nào.</p>';
           return;
         }
-        mineBox.innerHTML = data.map(item => `
-          <article class="ticket mini">
-            <div class="ticket-main">
-              <div class="ticket-title">
-                ${item.type ? item.type.toUpperCase() : ''} • ${item.date || ''}${item.time ? ' ' + item.time : ''}
+        mineBox.innerHTML = data.map(item=>{
+          const badgeCls = item.status==='approved' ? 'chip-success' : item.status==='rejected' ? 'chip-danger' : 'chip-info';
+          const imgUrl = resolveImg(item.image_url);
+          const img = imgUrl ? `<a href="${imgUrl}" target="_blank" class="thumb-sm"><img src="${imgUrl}" alt="Ảnh"></a>` : '';
+          return `
+            <div class="ticket">
+              <div style="display:flex;gap:12px;align-items:flex-start;flex:1">
+                ${img}
+                <div style="flex:1">
+                  <div class="ticket-title">${(item.type||'').toUpperCase()} • ${item.date||''}${item.time?(' '+item.time):''}</div>
+                  <div class="meta">
+                    ${item.created_at ? `<span class="material-symbols-outlined" style="font-size:18px">schedule</span> ${new Date(item.created_at).toLocaleString('vi-VN')}` : ''}
+                  </div>
+                  ${item.note ? `<div class="meta"><span class="material-symbols-outlined" style="font-size:18px">notes</span> ${item.note}</div>` : ''}
+                  ${item.admin_reply ? `<div class="meta"><span class="material-symbols-outlined" style="font-size:18px">chat</span> Phản hồi QL: ${item.admin_reply}</div>` : ''}
+                </div>
               </div>
-              <div class="ticket-meta">
-                ${item.created_at ? `<span class="meta"><span class="material-symbols-outlined">schedule</span> ${new Date(item.created_at).toLocaleString()}</span>` : ''}
-                ${item.note ? `<span class="meta"><span class="material-symbols-outlined">notes</span> ${item.note}</span>` : ''}
-              </div>
+              <div><span class="chip-badge ${badgeCls}">${item.status || 'pending'}</span></div>
             </div>
-            <div class="ticket-aside">
-              <span class="chip ${item.status==='approved'?'success':item.status==='rejected'?'danger':'info'}">
-                ${item.status || 'pending'}
-              </span>
-              ${item.admin_reply ? `<button class="btn ghost sm" onclick="alert('Phản hồi: ${String(item.admin_reply).replace(/'/g, '\\\'')}')">Phản hồi</button>` : ''}
-            </div>
-          </article>
-        `).join('');
-      } catch (e) {
+          `;
+        }).join('');
+      }catch(e){
         mineBox.innerHTML = `<p class="muted">Lỗi tải dữ liệu: ${e.message}</p>`;
-        console.error(e);
       }
     }
+
+    document.addEventListener('DOMContentLoaded', loadMine, {once:true});
+  })();
   </script>
 </body>
 </html>

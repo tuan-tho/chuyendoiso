@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quản lý tài khoản | KTX-DNU</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;600" rel="stylesheet"/>
+
+  <style>
+    html, body { height:100%; margin:0; background:#f6f7fb; font-family: Inter, system-ui, Arial, sans-serif; }
+    .app { min-height:100%; display:flex; }
+
+    /* Sidebar */
+    .sidebar{
+      position: fixed; top:0; left:0; bottom:0; width:270px; background:#fff;
+      border-right:1px solid #e5e7eb; overflow-y:auto; z-index:100;
+    }
+    .brand{ display:flex; align-items:center; gap:8px; padding:18px; font-weight:700; color:#4f46e5; }
+    .menu{ display:flex; flex-direction:column; padding:6px; }
+    .menu-item{
+      display:flex; align-items:center; gap:10px; padding:10px 12px; border-radius:10px;
+      text-decoration:none; color:#111827; font-weight:600;
+    }
+    .menu-item:hover{ background:#f3f4f6; }
+    .menu-item.active{ background:#eef2ff; color:#4f46e5; }
+
+    /* Main */
+    .main{ margin-left:270px; width:calc(100% - 270px); min-height:100vh; overflow-y:auto; }
+    .topbar{ padding:16px 20px; }
+    .topbar h2{ margin:0; font-size:22px; }
+
+    /* Toolbar */
+    .toolbar{
+      margin-top:10px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+
+    .btn{ border:none; border-radius:10px; padding:8px 14px; cursor:pointer; font-weight:600; font-size:14px; }
+    .btn.primary{ background:#4f46e5; color:#fff; }
+    .btn.ghost{ background:#eef2ff; color:#4f46e5; }
+    .btn.danger{ background:#fee2e2; color:#b91c1c; }
+    .btn.sm{ padding:6px 10px; border-radius:8px; font-size:13px; }
+
+    /* Search */
+    .search{
+      display:flex; align-items:center; gap:6px;
+      background:#fff; border:1px solid #e5e7eb;
+      border-radius:10px;
+      height:38px; padding:0 10px;
+      width:220px;
+    }
+    .search .material-symbols-outlined{ font-size:20px; line-height:1; color:#6b7280; }
+    .search input{
+      border:none; outline:none; background:transparent;
+      font-size:14px; width:100%;
+    }
+
+    /* Table */
+    .content{ padding:0 20px 24px; }
+    .card{ background:#fff; border-radius:14px; box-shadow:0 6px 18px rgba(0,0,0,.04); border:1px solid #eef0f4; }
+    .user-table{ width:100%; border-collapse:collapse; }
+    .user-table th,.user-table td{ padding:12px 14px; border-bottom:1px solid #eef2f6; text-align:left; }
+    .user-table th{ background:#fafbff; font-weight:700; }
+
+    /* Modal */
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 200;
+      padding: 20px;
+    }
+    .modal.hidden { display: none; }
+
+    .modal-content {
+      background: #fff;
+      border-radius: 14px;
+      width: 420px;
+      max-height: 70vh;
+      overflow-y: auto;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px 20px 0 20px;
+      scrollbar-width: thin;
+    }
+
+    .modal-content::-webkit-scrollbar { width: 6px; }
+    .modal-content::-webkit-scrollbar-thumb { background-color: #bbb; border-radius: 10px; }
+
+    .modal-content h3 {
+      margin: 0 0 10px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .modal-content label { font-weight: 600; font-size: 14px; margin-top: 6px; }
+    .modal-content input,
+    .modal-content select {
+      padding: 8px 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .modal-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin: 16px 0 0;
+      padding: 10px 0 12px;
+      border-top: 1px solid #f3f4f6;
+      background: #fff;
+      position: sticky;
+      bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="material-symbols-outlined">apartment</span>
+        <span>KSSV-DNU</span>
+      </div>
+      <nav class="menu">
+        <a class="menu-item" href="./admin.html"><span class="material-symbols-outlined">dashboard</span><span>Trang quản lý</span></a>
+        <a class="menu-item" href="./report_manage.html"><span class="material-symbols-outlined">report</span><span>Quản lý sự cố</span></a>
+        <a class="menu-item" href="./checkins.html"><span class="material-symbols-outlined">how_to_reg</span><span>Check-in/Check-out</span></a>
+        <a class="menu-item active" href="./users.html"><span class="material-symbols-outlined">groups_2</span><span>Quản lý tài khoản</span></a>
+        <a class="menu-item" href="../common/login.html" onclick="ktxAuth.logoutCurrent(); return false;">
+          <span class="material-symbols-outlined">logout</span><span>Đăng xuất</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="topbar">
+        <h2>Quản lý tài khoản sinh viên</h2>
+        <div class="toolbar">
+          <button class="btn primary" id="btnAddUser">+ Thêm tài khoản</button>
+          <label class="search">
+            <span class="material-symbols-outlined">search</span>
+            <input id="searchInput" placeholder="Tìm..." />
+          </label>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="card">
+          <table class="user-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Tên đăng nhập</th>
+                <th>Họ tên</th>
+                <th>Email</th>
+                <th>Khoa</th>
+                <th>Phòng</th>
+                <th>Giường</th>
+                <th>Địa chỉ</th>
+                <th>Vai trò</th>
+                <th>Thao tác</th>
+              </tr>
+            </thead>
+            <tbody id="userTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Modal thêm/sửa -->
+  <div id="userModal" class="modal hidden">
+    <div class="modal-content">
+      <h3 id="modalTitle">Thêm tài khoản</h3>
+      <label>ID (Mã SV / Username):</label><input id="username" />
+      <label>Mật khẩu:</label><input id="password" type="password" />
+      <label>Họ tên:</label><input id="fullname" />
+      <label>Email:</label><input id="email" />
+      <label>Điện thoại:</label><input id="phone" />
+      <label>Khoa:</label><input id="faculty" />
+      <label>Phòng:</label><input id="room" />
+      <label>Giường:</label><input id="bed" />
+      <label>Địa chỉ:</label><input id="address" />
+      <label>Vai trò:</label>
+      <select id="role">
+        <option value="student">Sinh viên</option>
+        <option value="admin">Quản lý</option>
+      </select>
+      <div class="modal-actions">
+        <button class="btn primary" id="btnSaveUser" type="button">Lưu</button>
+        <button class="btn ghost" id="btnCancelModal" type="button">Hủy</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="../common/script.js"></script>
+  <script>
+    let editingId = null, allUsers = [];
+
+    document.addEventListener("DOMContentLoaded", () => {
+      ktxAuth.requireAuth(["admin"]);
+      loadUsers();
+      btnAddUser.onclick = () => openModal();
+      btnCancelModal.onclick = () => closeModal();
+      btnSaveUser.onclick = saveUser;             // 👉 nút Lưu là type="button", không submit form
+      searchInput.oninput = () => applySearch(searchInput.value);
+    });
+
+    async function loadUsers(){
+      const tbody = userTableBody;
+      tbody.innerHTML = "<tr><td colspan='10'>Đang tải...</td></tr>";
+      try{
+        const res = await ktxAuth.apiFetch("/users");
+        if(!res.ok){ tbody.innerHTML="<tr><td colspan='10'>Lỗi tải dữ liệu</td></tr>"; return; }
+        allUsers = await res.json();
+        renderUsers(allUsers);
+      }catch(e){
+        tbody.innerHTML="<tr><td colspan='10'>Lỗi: "+e.message+"</td></tr>";
+      }
+    }
+
+    function renderUsers(list){
+      const tbody=userTableBody;
+      if(!list.length){tbody.innerHTML="<tr><td colspan='10'>Không có dữ liệu</td></tr>";return;}
+      tbody.innerHTML=list.map(u=>`
+        <tr>
+          <td>${u.id}</td>
+          <td>${u.username}</td>
+          <td>${u.full_name||"-"}</td>
+          <td>${u.email||"-"}</td>
+          <td>${u.faculty||"-"}</td>
+          <td>${u.room||"-"}</td>
+          <td>${u.bed||"-"}</td>
+          <td>${u.address||"-"}</td>
+          <td>${u.role}</td>
+          <td>
+            <button class='btn sm' onclick='editUser(${u.id})'>Sửa</button>
+            <button class='btn danger sm' onclick='deleteUser(${u.id})'>Xóa</button>
+          </td>
+        </tr>`).join("");
+    }
+
+    function applySearch(q){
+      q=normalizeVN(q.toLowerCase().trim());
+      const pick = (u) => [
+        u.id, u.username, u.full_name, u.email, u.phone, u.faculty, u.room, u.bed, u.address, u.role
+      ].map(x => normalizeVN(String(x||"").toLowerCase())).join("|");
+      const filtered=allUsers.filter(u=>pick(u).includes(q));
+      renderUsers(filtered);
+    }
+    function normalizeVN(str){return str.normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/đ/g,"d").replace(/Đ/g,"D");}
+
+    function openModal(u=null){
+      userModal.classList.remove("hidden");
+      modalTitle.textContent=u?"Cập nhật tài khoản":"Thêm tài khoản";
+      editingId=u?.id||null;
+
+      username.value = u?.username || "";
+      password.value = ""; // khi sửa, để trống sẽ KHÔNG đổi mật khẩu
+      fullname.value = u?.full_name || "";
+      email.value    = u?.email || "";
+      phone.value    = u?.phone || "";
+      faculty.value  = u?.faculty || "";
+      room.value     = u?.room || "";
+      bed.value      = u?.bed || "";
+      address.value  = u?.address || "";
+      role.value     = u?.role || "student";
+    }
+    function closeModal(){userModal.classList.add("hidden");editingId=null;}
+
+    async function saveUser(){
+      const base = {
+        username: username.value.trim(),
+        full_name: (fullname.value||"").trim() || null,
+        email: (email.value||"").trim() || null,
+        phone: (phone.value||"").trim() || null,
+        faculty: (faculty.value||"").trim() || null,
+        room: (room.value||"").trim() || null,
+        bed: (bed.value||"").trim() || null,
+        address: (address.value||"").trim() || null,
+        role: role.value
+      };
+
+      try{
+        if(!editingId){
+          // TẠO MỚI
+          const pwd = (password.value||"").trim();
+          if(!base.username || !pwd){ alert("Vui lòng nhập ID (username) và mật khẩu."); return; }
+          const body = { ...base, password: pwd };
+
+          const res = await ktxAuth.apiFetch("/users", {
+            method:"POST",
+            headers: { "Content-Type":"application/json" },   // thêm header
+            body: JSON.stringify(body)
+          });
+          if(!res.ok) throw new Error((await res.text()) || res.status);
+          alert("✅ Đã tạo tài khoản");
+
+        }else{
+          // CẬP NHẬT
+          const updateBody = { ...base };
+          const pwd = (password.value||"").trim();
+          if(pwd) updateBody.password = pwd;
+
+          const res = await ktxAuth.apiFetch(`/users/${editingId}`, {
+            method:"PATCH",                                    // đổi PUT -> PATCH
+            headers: { "Content-Type":"application/json" },    // thêm header
+            body: JSON.stringify(updateBody)
+          });
+          if(!res.ok) throw new Error((await res.text()) || res.status);
+          alert("✅ Đã cập nhật");
+        }
+        closeModal();
+        loadUsers();
+      }catch(e){
+        alert("Lỗi: " + e.message);
+      }
+    }
+
+    function editUser(id){
+      const u=allUsers.find(x=>x.id===id);
+      if(u) openModal(u);
+    }
+    async function deleteUser(id){
+      if(!confirm("Xóa tài khoản này?"))return;
+      const res=await ktxAuth.apiFetch(`/users/${id}`,{method:"DELETE"});
+      if(res.ok){alert("✅ Đã xóa");loadUsers();}else alert("❌ Lỗi xóa");
+    }
+  </script>
+</body>
+</html>

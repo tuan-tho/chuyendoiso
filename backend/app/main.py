@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import os
+from pathlib import Path
 from fastapi import FastAPI  # type: ignore
 from fastapi.middleware.cors import CORSMiddleware  # type: ignore
 from fastapi.staticfiles import StaticFiles  # type: ignore
@@ -33,18 +34,36 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# 3) Static uploads: /uploads/<file>
-UPLOAD_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "uploads"))
-os.makedirs(UPLOAD_DIR, exist_ok=True)
-app.mount("/uploads", StaticFiles(directory=UPLOAD_DIR), name="uploads")
+# 3) Static uploads
+# Gốc lưu upload: app/uploads
+BASE_DIR = Path(__file__).resolve().parent
+UPLOAD_DIR = BASE_DIR / "uploads"
+(UPLOAD_DIR / "reports").mkdir(parents=True, exist_ok=True)
+(UPLOAD_DIR / "checkins").mkdir(parents=True, exist_ok=True)
 
-# 4) Import routers (lưu ý: import biến `router`)
+# a) /uploads -> duyệt toàn bộ cây uploads (giữ lại cho tương thích)
+app.mount("/uploads", StaticFiles(directory=str(UPLOAD_DIR)), name="uploads")
+
+# b) /static/reports và /static/checkins -> đường dẫn ngắn gọn cho FE
+app.mount(
+    "/static/reports",
+    StaticFiles(directory=str(UPLOAD_DIR / "reports")),
+    name="reports-static",
+)
+app.mount(
+    "/static/checkins",
+    StaticFiles(directory=str(UPLOAD_DIR / "checkins")),
+    name="checkins-static",
+)
+
+# 4) Import routers
 from .routers.auth_router import router as auth_router          # noqa: E402
 from .routers.reports_router import router as reports_router    # noqa: E402
 from .routers.checkins_router import router as checkins_router  # noqa: E402
 from .routers.profile import router as profile_router           # noqa: E402
 from .routers.ai_router import router as ai_router              # noqa: E402
-from .routers.files_router import router as files_router        # noqa: E402  # prefix="/files"
+from .routers.files_router import router as files_router        # noqa: E402
+from .routers.users_router import router as users_router        # noqa: E402
 
 # 5) Gắn routers
 app.include_router(auth_router,     prefix="/auth",     tags=["Auth"])
@@ -53,6 +72,7 @@ app.include_router(checkins_router, prefix="/checkins", tags=["Checkins"])
 app.include_router(profile_router)  # file profile đã tự đặt prefix="/profile"
 app.include_router(ai_router,       prefix="/ai",       tags=["AI"])
 app.include_router(files_router)    # -> /files/upload
+app.include_router(users_router)    # -> /users
 
 # 6) Tạo bảng khi khởi động
 @app.on_event("startup")

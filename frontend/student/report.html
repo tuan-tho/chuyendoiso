@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Báo cáo sự cố – Sinh viên | KTX-DNU</title>
+  <title>Báo cáo sự cố – Sinh viên | KSSV-DNU</title>
 
   <!-- Font & Icon -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -16,7 +16,6 @@
       --card-bg:#fff; --muted:#6b7280; --line:#e5e7eb; --brand:#4f46e5; --brand-2:#7c3aed;
       --chip-open:#ef4444; --chip-prog:#0284c7; --chip-done:#16a34a;
       --shadow:0 10px 20px rgba(0,0,0,.06); --radius:14px;
-
       --secondary-bg:#f1f5f9;
       --secondary-text:#111827;
       --secondary-border:#d1d5db;
@@ -58,10 +57,35 @@
     .prio-high{background:#f59e0b}
     .prio-urgent{background:#ef4444}
     .prio-badge .material-symbols-outlined{font-size:16px}
+
+    /* ✅ Giữ menu (sidebar) đứng yên */
+    html, body { height: 100%; margin: 0; font-family: 'Inter', sans-serif; }
+    .app { min-height: 100%; display: flex; }
+    .sidebar {
+      position: fixed;
+      top: 0; left: 0; bottom: 0;
+      width: 270px;
+      background: #fff;
+      border-right: 1px solid var(--line, #e5e7eb);
+      overflow-y: auto;
+      z-index: 100;
+    }
+    .main {
+      margin-left: 270px;
+      width: calc(100% - 270px);
+      min-height: 100vh;
+      overflow-y: auto;
+      padding-bottom: 30px;
+    }
+    @media (max-width: 900px) {
+      .sidebar { width: 240px; }
+      .main { margin-left: 240px; width: calc(100% - 240px); }
+    }
   </style>
 </head>
 <body>
   <div class="app">
+    <!-- Sidebar cố định -->
     <aside class="sidebar">
       <div class="brand">
         <span class="material-symbols-outlined">apartment</span>
@@ -70,6 +94,9 @@
       <nav class="menu">
         <a class="menu-item" data-keep-user href="./student.html">
           <span class="material-symbols-outlined">home</span><span>Trang chủ</span>
+        </a>
+        <a class="menu-item" data-keep-user href="./profile.html">
+          <span class="material-symbols-outlined">badge</span><span>Hồ sơ cá nhân</span>
         </a>
         <a class="menu-item" data-keep-user href="./checkin.html">
           <span class="material-symbols-outlined">how_to_reg</span><span>Check-in/Check-out</span>
@@ -92,7 +119,7 @@
           </div>
         </div>
 
-        <!-- Form -->
+        <!-- Form tạo báo cáo -->
         <article class="card" style="margin-bottom:16px">
           <div class="card-head">
             <span class="material-symbols-outlined">add</span><b>Tạo báo cáo mới</b>
@@ -127,7 +154,7 @@
           </div>
         </article>
 
-        <!-- Danh sách -->
+        <!-- Danh sách báo cáo -->
         <article class="card">
           <div class="card-head">
             <span class="material-symbols-outlined">history</span><b>Sự cố của tôi</b>
@@ -146,6 +173,11 @@
 
     const fileInp = document.getElementById("rp-file");
     const thumb = document.getElementById("thumb");
+
+    function resolveImg(url){
+      if(!url) return null;
+      return url.startsWith('http') ? url : (window.ktxAuth.apiBase + url);
+    }
 
     fileInp.addEventListener("change", () => {
       const f = fileInp.files?.[0];
@@ -171,6 +203,7 @@
         document.getElementById("rp-title").value = "";
         fileInp.value = "";
         thumb.innerHTML = '<span class="material-symbols-outlined">image</span>';
+        localStorage.setItem('ktx:reports:changed', String(Date.now()));
         await loadMine();
         alert("✅ Đã gửi báo cáo!");
       } catch (err) {
@@ -197,15 +230,19 @@
           const prMap={normal:{text:'Bình thường',cls:'prio-normal',icon:'schedule'},
                        high:{text:'Cao',cls:'prio-high',icon:'warning'},
                        urgent:{text:'Khẩn cấp',cls:'prio-urgent',icon:'whatshot'}};
-          const pr=prMap[r.priority||'normal'];
-          const img=r.image_url?`<a href="${r.image_url}" target="_blank" class="thumb-sm"><img src="${r.image_url}" alt="Ảnh sự cố"></a>`:"";
+          const pr=prMap[(r.priority||'normal')];
+          const imgUrl = resolveImg(r.image_url);
+          const img=imgUrl?`<a href="${imgUrl}" target="_blank" class="thumb-sm"><img src="${imgUrl}" alt="Ảnh sự cố"></a>`:"";
           return `
           <div class="ticket">
             <div style="display:flex;gap:14px;align-items:flex-start;flex:1">
               ${img}
               <div style="flex:1">
                 <div class="ticket-title">${r.title}</div>
-                <div class="meta"><span class="material-symbols-outlined" style="font-size:18px">schedule</span>${new Date(r.created_at).toLocaleString()}</div>
+                <div class="meta">
+                  <span class="material-symbols-outlined" style="font-size:18px">schedule</span>
+                  ${new Date(r.created_at).toLocaleString('vi-VN')}
+                </div>
                 <div class="meta">
                   ${r.category?`<span class="meta"><span class="material-symbols-outlined" style="font-size:18px">sell</span>${r.category}</span>`:""}
                   <span class="prio-badge ${pr.cls}"><span class="material-symbols-outlined">${pr.icon}</span>${pr.text}</span>
@@ -222,6 +259,7 @@
     }
 
     document.addEventListener("DOMContentLoaded", () => loadMine());
+    window.addEventListener('storage', (ev)=>{ if (ev.key === 'ktx:reports:changed') loadMine(); });
   </script>
 </body>
 </html>

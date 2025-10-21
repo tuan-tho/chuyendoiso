@@ -4,3 +4,53 @@ checkpoints/**
 !data/README.md
 !logs/README.md
 !checkpoints/README.md
+# ============================
+# 🚫 BỎ QUA FILE NẶNG & MODEL
+# ============================
+backend/ai/model/
+backend/ai/wav2vec2-vi/
+backend/ai/phobert/
+models/
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.h5
+
+# ============================
+# 🐍 PYTHON / ENVIRONMENT
+# ============================
+__pycache__/
+venv/
+*.pyc
+
+# ============================
+# 💻 IDE / HỆ THỐNG
+# ============================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ============================
+# 📦 KHÁC (LOG, BUILD, CACHE)
+# ============================
+*.log
+*.tmp
+*.bak
+# Secrets / env
+.env
+*.env
+**/.env
+backend/.env
+
+# Virtual env (mọi nơi)
+venv/
+**/venv/
+backend/venv/
+
+# Models folder trong backend/ai
+backend/ai/models/
+
+# Dữ liệu CSV đặt nhầm chỗ (tạm bỏ qua)
+backend/ai/Datakssv.csv

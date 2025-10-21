@@ -21,3 +21,17 @@
 /* ==== MODAL xem ảnh ==== */
 #img-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:200;align-items:center;justify-content:center}
 #img-modal img{max-height:85vh;border-radius:16px;display:block}
+/* chip trạng thái */
+.status-chip{padding:4px 10px;border-radius:999px;color:#fff;font-size:12px;font-weight:700;display:inline-block;text-transform:capitalize}
+.s-open{background:#ef4444}
+.s-progress{background:#0284c7}
+.s-done{background:#16a34a}
+
+/* badge nguồn phản hồi (AI / Thủ công) */
+.badge{display:inline-block;padding:2px 8px;margin-top:6px;border-radius:6px;font-size:12px;font-weight:600;color:#fff}
+.badge-ai{background:#4f46e5}
+.badge-manual{background:#16a34a}
+
+/* input/select dùng trong bảng */
+.select{border:1px solid var(--line);border-radius:8px;padding:6px 10px;background:#fff;font-size:14px}
+.reply{width:100%;min-height:64px;border:1px solid var(--line);border-radius:8px;padding:8px;font-family:inherit;font-size:14px}
