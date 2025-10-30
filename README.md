@@ -218,4 +218,4 @@ python -m backend.ai.predictor "ống nước tầng 2 bị vỡ, đang tràn ra
 
 
 </div>
-```
+
