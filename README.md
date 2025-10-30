@@ -128,9 +128,10 @@ pip install -r requirements.txt
 ```bash
 # Di chuyển đến thư mục backend
 cd backend
-
+# kích hoạt môi trường ảo
+venv\Scripts\activate
 # Chạy server FastAPI
-uvicorn main:app --reload
+ python -m uvicorn app.main:app --reload
 ```
 
 > 🔗 Sau khi chạy, truy cập:  
