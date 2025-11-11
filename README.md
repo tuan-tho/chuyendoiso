@@ -86,7 +86,7 @@
 ## 📸 HÌNH ẢNH CÁC CHỨC NĂNG
 
 ### 🔐 Giao diện Đăng nhập
-<img src="dangnhap.png" width="800"/>
+<img src="imgs/dangnhap.png" width="800"/>
 
 > Giao diện khởi đầu của hệ thống, cho phép sinh viên và quản lý đăng nhập bằng tài khoản được cấp.  
 > Hỗ trợ xác thực người dùng và phân quyền vai trò (Student / Admin).
@@ -94,7 +94,7 @@
 ---
 
 ### 🎓 Giao diện Sinh viên
-<img src="trangchusv.png" width="800"/>
+<img src="imgs/trangchusv.png" width="800"/>
 
 > Sinh viên có thể gửi phản ánh sự cố, xem lịch sử, theo dõi tiến độ xử lý và biểu đồ thống kê cá nhân.  
 > Giao diện đơn giản, thân thiện và hiển thị realtime trạng thái từng phản ánh.
@@ -102,7 +102,7 @@
 ---
 
 ### 🧰 Giao diện Quản trị viên
-<img src="trangchuql.png" width="800"/>
+<img src="imgs/trangchuql.png" width="800"/>
 
 > Cán bộ ký túc xá quản lý phản ánh, phân công xử lý và thống kê theo loại/mức độ ưu tiên.  
 > Giao diện quản trị hiển thị biểu đồ trực quan và hỗ trợ tìm kiếm nhanh.
@@ -110,33 +110,30 @@
 ---
 
 ### 📩 Gửi phản ánh sự cố
-<img src="baocaosv.png" width="800"/>
+<img src="imgs/baocaosv.png" width="800"/>
 
 > Sinh viên nhập mô tả, đính kèm hình ảnh, hệ thống AI (PhoBERT) tự động phân tích – phân loại loại sự cố và mức độ ưu tiên.  
 > Phản ánh được ghi nhận và chuyển ngay đến quản trị viên phụ trách.
 
 ---
 
-### 🤖 Phản hồi tự động (AI)
-<img src="screens/ai_autoreply.png" width="800"/>
-
-> AI sử dụng mô hình Gemini hoặc ViT5 để sinh phản hồi tự động, lịch sự, phù hợp ngữ cảnh và SLA.  
-> Giúp giảm tải 85% khối lượng phản hồi thủ công.
-
----
-
 ### 📊 Dashboard Thống kê
-<img src="screens/statistics.png" width="800"/>
+<img src="imgs/bieudo.png" width="800"/>
 
 > Biểu đồ thống kê loại sự cố, mức độ ưu tiên, tiến độ xử lý và hiệu suất phản hồi.  
 > Hỗ trợ đánh giá hiệu quả quản lý và phát hiện khu vực có tần suất sự cố cao.
 
 ---
+### 🏠 Sinh viên gửi Check-in / Check-out
+<img src="imgs/checksv.png" width="800"/>
 
+> Sinh viên chon check-in/ chjeck-out giờ và ảnh hiện tại
+> Giúp giảm tải tình trạng thủ công.
+---
 ### 🏠 Check-in / Check-out
-<img src="screens/checkin_checkout.png" width="800"/>
+<img src="imgs/checkql.png" width="800"/>
 
-> Quản lý yêu cầu vào/ra ký túc xá, xác nhận lịch sử lưu trú, đồng bộ thông tin sinh viên với phản ánh.  
+> Quản lý, xác nhận lịch sử lưu trú, đồng bộ thông tin sinh viên với phản ánh.
 > Hỗ trợ minh bạch dữ liệu vận hành và đối soát dễ dàng.
 
 ---
