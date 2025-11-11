@@ -267,8 +267,10 @@ python -m backend.ai.predictor "ống nước tầng 2 bị vỡ, đang tràn ra
 ---
 
 ## 👨‍💻 Tác giả
-- **Nguyễn Anh Tuấn** – Đại học Đại Nam  
+- **Nguyễn Anh Tuấn** – Đại học Đại Nam
+- **khoa**: Công nghệ thông tin
 - **Email:** tuanvtv2004@gmail.com
+- **SĐT**: 0345850516
 
 <div align="center">
 
