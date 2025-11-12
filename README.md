@@ -8,9 +8,11 @@
 [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-Latest-DA3B01?style=for-the-badge&logo=databricks&logoColor=white)](https://www.sqlalchemy.org/)
 [![Google Gemini](https://img.shields.io/badge/Google%20Gemini-API-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
 
+<div align="center">
+  <img src="logoDaiNam.png" width="200"/> 
+  <img src="AIoTLab_logo.png" width="200"/>
+</div>
 
-<img src="logoDaiNam.png" width="200"/> 
-<img src="AIoTLab_logo.png" width="200"/>
 **Hệ thống chuyển đổi số quản lý khách sạn sinh viên Đại Nam – kết hợp AI & IoT để số hóa toàn bộ quy trình vận hành**
 
 [🚀 Demo](#-demo) • [✨ Tính Năng](#-tính-năng) • [🏗️ Kiến Trúc](#-kiến-trúc-hệ-thống) • [⚙️ Cài Đặt](#-cài-đặt) • [📖 API Docs](#-api-documentation)
