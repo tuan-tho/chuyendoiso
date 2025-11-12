@@ -10,7 +10,7 @@
 
 <div align="center">
   <img src="logoDaiNam.png" width="200"/> 
-  <img src="AIoTLab_logo.png" width="200"/>
+  <img src="logokhoa.jpg" width="200"/>
 </div>
 
 **Hệ thống chuyển đổi số quản lý khách sạn sinh viên Đại Nam – kết hợp AI & IoT để số hóa toàn bộ quy trình vận hành**
